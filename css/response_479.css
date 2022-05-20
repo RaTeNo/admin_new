@@ -1,0 +1,705 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 16px;
+    }
+
+
+    .content_flex .content
+    {
+        padding: 30px 22px 0;
+    }
+
+
+    .content .cols .block_title
+    {
+        font-size: 22px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 16px;
+    }
+
+    .fancybox__content > .carousel__button.is-close
+    {
+        top: 12px;
+        right: 12px;
+    }
+
+
+
+    /*----------------
+        Page title
+    ----------------*/
+    .page_title
+    {
+        font-size: 22px;
+    }
+
+    .page_title span{
+        max-width: calc(100% - 50px);
+    }
+
+
+
+    /*-----------------
+        Block title
+    -----------------*/
+    .block_title
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+
+
+    /*--------------
+        BG block
+    --------------*/
+    .bg_block
+    {
+        width: calc(100% + 44px);
+        margin-right: -22px;
+        margin-left: -22px;
+        padding: 22px;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
+    {
+        padding: 14px 22px;
+    }
+
+
+    .mob_header .nitifications,
+    .mob_header .account
+    {
+        margin-left: 20px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h2
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+
+    .text_block figure figcaption
+    {
+        font-size: 12px;
+        line-height: 14px;
+
+        padding: 14px 18px;
+    }
+
+
+
+    /*-------------
+        Welcome
+    -------------*/
+    .welcome .avatar
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .welcome .avatar + *
+    {
+        width: calc(100% - 66px);
+    }
+
+    .welcome .name
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .welcome .last_date
+    {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+
+
+    /*------------------
+        Notification
+    ------------------*/
+    .notification .icon + *
+    {
+        width: calc(100% - 66px);
+    }
+
+    .notification .title
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+
+
+    /*---------------
+        Test data
+    ---------------*/
+    .test_data
+    {
+        width: calc(100% + 44px);
+        margin-right: -22px;
+        margin-left: -22px;
+    }
+
+
+    .test_data .title
+    {
+        font-size: 19px;
+    }
+
+
+    .test_data .step .answers .row
+    {
+        margin-bottom: -15px;
+        margin-left: -15px;
+    }
+
+    .test_data .step .answers .row > *
+    {
+        margin-bottom: 15px;
+        margin-left: 15px;
+    }
+
+
+    .test_data .step .answers .row.default
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .test_data .step .answers .row.default > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .test_data .step .answers .text
+    {
+        line-height: 32px;
+    }
+
+    .test_data .step .answers .text .input
+    {
+        height: 28px;
+    }
+
+
+
+    /*----------
+        Quiz
+    ----------*/
+    .quiz .steps .answers .row
+    {
+        margin-left: 0;
+    }
+
+    .quiz .steps .answers .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .quiz .total_answers,
+    .quiz .result
+    {
+        padding: 20px;
+    }
+
+
+
+    /*-------------------
+        Workbook item
+    -------------------*/
+    .workbook_item .title
+    {
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+
+    .workbook_item .form .question
+    {
+        font-size: 14px;
+    }
+
+
+
+    /*--------------------
+        Simulator item
+    --------------------*/
+    .simulator_item .audio_message .audio_wave
+    {
+        width: 214px;
+    }
+
+
+    .simulator_item .audio_message .duration
+    {
+        font-size: 12px;
+        line-height: 16px;
+
+        margin-left: 8px;
+    }
+
+
+    .simulator_item .dialog .data
+    {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .simulator_item .dialog .message .audio_message .audio_wave
+    {
+        width: 145px;
+    }
+
+
+
+    /*------------
+        Dialog
+    ------------*/
+    .dialog .data
+    {
+        width: calc(100% + 44px);
+        margin-right: -22px;
+        margin-left: -22px;
+
+        border-radius: 0;
+    }
+
+
+
+    .dialog .message .audio_message .audio_wave
+    {
+        width: 120px;
+    }
+
+
+    .dialog .head + .video_player
+    {
+        border-radius: 0;
+    }
+
+
+
+    .dialog  .limit_time
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        padding: 12px 32px;
+    }
+
+
+
+    /*-----------------------
+        Simulator actions
+    -----------------------*/
+    .simulator_actions .steps .question
+    {
+        padding: 19px;
+    }
+
+
+    .simulator_actions .steps .answers .row
+    {
+        margin-left: 0;
+    }
+
+    .simulator_actions .steps .answers .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*-----------------
+        Course info
+    -----------------*/
+    .course_info .name
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+    .course_info .steps .title
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+    .course_info .steps .step + .step:after
+    {
+        height: 60px;
+    }
+
+
+
+    /*----------------
+        Error info
+    ----------------*/
+    .error_info .title
+    {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+
+    .error_info .desc
+    {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+    .error_info .code img
+    {
+        width: 320px;
+    }
+
+
+
+    /*----------
+        Auth
+    ----------*/
+    .auth .data .title
+    {
+        font-size: 22px;
+        line-height: 28px;
+
+        margin-bottom: 36px;
+    }
+
+
+    .auth .register.success .info > *
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+
+
+    .auth .contacts .logo img
+    {
+        
+    }
+
+
+    .auth .contacts .info{
+        width: 330px;
+    }
+
+
+
+    /*--------------
+        Feedback
+    --------------*/
+    .feedback .line > *
+    {
+        width: 100% !important;
+    }
+
+
+
+    /*--------------
+        Comments
+    --------------*/
+    .comments .children
+    {
+        padding-left: 30px;
+    }
+
+
+    .comments .comment .avatar
+    {
+        font-size: 18px;
+        line-height: 20px;
+
+        width: 44px;
+        height: 44px;
+
+        border-radius: 8px;
+    }
+
+
+    .comments .comment .data
+    {
+        width: calc(100% - 60px);
+    }
+
+
+    .comments .comment .exp
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*--------------
+        Settings
+    --------------*/
+    .settings .form .birthday > *
+    {
+        width: calc(50% - 10px);
+    }
+
+    .settings .form .birthday > *.month
+    {
+        width: calc(100% - 10px);
+
+        order: 2;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding: 32px;
+    }
+
+
+    .modal .icon
+    {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+
+    .modal_title
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .modal_desc
+    {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+
+    .modal .form
+    {
+        margin-top: 24px;
+    }
+
+
+
+    #register_code_modal
+    {
+        padding: 40px;
+    }
+
+    .error_info .code
+    {
+        order: -1;
+    }
+
+    .persons .person .avatar + .name
+    {
+        min-height: 38px;
+    }
+
+    .test_data .step .couples li span
+    {
+        min-width: 155px;
+        max-width: 155px;
+    }
+
+
+
+    #simulator_over_modal,
+    #confirm_modal
+    {
+        padding: 32px;
+    }
+
+
+    #confirm_modal .btns
+    {
+        margin-top: 24px;
+    }
+
+    #confirm_modal .btns .btn
+    {
+        width: 100%;
+    }
+
+    #confirm_modal .btns .btn + .btn
+    {
+        margin-top: 12px;
+    }
+
+    .block_head .title{
+        max-width: 200px;
+    }
+
+    .text_block figure img{
+        width: 100%;
+    }
+
+    .audio_media .media-slider{
+        padding:0;
+    }
+
+    .audio_media .media-remaining-time{
+        display: none;
+    }
+
+    .steps .items{
+        overflow: hidden;
+    }
+
+
+    .faq .test_data{
+    	width: 100%;
+    	margin:0;
+    }
+
+    .info_faq{
+    	order:3;
+    	margin-left: 30px;
+    	margin-top: 10px;
+    }
+
+    .accordion_item .head{
+	    flex-wrap: wrap;
+	}
+
+    .video_record_modal{
+        padding:0;
+    }
+
+    .video_empty{
+        min-height: 200px;
+    }
+
+    .video_empty svg{
+        width: 50px;
+    }
+
+    .video_empty span{
+        margin-top: 0;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .ready_video{
+        font-size: 15px;
+
+    }
+
+    .ready_video:before{
+        left:13px;
+    }
+
+    .item_tiket{
+        flex-direction: column;
+    }
+
+    .ticket_head{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ticket_desc{
+        flex-wrap:wrap;
+    }
+
+    .ticket_desc span{
+        max-width: calc(100% - 100px);
+    }
+
+    .ticket_desc .img{
+        margin-left:0;
+        margin-top: 15px;
+    }
+
+    .ticket_name{
+        margin-bottom: 10px;
+    }
+
+    .webinar_more{
+        display: inline-flex !important;
+        justify-content: center;
+    }
+
+    .webinar_more a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: -0.3px;
+        color: #000;
+        text-decoration: none;
+    }
+    .webinar_more span{
+        display: flex;
+        width: 25px;
+        height: 25px;
+        padding: 0;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        background: var(--main_color);
+        color:#fff;
+        margin-right: 10px;
+    }
+    .webinar_more svg{
+        width: 11px;
+        height: 7px;
+        transform: rotate(-90deg);
+    }
+
+    .courses .course:hover,.simulators .simulator:hover,.articles .article:hover,.discussions .discussion:hover,.polls .poll:hover,.webinars .webinar:hover,.podcasts .podcast:hover,.persons .person:hover{
+        top:0;
+    }
+
+    .viewer{
+        padding: 0;
+    }
+}
