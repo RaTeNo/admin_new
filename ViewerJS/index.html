@@ -377,11 +377,36 @@ c;a?(e.title||(e.title=a.replace(/^.*[\\\/]/,"")),e.documentUrl=a,b(a,function(b
                 #zoomIn{
                     padding:0;
                     margin-right: 10px;
-                    margin-left: 10px; 
+                    margin-left: 6px; 
                 }
 
                 #navButtons{
-                    display: none;
+                    display: flex;
+                }
+
+                #next, #previous{
+                    display: block;
+                    margin: 0;
+                }
+                .toolbarButton.pageUp::before {
+                    content:"";
+                    display: inline-block;
+                    background: url(images/toolbarButton-pageUp.png);
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                    background-repeat: no-repeat;                    
+                    display: inline-block;
+                }
+                .toolbarButton.pageDown::before {
+                    display: inline-block;
+                    content:"";
+                    display: inline-block;
+                    background: url(images/toolbarButton-pageDown.png);
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                    background-repeat: no-repeat;      
                 }
 
             }
