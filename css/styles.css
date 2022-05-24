@@ -12100,6 +12100,7 @@ section.total {
     height: 50px;
     margin-left: 30px;
     display: flex;
+    align-items: center;
 }
 
 .mob_header .logo.m_l{
