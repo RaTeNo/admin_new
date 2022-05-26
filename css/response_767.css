@@ -784,7 +784,7 @@
 
     .dialog .message .prompt .text
     {
-        font-size: 14px;
+        font-size: 18px;
 
         max-width: calc(100% - 55px);
         margin-top: 12px;
