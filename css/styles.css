@@ -397,6 +397,12 @@ button
     flex-wrap: wrap;
 }
 
+.sub_title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+
 
 .page_title .icon
 {
