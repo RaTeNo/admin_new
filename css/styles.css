@@ -2220,6 +2220,7 @@ aside .menu .sub_menu a.active
 }
 
 
+
 .courses .course
 {
     position: relative;
@@ -2239,7 +2240,19 @@ aside .menu .sub_menu a.active
 {
     top: -10px;
 
-    filter: drop-shadow(1px 30px 25px rgba(6, 16, 88, .035));
+    box-shadow: 1px 30px 25px rgb(6 16 88 / 4%);
+}
+.courses .course.complete{
+    pointer-events: none;
+}
+.courses .course.complete:after{
+    content:"";
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.7);
+    display: block;
+    position: absolute;
+    top:0;
 }
 
 
@@ -2531,7 +2544,7 @@ aside .menu .sub_menu a.active
 {
     top: -10px;
 
-    filter: drop-shadow(1px 30px 25px rgba(6, 16, 88, .035));
+    box-shadow: 1px 30px 25px rgb(6 16 88 / 4%);
 }
 
 .simulators .simulator .avatar{
@@ -2831,7 +2844,7 @@ aside .menu .sub_menu a.active
 {
     top: -10px;
 
-    filter: drop-shadow(1px 30px 25px rgba(6, 16, 88, .035));
+    box-shadow: 1px 30px 25px rgb(6 16 88 / 4%);
 }
 
 
@@ -3024,7 +3037,7 @@ aside .menu .sub_menu a.active
 {
     top: -10px;
 
-    filter: drop-shadow(1px 30px 25px rgba(6, 16, 88, .035));
+    box-shadow: 1px 30px 25px rgb(6 16 88 / 4%);
 }
 
 
@@ -3153,7 +3166,7 @@ aside .menu .sub_menu a.active
 {
     top: -10px;
 
-    filter: drop-shadow(1px 30px 25px rgba(6, 16, 88, .035));
+    box-shadow: 1px 30px 25px rgb(6 16 88 / 4%);
 }
 
 
@@ -3299,7 +3312,7 @@ aside .menu .sub_menu a.active
 {
     top: -10px;
 
-    filter: drop-shadow(1px 30px 25px rgba(6, 16, 88, .035));
+    box-shadow: 1px 30px 25px rgb(6 16 88 / 4%);
 }
 
 
@@ -3431,7 +3444,7 @@ aside .menu .sub_menu a.active
 {
     top: -10px;
 
-    filter: drop-shadow(1px 30px 25px rgba(6, 16, 88, .035));
+    box-shadow: 1px 30px 25px rgb(6 16 88 / 4%);
 }
 
 
@@ -3564,7 +3577,7 @@ aside .menu .sub_menu a.active
 {
     /*top: -10px;
 
-    filter: drop-shadow(1px 30px 25px rgba(6, 16, 88, .035));*/
+    box-shadow: 1px 30px 25px rgb(6 16 88 / 4%);*/
 }
 
 
@@ -3991,7 +4004,7 @@ aside .menu .sub_menu a.active
 {
     top: -10px;
 
-    filter: drop-shadow(1px 30px 25px rgba(6, 16, 88, .035));
+    box-shadow: 1px 30px 25px rgb(6 16 88 / 4%);
 }
 
 
@@ -6641,7 +6654,7 @@ aside .menu .sub_menu a.active
 {
     top: -10px;
 
-    filter: drop-shadow(1px 30px 25px rgba(6, 16, 88, .035));
+    box-shadow: 1px 30px 25px rgb(6 16 88 / 4%);
 }
 
 
@@ -12781,3 +12794,31 @@ section.total {
     border-width: 0;
     outline-width: 0;
 }
+
+
+.buttonUp
+{
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    bottom: 20px;
+
+    display: none;
+}
+
+.buttonUp button
+{
+    position: relative;
+
+    display: block;
+
+    width: 50px;
+    height: 50px;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 50%;
+    background: var(--main_color) url(../images/ic_buttonUp.png) 50% calc(50% - 1px)/30px 30px no-repeat;
+}
+

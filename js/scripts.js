@@ -527,6 +527,16 @@ $(() => {
 
 		$(this).toggleClass('active')
 	})
+
+	// Кнопка 'Вверх'
+	$('body').on('click', '.buttonUp button', function(e) {
+		e.preventDefault()
+
+		$('body, html').stop(false, false).animate({
+			scrollTop: 0
+		}, 1000)
+	})
+
 })
 
 
@@ -635,6 +645,16 @@ $(window).on('resize', () => {
 
 		// Перезапись ширины окна
 		WW = $(window).width()
+	}
+})
+
+
+$(window).scroll(function(){
+	// Кнопка 'Вверх'
+	if( $(window).scrollTop() > $(window).innerHeight() ) {
+		$('.buttonUp').fadeIn(300)
+	} else {
+		$('.buttonUp').fadeOut(200)
 	}
 })
 
