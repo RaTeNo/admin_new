@@ -131,6 +131,7 @@ input[type=number]
     --color_title: #020027;
     --color_light: linear-gradient(0deg, rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)), var(--main_color);
     --color_light_anima: rgba(255, 0, 0, .05);
+    --border: rgba(10, 0, 197, 0.33);
 }
 
 
@@ -2234,6 +2235,8 @@ aside .menu .sub_menu a.active
 
     border-radius: 7px 7px 15px 15px;
     background: #fff;
+    border: 1px solid var(--border);
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.19);
 }
 
 .courses .course:hover
@@ -2242,9 +2245,7 @@ aside .menu .sub_menu a.active
 
     box-shadow: 1px 30px 25px rgb(6 16 88 / 4%);
 }
-.courses .course.complete{
-    pointer-events: none;
-}
+/*
 .courses .course.complete:after{
     content:"";
     width: 100%;
@@ -2255,7 +2256,7 @@ aside .menu .sub_menu a.active
     top:0;
 }
 
-
+*/
 .courses .course .stickers
 {
     position: absolute;
@@ -2321,6 +2322,10 @@ aside .menu .sub_menu a.active
     background: #ddd;
 }
 
+.courses .course.complete .thumb{
+    opacity: 0.4;
+}
+
 .courses .course .thumb img
 {
     position: absolute;
@@ -2341,6 +2346,10 @@ aside .menu .sub_menu a.active
     padding: 20px;
 
     flex: 1 0 auto;
+}
+
+.courses .course.complete .info{
+    opacity: 0.4;
 }
 
 
