@@ -131,7 +131,7 @@ input[type=number]
     --color_title: #020027;
     --color_light: linear-gradient(0deg, rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)), var(--main_color);
     --color_light_anima: rgba(255, 0, 0, .05);
-    --border: rgba(10, 0, 197, 0.33);
+    --border: var(--main_color);
 }
 
 
