@@ -2553,6 +2553,10 @@ aside .menu .sub_menu a.active
 
     border-radius: 15px;
     background: #fff;
+
+    border: 1px solid var(--border);
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.19);
+
 }
 
 .simulators .simulator:hover
@@ -2853,6 +2857,9 @@ aside .menu .sub_menu a.active
 
     border-radius: 7px 7px 15px 15px;
     background: #fff;
+
+    border: 1px solid var(--border);
+    box-shadow: 0px 8px 18px rgb(0 0 0 / 19%);
 }
 
 .articles .article:hover
@@ -3045,7 +3052,9 @@ aside .menu .sub_menu a.active
 
     border-radius: 15px;
     background: #fff;
-    box-shadow: 0 3px 31px rgba(148, 155, 195, .153327);
+    
+    border: 1px solid var(--border);
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.19);
 }
 
 .discussions .discussion:hover
@@ -3174,7 +3183,8 @@ aside .menu .sub_menu a.active
 
     border-radius: 15px;
     background: #fff;
-    box-shadow: 0 3px 31px rgba(148, 155, 195, .153327);
+    border: 1px solid var(--border);
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.19);
 }
 
 .polls .poll:hover
@@ -3321,6 +3331,8 @@ aside .menu .sub_menu a.active
     border-radius: 15px;
     background: #fff;
     box-shadow: 0 3px 31px rgba(148, 155, 195, .153327);
+        border: 1px solid var(--border);
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.19);
 }
 
 .webinars .webinar:hover
@@ -3452,7 +3464,8 @@ aside .menu .sub_menu a.active
 
     border-radius: 15px;
     background: #fff;
-    box-shadow: 0 3px 31px rgba(148, 155, 195, .153327);
+        border: 1px solid var(--border);
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.19);
 }
 
 .podcasts .podcast:hover
@@ -3580,7 +3593,8 @@ aside .menu .sub_menu a.active
 
     border-radius: 15px;
     background: #fff;
-    box-shadow: 0 3px 31px rgba(148, 155, 195, .153327);
+    border: 1px solid var(--border);
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.19);
 
     justify-content: space-between;
     align-items: center;
@@ -4007,7 +4021,8 @@ aside .menu .sub_menu a.active
 
     border-radius: 15px;
     background: #fff;
-    box-shadow: 0 3px 31px rgba(148, 155, 195, .153327);
+    border: 1px solid var(--border);
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.19);
 
     justify-content: space-between;
     align-items: flex-start;
@@ -12701,6 +12716,8 @@ section.total {
     background: #FFFFFF;
     border-radius: 15px;
     padding:20px;
+    border: 1px solid var(--border);
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.19);
 }
 
 .ticket + .ticket{
