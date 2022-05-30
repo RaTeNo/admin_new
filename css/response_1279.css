@@ -1445,8 +1445,8 @@
         display: flex;
 
         width: auto;
-        margin-right: 0;
-        padding: 0;
+        margin-left: -48px;
+       
     }
 
     .courses .row.not_slide > *
