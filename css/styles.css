@@ -3822,8 +3822,12 @@ aside .menu .sub_menu a.active
 
     background: none;
     box-shadow: none;
+    border:none;
 }
 
+.files .list .file:hover{
+	top:0;
+}
 
 
 .files .table
