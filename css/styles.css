@@ -12858,3 +12858,15 @@ section.total {
     background: var(--main_color) url(../images/ic_buttonUp.png) 50% calc(50% - 1px)/30px 30px no-repeat;
 }
 
+.page_title span {
+    max-width: calc(100% - 50px);
+}
+
+.steps{
+    overflow: hidden;
+}
+
+.lecture_steps .steps .step + .step:after{
+    height: 100px;
+}
+
