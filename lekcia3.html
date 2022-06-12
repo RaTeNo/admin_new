@@ -334,6 +334,8 @@
 											<div class="viewer_container" style="padding-bottom:50%">
 												<iframe src = "ViewerJS/#../images/demodoc.pdf" width='100%' height='700px' class="viewer" allowfullscreen webkitallowfullscreen frameBorder="0"></iframe>
 											</div>
+
+											<div id='viewer' style="height:1500px;"></div>
 											
 										</section>										
 									</section>
@@ -562,5 +564,29 @@
 		<script src="js/nice-select.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
+		<script src='js/webviewer.min.js'></script>
+
+		<script>
+		  WebViewer({
+		    path: 'WebViewer/lib', // path to the PDF.js Express'lib' folder on your server
+		    licenseKey: 'Insert commercial license key here after purchase',
+		    initialDoc: 'https://pdftron.s3.amazonaws.com/downloads/pl/webviewer-demo.pdf',
+		    // initialDoc: '/path/to/my/file.pdf',  // You can also use documents on your server
+		  }, document.getElementById('viewer'))
+		  .then(instance => {
+		    const docViewer = instance.docViewer;
+		    const annotManager = instance.annotManager;
+		    // call methods from instance, docViewer and annotManager as needed
+
+		    // you can also access major namespaces from the instance as follows:
+		    // const Tools = instance.Tools;
+		    // const Annotations = instance.Annotations;
+
+		    docViewer.on('documentLoaded', () => {
+		      // call methods relating to the loaded document
+		    });
+		  });
+		</script>
+
 	</body>
 </html>
