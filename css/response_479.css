@@ -702,4 +702,8 @@
     .viewer{
         padding: 0;
     }
+
+    .telegram_fixed{
+        max-width: 190px;
+    }
 }
