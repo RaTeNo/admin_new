@@ -29,12 +29,16 @@
 		<!-- Подключение файлов стилей -->
 		<link rel="stylesheet" href="css/fancybox.css" async>
 		<link rel="stylesheet" href="css/styles.css" async>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
 		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
 		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
 		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
 		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+
+
 
 	</head>
 
@@ -322,6 +326,16 @@
 
 											<p>Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.</p>
 
+
+											<div class="slick_wrap">
+												<div class="slick">
+													<img src="images/tmp/lisa.jpg" alt="">
+													<img src="images/tmp/lisa.jpg" alt="">
+													<img src="images/tmp/lisa.jpg" alt="">
+												</div>
+												<div class="nav_slick"></div>
+											</div>
+
 											<p><b>Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит, какой именно текст получится — таким образом, авторские права на реферат принадлежат только вам.</b></p>
 											<div class="viewer_container" style="padding-bottom:100%">
 												<iframe src = "ViewerJS/#../images/ohm2013.odp" width='100%' height='700px' class="viewer" allowfullscreen webkitallowfullscreen frameBorder="0"></iframe>
@@ -588,5 +602,15 @@
 		  });
 		</script>
 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.slick').slick({
+				    appendArrows: $('.nav_slick'),
+		            prevArrow: '<button id="prev" type="button" class="btn btn-juliet"><img src="images/toolbarButton-pageUp.png"></button>',
+		            nextArrow: '<button id="next" type="button" class="btn btn-juliet"><img src="images/toolbarButton-pageDown.png"></button>'
+				});
+			});
+		</script>
 	</body>
 </html>

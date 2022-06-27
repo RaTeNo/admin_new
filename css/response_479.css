@@ -706,4 +706,13 @@
     .telegram_fixed{
         max-width: 190px;
     }
+
+    .slick_wrap{
+        padding:10px;
+    }
+
+    .nav_slick button{
+        width: 25px;
+        height: 25px;
+    }
 }
