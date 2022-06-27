@@ -12992,3 +12992,102 @@ section.total {
 .paid .title .blue{
     color:#2D22F3;
 }
+
+
+.reward {
+    margin-top: 20px !important;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 3px 31px rgb(148 155 195 / 15%);
+    margin-top: 40px !important;
+}
+
+.reward_info {
+    padding: 25px;
+    display: flex;
+}
+
+.reward_desc {
+    margin-left: 20px;
+}
+
+.reward_title, .you_level_title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.reward_text, .you_level_desc {
+    font-size: 14px;
+    line-height: 130%;
+    color: #828282;
+}
+
+.you_level_desc, .you_level_title {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.you_level{
+    border-top: 1px solid #CBCBCB;
+    padding-top: 20px;
+}
+
+.you_level .paid{
+    padding: 0;
+    box-shadow: none;
+
+}
+
+.you_level .paid .line div{
+    width: 100%;
+}
+
+.you_level .paid .line {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.you_level .paid .line .next_level, .you_level .paid .line .prev_level{
+    width: 50%;
+    height: auto;
+}
+
+.you_level .paid .line .prev_level{
+    background: none;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.you_level .paid .paid_flex{
+    border-top: 1px solid #CBCBCB;
+    padding: 25px;
+}
+
+
+.you_level .paid .line{
+        padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+.coin_img{
+    position: relative;
+    top:5px;
+}
+
+.red_coin{
+    color: #CF1919;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.green_coin{
+    color:#33A529;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+}

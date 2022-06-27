@@ -737,4 +737,13 @@
     .paid .title.flex-start{
         align-self: baseline;
     }
+
+    .reward_info img{
+        width: 30px;
+    }
+
+    .reward_title, .you_level_title{
+        font-size: 17px;
+        line-height: 22px;
+    }
 }
