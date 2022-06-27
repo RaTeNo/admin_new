@@ -715,4 +715,26 @@
         width: 25px;
         height: 25px;
     }
+
+    .paid_flex{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .paid .link{
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .paid .title {
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    .paid .title span{
+        font-size: 14px;
+    }
+    .paid .title.flex-start{
+        align-self: baseline;
+    }
 }

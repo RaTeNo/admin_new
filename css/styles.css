@@ -12911,3 +12911,84 @@ section.total {
 .nav_slick button{
     margin-right: 10px;
 }
+
+
+.paid{   
+    margin-top: 20px !important;
+    padding: 24px 25px;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 3px 31px rgb(148 155 195 / 15%);   
+}
+
+.paid .title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.paid .title span{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #B4B7CC;
+}
+.paid .title span b{
+    color:#000000;
+}
+.paid .title span.green{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #33A529;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.paid_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.paid .link{
+    color: var(--main_color);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    display: block;
+    padding: 8px 32px;
+    transition: .2s linear;
+    text-decoration: none;
+    border: 2px solid var(--main_color);
+    border-radius: 20px;
+}
+
+.paid .link:hover {
+    color: #fff;
+    background: var(--main_color);
+}
+
+.paid .line{
+    margin-top: 25px;
+}
+.paid .line div{
+    background: #E9E9E9;
+    border-radius: 80px;
+    height: 10px;
+}
+
+.paid .line div div{
+    background: #40C53D;
+}
+
+.paid .line .next_level{
+    background: none;
+    margin-top: 15px;
+    text-align: right;
+}
+
+.paid .title .blue{
+    color:#2D22F3;
+}
