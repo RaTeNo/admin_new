@@ -746,8 +746,8 @@
         line-height: 28px;
     }
 
-    .paid .title span{
-        font-size: 14px;
+    .paid .title span, .paid .line, .paid .title span.green{
+        font-size: 12px;
     }
     .paid .title.flex-start{
         align-self: baseline;
@@ -760,5 +760,9 @@
     .reward_title, .you_level_title{
         font-size: 17px;
         line-height: 22px;
+    }
+
+    .paid .title span.green{
+        margin-right: 10px;
     }
 }
