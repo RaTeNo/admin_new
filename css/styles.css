@@ -12874,7 +12874,7 @@ section.total {
     position: fixed;
     bottom: 20px;
     left: 15px;
-    z-index: 9999;
+    z-index: 999;
     background: #FFFFFF;
     border-radius: 74px;
     display: flex;
@@ -12885,6 +12885,10 @@ section.total {
     font-size: 13px;
     padding-right: 20px;
     box-shadow: 0 0 11px 3px #0003;
+}
+
+.menu_open .telegram_fixed{
+    z-index: 5;
 }
 
 .telegram_fixed svg{
