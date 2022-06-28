@@ -523,6 +523,22 @@
 											<button class="next_btn">Далее</button>
 										</div>
 									</div>
+
+									<div class="review">
+										<div class="review_title">Оставьте свой отзыв о данном курсе</div>
+										<div class="rating-area">
+											<input type="radio" id="star-5" name="rating" value="5">
+											<label for="star-5" title="Оценка «5»"></label>	
+											<input type="radio" id="star-4" name="rating" value="4">
+											<label for="star-4" title="Оценка «4»"></label>    
+											<input type="radio" id="star-3" name="rating" value="3">
+											<label for="star-3" title="Оценка «3»"></label>  
+											<input type="radio" id="star-2" name="rating" value="2">
+											<label for="star-2" title="Оценка «2»"></label>    
+											<input type="radio" id="star-1" name="rating" value="1">
+											<label for="star-1" title="Оценка «1»"></label>
+										</div>
+									</div>	
 								</section>
 							</section>
 
@@ -567,6 +583,41 @@
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
 		</div>
 
+		<section class="modal" id="thanks">
+			<img data-src="images/thanks.svg" alt="" class="icon lozad">
+
+			<div class="modal_title">Спасибо за<br> обратную связь!</div>
+
+			<button class="close_btn btn">Вернуться к курсу</button>
+		</section>
+
+
+		<section class="modal" id="review">			
+			<div class="modal_title">Оставить отзыв о курсе</div>
+
+			<form action="">
+				<div class="rating-area">
+					<input type="radio" id="star-51" name="rating" value="5">
+					<label for="star-51" title="Оценка «5»"></label>	
+					<input type="radio" id="star-41" name="rating" value="4">
+					<label for="star-41" title="Оценка «4»"></label>    
+					<input type="radio" id="star-31" name="rating" value="3">
+					<label for="star-31" title="Оценка «3»"></label>  
+					<input type="radio" id="star-21" name="rating" value="2">
+					<label for="star-21" title="Оценка «2»"></label>    
+					<input type="radio" id="star-11" name="rating" value="1">
+					<label for="star-11" title="Оценка «1»"></label>
+				</div>
+
+				<div class="label">Введите свой комментарий</div>
+
+				<textarea name="" id="" placeholder="Ваш комментарий"></textarea>
+				<button>Отправить</button>
+			</form>
+
+		</section>
+
+
 
 		<!-- Подключение javascript файлов -->
 		<script src="js/jquery-3.5.0.min.js"></script>
@@ -610,6 +661,28 @@
 				    appendArrows: $('.nav_slick'),
 		            prevArrow: '<button id="prev" type="button" class="btn btn-juliet"><img src="images/toolbarButton-pageUp.png"></button>',
 		            nextArrow: '<button id="next" type="button" class="btn btn-juliet"><img src="images/toolbarButton-pageDown.png"></button>'
+				});
+			});
+		</script>
+
+
+		<script type="text/javascript">
+			$(() => {
+				$(".review .rating-area input").on("change", function(){					
+					Fancybox.show([{
+						src: "#review",
+						type: 'inline'
+					}]);
+					$("#review input[id="+$(this).prop("id")+"1]").prop("checked", "checked");
+				});
+
+				$("#review button").on("click", function(e){
+					e.preventDefault();			
+					Fancybox.close();		
+					Fancybox.show([{
+						src: "#thanks",
+						type: 'inline'
+					}]);
 				});
 			});
 		</script>

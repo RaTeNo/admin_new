@@ -13096,3 +13096,99 @@ section.total {
     font-size: 16px;
     line-height: 18px;
 }
+
+
+.review{
+    padding: 25px 20px;
+    border-radius: 15px;
+    background: #fff;
+    margin-top: 20px;
+}
+
+.review_title{
+    color: var(--text_color);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+
+
+.rating-area {
+    overflow: hidden;
+    max-width: 100%;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.rating-area:not(:checked) > input {
+    display: none;
+}
+.rating-area:not(:checked) > label {
+    float: right;
+    width: 48px;
+    padding: 0;
+    cursor: pointer;
+    font-size: 32px;
+    line-height: 32px;
+    color: lightgrey;
+    text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+    content: '';
+    display: block;
+    background: url(../images/star_black.svg);
+    width: 39px;
+    height: 35px;
+}
+.rating-area > input:checked ~ label:before {
+    background: url(../images/star.svg);
+}
+.rating-area:not(:checked) > label:hover:before,
+.rating-area:not(:checked) > label:hover ~ label:before {
+    background: url(../images/star.svg);
+}
+
+#review{
+    max-width: 375px;
+}
+
+#review form{
+    margin-top: 30px;
+}
+
+#review form .label{
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#review form textarea{
+    border-radius: 9px;
+    border:1px solid gray;
+    margin-top: 20px;
+    width: 100%;
+    height: 145px;
+    padding:15px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+#review form button{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 16px 32px;
+    text-align: center;
+    border-radius: 27px;
+    background: var(--main_color);
+}
