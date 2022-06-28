@@ -765,4 +765,8 @@
     .paid .title span.green{
         margin-right: 10px;
     }
+
+    .error_info form .flex a{
+        font-size: 14px;
+    }
 }
