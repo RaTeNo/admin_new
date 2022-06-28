@@ -13232,3 +13232,18 @@ section.total {
     margin-left: 40px;
     opacity: 0.8;
 }
+
+.btn_form{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 16px 32px;
+    text-align: center;
+    border-radius: 27px;
+    background: var(--main_color);
+    text-decoration: none;
+}
