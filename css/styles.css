@@ -5043,6 +5043,8 @@ aside .menu .sub_menu a.active
     line-height: 19px;
 
     letter-spacing: -.3px;
+    
+    word-break: break-word;
 }
 
 
