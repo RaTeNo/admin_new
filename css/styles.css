@@ -5856,6 +5856,9 @@ aside .menu .sub_menu a.active
     border: 2px solid transparent;
     border-radius: 16px;
     background: #f2f1fa;
+    max-width: 100%;
+    width: 100%;
+    overflow-wrap: break-word;
 }
 
 .test_data .step .answers label.error .name
@@ -13248,4 +13251,8 @@ section.total {
     border-radius: 27px;
     background: var(--main_color);
     text-decoration: none;
+}
+
+.img_test{
+    margin-bottom:20px;
 }
