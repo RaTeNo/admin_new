@@ -13256,3 +13256,35 @@ section.total {
 .img_test{
     margin-bottom:20px;
 }
+
+.gallery_test{
+    margin-left:-20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.gallery_test_item{
+    margin-left:20px;
+    width: calc(100%/7 - 20px);
+    margin-bottom: 20px;
+  
+}
+
+.gallery_test a{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding-bottom:100%;
+    border-radius: 10px;
+}
+
+.gallery_test a img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

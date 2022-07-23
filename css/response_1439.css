@@ -923,4 +923,8 @@
     {
         font-size: 15px;
     }
+
+    .gallery_test_item{
+        width: calc(100%/5 - 20px);      
+    }
 }

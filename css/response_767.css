@@ -1267,4 +1267,8 @@
     .title_setting{
         font-size: 19px;
     }
+
+     .gallery_test_item{
+        width: calc(100%/3 - 20px);      
+    }
 }
