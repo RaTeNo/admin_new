@@ -1486,4 +1486,13 @@
         width: calc(100%/4 - 20px);      
     }
 
+    .results_item{
+        width: calc(100%/2 - 20px);
+    }
+
+    .item_recomnd{
+        width: calc(100%/2 - 25px);
+    }
+
+
 }

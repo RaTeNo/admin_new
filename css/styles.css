@@ -13288,3 +13288,246 @@ section.total {
     height: 100%;
     object-fit: cover;
 }
+
+
+.results .row{
+    margin-left: -20px;
+}
+
+.results_item{
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    width: calc(100%/3 - 20px);
+    margin-left: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.results_item_text .title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: #000;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.results_item_text .recomend{
+    text-decoration: none;
+}
+
+.results_item_text .recomend span{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #178EFF;
+    border-bottom: 1px dashed #178EFF;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.results_item_rating{
+    background: rgba(227, 24, 24, 0.15);
+    border-radius: 11px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #E31818;
+    padding: 20px;
+    margin-left: 10px;
+}
+
+.results_item_text .recomend .counter{
+    background: #178EFF;
+    width: 18px;
+    height: 18px;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 18px;
+}
+
+.results .arrow{
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(135.48deg, #0B00D8 2%, #0500AF 96.5%), #C4C4C4;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.results .arrow svg{
+    transform: rotate(-90deg);
+    transition: 0.3s;
+}
+
+.results .arrow.open{
+    background: linear-gradient(0deg, #B8B5D6, #B8B5D6), #C4C4C4;
+}
+
+.results .arrow.open svg{
+    transform: rotate(0deg);
+}
+
+.results  .block_title{
+    display: flex;
+}
+
+.results_item_rating.yellow{
+    background: rgba(231, 176, 37, 0.15);
+    color: #E7B025;
+}
+
+.results_item_rating.green{
+    background: rgba(94, 198, 45, 0.15);
+    color: #5EC62D;
+}
+
+
+#test .btns{
+    display: flex;    
+    justify-content: center;
+}
+
+#test .btns button{
+    font-weight: 500;
+    font-size: 12.8332px;
+    line-height: 14px;
+    text-align: center;
+    color: #544B9D;
+    width: 80px;
+    background: #D9D5FD;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+#test .btns a{
+    font-weight: 500;
+    font-size: 12.8332px;
+    line-height: 14px;
+    width: 80px;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px 20px;
+    background: var(--main_color);
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+
+.recommendation .page_title {
+    margin-bottom: 25px;
+}
+
+.recommendation .data {
+    border-radius: 15px;
+    background: rgb(255, 255, 255);
+}
+
+.recommendation .data .head {
+    height: 100px;
+    line-height: 100px;
+    padding: 0 20px;
+    border-bottom: 1px solid #D0D0D0;
+    margin-bottom: 40px;
+}
+
+.recommendation .data .head .name{
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -0.3px;
+}
+
+.recommendation .cont{
+    padding: 0 20px;
+}
+
+.content .recommendation  .col_main{
+    width: 100%;
+}
+
+.title_block{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    margin-bottom: 25px;
+}
+
+.recommendation .cont .row{
+    margin-left: -25px;
+}
+
+.item_recomnd{
+    margin-left: 25px;
+    background: #F3F2FC;
+    border-radius: 15px;
+    width: calc(100%/3 - 25px);
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
+.item_recomnd .title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    margin-bottom: 20px;
+}
+
+.item_recomnd .btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item_recomnd .btns a{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #178EFF;
+    text-decoration: none;
+    border-bottom: 1px dashed #178EFF;
+}
+
+.item_recomnd .btns .complete{
+    background: #0A00C5;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    color: #F3F2FC;
+    padding: 10px 20px;
+}
+
+.item_recomnd .btns .complete2{
+background: #64C841;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+} 
+
+.item_recomnd .btns .complete2 svg{
+    margin-right: 10px;
+}

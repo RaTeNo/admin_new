@@ -1271,4 +1271,13 @@
      .gallery_test_item{
         width: calc(100%/3 - 20px);      
     }
+
+    .results_item{ 
+        width: calc(100%/1 - 20px);
+    }
+
+    .item_recomnd{
+        width: calc(100%/1 - 25px);
+    }
+
 }

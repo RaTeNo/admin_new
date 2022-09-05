@@ -2,6 +2,20 @@ $(() => {
 	// Ширина окна для ресайза
 	WW = $(window).width()
 
+	$('body').on('click', '.results .arrow', function (e) {
+		e.preventDefault()
+		$(this).parent().next().slideToggle();
+		if($(this).hasClass("open"))
+		{
+			$(this).removeClass("open");
+		}
+		else
+		{
+			$(this).addClass("open");
+		}
+	});
+
+
 	$('body').on('click', '.close_new_message', function (e) {
 		e.preventDefault()
 		$(this).parent().slideUp();
