@@ -1303,7 +1303,7 @@
         justify-content: space-between;
         width: 100%;
     }
-    .details_item-status {
+    .details_item-status, .details_item-status-green {
         order: -1;
         margin-left: 0;
     }
