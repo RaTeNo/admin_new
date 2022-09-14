@@ -327,4 +327,22 @@
         font-size: 14px;
         line-height: 18px;
     }
+
+
+    .advice_item-title,
+    .analitic_item-title {
+        font-size: 16px;
+        margin-bottom: 7px;
+    }
+
+    .advice_item,
+    .analitic_item {
+        padding: 15px;
+    }
+
+
+
+
+
+
 }

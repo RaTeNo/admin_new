@@ -16,6 +16,29 @@ $(() => {
 	});
 
 
+
+	$('body').on('click', '.details_item-right .details_item-link-yellow', function (e) {
+		e.preventDefault()
+		$(this).parent().parent().next('.details_item-body').slideToggle();
+		if($(this).hasClass("active"))
+		{
+			$(this).html('<span>Свернуть</span><svg class="icon"><use xlink:href="images/sprite.svg#turn"></use></svg>').removeClass("active");
+		}
+		else{
+			$(this).html('<span>Подробнее</span><svg class="icon"><use xlink:href="images/sprite.svg#link-more"></use></svg>').addClass("active");
+		}
+		
+
+		
+	});
+
+	$('body').on('click', '.details_item-body .details_item-link-yellow', function (e) {
+		e.preventDefault()
+		$(this).parent().hide('.details_item-body');
+	});
+
+
+
 	$('body').on('click', '.close_new_message', function (e) {
 		e.preventDefault()
 		$(this).parent().slideUp();

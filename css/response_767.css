@@ -1235,10 +1235,7 @@
     }
 
 
-     .courses .row.not_slide > *
-    {
-        width: calc(100%);
-    }
+
 
      .simulators .row.not_slide > *
     {
@@ -1279,5 +1276,131 @@
     .item_recomnd{
         width: calc(100%/1 - 25px);
     }
+
+
+
+    .details_item-head {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .details_item-left {
+        position: relative;
+        width: 100%;
+        padding-bottom: 25px;
+    }
+    .details_item-left:before {
+        position: absolute;
+        content: "";
+        width: calc(100% + 36px);
+        height: 1px;
+        background: #D8D8D8;
+        bottom: 0;
+        left: -18px;
+    }
+    .details_item-right {
+        margin-top: 15px;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .details_item-status {
+        order: -1;
+        margin-left: 0;
+    }
+    .details_item-left {
+        align-items: flex-start;
+    }
+    .details_item-text {
+        margin-top: 5px;
+    }
+
+    .training .courses .row {
+        margin: 0px;
+        padding: 0px;
+    }
+    .training .courses .row.not_slide {
+        margin-left: -15px;
+    }
+    .training .courses .row.not_slide > * {
+        width: calc(100%/2 - 15px);
+        margin-bottom: 24px;
+        margin-left: 15px;
+    }
+
+    .statistic_period {
+        font-size: 16px;
+    }
+    .statistic_period span {
+        font-size: 16px;
+        padding: 6px 8px;
+    }
+    .statistic_title {
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+    .statistic_subtitle {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .content .statistic {
+        margin-top: 30px;
+    }
+
+    .create-report_title {
+        font-size: 18px;
+    }
+    .create-report ul li {
+        font-size: 14px;
+    }
+    .create-report ul li:before {
+        width: 7px;
+        height: 7px;
+        left: 0;
+        top: 5px;
+    }
+    .create-report button {
+        font-size: 12px;
+    }
+
+    .advice_items,
+    .analitic_items {
+        margin-left: 0;  
+        margin-bottom: -15px;      
+    }
+    .advice_items > *,
+    .analitic_items > * {
+        margin-left: 0;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .advice_item-icon {
+        margin-right: 18px;
+    }
+    .analitic_item-icon {
+        margin-left: 18px;
+    }
+
+    .analytics-enabled_left {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .analytics-enabled_item {
+        flex-direction: column;
+    }
+    .analytics-enabled_icon {
+        margin-right: 0px;
+        margin-bottom: 12px;
+    }
+    .analytics-enabled_info {
+        text-align: center;
+    }
+    .analytics-enabled_time {
+        margin-left: 0;
+        margin-top: 22px;
+    }
+
+
+
 
 }

@@ -769,4 +769,52 @@
     .error_info form .flex a{
         font-size: 14px;
     }
+
+    .training .courses .row.not_slide > * {
+        width: 100%;
+        margin-bottom: 24px;
+        margin-left: 0px;
+    }
+    .training .courses .row.not_slide {
+        margin-left: 0;
+    }
+
+    .training .block_title {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .training .select-left {
+        margin-top: 15px;
+    }
+    .training .courses.column4 .row.not_slide > * {
+        width: 100%;
+        margin-bottom: 24px;
+        margin-left: 0px;
+    }
+
+    .create-report ul li {
+        width: 100%;
+    }
+    .create-report_title {
+        font-size: 16px;
+    }
+    .create-report_list li {
+        margin-right: 0;
+    }
+    .generated-report_list li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+
+    
+
+
+
+
+
+
+
+
 }

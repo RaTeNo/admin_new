@@ -1495,4 +1495,14 @@
     }
 
 
+
+    .training .courses.column4 .row > * {
+        width: calc(33.333% - 12px);
+        margin-bottom: 20px;
+        margin-left: 12px;
+    }
+    .statistics table {
+        margin-bottom: 0;
+    }
+
 }
