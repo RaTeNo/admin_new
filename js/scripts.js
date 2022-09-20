@@ -16,6 +16,19 @@ $(() => {
 	});
 
 
+	$(".register .submit_btn").prop("disabled", true);
+
+	$('body').on('change', '#remember_check', function (e) {
+		if($("#remember_check").prop("checked")){
+			$(".register .submit_btn").prop("disabled", false);
+		}
+		else
+		{
+			$(".register .submit_btn").prop("disabled", true);
+		}
+	});
+
+
 
 	$('body').on('click', '.details_item-right .details_item-link-yellow', function (e) {
 		e.preventDefault()

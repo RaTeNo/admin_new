@@ -9759,6 +9759,10 @@ aside .menu .sub_menu a.active
     background: var(--main_color);
 }
 
+.auth .form .submit_btn:disabled{
+    background: gray;
+}
+
 
 .auth .form .bottom
 {
