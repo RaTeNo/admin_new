@@ -1505,4 +1505,23 @@
         margin-bottom: 0;
     }
 
+    .modul_items {
+        flex-wrap: wrap;
+    }
+    .modul_items > * {
+        width: 100%;
+    }
+    .rating-block_items {
+        padding: 13px;
+    }
+    .rating-block_items {
+        flex-wrap: wrap;
+    }
+    .rating-block_items > * {
+        width: 100%;
+    }
+    .modul_item:last-child {
+        margin-bottom: 0;
+    }
+
 }

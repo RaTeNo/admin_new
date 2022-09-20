@@ -542,6 +542,21 @@ $(() => {
 	}
 
 
+
+
+	// Всплывающие окна
+	$('body').on('click', '.details_item-dialog-link', function (e) {
+		e.preventDefault()
+
+		Fancybox.close()
+
+		Fancybox.show([{
+			src: $(this).data('content'),
+			type: 'inline'
+		}])
+	})
+
+
 	// Восстановление пароля
 	$('.auth .recovery .form').submit(function (e) {
 		e.preventDefault()

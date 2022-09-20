@@ -807,6 +807,17 @@
         margin-bottom: 10px;
     }
 
+    .weekly-statistics_item {
+        position: relative;
+    }
+    .weekly-statistics_item-number {
+        position: absolute;
+        bottom: 18px;
+        right: 14px;
+    }
+    .weekly-statistics_item-title {
+        max-width: 100px;
+    }
 
     
 
