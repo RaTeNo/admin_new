@@ -1526,5 +1526,9 @@
         max-width: calc(100% - 150px);
     }
 
+    .courses .row.not_slide > *
+    {
+        width: calc(100%);
+    }
 
 }
