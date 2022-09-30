@@ -1455,11 +1455,13 @@
         font-size: 15px;
     }
     .activity_items {
-        margin-left: -3px;  
+        margin-left: -3px;
+        position: relative;  
     }
     .activity_item {
         width: calc(100%/30 - 3px);
         margin-left: 3px;  
+        position: static;
     }
     .modul_item-bottom-text br {
         display: none;
@@ -1523,7 +1525,7 @@
         padding-bottom: 14px;
     }
     .rating .block_title {
-        max-width: calc(100% - 150px);
+        max-width: 100%;
     }
 
     .courses .row.not_slide > *
