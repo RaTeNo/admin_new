@@ -786,6 +786,7 @@
     }
     .training .select-left {
         margin-top: 15px;
+        display: none;
     }
     .training .courses.column4 .row.not_slide > * {
         width: 100%;
@@ -821,7 +822,9 @@
 
     
 
-
+    .activity_item.empty_item:hover .activity_item-description{
+    	display: none;
+    }
 
 
 
