@@ -30,7 +30,7 @@ $(() => {
 
 
 
-	$('body').on('click', '.details_item-right .details_item-link-yellow', function (e) {
+	/*$('body').on('click', '.details_item-right .details_item-link-yellow', function (e) {
 		e.preventDefault()
 		$(this).parent().parent().next('.details_item-body').slideToggle();
 		if($(this).hasClass("active"))
@@ -40,14 +40,29 @@ $(() => {
 		else{
 			$(this).html('<span>Подробнее</span><svg class="icon"><use xlink:href="images/sprite.svg#link-more"></use></svg>').addClass("active");
 		}
-		
+	});*/
 
-		
+	$('body').on('click', '.details_item-head', function (e) {
+		e.preventDefault()
+		$(this).next('.details_item-body').slideToggle();
+		if($(this).find(".details_item-link-yellow").hasClass("active"))
+		{
+			$(this).find(".details_item-link-yellow").html('<span>Свернуть</span><svg class="icon"><use xlink:href="images/sprite.svg#turn"></use></svg>').removeClass("active");
+		}
+		else{
+			$(this).find(".details_item-link-yellow").html('<span>Подробнее</span><svg class="icon"><use xlink:href="images/sprite.svg#link-more"></use></svg>').addClass("active");
+		}
 	});
+
+	/*$('body').on('click', '.details_item-body .details_item-link-yellow', function (e) {
+		e.preventDefault()
+		$(this).parent().hide('.details_item-body');
+	});*/
 
 	$('body').on('click', '.details_item-body .details_item-link-yellow', function (e) {
 		e.preventDefault()
 		$(this).parent().hide('.details_item-body');
+		$(this).parent().prev().find(".details_item-link-yellow").html('<span>Подробнее</span><svg class="icon"><use xlink:href="images/sprite.svg#link-more"></use></svg>').addClass("active");
 	});
 
 

@@ -13569,6 +13569,7 @@ background: #64C841;
     display: flex;
     align-items: center;
     justify-content: space-between;    
+    cursor: pointer;
 }
 .details_item-left {
     display: flex;
@@ -13732,7 +13733,7 @@ background: #64C841;
 .details_item-dialog-link {
     text-decoration: none;
     padding: 8px 15px;
-    background: #0601B7;
+    background: var(--main_color);  
     border-radius: 76px;
     font-weight: 500;
     font-size: 14px;
