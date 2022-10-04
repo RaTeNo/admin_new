@@ -15063,3 +15063,7 @@ background: #64C841;
 .auth .data .has_account {
     padding-left: 32px;
 }
+
+.details-modal{
+    display: none;
+}
