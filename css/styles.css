@@ -15068,3 +15068,19 @@ background: #64C841;
 .details-modal{
     display: none;
 }
+
+
+.details-modal .video_message button{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #595584;
+}
+
+.details-modal .video_message svg{
+	width: 19px;
+    height: 19px;
+    margin-right: 5px;
+}
