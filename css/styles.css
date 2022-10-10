@@ -14559,7 +14559,7 @@ background: #64C841;
     min-width: 176px;
 }
 .activity_item:hover .progress .line {
-    background: #0A0473;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), var(--main_color);
 }
 .activity_item-description-date {
     font-weight: 700;
