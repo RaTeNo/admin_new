@@ -13777,6 +13777,10 @@ background: #64C841;
 .remarks_item-red {
     color: #E31818;
 }
+
+.remarks_item-yellow {
+    color: #ffb100;
+}
 .remarks_item .icon {
     width: 19px;
     height: 19px;
@@ -14347,6 +14351,7 @@ background: #64C841;
     line-height: 28px;
     letter-spacing: -1px;  
     margin-bottom: 7px; 
+    margin-top: 10px;
 }
 .greeting_info-text {
     font-weight: 400;
@@ -14364,7 +14369,8 @@ background: #64C841;
     background: var(--main_color);
     border-radius: 57px;
     display: block;
-    height: 20px;
+    max-width: 200px;
+    align-self: baseline;
 }
 
 
