@@ -123,11 +123,22 @@ $(() => {
         let	list = $(".accordion_item");
         list.each(function(index) {	
 		    let label = $(this).text();
-		    if (label.toLowerCase().indexOf(value.toLowerCase()) == -1) {
+		    let array = value.split(" ");
+		   
+		    for(let i=0;i<array.length;i++)
+		    {		    	
+		    	if (label.toLowerCase().indexOf(array[i].toLowerCase()) == -1) {
+			        $(this).hide();
+			    } else {
+			        $(this).show();
+			    }
+		    }	
+		    /*if (label.toLowerCase().indexOf(value.toLowerCase()) == -1) {
 		        $(this).hide();
 		    } else {
 		        $(this).show();
-		    }		   
+		    }*/
+
 		});
     });  
 
