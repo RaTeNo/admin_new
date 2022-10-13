@@ -15090,3 +15090,23 @@ background: #64C841;
     height: 19px;
     margin-right: 5px;
 }
+
+.search_faq{
+    display: flex;
+    position: relative;
+}
+
+.search_faq button{
+    position: absolute;
+    right: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    display: block;
+    width: 100px;
+    padding: 14px 32px;
+    border-radius: 55px;
+    background: var(--main_color);
+    top: 4px;
+}
