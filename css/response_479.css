@@ -826,7 +826,9 @@
     	display: none;
     }
 
-
+    .analitic_item-icon {
+        max-width: 100px;
+    }
 
 
 

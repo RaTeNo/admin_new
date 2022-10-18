@@ -14250,20 +14250,20 @@ background: #64C841;
     color: #505261;
 }
 .analitic_item-icon {
-    margin-left: 53px;
     border-radius: 11px;
-    width: 61px;
-    height: 61px;
+    min-width: 61px;
+    min-height: 61px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 700;
     font-size: 22px;
-    line-height: 19px;
+    line-height: 27px;
     text-align: center;
     letter-spacing: -0.3px;
     flex-shrink: 0;
-    white-space: nowrap;
+    padding: 10px 10px;
+    flex-wrap: wrap;
 }
 .analitic_item .analitic_item-icon.yellow {
     color: #E7B025;
