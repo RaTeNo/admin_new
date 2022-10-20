@@ -13617,7 +13617,7 @@ background: #64C841;
     margin-right: 7px;
 }
 .details_item-status {
-    margin-left: 12px;
+   
     background: rgba(227, 24, 24, 0.25);
     border-radius: 8px;
     display: flex;
@@ -13630,6 +13630,8 @@ background: #64C841;
     letter-spacing: -0.3px;
     color: #E31818;
     white-space: nowrap;
+    order:-1;
+    margin-right: 12px;
 }
 .details_item-status span {
     margin-left: 4px;
@@ -13658,6 +13660,8 @@ background: #64C841;
     letter-spacing: -0.3px;
     color: #5EC62D;
     white-space: nowrap;  
+    margin-right: 12px;
+    order:-1;
 }
 .details_item-status-green .icon {
     width: 17px;
@@ -15109,4 +15113,15 @@ background: #64C841;
     border-radius: 55px;
     background: var(--main_color);
     top: 4px;
+}
+
+
+.update_page{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--main_color);
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
 }
