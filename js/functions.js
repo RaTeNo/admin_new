@@ -99,6 +99,11 @@ $(() => {
 		}
 	})
 
+	$('.webinar-modal_head button').click(function (e) {
+		e.preventDefault()
+		$('.mini_modal').removeClass('active')
+		$('.mini_modal_btn').removeClass('active')
+	})
 
 	// Моб. версия
 	fiestResize = false

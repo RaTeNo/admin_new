@@ -580,6 +580,13 @@ $(() => {
 		}])
 	}
 
+	if ($('#confirm_modal2').length) {
+		Fancybox.show([{
+			src: '#confirm_modal2',
+			type: 'inline'
+		}])
+	}
+
 
 
 

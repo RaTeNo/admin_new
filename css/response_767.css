@@ -1526,11 +1526,213 @@
     }
     .rating .block_title {
         max-width: 100%;
+        width: calc(100% - 138px);
     }
 
     .courses .row.not_slide > *
     {
         width: calc(100%);
     }
+
+
+
+
+
+    /* line-top */ 
+    .line-top {
+        padding: 8px 0 13px;
+    }
+    .line-top .cont {
+        align-items: flex-end;
+    }
+    .line-top_box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .line-top_name {
+        margin-bottom: 4px;
+        margin-right: 0;
+    }
+    .line-top_time {
+        margin-bottom: 9px;
+        margin-right: 0;
+    }
+
+
+    /* webinar.html */
+    .greeting_status {
+        display: none;
+    }
+    .webinar .greeting_left-mob {
+        position: relative;
+        width: 100%;
+    }
+    .greeting_left-label {
+        position: absolute;
+        top: -11px;
+        right: 11px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFFFFF;
+        padding: 3px 10px;
+        background: #0500AF;
+        border-radius: 57px;
+    }
+
+
+
+    /* webinar2.html */
+    .webinar_item {
+        padding: 15px;
+    }
+    .webinar_item-time {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;        
+    }
+    .webinar_item-time span {
+        margin-left: 0;
+        display: block;
+        margin-top: 4px;
+    }
+    .webinar_item-name {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+
+    /* webinar3.html */
+    .calendar {
+        padding: 17px 15px 25px;
+    }
+    .calendar_head {
+        flex-wrap: wrap;        
+    }
+    .calendar_head-link {
+        width: 100%;
+        margin-top: 32px;
+        margin-left: 0;
+    }
+    .calendar_head-left {
+        justify-content: space-between;
+        width: 100%;
+    }
+    .calendar_head-title {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .calendar_item-day {
+        display: none;
+    }
+    .calendar_item-day-mob {
+        display: block;
+        padding: 9px;
+        font-family: 'Inter';
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 24px;
+        color: #19181A;
+    }
+    .modal-video_title {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .modal-video .video_new {
+        width: calc(100% - 30px);
+    }
+    .modal-video_link {
+        margin: 15px auto 20px;
+    }
+    .calendar_item-info {
+        display: none;
+    }
+    .calendar_item {
+        height: auto;
+    }
+    .calendar_item:nth-child(1), 
+    .calendar_item:nth-child(2), 
+    .calendar_item:nth-child(3), 
+    .calendar_item:nth-child(4), 
+    .calendar_item:nth-child(5), 
+    .calendar_item:nth-child(6), 
+    .calendar_item:nth-child(7) {
+        height: auto;
+    }
+    .calendar_item-links {
+        display: none;
+    }
+    .calendar_item-day,
+    .calendar_item:nth-child(25),
+    .calendar_item:nth-child(26),
+    .calendar_item:nth-child(27),
+    .calendar_item:nth-child(28),
+    .calendar_item:nth-child(29),
+    .calendar_item:nth-child(30),
+    .calendar_item:nth-child(31) {
+        border-bottom: none;
+    }
+    .calendar_item:nth-child(7), 
+    .calendar_item:nth-child(14), 
+    .calendar_item:nth-child(21), 
+    .calendar_item:nth-child(28), 
+    .calendar_item:nth-child(31) {
+        border-right: none;
+    }
+    .calendar_item {
+        border: none;
+    }
+    .calendar_item-day-mob {
+        text-align: center;
+    }
+    .calendar_item {
+        text-align: center;
+    }
+    .calendar_item:hover .calendar_item-date {
+        color: #0701BF;        
+    }
+    .calendar_item:hover .calendar_item-date::before {
+        background: none;
+    }
+    .calendar .mini_modal_btn {
+        display: none;
+    }
+    .calendar .mini_modal {
+        display: none;
+    }
+    .calendar_modal-mob span {
+        display: block;
+    }
+
+
+
+
+    /* webinar4.html */
+    .webinar-test_top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .webinar-test_left {
+        margin-bottom: 15px;
+    }
+    .webinar-test {
+        padding: 20px;
+    }
+    .webinar a.page_title {
+        font-size: 22px;
+        margin-bottom: 0;
+    }
+
+
+    /* webinar5.html */
+    .webinar-test_wrapper {
+        padding: 70px 20px;
+    }
+
+
+
 
 }
