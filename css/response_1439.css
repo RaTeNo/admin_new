@@ -830,7 +830,7 @@
     -----------------*/
     .course_info .thumb + *
     {
-        width: calc(100% - 248px);
+        width: calc(100% - 515px);
     }
 
 

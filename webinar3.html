@@ -311,13 +311,11 @@
 							</div>
 						</aside>
 
-
 						<section class="content">
 							<h1 class="page_title">
 								Вебинары
-								<div class="webinar-tooltip_btn">
-									<svg class="icon"><use xlink:href="images/sprite.svg#tooltip2"></use></svg>
-									<div class="webinar-tooltip_block">В мае этого года Nextjs неожиданно выпустил в своём блоге RFC (request for comments). В нём речь идёт, в первую очередь, о новой абстракции — layouts, а также о множестве связанных изменений, нацеленных на ускорение, улучшение DX</div>							
+								<div class="tooltip modal_btn" data-content="#video_modal" data-tippy-content="В мае этого года Nextjs неожиданно выпустил в своём блоге RFC (request for comments). В нём речь идёт, в первую очередь, о новой абстракции — layouts, а также о множестве связанных изменений, нацеленных на ускорение, улучшение DX">
+									<svg class="icon_tippy"><use xlink:href="images/sprite.svg#tooltip2"></use></svg>					
 								</div>									
 							</h1>
 							<section class="calendar">
@@ -460,7 +458,7 @@
 
 
 										<div class="calendar_item-links">
-											<a href="#" class="modal_btn" data-content="#video_modal">
+											<a href="#" class="modal_btn gray" data-content="#video_modal">
 												<span>Как полюбить работу</span>
 												<svg class="icon"><use xlink:href="images/sprite.svg#arrow5"></use></svg>
 											</a>
@@ -480,6 +478,11 @@
 									</div>
 									<div class="calendar_item">
 										<div class="calendar_item-date">12</div>	
+										<div class="calendar_item-info green">
+											<div class="calendar_item-info-name">Вебинар по продажам</div>
+											<div class="calendar_item-info-time">11 мая в 12:00</div>
+											<div class="calendar_item-info-text">Ждем вас в zoom! С собой тетрадки и ручки!Еще какой то текст который сокращается... </div>
+										</div>	
 									</div>
 									<div class="calendar_item">
 										<div class="calendar_item-date">13</div>	
@@ -662,6 +665,8 @@
 		<script src="js/nice-select.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
+		<script src="https://unpkg.com/@popperjs/core@2"></script>
+		<script src="https://unpkg.com/tippy.js@6"></script>
 
 		
 	</body>

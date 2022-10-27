@@ -316,15 +316,20 @@
 										</div>
 										<div class="greeting_info-text">Пусть сегодня у вас все получится! Какие то мотивирующие фразы, десяток, которые меняются каждый день!</div>
 									</div>
-									<div class="greeting_right">
-										Администратор
+									<div class="greeting_right" title="Пусть сегодня у вас все получится! Какие то мотивирующие фразы, десяток, которые меняются каждый день!">
+										Пусть сегодня у вас все получится! Какие то мотивирующие фразы, десяток, которые меняются каждый день!
 									</div>	
 								</div>	
 
 								<div class="weekly-statistics block2">
 									<div class="block_top">
 										<div class="block_top-info">
-											<div class="block_title">Статистика за неделю</div>
+											<div class="block_title">
+												Статистика за неделю
+												<div class="tooltip" data-tippy-content="В мае этого года Nextjs неожиданно выпустил в своём блоге RFC (request for comments). В нём речь идёт, в первую очередь, о новой абстракции — layouts, а также о множестве связанных изменений, нацеленных на ускорение, улучшение DX">
+													<svg class="icon_tippy"><use xlink:href="images/sprite.svg#tooltip2"></use></svg>					
+												</div>	
+											</div>
 											<div class="block_text">Ваша статистика за прошедшие 30  дней по сравнению с прошлым месяцем</div>	
 										</div>
 										<div class="select-right">
@@ -1018,5 +1023,7 @@
 		<script src="js/nice-select.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
+		<script src="https://unpkg.com/@popperjs/core@2"></script>
+		<script src="https://unpkg.com/tippy.js@6"></script>
 	</body>
 </html>

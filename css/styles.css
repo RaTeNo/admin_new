@@ -2408,6 +2408,10 @@ aside .menu .sub_menu a.active
     -webkit-box-orient: vertical;
 }
 
+.courses .course .desc:hover{
+    height: 100% !important;
+}
+
 
 .courses .course .progress
 {
@@ -8912,8 +8916,8 @@ aside .menu .sub_menu a.active
     display: block;
     overflow: hidden;
 
-    width: 225px;
-    height: 225px;
+    width: 490px;
+    height: 260px;
 
     text-decoration: none;
 
@@ -8940,7 +8944,7 @@ aside .menu .sub_menu a.active
 
 .course_info .thumb + *
 {
-    width: calc(100% - 255px);
+    width: calc(100% - 515px);
 }
 
 
@@ -14375,6 +14379,9 @@ background: #64C841;
     display: block;
     max-width: 200px;
     align-self: baseline;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 
@@ -14391,6 +14398,8 @@ background: #64C841;
     line-height: 28px;
     letter-spacing: -1px;
     margin-bottom: 7px;
+    display: flex;
+        align-items: center;
 }
 .rating .block_text {
     font-weight: 400;
@@ -15452,6 +15461,15 @@ background: #64C841;
     border-radius: 5px;
     height: 105px;
 }
+
+.calendar_item-info.green, .calendar_item-info.green *{
+    color: #0E9700;
+    background: #C9FBC4;
+}
+
+.calendar_item-info.green .calendar_item-info-name{
+    font-weight: bold;
+}
 .calendar_item-info-name {
     font-weight: 500;
     font-size: 10px;
@@ -15580,6 +15598,11 @@ background: #64C841;
     height: 16px;
     margin-left: 7px;
     fill: #fff;
+}
+
+.calendar_item-links .gray{
+    color: #828282;
+        background: #F2F2F2;
 }
 .calendar_item-date {
     position: relative;
@@ -15871,6 +15894,7 @@ background: #64C841;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 15px;
 }
 .webinar-test_wrapper .icon {
     margin-bottom: 26px;
@@ -15945,4 +15969,17 @@ background: #64C841;
     padding: 0 49px;
     display: block;
     width: 116px;
+}
+
+.tooltip{
+    width: 19px !important;
+    height: 19px !important;
+    margin:0 !important;
+    margin-left: 10px !important;
+}
+
+.icon_tippy{
+    width: 19px;
+    height: 19px;
+    display: block;
 }

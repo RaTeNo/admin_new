@@ -1006,6 +1006,12 @@
     /*-----------------
         Course info
     -----------------*/
+
+    .course_info .thumb{
+        width: 100%;
+        padding-bottom: 53%;
+        height: auto;
+    }
     .course_info .thumb + *
     {
         width: 100%;
