@@ -2408,9 +2408,7 @@ aside .menu .sub_menu a.active
     -webkit-box-orient: vertical;
 }
 
-.courses .course .desc:hover{
-    height: 100% !important;
-}
+
 
 
 .courses .course .progress
@@ -15999,4 +15997,25 @@ background: #64C841;
 
 .privacy a{
      color:var(--main_color);
+}
+
+.icon-calendar{
+    width: 16px;
+    height: 16px;
+    fill: #fff;
+    color: #828282;
+    margin-left: auto;
+    display: block;
+    margin-top: 5px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.calendar_item-links.mod_2 a{
+    height: 51px;
+}
+
+.calendar_item-links.mod_3 a{
+    height: 33px; 
 }
