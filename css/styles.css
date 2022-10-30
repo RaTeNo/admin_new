@@ -16035,7 +16035,7 @@ background: #64C841;
     border-radius: 6px;
     padding: 10px;
     position: absolute;
-    z-index: 1;
+    z-index: 9999999999;
     top: 150%;
     left: 50%;
     margin-left: -115px;
