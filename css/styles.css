@@ -15728,6 +15728,7 @@ background: #64C841;
     position: absolute;
     bottom: 5px;
     right: 5px;
+    color: var(--main_color);
 }
 .webinar-modal_head {
     display: flex;

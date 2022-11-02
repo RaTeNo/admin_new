@@ -25,7 +25,9 @@ $(() => {
 
 	// Fancybox
 	Fancybox.defaults.autoFocus = false
+	Fancybox.defaults.trapFocus = false
 	Fancybox.defaults.dragToClose = false
+	Fancybox.defaults.placeFocusBack = false
 	Fancybox.defaults.l10n = {
 		CLOSE: "Закрыть",
 		NEXT: "Следующий",
