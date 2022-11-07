@@ -99,6 +99,31 @@ $(() => {
 		}
 	})
 
+	$(".faq_fast_list button, .faq_search").on("click", function(){
+
+		let id = "fast"+$(this).data("id");
+
+		const $item = $("#"+id).closest('.accordion_item'),
+			$accordion = $("#"+id).closest('.accordion')
+
+		/*if ($item.hasClass('active')) {
+			$item.removeClass('active').find('.data').slideUp(300)
+		} else {
+			$accordion.find('.accordion_item').removeClass('active')
+			$accordion.find('.data').slideUp(300)
+
+			$item.addClass('active').find('.data').slideDown(300)
+		}*/
+		$item.addClass('active').find('.data').slideDown(300)
+
+		setTimeout(() => {
+			const el = document.getElementById(id);
+			el.scrollIntoView({block: "center", inline: "center", behavior: "smooth"});
+		}, 400)
+		
+
+	});
+
 	$(".title_faq_result button").on("click", function(){
 		$(".js-search").val("");
 		$(".title_faq").show();
