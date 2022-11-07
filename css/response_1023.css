@@ -357,6 +357,11 @@
 
 
 
+    /* inclusion.html */
+    .inclusion_items > * {
+        width: calc(100%/3 - 15px);
+    }
+
 
 
 }

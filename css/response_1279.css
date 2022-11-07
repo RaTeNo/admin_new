@@ -1524,4 +1524,15 @@
         margin-bottom: 0;
     }
 
+
+
+    /* inclusion.html */
+    .inclusion_items {
+        flex-wrap: wrap;
+    }
+    .inclusion_items > * {
+        margin-left: 15px;
+        margin-bottom: 15px;
+        width: calc(100%/4 - 15px);
+    }
 }

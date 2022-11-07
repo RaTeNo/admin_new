@@ -24,9 +24,10 @@
 		<!-- Подключение шрифтов с гугла -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/nice-select.css">
 		<link rel="stylesheet" href="css/fancybox.css" async>
 		<link rel="stylesheet" href="css/styles.css" async>
 
@@ -39,7 +40,20 @@
 
 	<body>
 		<div class="wrap">
-			<div class="main">
+			<div class="main webinar">
+				<div class="line-top">
+					<div class="cont">
+						<div class="line-top_box">
+							<div class="line-top_name">Вебинар по продажам №12</div>	
+							<div class="line-top_time">22 октября 2022 в 13:00 (МСК)</div>
+							<div class="line-top_status">Уже идет</div>
+						</div>
+						<a href="#" class="line-top_link">
+							<span>Открыть</span>
+							<svg class="icon"><use xlink:href="images/sprite.svg#link-arrow"></use></svg>
+						</a>
+					</div>
+				</div>
 				<header>
 					<div class="cont row">
 						<div class="logo">
@@ -233,7 +247,7 @@
 								</div>
 
 								<div class="item">
-									<a href="/">
+									<a href="/" class="active">
 										<div class="icon icon9">
 											<svg><use xlink:href="images/sprite.svg#ic_category9"></use></svg>
 										</div>
@@ -295,104 +309,50 @@
 
 
 						<section class="content">
-							<h1 class="page_title">Тренажеры</h1>
-
-							<section class="simulators">
-								<div class="row not_slide">
-									<div class="simulator">
-										<div class="format orange">Аудио тренажер</div>
-
-										<div class="name">
-											<a href="/">Как успешно зарабатывать деньги на продаже сайтов</a>
-										</div>
-
-										<div class="questions_count">15 вопросов</div>
-
-										<div class="links">
-											<div><a href="/" class="blue">Запустить</a></div>
-											<div><a href="/" class="orange">История</a></div>
-										</div>
-
-										<div class="last_date red">Последний запуск: Никогда</div>
-
-										<div class="avatar">
-											<img src="images/tmp/person_photo.jpg" alt="">
-											Василий Иванович
-										</div>
-										<div class="correction-btn">
-											<button class="btn"><img src="images/correction_btn.svg" alt=""></button>
+							<section class="inclusion">
+								<div class="block_top-info">
+									<div class="block_title">Вовлеченность за последние 7 дней</div>
+									<div class="block_text">Обновляется каждые 15 минут</div>	
+								</div>
+								<div class="inclusion_items">
+									<div class="inclusion_item">
+										<div class="inclusion_item-title">Лекции</div>
+										<div class="inclusion_item-number">43</div>
+										<div class="inclusion_item-text green">
+											<svg><use xlink:href="images/sprite.svg#arrow-green"></use></svg>
+											<span>Выше средней</span> 
 										</div>
 									</div>
-
-									<div class="simulator">
-										<div class="format orange">Аудио тренажер</div>
-
-										<div class="name">
-											<a href="/">											
-												<span>Как успешно зарабатывать деньги на продаже сайтов</span>
-											</a>
-										</div>
-
-										<div class="questions_count">15 вопросов</div>
-
-										<div class="links">
-											<div><a href="/" class="blue2">Продолжить</a></div>
-										</div>
-
-										<div class="last_date red">Последний запуск: Никогда</div>
-
-										<div class="avatar">
-											<img src="images/tmp/person_photo.jpg" alt="">
-										</div>
-										<div class="correction-btn">
-											<button class="btn"><img src="images/correction_btn.svg" alt=""></button>
+									<div class="inclusion_item">
+										<div class="inclusion_item-title">Тесты</div>
+										<div class="inclusion_item-number">43</div>
+										<div class="inclusion_item-text yellow">
+											<svg><use xlink:href="images/sprite.svg#arrow-yellow"></use></svg>
+											<span>Средняя</span> 
 										</div>
 									</div>
-
-									<div class="simulator">
-										<div class="format orange">Аудио тренажер</div>
-
-										<div class="name">
-											<a href="/">Как успешно зарабатывать деньги на продаже сайтов</a>
-										</div>
-
-										<div class="questions_count">15 вопросов</div>
-
-										<div class="links">
-											<div><a href="/" class="blue2">Продолжить</a></div>
-											<div><a href="/" class="orange">История</a></div>
-										</div>
-
-										<div class="last_date red">Последний запуск: Никогда</div>
-
-										<div class="avatar">
-											<img src="images/tmp/person_photo.jpg" alt="">
-										</div>
-										<div class="correction-btn">
-											<button class="btn"><img src="images/correction_btn.svg" alt=""></button>
+									<div class="inclusion_item">
+										<div class="inclusion_item-title">Задания</div>
+										<div class="inclusion_item-number">43</div>
+										<div class="inclusion_item-text red">
+											<svg><use xlink:href="images/sprite.svg#arrow-red"></use></svg>
+											<span>Ниже средней</span> 
 										</div>
 									</div>
-
-									<div class="simulator">
-										<div class="format orange">Аудио тренажер</div>
-
-										<div class="name">
-											<a href="/">Как успешно зарабатывать деньги на продаже сайтов</a>
+									<div class="inclusion_item">
+										<div class="inclusion_item-title">Симуляторы</div>
+										<div class="inclusion_item-number">43</div>
+										<div class="inclusion_item-text yellow">
+											<svg><use xlink:href="images/sprite.svg#arrow-yellow"></use></svg>
+											<span>Средняя</span> 
 										</div>
-
-										<div class="questions_count">15 вопросов</div>
-
-										<div class="links">
-											<div><a href="/" class="blue">Запустить</a></div>
-										</div>
-
-										<div class="last_date red">Последний запуск: Никогда</div>
-
-										<div class="avatar">
-											<img src="images/tmp/person_photo.jpg" alt="">
-										</div>
-										<div class="correction-btn">
-											<button class="btn"><img src="images/correction_btn.svg" alt=""></button>
+									</div>
+									<div class="inclusion_item">
+										<div class="inclusion_item-title">Тренажеры</div>
+										<div class="inclusion_item-number">43</div>
+										<div class="inclusion_item-text red">
+											<svg><use xlink:href="images/sprite.svg#arrow-red"></use></svg>
+											<span>Ниже средней</span> 
 										</div>
 									</div>
 								</div>
@@ -401,6 +361,7 @@
 
 
 
+						
 							<footer>
 								<div class="logo">
 									<img src="images/logo.svg" alt="">
@@ -435,6 +396,30 @@
 				</section>
 			</div>
 		</div>
+
+
+		<section class="modal" id="test">
+			<img data-src="images/ic_warning.svg" alt="" class="icon lozad">
+
+			<div class="modal_title">Аттестация по теме “Маркетинг в IT-Сфере”</div>
+
+			<div class="modal_desc">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок. Теперь никто не сможет обвинить вас в плагиате, ибо каждый текст Яндекс.Рефератов неповторим.</div>
+
+			<div class="btns">
+				<button class="close_btn btn">Позже</button>
+
+				<a href="">Начать</a>
+			</div>
+		</section>
+
+
+		<section class="modal" id="video_modal">
+			<video class="video-player video_new" width="100%" controlsList="nodownload" controls crossorigin="anonymous">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm" type="video/webm">
+			    <track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default></track>
+			</video>
+		</section>
 
 
 		<div class="supports_error">

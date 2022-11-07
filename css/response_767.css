@@ -1696,12 +1696,56 @@
     }
     .calendar_item {
         text-align: center;
+        position: relative;
+    }
+    .calendar_item-index {
+        display: block;
+        position: absolute;
+        top: 1px;
+        right: calc(50% - 21px);
+        z-index: 1;
+        width: 15px;
+        height: 15px;
+        background: #C9FBC4;
+        border-radius: 50%;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 14px;
+        text-align: center;
+        color: #0E9700;
+    }
+    .calendar_item-date {
+        padding: 13px;        
+    }
+    .webinar-modal_item-text {
+        line-height: 18px;
+    }
+    .webinar-modal_item .icon {
+        top: 14px;
+        right: 9px;
+    }
+    .webinar-modal_item.gray {
+        background: #F2F2F2;        
+    }
+    .webinar-modal_item.gray .webinar-modal_item-title {
+        color: #828282;
+    }
+    .webinar-modal_item.gray .webinar-modal_item-text {
+        color: #BDBDBD;
     }
     .calendar_item:hover .calendar_item-date {
-        color: #0701BF;        
+        color: var(--main_color);        
     }
     .calendar_item:hover .calendar_item-date::before {
         background: none;
+    }
+    .calendar_item-date.active {
+        background: var(--main_color);
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        color: #fff;
     }
     .calendar .mini_modal_btn {
         display: none;
@@ -1739,6 +1783,24 @@
     }
 
 
+    .dialog .head .what_do {
+        flex-direction: column;
+    }
+
+    /* inclusion.html */
+    .inclusion_items > * {
+        width: calc(100%/2 - 15px);
+        padding: 14px 14px 12px 14px;
+    }
+    .inclusion_item-title {
+        font-size: 15px;
+    }
+    .dialog .head .what_do {
+        flex-direction: column;
+    }
+    .dialog .head .what_do .btn {
+        margin-bottom: 10px;
+    }
 
 
 }
