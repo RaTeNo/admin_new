@@ -2,7 +2,7 @@ $(() => {
 	// Ширина окна для ресайза
 	WW = $(window).width()
 
-	tippy('[data-tippy-content]');
+	//tippy('[data-tippy-content]');
 
 	$('body').on('click', '.results .arrow', function (e) {
 		e.preventDefault()
