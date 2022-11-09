@@ -1737,6 +1737,9 @@
     .calendar_item:hover .calendar_item-date {
         color: var(--main_color);        
     }
+    .calendar_item:hover .calendar_item-date.active {
+        color:#fff;
+    }
     .calendar_item:hover .calendar_item-date::before {
         background: none;
     }
