@@ -840,5 +840,15 @@
 
 
 
+    /* training-course */
+    .training-course_items {
+        margin-left: 0px;
+    }
+    .training-course_items > * {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+
 
 }

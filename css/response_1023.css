@@ -361,7 +361,25 @@
     .inclusion_items > * {
         width: calc(100%/3 - 15px);
     }
+    
 
+    /* training-course */
+    .training-course_items {
+        margin-left: -25px;
+        margin-bottom: -40px;
+    }
+    .training-course_items > * {
+        width: calc(100%/3 - 25px);
+        margin-left: 25px;
+        margin-bottom: 40px;
+    }
+    .training-course_item-info {
+        top: calc(100% + 20px);
+        left: 0;
+    }
+    .training-course .page_title {
+        margin-bottom: 45px;
+    }
 
 
 }

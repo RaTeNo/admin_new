@@ -1803,4 +1803,22 @@
     }
 
 
+    
+    /* training-course */
+    .training-course_items > * {
+        width: calc(100%/2 - 25px);
+    }
+    .training-course .page_title {
+        margin-bottom: 35px;
+    }
+    .training-course_item-image:hover img {
+        transform: scale(1);
+    }
+    .training-course_item-image:nth-child(4):hover {
+        transform: scale(1);
+    }
+    .training-course_item-image:hover .training-course_item-info {
+        display: none;
+    }
+
 }
