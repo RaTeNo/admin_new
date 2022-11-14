@@ -782,16 +782,6 @@
         padding: 7px 19px;
     }
 
-    .dialog .message .prompt .text
-    {
-        font-size: 18px;
-
-        max-width: calc(100% - 55px);
-        margin-top: 12px;
-        padding: 8px 12px;
-    }
-
-
     .dialog .message .audio_message .audio_wave
     {
         width: 176px;
@@ -1764,16 +1754,6 @@
 
 
     /* webinar4.html */
-    .webinar-test_top {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .webinar-test_left {
-        margin-bottom: 15px;
-    }
-    .webinar-test {
-        padding: 20px;
-    }
     .webinar a.page_title {
         font-size: 22px;
         margin-bottom: 0;
@@ -1823,5 +1803,37 @@
     .training-course_item-image:hover .training-course_item-info {
         display: none;
     }
+
+
+    .dialog .message .prompt .text-information {
+        width: 270px;
+    }
+    .dialog .message .prompt .text .info-hint {
+        font-size: 14px;
+    }
+    .dialog .message .prompt .text .name {
+        font-size: 15px;
+    }
+
+    .webinar-test_right .webinar-test_link {
+        margin-left: 10px;
+    }
+    .webinar-test .files {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .webinar-test_top {
+        margin-left: 20px;
+        margin-right: 0px;
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+
+    .webinar-description_title {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+
 
 }

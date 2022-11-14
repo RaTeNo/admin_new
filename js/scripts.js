@@ -538,7 +538,7 @@ $(() => {
 	$('body').on('click', '.dialog .message .prompt .yes_btn', function (e) {
 		e.preventDefault()
 
-		$(this).toggleClass('active').closest('.prompt').find('.text').slideToggle(300)
+		$(this).toggleClass('active').closest('.prompt').find('.prompt-box').slideToggle(300)
 	})
 
 	$('body').on('click', '.dialog .message .prompt .no_btn', function (e) {
@@ -576,6 +576,17 @@ $(() => {
 		$('.dialog .success_text').fadeIn(300)
 		$('.dialog .next_link').css('display', 'flex')
 	})
+
+
+	// Клик по лайку
+	$(".likes button").click(function(e) {
+		e.preventDefault();
+		$(".likes button").removeClass('active');
+		$(this).addClass('active');
+	})
+
+
+
 
 
 	// Всплывашки

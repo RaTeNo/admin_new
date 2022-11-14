@@ -350,11 +350,28 @@
 												<div class="btns">
 													<button class="yes_btn">
 														<span>Показать подсказку</span>
-														<span>Скрыть подсказку</span>
+														<span>Скрыть подсказку</span>														
 													</button>
 													<button class="yes_btn">
 														<span>Совет эксперта</span>
 													</button>
+													<div class="prompt-box">
+														<div class="text">
+															<div class="text-information">
+																<div class="name">Подсказка</div>
+																<div class="info-hint">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов</div>	
+															</div>
+															<div class="likes">
+																<button class="like">
+																	<svg class="icon"><use xlink:href="images/sprite.svg#like"></use></svg>
+																</button>
+																<button class="dislike modal_btn" data-content="#correction_modal5">
+																	<svg class="icon"><use xlink:href="images/sprite.svg#dislike"></use></svg>
+																</button>
+															</div>																
+														</div>
+													</div>
+													
 												</div>
 											</div>
 										</div>
@@ -515,6 +532,24 @@
 					<span>Закрыть</span>					
 				</a>							
 			</div>
+		</section>
+
+
+		<section class="correction_modal" id="correction_modal5">			
+			<div class="correction_modal-title">Что вам не понравилось?</div>											
+			<div class="correction_modal-text">Причина</div>
+			<form class="correction_modal-form">
+				<div class="line">
+					<div class="field">
+						<textarea placeholder="Ведите причину"></textarea>
+					</div>
+				</div>	
+				<div class="correction_modal-btns">
+					<a href="#" class="correction_modal-form-btn active">
+						<span>Отправить</span>					
+					</a>			
+				</div>							
+			</form>
 		</section>
 
 

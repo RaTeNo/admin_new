@@ -382,4 +382,9 @@
     }
 
 
+    .correction-btn:hover .correction-btn_text {
+        display: none;    
+    }
+
+
 }

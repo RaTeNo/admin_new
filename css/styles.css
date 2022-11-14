@@ -3740,6 +3740,7 @@ aside .menu .sub_menu a.active
     color: #505261;
     font-weight: bold;
     line-height: 19px;
+    white-space: nowrap;
 }
 
 
@@ -7824,7 +7825,7 @@ aside .menu .sub_menu a.active
 }
 
 
-.dialog .message .prompt .text
+/* .dialog .message .prompt .text
 {
     color: #061058;
     font-size: 16px;
@@ -7841,7 +7842,7 @@ aside .menu .sub_menu a.active
 
     border-radius: 21px;
     background: #d6dfff;
-}
+} */
 
 
 .dialog .message.answer
@@ -11040,6 +11041,7 @@ footer .contacts .val a
     display: block;
 
     width: 111px;
+    height: 111px;
     margin: 0 auto 28px;
 }
 
@@ -15826,6 +15828,13 @@ background: #64C841;
 
 
 /* webinar4.html */
+.webinar-test .files {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-right: 24px;
+}
 .webinar a.page_title {
    display: flex;
    align-items: center;
@@ -15835,7 +15844,6 @@ background: #64C841;
     line-height: 28px;
     letter-spacing: -1px;
     color: var(--color_title);
-    margin-bottom: 34px;
 }
 .webinar a.page_title .icon {
     width: 30px;
@@ -15844,51 +15852,56 @@ background: #64C841;
 .webinar-test {
     background: #FFFFFF;
     border-radius: 15px;
-    padding: 40px 57px 43px;
+    padding: 0px 0px 30px;
 }
 .webinar-test_top {
     display: flex;
-    align-items: center;
-    justify-content: space-between;   
+    align-items: center;  
     margin-bottom: 18px; 
 }
 .webinar-test_link {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    color: var(--main_color);   
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #FFFFFF;
     margin-bottom: 3px;
     display: flex;
     align-items: center;
     text-decoration: none;
+    position: relative;
+    background: var(--main_color);
+    border-radius: 16px;
+    padding: 8px 20px;
+    width: 128px;
 }
-.webinar-test_top .icon {
-    width: 20px;
-    height: 20px; 
-    margin-left: 7px;
+.webinar-test_right .webinar-test_link {
+    margin-left: 11px;
 }
-.webinar-test_left-status {
+.webinar-test_top {
+    margin-left: 24px;
+}
+.webinar-test_status {
+    position: absolute;
+    top: -10px;
+    left: 10px;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: #0E9700;
-    background: #C9FBC4;
+    font-size: 9px;
+    line-height: 11px;
+    color: #FFFFFF;
     border-radius: 57px;  
-    padding: 3px 10px; 
+    padding: 2px 8px; 
     display: inline-block; 
 }
-.webinar-test_right-status {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: #9B51E0;
-    background: #E9D6FB;
-    border-radius: 57px;
-    padding: 3px 10px;
-    display: inline-block; 
+.webinar-test_status.red {
+    background: #ED3232;
+}
+.webinar-test_status.green {
+    background: #4ACB3F;
 }
 .webinar-test .video_player {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+    border-radius: 25px 25px 0 0;
 }
 .webinar .comments .comment .data {
     border-bottom: none;
@@ -15903,7 +15916,8 @@ background: #64C841;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 30px;
 }
 .webinar-test_wrapper .icon {
     margin-bottom: 26px;
@@ -16542,4 +16556,129 @@ background: #64C841;
 }
 .training-course_item-image:hover .training-course_item-info {
     display: block;
+}
+
+
+.dialog .message .prompt .prompt-box {
+    display: none;
+}
+.dialog .message .prompt .text {
+    display: flex;
+    margin-top: 10px;
+}
+.dialog .message .prompt .text-information {
+    width: 368px;
+    background: #ECEBF5;
+    border: 1px solid #9A97B8;
+    border-radius: 21px;
+    padding: 15px;
+    text-align: start;
+}
+.dialog .message .prompt .text .name {
+    color: #9396B2;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 5px;
+}
+.dialog .message .prompt .text .info-hint {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 135%;
+    letter-spacing: -0.95px;
+    color: #75799C;
+}
+
+.dialog .message .prompt .likes {
+    display: flex;
+}
+.dialog .message .prompt .likes button {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #ECEBF5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 9px;
+    padding: 6px;
+}
+.dialog .message .prompt .likes .icon {
+    width: 16px;
+    height: 16px;
+    fill: #64698F;
+}
+.dialog .message .prompt .likes .like.active {
+    background: #5CC652;
+}
+.dialog .message .prompt .likes .dislike.active {
+    background: #F23E3E;
+}
+.dialog .message .prompt .likes .like.active .icon {
+    fill: #fff;
+}
+.dialog .message .prompt .likes .dislike.active .icon {
+    fill: #fff;
+}
+.correction_modal-form textarea::-webkit-input-placeholder {
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #818093;
+}
+.correction_modal-form textarea::-moz-placeholder {
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #818093;
+}
+.correction_modal-form textarea:-moz-placeholder {
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #818093;
+}
+.correction_modal-form textarea:-ms-input-placeholder {
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #818093;
+}
+
+.webinar-description {
+    padding: 19px 24px 27px;
+    background: #fff;
+    border-radius: 15px;
+}
+.webinar-description_title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1px;  
+    margin-bottom: 11px;
+}
+.webinar-description ul {
+    list-style: none;
+}
+.webinar-description ul li {
+    position: relative;
+    padding-left: 9px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #8C8FA4;
+}
+.webinar-description ul li::before {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #8C8FA4;
+    left: 0;
+    top: 8px;
+    content: "";
 }
