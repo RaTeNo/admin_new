@@ -622,7 +622,11 @@ $(() => {
 		Fancybox.show([{
 			src: '#confirm_modal2',
 			type: 'inline'
-		}])
+		}]);
+		let timerId = setInterval(() => $("#time_counter").html($("#time_counter").html()-1), 1000);
+
+		// остановить вывод через 5 секунд
+		setTimeout(() => { clearInterval(timerId); Fancybox.close(); }, 45000);
 	}
 
 

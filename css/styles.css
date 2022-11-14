@@ -15834,6 +15834,8 @@ background: #64C841;
     justify-content: space-between;
     margin-left: 24px;
     margin-right: 24px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .webinar a.page_title {
    display: flex;
@@ -15851,8 +15853,7 @@ background: #64C841;
 }
 .webinar-test {
     background: #FFFFFF;
-    border-radius: 15px;
-    padding: 0px 0px 30px;
+    border-radius: 25px;
 }
 .webinar-test_top {
     display: flex;
@@ -15900,7 +15901,6 @@ background: #64C841;
     background: #4ACB3F;
 }
 .webinar-test .video_player {
-    margin-bottom: 30px;
     border-radius: 25px 25px 0 0;
 }
 .webinar .comments .comment .data {
