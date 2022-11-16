@@ -8535,14 +8535,13 @@ aside .menu .sub_menu a.active
 }
 
 
-.dialog .image_wrap .prompt_btn
+.dialog .head .what_do .prompt_btn
 {
     color: #fff;
     font-size: 12px;
     font-weight: 500;
     line-height: 14px;
 
-    position: absolute;
     z-index: 3;
     top: 20px;
     left: 23px;
@@ -15301,7 +15300,7 @@ background: #64C841;
     padding: 3px 10px;
     margin-left: 5px;
 }
-.webinar_item:nth-child(2) .webinar_item-time span {
+.webinar_item.green .webinar_item-time span {
     color: #0E9700;
     background: #C9FBC4;
     white-space: nowrap;
@@ -15694,7 +15693,7 @@ background: #64C841;
     border-radius: 5px;
     left: 3px;
     top: calc(100% + 3px);
-    width: 166px;
+    width: 204px;
 }
 .webinar-modal_title {
     font-weight: 500;
@@ -15731,7 +15730,7 @@ background: #64C841;
     position: absolute;
     bottom: 5px;
     right: 5px;
-    color: var(--main_color);
+    color: #828282;
 }
 .webinar-modal_item.green {
     background: #C9FBC4;
@@ -15741,6 +15740,10 @@ background: #64C841;
 }
 .webinar-modal_item.green .webinar-modal_item-text {
     color: #67AB60;
+}
+.webinar-modal_item.green .icon
+{
+    color: #0E9700;
 }
 .webinar-modal_head {
     display: flex;
@@ -15787,6 +15790,7 @@ background: #64C841;
     margin-bottom: 10px;
     text-decoration: none;
     display: block;
+    background: #F2F2F2;
 }
 .webinar-modal_item:last-child {
     margin-bottom: 0;
@@ -15795,14 +15799,14 @@ background: #64C841;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    color: #0E9700; 
+    color: #828282;
     margin-bottom: 3px;
 }
 .webinar-modal_item-text {
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
-    color: #67AB60; 
+    color: #828282;
 }
 .webinar-modal_item .icon {
     width: 16px;
@@ -15812,6 +15816,10 @@ background: #64C841;
 .modal-calendar .webinar-modal_item .icon {
     width: 25px;
     height: 25px;
+}
+
+.webinar-modal_item.red .icon{
+    color: #CB2323;
 }
 .webinar-modal_item.red {
     background: #FFBDBD;
@@ -15915,8 +15923,7 @@ background: #64C841;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 15px 15px 0 0;
-    margin-bottom: 30px;
+    border-radius: 25px;
 }
 .webinar-test_wrapper .icon {
     margin-bottom: 26px;
@@ -16680,4 +16687,53 @@ background: #64C841;
     left: 0;
     top: 8px;
     content: "";
+}
+
+
+#modal_course{
+    background: #fff;
+}
+
+#modal_course .icon {
+    width: 245px;
+    height: 245px;
+}
+.modal_course_title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;   
+}
+
+.modal_course_desc{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #68677B;
+
+    opacity: 0.8;
+    margin-top: 15px;
+}
+
+.modal_course_buttons{
+    display: flex;
+    margin-top: 20px;
+}
+
+.modal_course_buttons button + button
+{
+    margin-left: 20px;
+    background: var(--main_color) !important;
+}
+
+.modal_course_buttons button:last-child
+{
+    background: var(--main_color) !important;
+}
+
+.modal_course_buttons button
+{
+    background: #5DB334 !important;
 }

@@ -1712,7 +1712,7 @@
         line-height: 18px;
     }
     .webinar-modal_item .icon {
-        top: 14px;
+        top: 10px;
         right: 9px;
     }
     .webinar-modal_item.gray {
@@ -1767,7 +1767,6 @@
 
 
     .dialog .head .what_do {
-        flex-direction: column;
     }
 
     /* inclusion.html */
@@ -1777,9 +1776,6 @@
     }
     .inclusion_item-title {
         font-size: 15px;
-    }
-    .dialog .head .what_do {
-        flex-direction: column;
     }
     .dialog .head .what_do .btn {
         margin-bottom: 10px;

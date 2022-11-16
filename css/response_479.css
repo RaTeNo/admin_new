@@ -858,6 +858,13 @@
         display: none;
     }
 
+    .modal_course_buttons{
+        flex-direction: column;
+    }
+
+    .modal_course_buttons button + button{
+        margin-left: auto;
+    }
 
 
 

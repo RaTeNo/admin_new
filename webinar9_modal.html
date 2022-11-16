@@ -24,9 +24,10 @@
 		<!-- Подключение шрифтов с гугла -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/nice-select.css">
 		<link rel="stylesheet" href="css/fancybox.css" async>
 		<link rel="stylesheet" href="css/styles.css" async>
 
@@ -39,7 +40,20 @@
 
 	<body>
 		<div class="wrap">
-			<div class="main">
+			<div class="main webinar">
+				<div class="line-top">
+					<div class="cont">
+						<div class="line-top_box">
+							<div class="line-top_name">Вебинар по продажам №12</div>	
+							<div class="line-top_time">22 октября 2022 в 13:00 (МСК)</div>
+							<div class="line-top_status">Уже идет</div>
+						</div>
+						<a href="#" class="line-top_link">
+							<span>Открыть</span>
+							<svg class="icon"><use xlink:href="images/sprite.svg#link-arrow"></use></svg>
+						</a>
+					</div>
+				</div>
 				<header>
 					<div class="cont row">
 						<div class="logo">
@@ -233,7 +247,7 @@
 								</div>
 
 								<div class="item">
-									<a href="/">
+									<a href="/" class="active">
 										<div class="icon icon9">
 											<svg><use xlink:href="images/sprite.svg#ic_category9"></use></svg>
 										</div>
@@ -295,70 +309,41 @@
 
 
 						<section class="content">
-							<section class="dialog">
-								<section class="page_title">
-									<a href="/">
-										<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_left"></use></svg>
-									</a>
-									<span>Тренажер</span>
-								</section>
+							<a href="#" class="page_title">
+								<svg class="icon"><use xlink:href="images/sprite.svg#icon_arrow"></use></svg>
+								<span>Вебинар номер 21</span> 
+							</a> 
+							<section class="webinar-test">
 
+								<section class="video_player">
+									<video class="video-player" width="800" controlsList="nodownload"controls crossorigin="anonymous" poster="images/webinar_video.jpg">
+										<source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
+										<source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm" type="video/webm">
+										<track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default></track>
+									</video>
+								</section>	
 
-								<section class="data">
-									<div class="head no_border">
-										<div class="count">Вопрос <span class="current">3</span> из <span class="total">5</span></div>
-
-										<div class="title">Отсканируйте лист</div>
-
-										<div class="what_do modal_cont">
-
-											<button class="prompt_btn btn">Подсказка</button>
-
-											<button class="btn mini_modal_btn" data-modal-id="#what_do_modal">Что делать?</button>
-
-											<div class="mini_modal" id="what_do_modal">
-												Это аудиотренажер. Прослушайте сообщение и запишите свой ответ.
-											</div>
+								<section class="files">
+									<div class="webinar-test_top">
+										<div class="webinar-test_left">
+											<a href="#" class="webinar-test_link">
+												<span>Входной тест</span>
+												<div class="webinar-test_status green">Пройден</div>
+											</a>											
+										</div>
+										<div class="webinar-test_right">
+											<a href="#" class="webinar-test_link">
+												<span>Выходной тест</span>
+												<div class="webinar-test_status red">Не пройден</div>
+											</a>											
 										</div>
 									</div>
-
-
-									<div class="image_wrap">
-
-										<div class="image">
-											<img src="https://bipbap.ru/wp-content/uploads/2017/04/0_7c779_5df17311_orig.jpg" alt="">
-
-											<svg viewBox="0 0 1064 474" preserveAspectRatio="none">
-												<!-- <image x="0" y="0" width="100%" height="100%" xlink:href="https://bipbap.ru/wp-content/uploads/2017/04/0_7c779_5df17311_orig.jpg" /> -->
-
-												<polygon class="answer" points="222,125,153,299,448,287,467,121" fill="var(--fillColor)" stroke="var(--strokeColor)" stroke-width="2" stroke-linecap="round" />
-											</svg>
-										</div>
-									</div>
-
-
-									<div class="prompt_text">
-										<span>Для начала работы с принтером необходимо его включить. Найдите кнопку включения и нажмите на нее.</span>
-									</div>
-
-									<div class="error_text">
-										<span>Вы показали неправильную область. Попробуйте ещё раз.</span>
-									</div>
-
-									<div class="success_text">
-										<span>Вы выбрали неправильный ответ. Попробуйте ещё раз</span>
-									</div>
-
-
-									<div class="next_link">
-										<a href="/">
-											<svg class="icon"><use xlink:href="images/sprite.svg#ic_next_arrow"></use></svg>
-										</a>
-									</div>
 								</section>
+															
 							</section>
 
 
+						
 							<footer>
 								<div class="logo">
 									<img src="images/logo.svg" alt="">
@@ -393,6 +378,38 @@
 				</section>
 			</div>
 		</div>
+
+
+
+		<section class="modal" id="video_modal">
+			<video class="video-player video_new" width="100%" controlsList="nodownload" controls crossorigin="anonymous">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm" type="video/webm">
+			    <track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default></track>
+			</video>
+		</section>
+
+
+		<section class="modal" id="modal_course">			
+			<svg class="icon"><use xlink:href="images/sprite.svg#bad_course1"></use></svg>	
+			<svg class="icon"><use xlink:href="images/sprite.svg#bad_course2"></use></svg>
+			<svg class="icon"><use xlink:href="images/sprite.svg#bad_course3"></use></svg>
+			<svg class="icon"><use xlink:href="images/sprite.svg#good_course1"></use></svg>
+			<svg class="icon"><use xlink:href="images/sprite.svg#good_course2"></use></svg>
+			<svg class="icon"><use xlink:href="images/sprite.svg#good_course3"></use></svg>
+			<svg class="icon"><use xlink:href="images/sprite.svg#good_course4"></use></svg>
+
+			<div class="modal_course_title">Поздравляем!<br> Вы прошли курс</div>
+			<div class="modal_course_desc">Что бы вернуться назад, нажмите кнопку “Продолжить”</div>
+			<div class="modal_course_buttons">
+				<button class="close_btn modal_course_button">Продолжить</button>
+			</div>
+
+			<div class="modal_course_buttons">
+				<button class="close_btn modal_course_button">Повторить</button>
+				<button class="close_btn modal_course_button">Вернуться</button>
+			</div>			
+		</section>
 
 
 		<div class="supports_error">

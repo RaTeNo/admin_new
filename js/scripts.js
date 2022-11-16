@@ -548,7 +548,7 @@ $(() => {
 	})
 
 
-	$('body').on('click', '.dialog .image_wrap .prompt_btn', function (e) {
+	$('body').on('click', '.dialog .prompt_btn', function (e) {
 		e.preventDefault()
 
 		$('.dialog .image_wrap .image .answer').addClass('show')
@@ -627,6 +627,14 @@ $(() => {
 
 		// остановить вывод через 5 секунд
 		setTimeout(() => { clearInterval(timerId); Fancybox.close(); }, 45000);
+	}
+
+
+	if ($('#modal_course').length) {
+		Fancybox.show([{
+			src: '#modal_course',
+			type: 'inline'
+		}]);		
 	}
 
 
