@@ -641,7 +641,7 @@ $(() => {
 
 
 	// Всплывающие окна
-	$('body').on('click', '.details_item-dialog-link', function (e) {
+	$('body').on('click', '.details_item-dialog-link, .modal_content', function (e) {
 		e.preventDefault()
 
 		Fancybox.close()

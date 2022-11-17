@@ -16737,3 +16737,30 @@ background: #64C841;
 {
     background: #5DB334 !important;
 }
+
+.webinar-test_button{
+    display: flex;
+
+}
+
+.webinar-test_button a + a{
+    margin-left: 10px;
+}
+
+.inclusion_item-count{
+    background: #FFBE16;
+    color: #fff;
+    display: flex;
+    margin-left: auto;
+    width: 22px;
+    height: 22px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.modal_content .icon{
+    width: 26px;
+    height: 26px;
+    margin-left: 10px;
+}
