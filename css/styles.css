@@ -16748,7 +16748,7 @@ background: #64C841;
 }
 
 .inclusion_item-count{
-    background: #FFBE16;
+    background: var(--main_color);
     color: #fff;
     display: flex;
     margin-left: auto;
