@@ -16752,11 +16752,12 @@ background: #64C841;
     color: #fff;
     display: flex;
     margin-left: auto;
-    width: 22px;
+    min-width: 22px;
     height: 22px;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 13px;
+    padding: 0 7px;
 }
 
 .modal_content .icon{
