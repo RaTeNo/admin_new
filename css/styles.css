@@ -11747,7 +11747,7 @@ audio{
 }
 
 .audio_media{
-    width: 95%;
+    width: 100%;
 }
 
 .audio_media .media-current-time{
@@ -16695,8 +16695,8 @@ background: #64C841;
 }
 
 #modal_course .icon {
-    width: 245px;
-    height: 245px;
+    width: 190px;
+    height: 187px;
 }
 .modal_course_title{
     font-weight: 700;
@@ -16764,4 +16764,109 @@ background: #64C841;
     width: 26px;
     height: 26px;
     margin-left: 10px;
+}
+
+.wrapper_head_courses{
+    display: flex;
+    position: relative;
+    margin-bottom: 22px;
+    z-index: 100;
+}
+
+.wrapper_head_courses .select-right {
+    display: flex;
+    align-items: center;
+    margin-left: 22px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+}
+
+.wrapper_head_courses .nice-select {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #0A00C5;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #332894;
+    width: 128px;
+    height: 41px;
+    background: none;
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 4%);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 14px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    border: 1px solid #4D4A8D;
+    border-radius: 100px;
+
+
+}
+.wrapper_head_courses .select-right span{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    color: #655F95;
+    opacity: 0.8;
+
+}
+
+.wrapper_head_courses .nice-select:after {
+    border-bottom: 2px solid #938dc8;
+    border-right: 2px solid #938dc8;
+    content: '';
+    display: block;
+    height: 8px;
+    margin-top: -4px;
+    pointer-events: none;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    -webkit-transform-origin: 66% 66%;
+    -ms-transform-origin: 66% 66%;
+    transform-origin: 66% 66%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    width: 8px;
+}
+
+
+.text_block_hide{
+    overflow: hidden;
+    position: relative;
+    height: 62px;
+}
+
+.text_block_hide:after {
+    content: "";
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 200px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white 100%);
+    pointer-events: none;
+}
+
+.text_block_show_more{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    border-bottom: 1px dashed #178EFF;
+    color: #178EFF;
+}
+.text_block_hide.active{
+    height: 100%;
+}
+.text_block_hide.active:after{
+    display: none;
+
 }

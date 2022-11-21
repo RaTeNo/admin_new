@@ -4,6 +4,12 @@ $(() => {
 
 	//tippy('[data-tippy-content]');
 
+	$('body').on('click', '.text_block_show_more', function (e) {
+		e.preventDefault()
+		$(".text_block_hide").addClass("active");
+		$(this).hide();
+	});
+
 	$('body').on('click', '.results .arrow', function (e) {
 		e.preventDefault()
 		$(this).parent().next().slideToggle();
