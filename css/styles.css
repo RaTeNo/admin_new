@@ -11750,9 +11750,6 @@ audio{
     width: 100%;
 }
 
-.audio_media .media-current-time{
-    display: none;
-}
 
 .audio_media.light .media-control.media-play{
     color: var(--main_color); 
@@ -16769,17 +16766,19 @@ background: #64C841;
 .wrapper_head_courses{
     display: flex;
     position: relative;
-    margin-bottom: 22px;
+    margin-bottom: 32px;
     z-index: 100;
+    align-items: center;
+}
+
+.wrapper_head_courses .block_title{
+    margin-bottom: 0;
 }
 
 .wrapper_head_courses .select-right {
     display: flex;
     align-items: center;
-    margin-left: 22px;
-    position: absolute;
-    right: 0px;
-    top: 0;
+    margin-left: auto;
 }
 
 .wrapper_head_courses .nice-select {
