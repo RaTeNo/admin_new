@@ -16840,7 +16840,7 @@ background: #64C841;
 .text_block_hide{
     overflow: hidden;
     position: relative;
-    height: 62px;
+    height: 200px;
 }
 
 .text_block_hide:after {
