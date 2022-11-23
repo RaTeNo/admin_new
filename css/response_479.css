@@ -872,4 +872,22 @@
         margin-left: 0;
         margin-top: 10px;
     }
+
+
+    .webinar-online_modal {
+        padding: 24px 15px 20px;
+    }
+    .online-modal_title {
+        font-size: 18px;
+        line-height: 21px;
+        padding-bottom: 15px;
+        margin-bottom: 18px;
+    }
+    .modal_course .icon {
+        width: 190px;
+    }
+
+
+
+
 }

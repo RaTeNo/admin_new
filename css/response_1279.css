@@ -1115,7 +1115,7 @@
 
     .dialog .head
     {
-        padding: 22px;
+        /* padding: 22px; */
     }
 
     .dialog .head .person
@@ -1535,4 +1535,36 @@
         margin-bottom: 15px;
         width: calc(100%/4 - 15px);
     }
+
+
+    .simulators-new .simulator_items {
+        margin-left: -20px;
+        margin-bottom: -20px;
+    }
+    .simulators-new .simulator_items > * {
+        width: calc(100%/2 - 20px);
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .trainer_items {
+        margin-left: -20px;
+        margin-bottom: -20px;
+    }
+    .trainer_items > * {
+        width: calc(100%/2 - 20px);
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .dialog .prompt_text, 
+    .dialog .error_text, 
+    .dialog .success_text {
+        padding: 0 24px;
+    }
+
+
+
+
+
 }
