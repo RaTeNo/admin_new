@@ -17574,6 +17574,6 @@ background: #64C841;
     color: #fff;
 }
 
-
-
-
+.answer_btn{
+    display: none;
+}

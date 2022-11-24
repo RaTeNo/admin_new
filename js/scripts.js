@@ -3,6 +3,9 @@ $(() => {
 	WW = $(window).width()
 
 	//tippy('[data-tippy-content]');
+	$('body').on('change', '.test_data .step input, .test_data .step textarea', function (e) {
+		$(".answer_btn").show();
+	});
 
 	$('body').on('click', '.text_block_show_more', function (e) {
 		e.preventDefault()
