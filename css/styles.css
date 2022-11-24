@@ -9108,6 +9108,7 @@ aside .menu .sub_menu a.active
     transition: color .2s linear;
     text-decoration: none;
     letter-spacing: -.3px;
+    min-height: 34px;
 }
 
 .course_info .steps .step:before
@@ -17583,4 +17584,20 @@ background: #64C841;
     padding-top: 20px;
     margin-top: 20px;
     border-top:1px solid #CDCDCD;
+}
+
+.test_info{
+    background: var(--main_color);
+    color: #fff;
+    display: inline-flex;
+    padding: 8px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+
+.test_info svg{
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
 }

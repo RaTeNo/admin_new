@@ -1879,7 +1879,7 @@
     .dialog .prompt_text, 
     .dialog .error_text, 
     .dialog .success_text {
-        height: 38px;
+       
     }
     .dialog .image_wrap .image:after {
         top: 24px;
