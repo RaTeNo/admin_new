@@ -17023,6 +17023,7 @@ background: #64C841;
     border-radius: 15px;
     background: #fff;
     display: none;
+    min-height: 320px;
 }
 .online-modal_title {
     font-weight: 700;
@@ -17410,7 +17411,7 @@ background: #64C841;
     margin-left: 0;
     min-width: 22px;
     height: auto;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     border-radius: 0px;
     padding: 0;
@@ -17576,4 +17577,10 @@ background: #64C841;
 
 .answer_btn{
     display: none;
+}
+
+.course_info .steps .items + .items {
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top:1px solid #CDCDCD;
 }

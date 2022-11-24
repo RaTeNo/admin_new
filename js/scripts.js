@@ -7,6 +7,10 @@ $(() => {
 		$(".answer_btn").show();
 	});
 
+	sortable('.sortable')[0].addEventListener('sortupdate', function(e) {
+		$(".answer_btn").show();
+	});	
+
 	$('body').on('click', '.text_block_show_more', function (e) {
 		e.preventDefault()
 		$(".text_block_hide").addClass("active");
@@ -276,6 +280,7 @@ $(() => {
 	}
 
 	function drawLine(stem, option) {
+		$(".answer_btn").show();
 		var pointA = stem.offset(),
 			pointB = option.offset()
 
@@ -342,6 +347,7 @@ $(() => {
 				$(".options").removeClass("ready")
 			}
 		}
+
 	});
 
 	$(".options li").on("click", function () {
