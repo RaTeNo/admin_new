@@ -1564,7 +1564,9 @@
     }
 
 
-
+    .inclusion_item-title{
+        height: 38px;
+    }
 
 
 }
