@@ -710,6 +710,7 @@
     {
         top: 12px;
         right: 12px;
+        flex-direction: column;
     }
 
     .dialog .head .what_do .btn
