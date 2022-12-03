@@ -703,6 +703,13 @@ $(() => {
 		}, 1000)
 	})
 
+	var locationHash = window.location.hash
+
+	if (locationHash && $('.faq .accordion').length) {
+		$(locationHash).addClass('active').find('.data').slideDown(300)	
+		$('html, body').stop().animate({ scrollTop: $(locationHash).offset().top }, 1000)
+	}
+
 })
 
 

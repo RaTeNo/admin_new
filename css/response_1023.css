@@ -390,4 +390,8 @@
         display: none;
     } */
 
+    .remarks_item{
+        height: auto;
+    }
+
 }

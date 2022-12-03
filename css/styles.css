@@ -13772,6 +13772,7 @@ background: #64C841;
     font-weight: 500;
     font-size: 14px;
     line-height: 19px;
+    height: 19px;
 }
 .remarks_item:last-child {
     margin-bottom: 0;
