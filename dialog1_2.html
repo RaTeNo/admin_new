@@ -319,7 +319,10 @@
 										</div>
 
 										<div class="what_do modal_cont">
-											<button class="btn mini_modal_btn" data-modal-id="#what_do_modal">Предложить вопрос</button>
+											<button class="btn modal_btn" data-content="#correction_modal">
+												<svg class="icon"><use xlink:href="images/sprite.svg#correct"></use></svg>
+												<span>Исправить</span>
+											</button>
 											<button class="btn mini_modal_btn" data-modal-id="#what_do_modal">Что делать?</button>
 
 											<div class="mini_modal" id="what_do_modal">
@@ -328,6 +331,9 @@
 										</div>
 									</div>
 
+									<div class="dialog_before">
+										Вы продолжаете ранее запущенный диалог
+									</div>
 
 									<div class="messages">
 										<div class="message animate__animated animate__fadeInUp">
@@ -340,12 +346,12 @@
 
 												<div class="text_message">Прослушайте аудиосообщение и запишите свой ответ</div>
 											</div>
-											<div class="correction-btn">
+											<!-- <div class="correction-btn">
 												<button class="btn modal_btn" data-content="#correction_modal"><img src="images/correction_btn.svg" alt=""></button>
 												<div class="correction-btn_text">
 													Нажмите данную кнопку для предложения исправления вопроса
 												</div>
-											</div>
+											</div> -->
 											<div class="prompt">
 												<div class="btns">
 													<div class="btns_block">
@@ -355,7 +361,56 @@
 														</button>
 														<button class="yes_btn">
 															<span>Совет эксперта</span>
-														</button>	
+														</button>
+														<!-- <div class="date_message">04 декабря в 20:43</div> -->
+													</div>													
+													<div class="prompt-box">
+														<div class="text">
+															<div class="text-information">
+																<div class="name">Подсказка</div>
+																<div class="info-hint">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов</div>	
+															</div>
+															<div class="likes">
+																<button class="like">
+																	<svg class="icon"><use xlink:href="images/sprite.svg#like"></use></svg>
+																</button>
+																<button class="dislike modal_btn" data-content="#correction_modal5">
+																	<svg class="icon"><use xlink:href="images/sprite.svg#dislike"></use></svg>
+																</button>
+															</div>																
+														</div>
+													</div>
+													
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="messages">
+										<div class="message animate__animated animate__fadeInUp">
+											<div class="photo">
+												<img data-src="images/tmp/person_photo.jpg" alt="" class="lozad">
+											</div>
+
+											<div class="info">
+												<div class="name">Василий Иванович</div>
+
+												<div class="text_message">Прослушайте аудиосообщение и запишите свой ответ</div>
+											</div>
+											<!-- <div class="correction-btn">
+												<button class="btn modal_btn" data-content="#correction_modal"><img src="images/correction_btn.svg" alt=""></button>
+												<div class="correction-btn_text">
+													Нажмите данную кнопку для предложения исправления вопроса
+												</div>
+											</div> -->
+											<div class="prompt">
+												<div class="btns">
+													<div class="btns_block">
+														<button class="yes_btn">
+															<span>Показать подсказку</span>
+															<span>Скрыть подсказку</span>														
+														</button>
+														<div class="date_message">04 декабря в 20:43</div>
 													</div>													
 													<div class="prompt-box">
 														<div class="text">

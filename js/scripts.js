@@ -97,10 +97,22 @@ $(() => {
 		$(this).toggleClass('open').next().slideToggle(300)
 	})
 
+	const clipboard =  new ClipboardJS('.copy');
+
+	clipboard.on('success', (e) => {
+		$(e.trigger).addClass('copied')
+
+		setTimeout(() => {
+			$(e.trigger).removeClass('copied')
+		}, 3000)
+
+		e.clearSelection()
+	})
+
 
 	// Аккордион
 	$('body').on('click', '.accordion .accordion_item .head', function (e) {
-		e.preventDefault()
+		/*e.preventDefault()*/
 
 		const $item = $(this).closest('.accordion_item'),
 			$accordion = $(this).closest('.accordion')

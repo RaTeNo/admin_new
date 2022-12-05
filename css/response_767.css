@@ -710,7 +710,6 @@
     {
         top: 12px;
         right: 12px;
-        flex-direction: column;
     }
 
     .dialog .head .what_do .btn
@@ -1893,6 +1892,13 @@
     .dialog .success_text {
         padding: 0px 24px;
         margin-bottom: 12px;
+    }
+
+
+    .date_message{
+        line-height: 41px;
+        white-space: nowrap;
+        margin-left: 0;
     }
 
 
