@@ -97,17 +97,20 @@ $(() => {
 		$(this).toggleClass('open').next().slideToggle(300)
 	})
 
-	const clipboard =  new ClipboardJS('.copy');
+	if($(".copy").length)
+	{
+		const clipboard =  new ClipboardJS('.copy');
 
-	clipboard.on('success', (e) => {
-		$(e.trigger).addClass('copied')
+		clipboard.on('success', (e) => {
+			$(e.trigger).addClass('copied')
 
-		setTimeout(() => {
-			$(e.trigger).removeClass('copied')
-		}, 3000)
+			setTimeout(() => {
+				$(e.trigger).removeClass('copied')
+			}, 3000)
 
-		e.clearSelection()
-	})
+			e.clearSelection()
+		})
+	}
 
 
 	// Аккордион

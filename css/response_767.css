@@ -1901,5 +1901,9 @@
         margin-left: 0;
     }
 
+     .dialog .head .what_do .btn span{
+        display: none;
+    }
+
 
 }
