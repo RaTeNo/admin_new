@@ -1569,4 +1569,15 @@
     }
 
 
+    .mistake_items {
+        flex-wrap: wrap;
+        margin-bottom: -30px;
+    }
+    .mistake_items > * {
+        margin-left: 30px;
+        width: calc(100%/2 - 30px);
+        margin-bottom: 30px;
+    }
+
+
 }
