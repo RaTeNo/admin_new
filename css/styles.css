@@ -13689,6 +13689,24 @@ background: #64C841;
     margin-top: 15px;
 }
 
+.details_item-body-title.mt_20{
+    margin-top: 20px;
+}
+
+.details_item-remarks{
+    background: #F2F1FD;
+    border-radius: 11px;
+    padding: 10px;
+}
+.details_item_title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #605D7D;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
 .details_item-body {
     position: relative;
     padding-top: 15px;
