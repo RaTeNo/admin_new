@@ -9146,6 +9146,7 @@ aside .menu .sub_menu a.active
     transition: background .2s linear;
 
     background: #eaeaea;
+    display: none;
 }
 
 
@@ -17819,6 +17820,7 @@ button.copy span{
     font-size: 55px;
     background-color: #EBEBEB;
     margin: 0;
+    flex-shrink: 0;
 }
 
 
