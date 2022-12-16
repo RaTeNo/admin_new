@@ -17051,6 +17051,7 @@ background: #64C841;
     background: #fff;
     display: none;
     min-height: 320px;
+    min-width: 320px;
 }
 .online-modal_title {
     font-weight: 700;
@@ -17251,6 +17252,7 @@ background: #64C841;
     font-weight: 700;
     font-size: 12px;
     line-height: 14px;
+    color: #6C698C;
 }
 .simulators-new .simulator_item-links .icon {
     width: 20px;
