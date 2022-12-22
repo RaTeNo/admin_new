@@ -931,5 +931,5 @@ function startTimer() {
     	$(".resend_link").show()
     }
   }, 1000);
-  setTimeout(() => { clearInterval(timerInterval); }, 10000);
+  setTimeout(() => { clearInterval(timerInterval); }, 10001);
 }
