@@ -18254,3 +18254,23 @@ button.copy span{
     text-decoration: none;
     display: block;
 }
+.resend_link {
+    display: none;
+}
+.resend_link a{
+    display: block;
+    color: #9699ac;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 20px;
+    text-align: center;
+}
+.resend{
+    color: #9699ac;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 20px;
+    text-align: center;
+    opacity: .8;
+}
+

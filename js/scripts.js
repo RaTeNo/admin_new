@@ -2,6 +2,18 @@ $(() => {
 	// Ширина окна для ресайза
 	WW = $(window).width()
 
+	$(".resend_link a").click(function(e){
+		e.preventDefault();		
+		TIME_LIMIT = 10;
+		timePassed = 0;
+		timeLeft = TIME_LIMIT;
+		timerInterval = null;
+		startTimer();
+		$(".resend_link").hide();
+		$(".resend").show();
+
+	});
+
 	//tippy('[data-tippy-content]');
 	$('body').on('change', '.test_data .step input, .test_data .step textarea', function (e) {
 		$(".answer_btn").show();
@@ -895,4 +907,29 @@ function sec2time(timeInSeconds) {
 		seconds = Math.floor(time - minutes * 60)
 
 	return pad(minutes, 2) + ':' + pad(seconds, 2);
+}
+
+let TIME_LIMIT = 10;
+let timePassed = 0;
+let timeLeft = TIME_LIMIT;
+
+
+startTimer();
+
+function startTimer() {
+  let timerInterval = null;
+  timerInterval = setInterval(() => {
+    
+    // Количество времени, которое прошло, увеличивается на  1
+    timePassed = timePassed += 1;
+    timeLeft = TIME_LIMIT - timePassed;
+    
+    // Обновляем метку оставшегося времени
+    $(".resend span").text(timeLeft);
+    if(timeLeft==0){
+    	$(".resend").hide();
+    	$(".resend_link").show()
+    }
+  }, 1000);
+  setTimeout(() => { clearInterval(timerInterval); }, 10000);
 }
