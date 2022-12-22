@@ -1917,4 +1917,30 @@
     }
 
 
+
+
+    .report_modal form .line {
+        flex-direction: column;
+        margin-left: 0px;
+        margin-bottom: 12px;
+    }
+    .report_modal form .line > * {    
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+
+    .recommendations .mistake_items {
+        margin-left: 0px;
+    }
+    .recommendations .mistake_items > * {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .detailed_items > * {
+        width: calc(100%/2 - 15px);
+        padding: 12px;
+    }
+
+
 }

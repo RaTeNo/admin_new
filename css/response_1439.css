@@ -927,4 +927,12 @@
     .gallery_test_item{
         width: calc(100%/5 - 20px);      
     }
+
+
+
+    .recommendations .mistake_items > * {
+        width: calc(100%/3 - 15px);
+    }
+
+
 }

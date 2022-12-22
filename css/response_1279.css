@@ -1580,4 +1580,15 @@
     }
 
 
+    .recommendations .mistake_items > * {
+        width: calc(100%/2 - 15px);
+    }
+
+
+    .detailed_items > * {
+        width: calc(100%/3 - 15px);
+        padding: 15px;
+    }
+
+
 }

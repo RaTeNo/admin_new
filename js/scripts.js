@@ -847,6 +847,10 @@ $(window).scroll(function(){
 })
 
 
+$('body').on('click', '.detailed_item-link-right', function (e) {
+	e.preventDefault()
+	$(this).parent().parent().addClass('active');	
+});
 
 // Выравнивание заголовокв
 function namesHeight(context, step) {

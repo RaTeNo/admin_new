@@ -916,4 +916,17 @@
     .dialog .head .what_do .btn{
         margin-left: 5px;
     }
+
+
+    .detailed_items {
+        margin-left: 0;
+    }
+    .detailed_items > * {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+
 }
