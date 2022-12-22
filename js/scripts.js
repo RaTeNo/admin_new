@@ -926,10 +926,6 @@ function startTimer() {
     
     // Обновляем метку оставшегося времени
     $(".resend span").text(timeLeft);
-    if(timeLeft==0){
-    	$(".resend").hide();
-    	$(".resend_link").show()
-    }
   }, 1000);
-  setTimeout(() => { clearInterval(timerInterval); }, 10001);
+  setTimeout(() => { $(".resend").hide(); $(".resend_link").show()clearInterval(timerInterval); }, 10000);
 }
