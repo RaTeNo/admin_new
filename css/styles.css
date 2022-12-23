@@ -11275,7 +11275,8 @@ footer .contacts .val a
 }
 
 #video_modal video{
-    max-height: 600px 
+    max-height: 600px;
+    max-width: 1000px;
 }
 
 #video_modal .carousel__button.is-close
