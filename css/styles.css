@@ -17168,6 +17168,7 @@ background: #64C841;
     flex-direction: column;
     position: relative;
     padding-right: 17px;
+    flex-shrink: 0;
 }
 .simulators-new .simulator_item-left:before {
     position: absolute;
@@ -17222,7 +17223,6 @@ background: #64C841;
     line-height: 14px;
     letter-spacing: -0.3px;
     margin-bottom: 8px;
-    max-width: 165px;
     width: 100%;
     text-decoration: none;
     color: #020027;
