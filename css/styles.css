@@ -18280,5 +18280,6 @@ button.copy span{
     opacity: .8;
 }
 
-
-#
+.modal-page_img_nomargin{
+    margin-top: 0;
+}
