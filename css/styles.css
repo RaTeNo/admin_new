@@ -18080,6 +18080,7 @@ button.copy span{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    display: none;
 }
 .modal-page_img {
     margin-top: -69px;    
@@ -18210,6 +18211,10 @@ button.copy span{
     fill: var(--main_color);
 }
 
+#modal-page1 .is-close, #modal-page2 .is-close, #modal-page3 .is-close, #modal-page4 .is-close, #modal-page5 .is-close{
+    display: none;
+}
+
 
 
 
@@ -18275,3 +18280,5 @@ button.copy span{
     opacity: .8;
 }
 
+
+#
