@@ -16467,6 +16467,12 @@ background: #64C841;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+    top:0;
+    transition: 0.3s;
+}
+.training-course_item_mod:hover{
+    top:-10px;
 }
 .training-course_item::before {
     position: absolute;
@@ -16500,6 +16506,10 @@ background: #64C841;
     max-width: 240px;
     text-decoration: none;
     color: #020027;
+}
+
+.training-course_item-title_mod{
+    margin-bottom: 20px;
 }
 .training-course_item-text {
     font-weight: 400;
