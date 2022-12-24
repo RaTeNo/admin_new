@@ -16470,6 +16470,7 @@ background: #64C841;
     position: relative;
     top:0;
     transition: 0.3s;
+    text-decoration: none;
 }
 .training-course_item_mod:hover{
     top:-10px;
