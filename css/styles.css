@@ -16453,6 +16453,7 @@ background: #64C841;
     margin-left: -44px;
     margin-bottom: -44px;
     flex-wrap: wrap;
+    margin-top: 60px;
 }
 .training-course_items > * {
     width: calc(100%/3 - 44px);
