@@ -927,6 +927,24 @@
     }
 
 
+    .rating-star {
+        margin-left: 12px;
+    }
+    .modal-survey .fancybox__content > .carousel__button.is-close {
+        top: 12px;
+        right: 17px;
+    }
+    .survey-modal_btn {
+        font-size: 12px;
+        line-height: 38px;
+        width: 199px;
+    }
+    .modal-survey {
+        border-radius: 15px;
+        padding: 25px;
+    }
+
+
 
 
 }

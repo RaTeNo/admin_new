@@ -18295,3 +18295,210 @@ button.copy span{
 .modal-page_img_nomargin{
     margin-top: 0;
 }
+
+
+
+/* modal-survey */
+.modal-survey {
+    display: none;
+    background: #FFFFFF;
+    border-radius: 30px;
+    padding: 34px;
+    max-width: 360px;
+    width: 100%;
+}
+.modal-survey_title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 107.9%;
+    margin-bottom: 17px;
+    }
+.modal-survey_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #747293;
+    margin-bottom: 30px;
+}
+.modal-survey_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal-survey_img {
+    width: 46px;
+    height: 46px;
+    padding: 9px;
+    border-radius: 50%;
+    background: #E3E1F1;
+}
+.modal-survey_btn {
+    margin-top: 29px;
+    background: var(--main_color);
+    border-radius: 53px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 53px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+    width: 100%;
+}
+.modal-survey .rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal-survey .rating input{
+    display: none;
+}
+.modal-survey .rating label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    padding: 9px;
+    border-radius: 50%;
+    background: #E3E1F1;
+    transition: all .4s;
+    cursor: pointer;
+}
+.modal-survey .rating label:hover {
+    background: var(--main_color);
+}  
+.modal-survey .rating input:hover + label,
+.modal-survey .rating input:checked + label {
+    background: var(--main_color);
+}
+
+.modal-survey .carousel__button.is-close {
+    margin-top: 0;
+    top: 15px;
+    right: 17px;
+    background: #CECBE4;
+}
+.modal-survey5 .carousel__button.is-close {
+    display: none;
+}
+
+.survey-modal_btn-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.survey-modal_btn {
+    margin-top: 29px;
+    background: var(--main_color);
+    border-radius: 53px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 53px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+    width: 230px;
+    display: block;
+    text-decoration: none;
+}
+
+.scale {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.scale label {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #7E7A98;
+    background: #E3E1F1;
+    border-radius: 11px;
+    width: 46px;
+    height: 46px;
+    transition: all .4s;
+    cursor: pointer;
+}
+.modal-survey .scale label:hover {
+    background: var(--main_color);
+    color: #fff;
+}  
+.modal-survey .scale input:hover + label,
+.modal-survey .scale input:checked + label {
+    background: var(--main_color);
+    color: #fff;
+}
+
+
+
+.rating-wrapper {
+    overflow: hidden;
+    display: inline-block;
+    margin-left: -23px;
+} 
+.rating-star:hover,
+.rating-star:hover~.rating-star {
+    background: url('../images/stars2.svg');
+}  
+.rating-wrapper:hover .rating-star:hover,
+.rating-wrapper:hover .rating-star:hover~.rating-star,
+.rating-input:checked~.rating-star {
+    background: url('../images/stars2.svg');
+} 
+.rating-star,
+.rating-wrapper:hover .rating-star {
+    float: right;
+    display: block;
+    width: 47px;
+    height: 44px;
+    background: url('../images/stars.svg');
+    cursor: pointer;
+}
+.rating-star {
+    margin-left: 14px;
+}
+.rating-star:last-child {
+    margin-left: 0px;
+}
+
+
+
+
+.modal-survey textarea {
+    resize: none;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #4D4A8D;
+    padding: 16px;
+    background: #FFFFFF;
+    border: 1px solid #4D4A8D;
+    border-radius: 13px;
+    height: 150px;
+    width: 100%;
+}
+.modal-survey4 .modal-survey_text {
+    margin-bottom: 22px;
+}
+.modal-survey4 button {
+    margin-top: 19px;
+}
+
+
+
+
+.modal-survey5_img {
+    margin-bottom: 22px;
+    width: 94px;
+    height: 102px;
+}
+.modal-survey5 .modal-survey_title {
+    margin-bottom: 7px;
+}
+.modal-survey5 .modal-survey_text {
+    margin-bottom: 0px;
+}
