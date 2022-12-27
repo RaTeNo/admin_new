@@ -3740,7 +3740,7 @@ aside .menu .sub_menu a.active
     color: #505261;
     font-weight: bold;
     line-height: 19px;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
 }
 
 

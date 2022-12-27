@@ -1590,5 +1590,107 @@
         padding: 15px;
     }
 
+    .simulators-new .simulator_items{
+        display: block;
+        overflow: auto;
+        width: calc(100% + 48px);
+        margin: -24px;
+        padding: 24px;
+        white-space: nowrap;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .simulators-new .simulator_items::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .simulators-new .simulator_items::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .simulators-new .simulator_items > * {
+        display: inline-flex;
+        width: 400px;
+        max-width: none;
+        margin: 0;
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .simulators-new .simulator_items > * + * {
+        margin-left: 20px;
+    }
+
+    .simulators-new .simulator_items.not_slide {
+        display: flex;
+        width: auto;
+        margin-left: -48px;
+    }
+
+    .simulators-new .simulator_items.not_slide > * {
+        width: calc(100%/2 - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+
+
+    .trainer_items{
+        display: block;
+        overflow: auto;
+        width: calc(100% + 48px);
+        margin: -24px;
+        padding: 24px;
+        white-space: nowrap;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .trainer_items::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .trainer_items::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .trainer_items > * {
+        display: inline-block;
+        width: 264px;
+        max-width: none;
+        margin: 0;
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .trainer_items > * + * {
+        margin-left: 20px;
+    }
+
+    .trainer_items.not_slide {
+        display: flex;
+        width: auto;
+        margin-left: -48px;
+    }
+
+    .trainer_items.not_slide > * {
+        width: calc(100%/2 - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
 
 }

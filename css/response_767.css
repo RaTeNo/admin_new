@@ -1848,20 +1848,21 @@
         margin-left: 0;
         margin-top: 0;
     }
-    .simulators-new .simulator_items {
+
+    /*.simulators-new .simulator_items {
         margin-left: 0px;
     }
     .simulators-new .simulator_items > * {
         width: 100%;
         margin-left: 0px;
-    }
+    }*/
 
     .trainer_items  {
-        margin-left: 0px;
+        /*margin-left: 0px;*/
     }
     .trainer_items  > * {
-        width: 100%;
-        margin-left: 0px;
+        /*width: 100%;
+        margin-left: 0px;*/
     }
 
     .dialog .head {
@@ -1942,5 +1943,13 @@
         padding: 12px;
     }
 
+
+    .simulators-new .simulator_items.not_slide > * {
+        width: calc(100%);
+    }
+
+    .trainer_items.not_slide > * {
+        width: calc(100%);
+    }
 
 }

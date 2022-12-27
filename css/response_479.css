@@ -671,7 +671,10 @@
 
     .webinar_more{
         display: inline-flex !important;
-        justify-content: center;
+        justify-content: center !important;
+        padding: 0 !important;
+        align-items: center !important;
+        align-content: center !important;
     }
 
     .webinar_more a {
