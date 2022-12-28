@@ -18502,3 +18502,95 @@ button.copy span{
 .modal-survey5 .modal-survey_text {
     margin-bottom: 0px;
 }
+
+
+
+.create-report_btns {
+    margin-bottom: 34px;
+}
+.create-report table{
+    width: 100%;
+	margin-bottom: 24px;
+	border-collapse: collapse; 
+    border-radius: 10px;
+}
+.create-report table thead {
+    background: var(--main_color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.create-report table thead th {
+    padding: 17px;
+    border: 1px solid rgba(21, 21, 21, 0.15);
+}
+.create-report table thead th {
+    text-align: start;   
+}
+.create-report table thead th:last-child {
+    text-align: center;
+    border-radius: 0 10px 0 0;
+    border-top: none;
+    border-right: none;
+}
+.create-report table thead th:first-child {
+    border-radius: 10px 0 0 0;
+    border-top: none;
+    border-left: none;
+}
+
+.create-report table tbody td {
+    padding: 11px 17px;
+    border-right: 1px solid #C8D2DA;
+    border-top: none;
+    text-align: start;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #514F96;
+}
+.create-report table tbody td:first-child {
+    border-left: 1px solid #C8D2DA;
+}
+.create-report table tbody tr:last-child {
+    border-bottom: 1px solid #C8D2DA;
+}
+.create-report table tbody tr:nth-child(even){
+    background: rgba(5, 0, 175, 0.01);
+}
+.create-report .table-wrap {
+    overflow-x: scroll;
+    scrollbar-width: none; 
+}
+.create-report .table-wrap::-webkit-scrollbar {
+    display: none; 
+}
+.create-report table tbody td a {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #0583DF;
+    text-decoration: none;
+    border-bottom: 1px dashed #0583DF;
+}
+.create-report table tbody td span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+.create-report table tbody td span.blau {
+    background: #0B00D8;
+}
+.create-report table tbody td span.yellow {
+    background: #FFC01C;
+}
+.create-report table tbody td span.green {
+    background: #5AB344;
+}
+.create-report table tbody td:nth-child(3) {
+    white-space: nowrap;
+}

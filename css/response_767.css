@@ -1356,6 +1356,7 @@
     }
     .create-report button {
         font-size: 12px;
+        margin-bottom: 10px;
     }
 
     .advice_items,
@@ -1950,6 +1951,11 @@
 
     .trainer_items.not_slide > * {
         width: calc(100%);
+    }
+
+
+    .create-report table thead th:nth-child(2) {
+        padding: 17px 150px;
     }
 
 }
