@@ -18642,6 +18642,7 @@ button.copy span{
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
+
 }
 
 .top_line_link{
@@ -18653,4 +18654,10 @@ button.copy span{
     text-decoration: none;
     padding: 0 12px;
     color: var(--main_color);
+    margin-left: 15px;
+}
+
+.line-top_flex_start .cont{
+    justify-content: center;
+    max-width: 95%;
 }
