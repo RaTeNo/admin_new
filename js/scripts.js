@@ -2,6 +2,10 @@ $(() => {
 	// Ширина окна для ресайза
 	WW = $(window).width()
 
+	$(".info_data_close").click(function(e){
+		$(".info_data").hide();
+	});
+
 	$(".resend_link a").click(function(e){
 		e.preventDefault();		
 		TIME_LIMIT = 10;
