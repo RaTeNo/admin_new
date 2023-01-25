@@ -814,7 +814,10 @@
 
         padding: 40px;
     }
-
+    .dialog .error_text,
+    .dialog .prompt_text {
+        padding: 0 0 0 24px;
+    }
 
     .simulator_actions .error_text,
     .simulator_actions .success_text

@@ -395,6 +395,18 @@
     }
 
 
+    .col_main .title {
+        font-size: 19px;
+        margin-bottom: 20px;
+    }
+    .task_items > * {
+        width: calc(100%/3 - 16px);
+    }
+
+    .task2 .task_items > * {
+        width: calc(100%/3 - 16px);
+    }
+
 
 
 }
