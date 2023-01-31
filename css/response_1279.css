@@ -1693,4 +1693,15 @@
         margin-left: 24px;
     }
 
+
+    .answer-option_items {
+        margin-left: -15px;
+        margin-bottom: -20px;
+    }
+    .answer-option_items > * {
+        width: calc(100%/2 - 15px);
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
+
 }

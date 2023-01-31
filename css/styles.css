@@ -17047,6 +17047,7 @@ background: #64C841;
 .dialog .next_link2 .icon {
     width: 23px;
     height: 23px;
+    display: block;
 }
 .dialog .next_link2 a {
     width: 40px;
@@ -18972,4 +18973,489 @@ button.copy span{
 }
 .task5 .task_item-text {
     width: calc(100% - 85px);
+}
+
+
+
+
+.modal-page6 {
+    max-width: 699px;
+    width: 100%;
+    padding: 24px 20px 25px;
+    justify-content: flex-start;
+    align-items: flex-start;    
+    border-radius: 15px;
+}
+.modal-page6 .modal-page_title {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px; 
+    margin-bottom: 23px;
+    text-align: start;
+    margin-top: 0;
+    width: 90%;
+}
+.modal-page6 form {
+    position: relative;
+    padding-bottom: 19px;
+    padding-top: 16px;
+    width: 100%;
+}
+.modal-page6 form:before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 40px);
+    height: 1px;
+    background: #EBEBEB;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+.modal-page6 form:after {
+    position: absolute;
+    content: "";
+    width: calc(100% + 40px);
+    height: 1px;
+    background: #EBEBEB;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+.modal-page6 form .line {
+    display: flex;
+}
+.modal-page6 form .field {
+    display: flex;
+    align-items: center;
+}
+.modal-page6 form .field label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;    
+    color: #605CA9;    
+    opacity: 0.8;
+    margin-right: 15px;
+}
+.modal-page6 form .field input {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: #777777;
+    width: 37px;
+    height: 29px;
+    background: #FFFFFF;
+    border: 1px solid #C2CDDF;
+    border-radius: 5px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    text-align: center;
+    margin-right: 20px;
+}
+.modal-page6 .modal-page_link {
+    width: 85px;
+    height: 30px;
+    background: var(--main_color);
+    padding: 0 7px;
+    font-size: 12px;
+    line-height: 30px;
+    margin-top: 19px;
+}
+
+
+
+.form_title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.form_title span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;    
+    color: #000000;    
+    opacity: 0.8;   
+    margin-right: 13px;
+    display: block;
+}
+.choose-link {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 12px;    
+    color: #0583DF;  
+    margin-right: 9px;
+    text-decoration: none;
+    border-bottom: 1px dashed #0583DF;
+}
+.remove-link {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 12px;
+    color: #CE2D4A;
+    text-decoration: none;
+    border-bottom: 1px dashed #CE2D4A;
+}
+.modal-page6 .form_list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.modal-page6 .form_list li {
+    padding: 6px 10px 6px 7px;
+    background: #E7E5FE;
+    border-radius: 13px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.modal-page6 .form_list li:last-child {
+    margin-bottom: 0;
+}
+.modal-page6 .form_list input[type=checkbox] {
+    display: none;
+    opacity: 0;
+}
+.modal-page6 .form_list label.checkbox {
+    font-family: "Ubuntu";
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;    
+    color: #7B78BA;
+    position: relative;
+
+    padding-left: 27px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+}
+.modal-page6 .form_list label.checkbox:before {
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    display: inline-block;
+    content: '';
+    transition: .2s linear;
+    background: #FFFFFF;
+    border-radius: 4px;
+    width: 14px;
+    height: 14px;
+}
+.modal-page6 .form_list label.checkbox:after {
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    display: block;
+    width: 9px;
+    height: 5px;
+    content: '';
+    transition: opacity .2s linear;
+    transform: rotate(-45deg);
+    opacity: 0;
+    border-bottom: 1.5px solid var(--main_color);
+    border-left: 1.5px solid var(--main_color);
+}
+.modal-page6 .form_list input[type=checkbox]:checked + label.checkbox:after {
+    opacity: 1;
+}
+.form_item {
+    padding-top: 15px;
+    padding-bottom: 24px;
+    position: relative;
+}
+.form_item:before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 40px);
+    height: 1px;
+    background: #EBEBEB;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+.form_item:after {
+    position: absolute;
+    content: "";
+    width: calc(100% + 40px);
+    height: 1px;
+    background: #EBEBEB;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+.modal-page6.modal-page7 form {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.modal-page6.modal-page7 form::after {
+    display: none;
+}
+.modal-page6.modal-page7 form::before {
+    display: none;
+}
+.form_btns {
+    display: flex;
+    align-items: center;
+}
+.modal-page6.modal-page7 .modal-page_link.modal-page_link3 {
+    display: block;
+    padding: 0px 13px;
+    line-height: 30px;
+    width: 65px;
+    background: #ECEBF5;
+    color: #64698F;
+    font-weight: 500;
+    margin-right: 10px;
+}
+.form_btns .modal-page_link.modal-page_link2 {
+    padding: 0px 13px;
+    display: block;
+    line-height: 30px;
+    width: 118px;
+}
+
+
+
+.dialog .prompt_title {
+    padding: 26px 24px 0;
+}
+.answer-option .dialog .head {
+    padding: 0 0 87px;
+}
+.answer-option .dialog .prompt_text {
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    padding: 0;
+    vertical-align: top;
+    border-radius: 21px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #6677A4;
+}
+.answer-option .dialog .error_text {
+    color: #DE1E29;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    display: none;
+    padding: 0;
+    text-align: start;
+    border-radius: 21px;
+}
+.answer-option .dialog .success_text {
+    color: #47BF41;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    display: none;
+    padding: 0;
+    text-align: start;
+    border-radius: 21px;
+}
+.answer-option_items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -26px;
+    margin-bottom: -24px;
+    padding-bottom: 27px;
+}
+.answer-option_items > * {
+    width: calc(100%/3 - 26px);
+    margin-left: 26px;
+    margin-bottom: 24px;
+}
+.answer-option_items label {
+    cursor: pointer;
+}
+.answer-option_items .thumb {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 11px;
+    padding-bottom: 70.18%;
+    border-radius: 20px;
+    border: 5px solid transparent;
+    transition: all .5s;
+}
+.answer-option_items .thumb img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.answer-option_items label .name {
+    padding: 11px 19px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #64698F;
+    background: #DFDEE8;
+    border-radius: 7px;
+    min-height: 54px;
+    transition: all .5s;
+}
+.answer-option_items label.success .thumb {
+    border: 5px solid #47BF41;
+}
+.answer-option_items label.success .name {
+    background: #47BF41;
+    color: #FFFFFF;
+}
+.answer-option_items label.error .thumb {
+    border: 5px solid #DE1E29;
+}
+.answer-option_items label.error .name {
+    background: #DE1E29;
+    color: #FFFFFF;
+}
+.answer-option_items label:hover .thumb {
+    border: 5px solid var(--main_color);
+}
+.answer-option_items label:hover .name {
+    background: var(--main_color);
+    color: #FFFFFF;
+}
+
+.answer-option_items input:checked + label .name {
+    background: var(--main_color);
+    color: #fff;
+}
+.answer-option_items input:checked + label .thumb {
+    border: 5px solid var(--main_color);
+}
+
+.answer-option_btn {
+    width: 104px;
+    height: 38px;
+    background: var(--main_color);
+    border-radius: 41px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 38px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 27px 24px 27px;
+
+}
+.answer-option .dialog .prompt_text,
+.answer-option .dialog .success_text,
+.answer-option .dialog .error_text {
+    margin: 0 24px;
+}
+.answer-option_items {
+    padding: 0 24px 27px;
+}
+
+
+.answer-question_items {
+    padding: 26px 24px 22px; 
+    position: relative;
+    margin-top: 30px;  
+}
+.answer-question_items::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 1px;
+    background: #D0D0D0;
+}
+.answer-question_items::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 1px;
+    background: #D0D0D0;
+}
+.answer-question_items label {
+    margin-bottom: 15px;
+    display: block;
+    cursor: pointer;
+}
+.answer-question_items label:last-child {
+    margin-bottom: 0px;
+}
+.answer-question_items input + label .name {
+    background: #ECEBF5;
+    padding: 10px 20px;
+    border-radius: 7px;
+    display: inline-block;    
+}
+.answer-question_items input:checked + label .name {
+    background: var(--main_color);
+    color: #fff;
+}
+.answer-question_items .answer-option_btn {
+    margin: 24px 0 0 0;
+}
+.answer-question_images {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 24px 26px;
+}
+.answer-question_images2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 24px 26px;
+}
+.answer-question_images .thumb {
+    position: relative;
+    width: 49%;    
+}
+.answer-question_images .thumb img {
+    width: 100%;
+    height: auto;
+    border-radius: 14px;  
+}
+.answer-question_images2 .thumb {
+    position: relative;
+    width: 100%;    
+}
+.answer-question_images2 .thumb img {
+    width: 100%;
+    height: auto;
+    border-radius: 14px;  
+}
+.answer-question_items {
+    padding: 10px 24px 22px;
+    margin-top: 20px;
+}
+
+
+
+.answer-question_items input:checked + label.answer-error .name {
+    background: #DE1E29;
+    color: #fff;
+}
+.answer-question_items input:checked + label.answer-sucess .name {
+    background: #47BF41;
+    color: #fff;
+}
+
+.answer-option .dialog .prompt_text, 
+.answer-option .dialog .success_text, 
+.answer-option .dialog .error_text {
+    display: block;
+}
+.answer-option .dialog .next_link2 a {
+    width: 23px;
+    height: 23px;
+    display: block;
+    margin-left: 16px;
 }
