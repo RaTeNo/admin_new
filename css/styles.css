@@ -18996,13 +18996,13 @@ button.copy span{
     margin-top: 0;
     width: 90%;
 }
-.modal-page6 form {
+.modal-page6 .form {
     position: relative;
     padding-bottom: 19px;
     padding-top: 16px;
     width: 100%;
 }
-.modal-page6 form:before {
+.modal-page6 .form:before {
     position: absolute;
     content: "";
     width: calc(100% + 40px);
@@ -19012,7 +19012,7 @@ button.copy span{
     transform: translateX(-50%);
     bottom: 0;
 }
-.modal-page6 form:after {
+.modal-page6 .form:after {
     position: absolute;
     content: "";
     width: calc(100% + 40px);
@@ -19022,14 +19022,14 @@ button.copy span{
     transform: translateX(-50%);
     top: 0;
 }
-.modal-page6 form .line {
+.modal-page6 .form .line {
     display: flex;
 }
-.modal-page6 form .field {
+.modal-page6 .form .field {
     display: flex;
     align-items: center;
 }
-.modal-page6 form .field label {
+.modal-page6 .form .field label {
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;    
@@ -19037,7 +19037,7 @@ button.copy span{
     opacity: 0.8;
     margin-right: 15px;
 }
-.modal-page6 form .field input {
+.modal-page6 .form .field input {
     font-family: 'Ubuntu';
     font-weight: 400;
     font-size: 12px;
