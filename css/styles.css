@@ -1586,6 +1586,7 @@ aside .menu .sub_menu a.active
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
 
