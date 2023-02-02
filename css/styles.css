@@ -18694,6 +18694,10 @@ button.copy span{
     background: #fff;
     border-radius: 9px;
 }
+
+.audio_training .audio_message:first-child{
+    width: 100%;
+}
 .audio_training .icon {
     color: var(--text_color);
     display: block;
