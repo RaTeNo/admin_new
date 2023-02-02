@@ -17048,13 +17048,12 @@ background: #64C841;
     height: calc(100% - 95px);
 }
 .dialog .next_link2 .icon {
-    width: 23px;
-    height: 23px;
+    width: 38px;
+    height: 38px;
     display: block;
 }
 .dialog .next_link2 a {
-    width: 40px;
-    height: 40px;
+
     margin-left: 16px;
 }
 .success_text-box {
