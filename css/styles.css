@@ -16955,6 +16955,8 @@ background: #64C841;
 }
 .dialog .next_link2 {
     padding: 0;
+    display: flex;
+
 }
 .dialog .prompt_text {
     font-weight: 500;
