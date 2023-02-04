@@ -19465,3 +19465,13 @@ button.copy span{
     display: block;
     margin-left: 16px;
 }
+
+.dialog .image_wrap .image .answer.show{    
+    animation: myanimation 1s infinite linear;
+}
+
+@keyframes myanimation {
+    0% {opacity:0;}
+    50% {opacity:1;}
+    100% {opacity:0;}
+}
