@@ -19466,7 +19466,7 @@ button.copy span{
     margin-left: 16px;
 }
 
-.dialog .image_wrap .image .answer.show{    
+.dialog .image_wrap .image .answer.show:not(.success){    
     animation: myanimation 1s infinite linear;
 }
 
