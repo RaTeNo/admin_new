@@ -319,6 +319,7 @@ button
     flex-direction: column;
 
     flex: 1 0 auto;
+    z-index: 1;
 }
 
 .content_flex.row,
