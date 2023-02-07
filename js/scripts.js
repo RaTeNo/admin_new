@@ -314,7 +314,7 @@ $(() => {
 	}
 
 	function drawLine(stem, option) {
-		$(".answer_btn").show();
+		
 		var pointA = stem.offset(),
 			pointB = option.offset()
 
@@ -352,6 +352,8 @@ $(() => {
 		pointB.top > pointA.top
 			? $(line).offset({ top: pointA.top, left: pointA.left })
 			: $(line).offset({ top: pointB.top, left: pointA.left })
+
+
 	}
 
 
@@ -415,6 +417,11 @@ $(() => {
 				$(this).removeClass("selected");
 				$(".options").removeClass("ready")
 			}
+		}
+
+		if($(".stems li.matched").length==$(".stems li").length)
+		{	
+			$(".answer_btn").show();
 		}
 	})
 
