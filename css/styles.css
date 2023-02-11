@@ -14141,6 +14141,7 @@ background: #64C841;
     font-size: 14px;
     color: #FFFFFF;
     font-family: 'Ubuntu';
+    margin-bottom: 10px;
 }
 .create-report {
     margin-top: 22px !important;
@@ -14199,11 +14200,9 @@ background: #64C841;
     display: table-cell;
     padding-left: 26px;
     cursor: pointer;
-    text-align: center;
     vertical-align: middle;
     margin-left: auto;
     margin-right: auto;
-    white-space: nowrap;
 }
 .generated-report label.checkbox:before {
     position: absolute;

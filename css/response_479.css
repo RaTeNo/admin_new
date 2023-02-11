@@ -1025,6 +1025,9 @@
     }
 
 
-
+    .tooltip .tooltiptext {
+        margin-left: -250px;
+        top: 0;
+    }
 
 }
