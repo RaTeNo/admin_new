@@ -19327,19 +19327,19 @@ button.copy span{
     color: #FFFFFF;
 }
 .answer-option_items label:hover .thumb {
-    border: 5px solid var(--main_color);
+    /*border: 5px solid var(--main_color);*/
 }
 .answer-option_items label:hover .name {
-    background: var(--main_color);
-    color: #FFFFFF;
+    /*background: var(--main_color);
+    color: #FFFFFF;*/
 }
 
 .answer-option_items input:checked + label .name {
-    background: var(--main_color);
+    background: #909090;
     color: #fff;
 }
 .answer-option_items input:checked + label .thumb {
-    border: 5px solid var(--main_color);
+    border: 5px solid #909090;
 }
 
 .answer-option_btn {
@@ -19405,7 +19405,7 @@ button.copy span{
     display: inline-block;    
 }
 .answer-question_items input:checked + label .name {
-    background: var(--main_color);
+    background: #909090;
     color: #fff;
 }
 .answer-question_items .answer-option_btn {
