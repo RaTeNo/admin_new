@@ -17101,7 +17101,6 @@ background: #64C841;
     border-radius: 15px;
     background: #fff;
     display: none;
-    min-height: 320px;
     min-width: 320px;
 }
 .online-modal_title {
@@ -19313,18 +19312,18 @@ button.copy span{
     transition: all .5s;
 }
 .answer-option_items label.success .thumb {
-    border: 5px solid #47BF41;
+    border: 5px solid #47BF41 !important;
 }
 .answer-option_items label.success .name {
-    background: #47BF41;
-    color: #FFFFFF;
+    background: #47BF41 !important;
+    color: #FFFFFF !important;
 }
 .answer-option_items label.error .thumb {
-    border: 5px solid #DE1E29;
+    border: 5px solid #DE1E29 !important;
 }
 .answer-option_items label.error .name {
-    background: #DE1E29;
-    color: #FFFFFF;
+    background: #DE1E29 !important;
+    color: #FFFFFF !important;
 }
 .answer-option_items label:hover .thumb {
     /*border: 5px solid var(--main_color);*/
