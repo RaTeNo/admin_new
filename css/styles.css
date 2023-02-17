@@ -7337,6 +7337,8 @@ aside .menu .sub_menu a.active
 
 
 
+
+
 .dialog .head
 {
     position: relative;
@@ -19451,11 +19453,11 @@ button.copy span{
 
 
 
-.answer-question_items input:checked + label.answer-error .name {
+.answer-question_items input + label.answer-error .name {
     background: #DE1E29;
     color: #fff;
 }
-.answer-question_items input:checked + label.answer-sucess .name {
+.answer-question_items input + label.answer-sucess .name {
     background: #47BF41;
     color: #fff;
 }
@@ -19480,4 +19482,11 @@ button.copy span{
     0% {opacity:0;}
     50% {opacity:1;}
     100% {opacity:0;}
+}
+
+@media print, (min-width: 1023px)
+{
+    .dialog .data .video_player{
+        max-height: 900px;
+    }
 }
