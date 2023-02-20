@@ -19489,4 +19489,17 @@ button.copy span{
     .dialog .data .video_player{
         max-height: 900px;
     }
+
+    aside {
+        max-height: 100vh;
+        overflow: auto;
+        position: sticky;
+        top: 0;
+    }
+
+    .wrap{
+        overflow: initial;
+    }
 }
+
+
