@@ -26,7 +26,7 @@ $(document).ready(function() {
         separateDialCode: true,
         utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
     });
-    $(phoneInputID).on("countrychange", function(event) {
+    /*$(phoneInputID).on("countrychange", function(event) {
         var selectedCountryData = iti.getSelectedCountryData();
         let s = intlTelInputUtils.numberType;
         newPlaceholder = intlTelInputUtils.getExampleNumber(selectedCountryData.iso2, true, intlTelInputUtils.numberType.MOBILE),          
@@ -39,5 +39,5 @@ $(document).ready(function() {
     
     iti.promise.then(function() {
         $(phoneInputID).trigger("countrychange");
-    });
+    });*/
 });
