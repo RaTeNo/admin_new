@@ -237,10 +237,17 @@ $(() => {
 
     $('body').on("keyup", '.js-search-courses', function(event) {
         let value = $(this).val();
+      
         if(value=="")
         {
-        	$(".training-course, .courses").show();
+        	$(".courses").show();
+        	$(".title_courses_result").hide();
         }
+        else
+        {        	
+	        $(".title_courses_result").show();	
+        }
+
 
         /*let	list = $(".training-course_item-title");
         list.each(function(index) {	
@@ -279,7 +286,6 @@ $(() => {
 			let check = false;
 			courses.each(function(index) {
 				if ($(this).is(':visible')) {
-					console.log($(this));
 				    check = true;
 				}
 			});
@@ -287,6 +293,12 @@ $(() => {
 			{	
 				$(this).hide();
 			}
+		});
+
+		$(".title_courses_result button").on("click", function(){
+			$(".js-search-courses").val("");			
+	        $(".title_courses_result").hide();
+	        $(".course, .courses").show();
 		});
     });  
 

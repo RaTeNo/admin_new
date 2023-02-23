@@ -19523,3 +19523,12 @@ button.copy span{
     margin-bottom: 30px;
     font-family: 'Ubuntu';
 }
+
+.title_courses_result{
+    display: none;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 0px;
+    margin-top:30px;
+}
