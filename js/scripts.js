@@ -235,6 +235,62 @@ $(() => {
     });  
 
 
+    $('body').on("keyup", '.js-search-courses', function(event) {
+        let value = $(this).val();
+        if(value=="")
+        {
+        	$(".training-course, .courses").show();
+        }
+
+        /*let	list = $(".training-course_item-title");
+        list.each(function(index) {	
+		    let label = $(this).text();
+		    let array = value.split(" ");
+		   
+		    for(let i=0;i<array.length;i++)
+		    {		    	
+		    	if (label.toLowerCase().indexOf(array[i].toLowerCase()) == -1) {
+			        $(this).parent().hide();
+			    } else {
+			        $(this).parent().show();
+			    }
+		    }	
+		});*/		
+
+		let	list2 = $(".courses .course .name");
+        list2.each(function(index) {	
+		    let label = $(this).text().trim();
+
+		    let array = value.split(" ");
+		    
+		    for(let i=0;i<array.length;i++)
+		    {		    	
+		    	
+		    	if (label.toLowerCase().indexOf(array[i].toLowerCase()) == -1) {
+			        $(this).closest(".course").hide();
+			    } else {
+			        $(this).closest(".course").show();
+			    }
+		    }	
+		});
+
+		$(".courses").each(function(index) {
+			let courses = $(this).find(".course");
+			let check = false;
+			courses.each(function(index) {
+				if ($(this).is(':visible')) {
+					console.log($(this));
+				    check = true;
+				}
+			});
+			if(!check)
+			{	
+				$(this).hide();
+			}
+		});
+    });  
+
+
 
 	// Видео плеер
 	/*if ('function' === typeof MediaPlayer) {
