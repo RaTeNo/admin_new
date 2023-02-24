@@ -19535,7 +19535,6 @@ button.copy span{
 
 .swiper {
   width: 100%;
-  height: 300px;
 
 }
 .slider .swiper-slide{
@@ -19544,7 +19543,6 @@ button.copy span{
 }
 
 .slider .swiper-slide img{
-    border-radius: 15px;
     max-width: 100%;
 }
 
