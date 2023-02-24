@@ -238,6 +238,7 @@ $(() => {
     $('body').on("keyup", '.js-search-courses', function(event) {
         let value = $(this).val();
       
+      	$(".title_courses_result span").text(value); 
         if(value=="")
         {
         	$(".courses").show();
@@ -816,6 +817,22 @@ $(() => {
 		$('html, body').stop().animate({ scrollTop: $(locationHash).offset().top }, 1000)
 	}
 
+	//слайдер на главной 
+	const swiper = new Swiper('.swiper', {	 
+	  loop: true,
+
+	  // If we need pagination
+	  pagination: {
+	    el: '.swiper-pagination',
+	  },
+
+	  // Navigation arrows
+	  navigation: {
+	    nextEl: '.swiper-button-next',
+	    prevEl: '.swiper-button-prev',
+	  },
+	});
+
 })
 
 
@@ -961,14 +978,14 @@ function namesHeight(context, step) {
 }
 
 function namesHeight2(context, step) {
-	console.log(step);
+
 	let start = 0,
 		finish = step,
 		$items = context.find('> *')
 
 	//$items.find('.name, .desc').height('auto')
 	$items.each(function () {
-		console.log($items.slice(start, finish));
+	
 		setHeight($items.slice(start, finish))
 		setHeight($items.slice(start, finish))
 
