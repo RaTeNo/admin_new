@@ -19553,3 +19553,7 @@ button.copy span{
 .swiper-pagination-bullet-active{
     background:var(--main_color);
 }
+
+.slider + .welcome{
+	margin-top: 20px;
+}
