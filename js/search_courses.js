@@ -46,19 +46,20 @@ $(() => {
 				{	
 					$(this).hide();
 				}
-			});
-
-			$(".title_courses_result button").on("click", function(){
-				$(".js-search-courses").val("");			
-		        $(".title_courses_result").hide();
-		        $(".course, .courses").show();
-			});
+			});			
 
 			$(".courses:not(.not_my)").hide();
         }	
 
 		
     });  
+
+    $(".title_courses_result button").on("click", function(){
+		$(".js-search-courses").val("");			
+        $(".title_courses_result").hide();
+        $(".course, .courses").show();
+        $(".found_course").empty();
+	});
 
 })
 
