@@ -235,7 +235,7 @@ $(() => {
     });  
 
 
-    $('body').on("keyup", '.js-search-courses', function(event) {
+    /*$('body').on("keyup", '.js-search-courses', function(event) {
         let value = $(this).val();
       
       	$(".title_courses_result span").text(value); 
@@ -246,8 +246,9 @@ $(() => {
         }
         else
         {        	
+        	$(".courses").show();
 	        $(".title_courses_result").show();	
-        }
+        }*/
 
 
         /*let	list = $(".training-course_item-title");
@@ -265,7 +266,7 @@ $(() => {
 		    }	
 		});*/		
 
-		let	list2 = $(".courses .course .name");
+		/*let	list2 = $(".courses .course .name");
         list2.each(function(index) {	
 		    let label = $(this).text().trim();
 
@@ -301,7 +302,7 @@ $(() => {
 	        $(".title_courses_result").hide();
 	        $(".course, .courses").show();
 		});
-    });  
+    });  */
 
 
 
@@ -818,23 +819,26 @@ $(() => {
 	}
 
 	//слайдер на главной 
-	const swiper = new Swiper('.swiper', {	 
-	  loop: true,
-	  autoplay: {
-	    delay: 5000,
-	  },
+	if($(".swiper").length)
+	{
+		const swiper = new Swiper('.swiper', {	 
+		  loop: true,
+		  autoplay: {
+		    delay: 5000,
+		  },
 
-	  // If we need pagination
-	  pagination: {
-	    el: '.swiper-pagination',
-	  },
+		  // If we need pagination
+		  pagination: {
+		    el: '.swiper-pagination',
+		  },
 
-	  // Navigation arrows
-	  navigation: {
-	    nextEl: '.swiper-button-next',
-	    prevEl: '.swiper-button-prev',
-	  },
-	});
+		  // Navigation arrows
+		  navigation: {
+		    nextEl: '.swiper-button-next',
+		    prevEl: '.swiper-button-prev',
+		  },
+		});
+	}
 
 })
 

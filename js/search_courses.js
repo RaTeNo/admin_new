@@ -1,0 +1,64 @@
+$(() => {
+
+    $('body').on("keyup", '.js-search-courses', function(event) {
+        let value = $(this).val();
+
+        $(".found_course").empty();
+      
+      	$(".title_courses_result span").text(value); 
+        if(value=="")
+        {
+        	$(".courses").show();
+        	$(".courses .course").show();
+        	$(".title_courses_result").hide();
+        }
+        else
+        {        	
+        	$(".courses").show();
+	        $(".title_courses_result").show();	
+
+	        let	list2 = $(".courses .course .name");
+	        list2.each(function(index) {	
+			    let label = $(this).text().trim();
+
+			    let array = value.split(" ");
+			    array = array.filter(Boolean);
+			    console.log(array);
+			    for(let i=0;i<array.length;i++)
+			    {	    	
+			    	if (label.toLowerCase().indexOf(array[i].toLowerCase()) == -1) {
+				        $(this).closest(".course").hide();
+				    } else {
+				        $(this).closest(".course").show().clone().appendTo(".found_course");
+				    }
+			    }	
+			});
+
+			$(".courses").each(function(index) {
+				let courses = $(this).find(".course");
+				let check = false;
+				courses.each(function(index) {
+					if ($(this).is(':visible')) {
+					    check = true;
+					}
+				});
+				if(!check)
+				{	
+					$(this).hide();
+				}
+			});
+
+			$(".title_courses_result button").on("click", function(){
+				$(".js-search-courses").val("");			
+		        $(".title_courses_result").hide();
+		        $(".course, .courses").show();
+			});
+
+			$(".courses:not(.not_my)").hide();
+        }	
+
+		
+    });  
+
+})
+

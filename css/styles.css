@@ -19544,6 +19544,7 @@ button.copy span{
 
 .slider .swiper-slide img{
     max-width: 100%;
+    display: block;
 }
 
 .swiper-button-next, .swiper-button-prev{
