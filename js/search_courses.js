@@ -17,24 +17,24 @@ $(() => {
         	$(".courses").show();
 	        $(".title_courses_result").show();	
 
-	        let	list2 = $(".courses .course .name");
+	        let	list2 = $(".courses:not(.not_my) .course .name")
 	        list2.each(function(index) {	
-			    let label = $(this).text().trim();
+			    let label = $(this).data("search");
 
 			    let array = value.split(" ");
 			    array = array.filter(Boolean);
-			    console.log(array);
 			    for(let i=0;i<array.length;i++)
 			    {	    	
 			    	if (label.toLowerCase().indexOf(array[i].toLowerCase()) == -1) {
 				        $(this).closest(".course").hide();
 				    } else {
 				        $(this).closest(".course").show().clone().appendTo(".found_course");
+				        break;
 				    }
 			    }	
 			});
 
-			$(".courses").each(function(index) {
+			$(".courses:not(.not_my)").each(function(index) {
 				let courses = $(this).find(".course");
 				let check = false;
 				courses.each(function(index) {
@@ -50,6 +50,16 @@ $(() => {
 
 			$(".courses:not(.not_my)").hide();
         }	
+
+        setTimeout(() => {
+			observer = lozad('.lozad', {
+				rootMargin: '200px 0px',
+				threshold: 0,
+				loaded: el => el.classList.add('loaded')
+			})
+
+			observer.observe()
+		}, 200)
 
 		
     });  
