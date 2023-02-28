@@ -19558,3 +19558,11 @@ button.copy span{
 .slider + .welcome{
 	margin-top: 20px;
 }
+
+.title_courses_result + .not_my{
+	margin-top: 0;
+}
+
+.title_courses_result[style="display: block;"] + .not_my{
+	margin-top: 40px;
+}
