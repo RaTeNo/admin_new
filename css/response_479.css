@@ -1030,4 +1030,8 @@
         top: 0;
     }
 
+    .media-remaining-time{
+    	display: none;
+    }
+
 }
