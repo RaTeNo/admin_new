@@ -329,9 +329,31 @@
 
 											<div class="slick_wrap">
 												<div class="slick">
-													<img src="images/tmp/lisa.jpg" alt="">
-													<img src="images/tmp/lisa.jpg" alt="">
-													<img src="images/tmp/lisa.jpg" alt="">
+													<div class="slick_item">
+														<div class="slick_image"><img src="images/tmp/lisa.jpg" alt=""></div>
+														<div class="slick_player">
+															<div class="audio_media">
+																<audio controls src="images/t-rex-roar.mp3">
+																	Your browser does not support the
+																	<code>audio</code> element.
+																</audio>
+															</div>
+														</div>
+													</div>
+													<div class="slick_item">
+														<div class="slick_image"><img src="images/tmp/lisa.jpg" alt=""></div>
+														<div class="slick_player">
+															<div class="audio_media">
+																<audio controls src="images/t-rex-roar.mp3">
+																	Your browser does not support the
+																	<code>audio</code> element.
+																</audio>
+															</div>
+														</div>
+													</div>
+													<div class="slick_item">
+														<div class="slick_image"><img src="images/tmp/lisa.jpg" alt=""></div>														
+													</div>
 												</div>
 												<div class="nav_slick"></div>
 											</div>
@@ -657,11 +679,29 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
-				$('.slick').slick({
-				    appendArrows: $('.nav_slick'),
-		            prevArrow: '<button id="prev" type="button" class="btn btn-juliet"><img src="images/toolbarButton-pageUp.png"></button>',
-		            nextArrow: '<button id="next" type="button" class="btn btn-juliet"><img src="images/toolbarButton-pageDown.png"></button>'
+				let $slickElement = $('.slick');					
+
+				$slickElement.on("init reInit afterChange", function(event, slick){
+					if($(".btn-prev").next().hasClass("count_slider"))
+					{
+				    	$(".count_slider").text(parseInt(slick.currentSlide + 1) + ' из ' + slick.slideCount);
+					}
+					else
+					{						
+						$(".btn-prev").after("<div class='count_slider'></div>");
+					    $(".count_slider").text(parseInt(slick.currentSlide + 1) + ' из ' + slick.slideCount);
+					}
 				});
+
+				$slickElement.slick({
+				    appendArrows: $('.nav_slick'),
+				    adaptiveHeight: true,
+		            prevArrow: '<button id="prev" type="button" class="btn btn-juliet btn-prev"><img src="images/toolbarButton-pageUp.png"></button>',
+		            nextArrow: '<button id="next" type="button" class="btn btn-juliet btn-next"><img src="images/toolbarButton-pageDown.png"></button>'
+				});
+				
+				
+
 			});
 		</script>
 
