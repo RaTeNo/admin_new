@@ -558,7 +558,7 @@ button
 }
 
 
-.fancybox__content > .carousel__button.is-close
+.fancybox__content > .carousel__button.is-close 
 {
     color: #000;
 
@@ -567,6 +567,10 @@ button
 
     width: 28px;
     height: 28px;
+}
+
+.fancybox__content>.f-button.is-close-btn{
+    
 }
 
 .modal.fancybox__content > .carousel__button.is-close svg
@@ -581,6 +585,10 @@ button
     stroke-width: 1px;
 }
 
+.is-compact .fancybox__content>.f-button.is-close-btn{
+    color: #000 !important;
+    background: none !important;
+}
 
 
 /*----------------
