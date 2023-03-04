@@ -691,6 +691,9 @@
 						$(".btn-prev").after("<div class='count_slider'></div>");
 					    $(".count_slider").text(parseInt(slick.currentSlide + 1) + ' из ' + slick.slideCount);
 					}
+					$('audio').each(function(){
+                		this.pause();
+                	});
 				});
 
 				$slickElement.slick({
