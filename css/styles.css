@@ -19744,3 +19744,15 @@ button.copy span{
     color: #000000;
     text-align: center;
 }
+
+.icon_full{
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.slick_image{
+    position: relative;
+}
