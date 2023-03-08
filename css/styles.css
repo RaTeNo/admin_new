@@ -19746,10 +19746,10 @@ button.copy span{
 }
 
 .icon_full{
-    width: 36px;
-    height: 36px;
+width: 100px;
+    height: 100px;
     position: absolute;
-    bottom: 10px;
+    top: 10px;
     right: 10px;
 }
 
