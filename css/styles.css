@@ -12971,7 +12971,7 @@ section.total {
 
 
 .slick_wrap{
-    border-radius: 10px;
+    border-radius: 12px;
     overflow: hidden;
     border: 1px solid #948FBB;
     background: #F3F2FC;
@@ -19756,3 +19756,24 @@ width: 100px;
 .slick_image{
     position: relative;
 }
+
+.slick_video a:before{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    display: block;
+    width: 100%;
+    height: 100%;    
+    background: rgba(0, 0, 0, 0.44);
+    border-radius: 10px 10px 0px 0px;
+}
+.slick_video a .icon_full_video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+}
+

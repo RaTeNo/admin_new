@@ -1047,7 +1047,14 @@
         font-size: 17px;
     } 
 
+    .icon_full{
+    	width: 50px;
+    	height: 50px;
+    }
 
-
+    .slick_video a .icon_full_video{
+        width: 100px;
+        height: 100px;
+    }
 
 }
