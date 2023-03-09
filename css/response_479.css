@@ -1048,13 +1048,13 @@
     } 
 
     .icon_full{
-    	width: 50px;
-    	height: 50px;
+    	width: 30px;
+    	height: 30px;
     }
 
     .slick_video a .icon_full_video{
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
     }
 
 }
