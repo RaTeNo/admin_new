@@ -18727,10 +18727,11 @@ button.copy span{
     margin-left: 20px;
 }
 .audio_training .audio_message {
-    width: 570px;
+    width: 270px;
     padding: 12px;
     background: #fff;
     border-radius: 9px;
+    flex-shrink: 0;
 }
 
 .audio_training .audio_message:first-child{
