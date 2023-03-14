@@ -18727,7 +18727,7 @@ button.copy span{
     margin-left: 20px;
 }
 .audio_training .audio_message {
-    width: 270px;
+    width: 50%;
     padding: 12px;
     background: #fff;
     border-radius: 9px;
