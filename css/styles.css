@@ -20000,3 +20000,226 @@ button.copy span{
     display: block;
     margin-right: 8px;
 }
+
+.info_sim_content{
+	padding:24px;
+	padding-top: 0;
+	margin-top: -15px;
+}
+
+.image_info_sim{
+	margin-top: 30px;
+	position: relative;
+}
+
+.image_info_sim img{
+	width: 100%;
+	max-width: 100%;
+}
+
+.image_info_sim .tooltype
+{
+	border: 5px solid #FFFFFF;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+/*
+.image_info_sim .tooltype:after{
+	content: "";
+    border: 5px solid var(--main_color);
+    width: 35px;
+    height: 35px;
+    display: block;
+    border-radius: 50%;
+}*/
+
+.tooltype::after,
+.tooltype::before {
+	content: '';
+	position: absolute;
+	border: 5px solid var(--main_color);
+	left: -20px;
+	opacity: 0;
+	right: -20px;
+	top: -20px;
+	bottom: -20px;
+	border-radius: 50%;
+	animation: pulse 2.5s linear infinite;
+}
+
+.tooltype::after {
+	animation-delay: 1.25s;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.5);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1.2);
+		opacity: 0;
+	}
+}
+
+.image_info_sim .tooltype.active{
+	background: #fff;
+}
+
+.info_sim_content button{	
+background: var(--main_color);
+    border-radius: 77px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    height: 37px;
+    padding: 0 20px;
+    margin-left: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+.simulator_point{
+	display: none;
+    padding: 23px 20px 24px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    max-width: 587px;
+    width: 100%;
+}
+
+.simulator_point-title{
+	font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    padding-bottom: 21px;
+    position: relative;
+    margin-bottom: 22px;
+}
+
+.simulator_point-title::after {
+    position: absolute;
+    content: "";
+    width: calc(100% + 40px);
+    height: 1px;
+    background: #D0D0D0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.simulator_point-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #353352;
+    margin-bottom: 10px;
+}
+
+.simulator_point-text p{
+	margin-bottom: 20px;
+}
+.simulator_point-text .audio_media{
+	background: #F3F3FF;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.simulator_action_debug .prompt_desc{
+	border-bottom: 1px solid #d0d0d0;
+	padding: 0 20px 20px;
+}
+
+.simulator_point-button{
+	background: var(--main_color);
+    border-radius: 77px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    height: 37px;
+    padding: 0 20px;
+    margin-left: auto;
+    display: block;
+    margin-top: 20px;
+}
+.simulator_point-button-wrap{
+	position: relative;
+    padding-top: 1px;
+    margin-top: 20px;
+}
+.simulator_point-button-wrap:before{
+	position: absolute;
+    content: "";
+    width: calc(100% + 40px);
+    height: 1px;
+    background: #D0D0D0;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.simulator_point-form {
+    --form_border_color: rgba(2,0,39,.5);
+    --form_focus_color: var(--main_color);
+    --form_error_color: red;
+    --form_border_radius: 22px;
+    --form_bg_color: transparent;
+    --form_placeholder_color: rgba(2,0,39,.5);
+}
+
+.simulator_point-form .line {
+    margin-bottom: 20px;
+}
+
+.simulator_point-form .label {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+
+.simulator_point-form .field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.simulator_point-form .input {
+    color: var(--text_color);
+    font-family: var(--font_family);
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    height: 44px;
+    padding: 0 14px;
+    transition: border-color .2s linear;
+    border: 1px solid var(--form_border_color);
+    border-radius: var(--form_border_radius);
+    background: var(--form_bg_color);
+    order: 2;
+}
+
+.simulator_point-form textarea {
+	color: var(--text_color);
+    font-family: var(--font_family);
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    width: 100%;
+    height: 150px;
+    padding: 14px;
+    resize: none;
+    transition: border-color .2s linear;
+    border: 1px solid var(--form_border_color);
+    border-radius: var(--form_border_radius);
+    background: var(--form_bg_color);
+}
