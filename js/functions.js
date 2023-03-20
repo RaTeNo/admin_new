@@ -62,7 +62,7 @@ $(() => {
 			})
 	})
 
-	$('body').on('click', '.modal .close_btn', function (e) {
+	$('body').on('click', '.modal .close_bnt', function (e) {
 		e.preventDefault()
 
 		Fancybox.close()

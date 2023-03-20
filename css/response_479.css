@@ -1080,4 +1080,55 @@
     }
 
 
+
+
+    .modal-statistic {
+        padding: 25px 10px 15px;
+        border-radius: 10px;
+    }
+    .modal-statistic_title::before {
+        width: calc(100% + 20px);
+    }
+    .weekly-statistics_btn {
+        width: 140px;
+        height: 30px;
+        font-size: 11px;
+        line-height: 30px;
+    }
+    .modal-statistic table thead tr th:nth-child(2) {
+        padding: 0 0px 5px 0px;
+    }
+    .modal-statistic table thead tr th:nth-child(3) {
+        padding: 0 0px 5px 0px;
+    }
+    .modal-statistic table tbody tr td:nth-child(1),
+    .modal-statistic table tbody tr td:nth-child(2),
+    .modal-statistic table tbody tr td:nth-child(3) {
+        padding: 8px;
+    }
+    .modal-statistic table tbody tr {
+        min-height: 42px;
+    }
+    .modal-statistic table tbody tr td {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .modal-statistic_item2 table thead tr th:nth-child(2) {
+        width: 30%;
+    }
+    .modal-statistic_item2 table thead tr th:nth-child(1) {
+        width: 70%;
+    }
+    .modal-statistic_item2 table tbody tr td:nth-child(1) {
+        width: 70%;
+    }
+    .modal-statistic_item2 table tbody tr td:nth-child(2) {
+        width: 30%;
+    }
+
+
+
+
+
+
 }

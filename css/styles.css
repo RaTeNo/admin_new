@@ -20234,3 +20234,149 @@ background: var(--main_color);
     margin-left: 50px;
     margin-bottom: 40px;
 }
+
+
+
+.weekly-statistics_btn {
+    width: 172px;
+    height: 34px;
+    border-radius: 17px;
+    background: var(--main_color);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 34px;
+    color: #FFFFFF;
+    flex-shrink: 0;
+}
+.modal-statistic {
+    padding: 24px 25px 19px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    max-width: 637px;
+    width: 100%;
+}
+.modal-statistic_item {
+    margin-bottom: 18px;
+}
+.modal-statistic_item:last-child {
+    margin-bottom: 0px;
+}
+.modal-statistic_title {
+    position: relative;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+    padding-bottom: 19px;
+    margin-bottom: 14px;
+}
+.modal-statistic_title::before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 50px);
+    height: 1px;
+    background: #D0D0D0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.modal-statistic_item-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;  
+    margin-bottom: 16px;  
+}
+.modal-statistic table {
+    width: 100%;
+}
+.modal-statistic table thead {
+    width: 100%;
+}
+.modal-statistic table thead tr {
+    display: flex;
+}
+.modal-statistic table thead tr th {
+    color: #273179;
+    opacity: 0.5;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
+.modal-statistic table thead tr th:nth-child(1) {
+    width: 53%;
+    padding: 0 12px 12px 0;
+    display: block;
+    text-align: start;
+}
+.modal-statistic table thead tr th:nth-child(2) {
+    width: 23%;
+    padding: 0 12px 12px 12px;
+    display: block;
+    text-align: center;
+}
+.modal-statistic table thead tr th:nth-child(3) {
+    width: 24%;
+    padding: 0 12px 12px 12px;
+    display: block;
+    text-align: center;
+}
+.modal-statistic table tbody {
+    width: 100%;
+    display: block;
+}
+.modal-statistic table tbody tr {
+    background: #F3F2FC;
+    border: 1px solid #D7D5E3;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    min-height: 58px;
+    height: 100%;
+}
+.modal-statistic table tbody tr td {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.3px;  
+}
+.modal-statistic table tbody tr td:nth-child(1) {
+    width: 53%;
+    border-right: 1px solid #D7D5E3;
+    padding: 19px 18px;
+    display: block;
+}
+.modal-statistic table tbody tr td:nth-child(2) {
+    width: 23%;
+    border-right: 1px solid #D7D5E3;
+    padding: 19px 18px;
+    display: block;
+    text-align: center;
+}
+.modal-statistic table tbody tr td:nth-child(3) {
+    width: 24%;
+    padding: 19px 18px;
+    display: block;
+    text-align: center;
+}
+
+.modal-statistic_item2 table tbody tr td:nth-child(2) {
+    border-right: none;
+    width: 21%;
+}
+.modal-statistic_item2 table tbody tr td:nth-child(1) {
+    width: 79%;
+    display: flex;
+    align-items: center;
+    padding: 13px 12px 13px 12px;
+}
+.modal-statistic_item2 table thead tr th:nth-child(2) {
+    width: 22%;
+    padding: 0 0 12px 0;
+}
+.modal-statistic_item2 table tbody tr td:nth-child(1) span {
+    margin-left: 10px;
+    display: block;
+}
+.modal-statistic_item2 table thead tr th:nth-child(1) {
+    width: 79%;
+}
