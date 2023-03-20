@@ -1974,9 +1974,22 @@
     }
     .audio_training-left {
         margin-bottom: 20px;
+        margin-right: 0;
+        align-items: flex-start;
     }
     .audio_training .audio_message {
         width: 100%;
+    }
+
+    .audio_training-text{
+        margin-left: 10px;
+    }
+
+    .audio_training .icon{
+        width: 20px;
+        height: 20px;
+        top: 3px;
+        position: relative;
     }
 
     .task_items > * {

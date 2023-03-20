@@ -20223,3 +20223,14 @@ background: var(--main_color);
     border-radius: var(--form_border_radius);
     background: var(--form_bg_color);
 }
+
+.page_subtitle{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: #7874A3;
+    margin-top: -15px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
