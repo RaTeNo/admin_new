@@ -28,7 +28,7 @@ $(() => {
 		console.log(x);
 		console.log(y);
 
-		$(".image_info_sim").append('<div class="tooltype" data-id="#type_new" style="top:'+y+'%; left:'+x+'%; position: absolute;"></div>');
+		//$(".image_info_sim").append('<div class="tooltype" data-id="#type_new" style="top:'+y+'%; left:'+x+'%; position: absolute;"></div>');
 
 		Fancybox.close()
 		Fancybox.show([{
