@@ -2056,6 +2056,10 @@
         font-size: 30px;
     }
 
-
+    .image_info_sim .tooltype{
+        width: 20px;
+        height: 20px;
+        border-width: 3px;
+    }
 
 }

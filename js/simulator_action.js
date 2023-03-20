@@ -12,7 +12,8 @@ $(() => {
 	});
 
 
-	$(".image_info_sim img").on("click", function(e){
+	$(".simulator_action_debug .image_info_sim img").on("click", function(e){
+		$('.simulator_point-form').trigger("reset"); //Line1
 		let box = $(this);
 		let offset = box.offset();
 		let x = e.pageX - offset.left - 22.5
