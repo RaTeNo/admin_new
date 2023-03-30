@@ -802,6 +802,15 @@ $(() => {
 		$(this).toggleClass('active')
 	})
 
+    // Показать контент 
+	$(".hide-content").hide();
+	$(".link-more").click(function(e) {
+		e.preventDefault();
+		$(this).next(".hide-content").slideToggle();
+		$(".link-more").addClass("active");
+	});
+
+
 	// Кнопка 'Вверх'
 	$('body').on('click', '.buttonUp button', function(e) {
 		e.preventDefault()

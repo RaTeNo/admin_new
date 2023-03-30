@@ -1752,5 +1752,46 @@
     }
 
 
+    .podcasts_item-right {
+        width: 100%;
+        padding-top: 20px;
+        position: relative;
+    }
+    .podcasts_item-right:after {
+        position: absolute;
+        content: "";
+        width: calc(100% + 52px);
+        height: 1px;
+        background: #D0D0D0;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+    }
+    .podcasts_item-left {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .podcasts_item {
+        flex-direction: column;
+    }
+    .podcasts_item-desc {
+        flex-wrap: wrap;
+    }
+    .photo-downloading .prompt_text br {
+        display: none;
+    }
+
+    .photo-downloading_btns {
+        flex-direction: column;
+    }
+    .photo-downloading_btn:nth-child(1) {
+        margin-right: 0px;
+        margin-bottom: 5px;
+    }
+    .photo-downloading_box .photo-downloading_head {
+        width: calc(100% - 270px);
+    }
+
+
 
 }
