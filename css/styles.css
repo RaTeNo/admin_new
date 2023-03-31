@@ -19849,6 +19849,7 @@ button.copy span{
     line-height: 16px;
     color: #273179;
     opacity: 0.53;
+
 }
 
 .step-simulator_items {
@@ -19876,6 +19877,20 @@ button.copy span{
     height: 163px;
     border-radius: 11px;
 }
+
+.step-simulator_img_bg:after{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #000;
+    opacity: 0.3;
+    position: absolute;
+    left:0;
+    top:0;
+    content:"";
+    z-index: 0;
+}
+
 .step-simulator_img .icon {
     position: absolute;
     top: 50%;
@@ -19883,6 +19898,7 @@ button.copy span{
     transform: translate(-50%, -50%);
     width: 48px;
     height: 48px;
+    z-index: 1;
 }
 .step-simulator_img img {
     width: 100%;
@@ -19891,19 +19907,16 @@ button.copy span{
     object-fit: cover;
     display: block;
 }
-.step-simulator_item:nth-child(7) .icon {
+.step-simulator_item.modal_btn .icon {
     width: 63px;
     height: 63px;
     display: block;
     margin: 0 auto;
 }
-.step-simulator_item:nth-child(3) .step-simulator_img {
+.step-simulator_item.step-simulator_item_bg_main .step-simulator_img {
     background: var(--main_color);
 }
-.step-simulator_item:nth-child(4) .step-simulator_img {
-    background: #EBE9F8;
-}
-.step-simulator_item:nth-child(5) .step-simulator_img {
+.step-simulator_item.step-simulator_item_bg_gray .step-simulator_img {
     background: #EBE9F8;
 }
 .step-simulator_label {
@@ -19952,7 +19965,7 @@ button.step-simulator_item span {
     border-radius: 50%;
     background: var(--main_color);
     font-weight: 900;
-    font-size: 22px;
+    font-size: 15px;
     line-height: 41px;
     text-align: center;
     letter-spacing: -0.3px;
@@ -19984,6 +19997,7 @@ button.step-simulator_item span {
     overflow: hidden;
     text-overflow: ellipsis;
     margin-right: 68px;
+    height: 33px;
 }
 .step-simulator_desc {
     font-weight: 500;
@@ -21306,6 +21320,7 @@ form .form_btns input[type=file] + label,
 .photo-downloading_btns {
     display: flex;
     align-items: center;
+    align-items: stretch;
 }
 .photo-downloading_btn {
     display: flex;
@@ -21315,6 +21330,7 @@ form .form_btns input[type=file] + label,
     background: #DFDDF0;
     border-radius: 10px;
     max-width: 259px;
+    min-width: 259px;
 }
 .photo-downloading_btn-title {
     font-weight: 700;

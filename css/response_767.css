@@ -2190,6 +2190,10 @@
         margin-top: 10px;
         flex-direction: row;
     }
+    .photo-downloading_btn{
+        width: 50%;
+        min-width: auto;
+    }
     .photo-downloading_btn:nth-child(1) {
         margin-right: 5px;
         margin-bottom: 0px;
