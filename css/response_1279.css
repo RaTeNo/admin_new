@@ -1792,6 +1792,8 @@
         width: calc(100% - 270px);
     }
 
-
+    .player_fixed{
+        margin-left: -24px !important;
+    }
 
 }

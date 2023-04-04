@@ -338,6 +338,8 @@ $(() => {
 		[].forEach.call(document.querySelectorAll('audio[controls]'), function (media) {
 			player = media.player = new MediaPlayer(media, {
 				svgs: {
+					mute: 'images/sprite.svg#ic_mute',
+					unmute: 'images/sprite.svg#ic_mute',
 					play: 'images/sprite.svg#ic_play',
 					pause: 'images/sprite.svg#ic_pause',
 				},

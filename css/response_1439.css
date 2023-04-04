@@ -946,4 +946,8 @@
         margin-right: 60px;
     }
 
+    .player_fixed{
+        margin-left: -32px !important;
+    }
+
 }

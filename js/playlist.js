@@ -1,8 +1,11 @@
 $(document).ready(function() {
-    var media = document.querySelector('audio, video');
+    var media = document.querySelector('.player_fixed audio, video');
 
     $(".podcast_play").on("click", function (event) {
         event.preventDefault();        
+        $(".podcast_play").removeClass("last");
+        $(".player_title").text($(this).data("title"));
+        $(".player_desc").text($(this).data("cat"));
         if($(this).hasClass("active"))
         {
             $(this).removeClass("active");
@@ -25,6 +28,16 @@ $(document).ready(function() {
             }            
             $(".player_fixed").show();
         }
+    });
+
+
+    media.addEventListener('pause', function () {
+
+        $(".podcast_play.active").removeClass("active").addClass("last");
+    });
+
+    media.addEventListener('play', function () {
+        $(".podcast_play.last").addClass("active");
     });
 
     /*media.addEventListener('ended', function () {

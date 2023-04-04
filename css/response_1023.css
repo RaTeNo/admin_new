@@ -407,10 +407,7 @@
         width: calc(100%/3 - 16px);
     }
 
-
-
-
-
-
-
+    .player_fixed{
+        width: 100% !important;
+    }
 }

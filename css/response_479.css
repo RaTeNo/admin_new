@@ -1217,6 +1217,19 @@
     }
 
 
+    .player_fixed{
+        margin-left: -22px !important;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .player_fixed .audio_media .media-mute, .player_fixed .audio_media .media-volume{
+        display: none;
+    }
+
+    .player_fixed .audio_media .media-text{
+        margin-right: 9px;
+    }
 
 
 }
