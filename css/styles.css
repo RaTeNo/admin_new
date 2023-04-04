@@ -21383,6 +21383,8 @@ form .form_btns input[type=file] + label,
     border-radius: 50%;
     background: var(--main_color);
     margin-right: 10px;
+    width: 33px;
+    height: 33px;
 }
 
 .podcast_play svg, .podcast_play_video svg{
