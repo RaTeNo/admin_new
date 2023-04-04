@@ -21379,3 +21379,44 @@ form .form_btns input[type=file] + label,
 .photo-downloading .comments .comment {
     justify-content: flex-start;
 }
+.podcast_play{
+    border-radius: 50%;
+    background: var(--main_color);
+    margin-right: 10px;
+}
+
+.podcast_play svg{
+    color: #fff;
+    display: flex;
+    width: 33px;
+    height: 33px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.podcast_play.active svg.play{
+    display: none;
+}
+
+.podcast_play:not(.active) svg.pause{
+    display: none;
+}
+
+.podcast_play.active svg.pause{
+    display: flex;
+}
+
+.player_fixed{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    margin: 0 !important;
+    background: #fff;
+    margin-left: -40px !important;
+    padding: 10px;
+    width: calc(100% - 296px) !important;
+}
