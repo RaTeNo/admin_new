@@ -2099,7 +2099,7 @@
         font-size: 16px;
     }
     .podcasts_item-text {
-        font-size: 12px;
+        font-size: 13px;
         line-height: 14px;
     }
     .podcasts_item-col {
@@ -2134,6 +2134,7 @@
     }
     .podcasts_item-date {
         white-space: normal;
+        font-size: 13px
     }
     .block-head_title {
         font-size: 26px;

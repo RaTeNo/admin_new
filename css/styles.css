@@ -20688,7 +20688,6 @@ background: var(--main_color);
     margin-bottom: 13px;
 }
 .podcasts_item-col {
-    font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     color: #273179;
@@ -20710,7 +20709,6 @@ background: var(--main_color);
     right: -2px;
 }
 .podcasts_item-date {
-    font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     color: #273179;
