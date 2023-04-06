@@ -2205,8 +2205,32 @@
     .photo-downloading_box .page_title {
         margin-bottom: 10px;
     }
-  
+    
+    .data_with_sidebar{
+        flex-direction: column;
+    }
 
+    .data_with_sidebar .steps{
+        width: 100%;
+    }
+
+    .data_with_sidebar .steps .inner_steps{
+        display: flex;
+    }
+
+    .data_with_sidebar .steps .step{
+        min-width: 240px;
+    }
+
+    .data_with_sidebar .steps .step + .step{
+        margin-top: 0;
+        margin-left: 15px;
+    }
+
+    .data_with_sidebar .steps .inner_steps{
+        padding-right: 0;
+        padding-bottom: 8px;
+    }
 
 
 }
