@@ -19871,11 +19871,14 @@ button.copy span{
     padding: 14px;
     background: #FFFFFF;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
 }
 .step-simulator_img {
     position: relative;
     height: 163px;
     border-radius: 11px;
+    flex-shrink: 0;
 }
 
 .step-simulator_img_bg:after{
@@ -19937,6 +19940,7 @@ button.step-simulator_item {
     background: #EAE8F9;
     border: 1px solid #D8D7F5;
     border-radius: 15px;    
+    align-items: center;
 }
 button.step-simulator_item span {
     font-weight: 700;
@@ -19951,11 +19955,14 @@ button.step-simulator_item span {
 .step-simulator_info {
     position: relative;
     margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 .step-simulator_info:before {
     position: absolute;
     font-family: "Inter";
-    top: 14px;
+    top: 0px;
     right: 0px;
     width: 41px;
     height: 41px;
@@ -19982,7 +19989,7 @@ button.step-simulator_item span {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 15px;
+    margin-top: auto;
 }
 .step-simulator_text {
     font-weight: 500;
@@ -19991,13 +19998,8 @@ button.step-simulator_item span {
     letter-spacing: -0.3px;
     color: #292B4B;
     margin-top: 7px;
-    -webkit-line-clamp: 3;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
     margin-right: 68px;
-    height: 33px;
+    margin-bottom: 15px;
 }
 .step-simulator_desc {
     font-weight: 500;
