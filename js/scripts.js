@@ -897,6 +897,7 @@ $(window).on('load', () => {
 		setHeight2($(this));
 	})
 
+    setHeight($(".photo-downloading_btn"));
 
 	
 
@@ -1043,3 +1044,5 @@ function startTimer() {
   }, 1000);
   setTimeout(() => { $(".resend").hide(); $(".resend_link").show(); clearInterval(timerInterval); }, 10000);
 }
+
+

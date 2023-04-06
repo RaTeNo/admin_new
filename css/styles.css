@@ -19959,21 +19959,21 @@ button.step-simulator_item span {
     flex-direction: column;
     height: 100%;
 }
-.step-simulator_info:before {
+.step-simulator_bottom:before {
     position: absolute;
     font-family: "Inter";
     top: 0px;
     right: 0px;
-    width: 41px;
-    height: 41px;
+    width: 24px;
+    height: 24px;
     content: counters(step, '') '';
     counter-increment: step;
     text-align: center;
     border-radius: 50%;
     background: var(--main_color);
     font-weight: 900;
-    font-size: 15px;
-    line-height: 41px;
+    font-size: 13px;
+    line-height: 24px;
     text-align: center;
     letter-spacing: -0.3px;
     color: #FFFFFF;
@@ -19990,6 +19990,7 @@ button.step-simulator_item span {
     align-items: center;
     justify-content: space-between;
     margin-top: auto;
+    position: relative;
 }
 .step-simulator_text {
     font-weight: 500;
@@ -19998,7 +19999,6 @@ button.step-simulator_item span {
     letter-spacing: -0.3px;
     color: #292B4B;
     margin-top: 7px;
-    margin-right: 68px;
     margin-bottom: 15px;
 }
 .step-simulator_desc {
@@ -20024,6 +20024,7 @@ button.step-simulator_item span {
     display: flex;
     align-items: center;
     text-decoration: none;
+    margin-right: 50px;
 }
 .step-simulator_comment span {    
     display: block;
