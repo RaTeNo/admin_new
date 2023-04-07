@@ -2236,4 +2236,9 @@
         flex-wrap: wrap;
     }
 
+    .winner_time a{
+        position: relative;
+        margin-bottom: 20px;
+    }
+
 }
