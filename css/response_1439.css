@@ -950,4 +950,9 @@
         margin-left: -32px !important;
     }
 
+
+    .bank .banks_item:nth-child(1) {
+        max-width: 270px;
+    }
+
 }

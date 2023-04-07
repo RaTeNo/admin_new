@@ -855,6 +855,20 @@ $(() => {
 
 
 
+$(".receiving-opinions button").click(function() { 
+    if ($(this).text() == "Открыть прием мнений") { 
+        $(this).text("Закрыть прием мнений"); 
+    } else { 
+        $(this).text("Открыть прием мнений"); 
+    }; 
+});
+
+
+$('.receiving-opinions button').on("click", function(){
+	$('.receiving-opinions .icon').toggle(); 
+});
+
+
 $(window).on('load', () => {
 	// Выравнивание элементов в сетке
 	$('.courses .row').each(function () {
