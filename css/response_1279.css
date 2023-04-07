@@ -1754,12 +1754,12 @@
 
     .podcasts_item-right {
         width: 100%;
-        padding-top: 20px;
+        /*padding-top: 20px;*/
         position: relative;
     }
     .podcasts_item-right:after {
         position: absolute;
-        content: "";
+        /*content: "";*/
         width: calc(100% + 52px);
         height: 1px;
         background: #D0D0D0;
