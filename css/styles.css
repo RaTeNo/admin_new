@@ -17419,12 +17419,21 @@ background: #64C841;
     padding-bottom: 15px;
     margin-bottom: 12px;
 }
-.trainer_item-info:before {
+/*.trainer_item-info:before {
     position: absolute;
     content: "";
     width: calc(100% + 24px);
     height: 1px;
     bottom: 0px;
+    left: -12px;
+    background: #EAEAEA;    
+}*/
+.trainer_item-links:before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 24px);
+    height: 1px;
+    top: -12px;
     left: -12px;
     background: #EAEAEA;    
 }
@@ -17466,6 +17475,7 @@ background: #64C841;
     align-items: center;
     justify-content: space-between;
     margin-top: auto;
+    position: relative;
 }
 .trainer_item-link-left {
     display: flex;

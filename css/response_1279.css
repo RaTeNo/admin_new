@@ -250,7 +250,7 @@
 
     .courses .row > *
     {
-        display: inline-block;
+        /*display: inline-block;*/
 
         width: 264px;
         max-width: none;
