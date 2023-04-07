@@ -21693,7 +21693,6 @@ form .form_btns input[type=file] + label,
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    flex-wrap: wrap;
     background: #FFFFFF;
     border-radius: 15px;
     margin-bottom: 15px;
@@ -21706,9 +21705,8 @@ form .form_btns input[type=file] + label,
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border-right: 1px solid #E1E1E1;
-    padding: 18px 80px 28px 20px;
+    justify-content: flex-start;
+    padding: 18px 20px 28px 20px;
 }
 .banks_item:last-child {
     border-right: none;
@@ -21716,10 +21714,10 @@ form .form_btns input[type=file] + label,
 .banks_item .banks_item-icon svg {
     width: 24px;
     height: 24px;
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+}
+
+.banks_item .banks_item-icon {
+    margin-left: 10px;
 }
 .banks_item-title {
     font-weight: 700;
@@ -21727,6 +21725,7 @@ form .form_btns input[type=file] + label,
     line-height: 19px;
     letter-spacing: -0.3px;
     color: #7874A3;
+    white-space: nowrap;
 }
 .banks_item-text {
     font-weight: 700;
@@ -21735,15 +21734,34 @@ form .form_btns input[type=file] + label,
     letter-spacing: -0.8px;
     color: #292B4B;
 }
-.banks_item:nth-child(1) {
-    max-width: 245px;
-    width: 100%;
-    align-items: flex-start;
-    padding: 18px 50px 28px 20px;
+.banks_item-text.nw{
+    white-space: nowrap;
 }
+.banks_item:nth-child(1) {
+    align-items: flex-start;
+    padding: 18px 20px 28px 20px;
+}
+.banks_item:nth-child(1){
+    width: 20%;
+}
+.banks_item:nth-child(1){
+    width: 15%;
+}
+.banks_item:nth-child(1){
+    width: 15%;
+}
+.banks_item:nth-child(1){
+    width: 15%;
+}
+.banks_item:nth-child(1){
+    width: 20%;
+}
+.banks_item:nth-child(1)
+{
+    width: 15%;
+}
+
 .banks_item:nth-child(5) {
-    max-width: 298px;
-    width: 100%;
     align-items: flex-start;
 }
 .banks_item:nth-child(1) .banks_item-title {
@@ -21751,6 +21769,7 @@ form .form_btns input[type=file] + label,
 }
 .banks_item:nth-child(1) .banks_item-text {
     text-align: start;
+    display: flex;
 }
 .banks_item a {
     text-decoration: none;
@@ -21768,7 +21787,7 @@ form .form_btns input[type=file] + label,
 
 
 .bank .banks_item:nth-child(1) {
-    max-width: 640px;
+    flex-grow: 2;
 }
 
 
@@ -21793,3 +21812,4 @@ form .form_btns input[type=file] + label,
     line-height: 16px;
     color: #FFFFFF;   
 }
+

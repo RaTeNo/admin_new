@@ -2232,6 +2232,8 @@
         padding-right: 0;
         padding-bottom: 8px;
     }
-
+    .banks_items{
+        flex-wrap: wrap;
+    }
 
 }
