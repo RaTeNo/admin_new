@@ -2249,6 +2249,8 @@ aside .menu .sub_menu a.active
     width: calc(33.333% - 30px);
     margin-bottom: 30px;
     margin-left: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -17463,6 +17465,7 @@ background: #64C841;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: auto;
 }
 .trainer_item-link-left {
     display: flex;
