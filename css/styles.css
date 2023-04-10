@@ -19543,7 +19543,9 @@ button.copy span{
 @media print, (min-width: 1023px)
 {
     .dialog .data .video_player{
-        max-height: 900px;
+        /*max-height: 900px;*/
+        padding: 0 25px;
+        margin-top: 20px;
     }
 
     aside {
@@ -21521,10 +21523,13 @@ form .form_btns input[type=file] + label,
     color: #37306F;
 }
 .trainer_item-info button {
-    position: absolute;
+    /*position: absolute;
     right: 0;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%);*/
+    position: absolute;
+    right: 0;
+    bottom: 10px;
 }
 .trainer_item-info button .icon {
     width: 30px;

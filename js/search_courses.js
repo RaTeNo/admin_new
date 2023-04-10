@@ -17,7 +17,7 @@ $(() => {
         	$(".courses").show();
 	        $(".title_courses_result").show();	
 
-	        let	list2 = $(".courses:not(.not_my) .course .name")
+	        let	list2 = $(".courses:not(.not_my) .course.if_search .name")
 	        list2.each(function(index) {	
 			    let label = $(this).data("search");
 

@@ -1260,6 +1260,10 @@
     .bank .banks_item:nth-child(1) {
         max-width: 100%;
     }
+   
 
+    .photo-downloading_btn:nth-child(2){
+        justify-content: flex-end;
+    }
 
 }

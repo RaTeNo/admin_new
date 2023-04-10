@@ -410,4 +410,41 @@
     .player_fixed{
         width: 100% !important;
     }
+
+     .data_with_sidebar{
+        flex-direction: column;
+    }
+
+    .data_with_sidebar .steps{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .data_with_sidebar .steps .inner_steps{
+        display: flex;
+    }
+
+    .data_with_sidebar .steps .step{
+        min-width: 240px;
+    }
+
+    .data_with_sidebar .steps .step + .step{
+        margin-top: 0;
+        margin-left: 15px;
+    }
+
+    .data_with_sidebar .steps .inner_steps{
+        padding-right: 0;
+        padding-bottom: 8px;
+    }
+     .step_title{
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .data_with_sidebar .steps .step {
+        min-width: auto;
+    }
 }
