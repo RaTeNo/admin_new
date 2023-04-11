@@ -2292,15 +2292,10 @@ aside .menu .sub_menu a.active
 */
 .courses .course .stickers
 {
-    position: absolute;
-    z-index: 3;
-    top: 20px;
-    left: 20px;
-
+   
     display: flex;
 
-    width: calc(100% - 20px);
-    margin-bottom: -10px;
+    width: calc(100%);
     margin-left: -10px;
 
     pointer-events: none;

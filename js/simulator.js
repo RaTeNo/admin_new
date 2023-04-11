@@ -1,6 +1,6 @@
 $(document).ready(function() {
     setTimeout(() => {
-        if($(window).width()>768)
+        if($(window).width()>1023)
         {
             const elHeight = $(".data_with_sidebar .data").outerHeight();
             $(".data_with_sidebar .steps").outerHeight(elHeight);
