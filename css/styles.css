@@ -17473,25 +17473,6 @@ background: #64C841;
     position: relative;
 }
 
-.trainer_item{	
-    container-type: inline-size;
-  	container-name: simulator;
-}
-
-@container simulator (max-width: 285px) {
-    .trainer_item-links {
-        flex-wrap: wrap;
-    }
-
-    .trainer_item-btn{
-    	margin-top: 5px;
-    	min-width: 90px;
-    }
-
-    .trainer_item-btn-study{
-    	margin-top: 0;
-    }
-}
 
 
 .trainer_item-link-left {
@@ -21863,3 +21844,25 @@ form .form_btns input[type=file] + label,
     color: #FFFFFF;   
 }
 
+
+
+.trainer_item{	
+    container-type: inline-size;
+  	container-name: simulator;
+}
+
+@container simulator (max-width: 285px) {
+    .trainer_item-links {
+        flex-wrap: wrap;
+    }
+
+    .trainer_item-btn{
+    	margin-top: 5px;
+    	min-width: 90px;
+    	justify-content: center;
+    }
+
+    .trainer_item-btn-study{
+    	margin-top: 0;
+    }
+}
