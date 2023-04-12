@@ -1266,4 +1266,18 @@
         justify-content: flex-end;
     }
 
+    .read-more__item{
+        flex-direction: column;
+    }
+
+    .read-more__item img{
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .read-more__button{
+        margin-top: 15px;
+        margin-left: 0;
+    }
+
 }
