@@ -17472,6 +17472,28 @@ background: #64C841;
     margin-top: auto;
     position: relative;
 }
+
+.trainer_item{	
+    container-type: inline-size;
+  	container-name: simulator;
+}
+
+@container simulator (max-width: 285px) {
+    .trainer_item-links {
+        flex-wrap: wrap;
+    }
+
+    .trainer_item-btn{
+    	margin-top: 5px;
+    	min-width: 90px;
+    }
+
+    .trainer_item-btn-study{
+    	margin-top: 0;
+    }
+}
+
+
 .trainer_item-link-left {
     display: flex;
     align-items: center;
