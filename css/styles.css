@@ -20126,12 +20126,22 @@ button.step-simulator_item span {
 
 .image_info_sim .tooltype
 {
-	border: 5px solid #FFFFFF;
+border: 5px solid #FFFFFF;
     width: 45px;
     height: 45px;
     border-radius: 50%;
     position: relative;
     cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.image_info_sim .tooltype.bg{
+        color: #fff;
+    background: var(--main_color);
+    line-height: 35px;
+    font-weight: bold;
 }
 /*
 .image_info_sim .tooltype:after{
@@ -21569,6 +21579,7 @@ form .form_btns input[type=file] + label,
     display: flex;
     align-items: center;
     margin-left: auto;
+    width: 100%;
 }
 .trainer_modal2 {
     padding: 20px 15px 16px;
@@ -21948,4 +21959,160 @@ form .form_btns input[type=file] + label,
     padding: 10px 20px;
     border-radius: 37px;
     margin-left: 10px;
+}
+
+.mla{
+    margin-right: auto;
+}
+
+.simulator_point-form .line.select {
+    position: relative;
+    width: 88px;
+    margin-bottom: 10px;
+}
+
+.simulator_point-form .line.select .nice-select {
+    position: relative;
+    display: block;
+    order: 2;
+}
+
+
+.simulator_point-form .line.select .nice-select .current
+{
+    color: var(--form_placeholder_color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 42px;
+
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    height: 44px;
+    padding: 0 39px 0 14px;
+
+    cursor: pointer;
+    transition: .2s linear;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    border: 1px solid var(--form_border_color);
+    border-radius: var(--form_border_radius);
+    background: var(--form_bg_color);
+}
+
+.simulator_point-form .line.select .nice-select.open .current
+{
+    border-color: var(--form_focus_color);
+}
+
+.simulator_point-form .line.select .nice-select .current.selected
+{
+    color: var(--text_color);
+}
+
+
+.simulator_point-form .line.select .nice-select .list
+{
+    position: absolute;
+    z-index: 9;
+    top: calc(100% + 30px);
+    left: 0;
+
+    visibility: hidden;
+    overflow: hidden;
+
+    min-width: 100%;
+
+    transition: .2s linear;
+
+    opacity: 0;
+    border: 1px solid var(--form_border_color);
+    border-radius: 11px;
+    background: #fff;
+}
+
+.simulator_point-form .line.select .nice-select.open .list
+{
+    top: calc(100% + 10px);
+
+    visibility: visible;
+
+    opacity: 1;
+}
+
+
+.simulator_point-form .line.select .nice-select .list .scrollbar
+{
+    overflow: auto;
+
+    max-height: 240px;
+    padding: 10px 0;
+}
+
+.simulator_point-form .line.select .nice-select .list .scrollbar::-webkit-scrollbar
+{
+    width: 5px;
+    height: 5px;
+}
+
+
+.simulator_point-form .line.select .nice-select .list .list_item
+{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+
+    padding: 10px 14px;
+
+    cursor: pointer;
+    transition: background .2s linear;
+}
+
+.simulator_point-form .line.select .nice-select .list .list_item:empty
+{
+    display: none;
+}
+
+.simulator_point-form .line.select .nice-select .list .list_item:hover,
+.simulator_point-form .line.select .nice-select .list .list_item.selected
+{
+    background: #eeeffc;
+        color: black;
+}
+
+
+.simulator_point-form .line.select .nice-select ~ .arrow
+{
+    color: #020027;
+
+    position: absolute;
+    z-index: 9;
+    top: 18px;
+    right: 15px;
+
+    display: block;
+
+    width: 11px;
+    height: 7px;
+
+    transition: .2s linear;
+    pointer-events: none;
+
+    opacity: .5;
+}
+
+.simulator_point-form .line.select .nice-select.open ~ .arrow
+{
+    color: var(--main_color);
+
+    transform: rotate(180deg);
+}
+
+
+.simulator_point-form .line.select .nice-select.open ~ .label
+{
+    color: var(--form_focus_color);
 }

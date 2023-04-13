@@ -2070,6 +2070,7 @@
         width: 20px;
         height: 20px;
         border-width: 3px;
+        text-indent: -9999px;
     }
 
 
