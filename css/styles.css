@@ -19880,6 +19880,8 @@ button.copy span{
 
 }
 
+
+
 .step-simulator_items {
     counter-reset: step;
     display: flex;
@@ -19893,6 +19895,7 @@ button.copy span{
     width: calc(100%/4 - 16px);
     margin-left: 16px;
     margin-bottom: 22px;
+    
 }
 .step-simulator_item {
     position: relative;
@@ -19963,6 +19966,25 @@ button.copy span{
     text-align: center;
     color: #FFFFFF;
 }
+
+
+/* (B) DRAG-AND-DROP HINT */
+.step-simulator_items .step-simulator_item.hint {
+  border: 1px solid #ffc49a;
+  background: #feffb4;
+}
+.step-simulator_items .step-simulator_item.active {
+  border: 1px solid #ffa5a5;
+  background: #ffe7e7;
+}
+
+.ui-state-highlight {}
+.ui-sortable-handle{
+    cursor: grab;
+}
+
+
+
 button.step-simulator_item {
     padding: 80px 0;
     background: #EAE8F9;

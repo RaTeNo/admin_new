@@ -328,11 +328,11 @@
 								
 								<section class="step-simulator">
 									<div class="step-simulator_head">
-										<div class="step-simulator_title">Этапы симулятора</div>
+										<div class="step-simulator_title">Этапы симулятора <a href="" class="sort_step">Включить сортировку</a></div>
 										<div class="step-simulator_texts">Вы можете посмотреть каждый шаг симулятора и обсудить их со своими коллегами</div>
 									</div>
-									<div class="step-simulator_items">
-										<div class="step-simulator_item">
+									<div class="step-simulator_items ui-state-default-zone" id="sortlist">
+										<div class="step-simulator_item ui-state-default">
 											<div class="step-simulator_img">
 												<img src="images/step1.jpg" alt="">
 											</div>	
@@ -348,7 +348,7 @@
 												</div>	
 											</div>											
 										</div>
-										<div class="step-simulator_item">
+										<div class="step-simulator_item ui-state-default">
 											<div class="step-simulator_img step-simulator_img_bg">
 												<img src="images/step2.jpg" alt="">
 												<svg class="icon">
@@ -367,7 +367,7 @@
 												</div>	
 											</div>											
 										</div>
-										<div class="step-simulator_item step-simulator_item_bg_main">
+										<div class="step-simulator_item step-simulator_item_bg_main ui-state-default">
 											<div class="step-simulator_img">
 												<svg class="icon">
 													<use xlink:href="images/sprite.svg#step3"></use>
@@ -385,7 +385,7 @@
 												</div>	
 											</div>											
 										</div>
-										<div class="step-simulator_item step-simulator_item_bg_gray">
+										<div class="step-simulator_item step-simulator_item_bg_gray ui-state-default">
 											<div class="step-simulator_img">
 												<svg class="icon">
 													<use xlink:href="images/sprite.svg#step4"></use>
@@ -404,7 +404,7 @@
 												</div>	
 											</div>											
 										</div>
-										<div class="step-simulator_item step-simulator_item_bg_gray">
+										<div class="step-simulator_item step-simulator_item_bg_gray ui-state-default">
 											<div class="step-simulator_img">
 												<svg class="icon">
 													<use xlink:href="images/sprite.svg#step2"></use>
@@ -423,7 +423,7 @@
 												</div>	
 											</div>											
 										</div>
-										<div class="step-simulator_item">
+										<div class="step-simulator_item ui-state-default">
 											<div class="step-simulator_img">
 												<img src="images/step1.jpg" alt="">												
 											</div>	
@@ -628,5 +628,87 @@
 		<script src="js/file.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
+
+		<!-- <script>
+			function slist (target) {
+			  // (A) SET CSS + GET ALL LIST ITEMS
+			  target.classList.add("slist");
+			  let items = target.querySelectorAll(".step-simulator_item"), current = null;
+
+			  // (B) MAKE ITEMS ui-state-default + SORTABLE
+			  for (let i of items) {
+			    // (B1) ATTACH ui-state-default
+			    i.ui-state-default = true;
+
+			    // (B2) DRAG START - YELLOW HIGHLIGHT DROPZONES
+			    i.ondragstart = e => {
+			      current = i;
+			      for (let it of items) {
+			        if (it != current) { it.classList.add("hint"); }
+			      }
+			    };
+
+			    // (B3) DRAG ENTER - RED HIGHLIGHT DROPZONE
+			    i.ondragenter = e => {
+			      if (i != current) { i.classList.add("active"); }
+			    };
+
+			    // (B4) DRAG LEAVE - REMOVE RED HIGHLIGHT
+			    i.ondragleave = () => i.classList.remove("active");
+
+			    // (B5) DRAG END - REMOVE ALL HIGHLIGHTS
+			    i.ondragend = () => { for (let it of items) {
+			      it.classList.remove("hint");
+			      it.classList.remove("active");
+			    }};
+
+			    // (B6) DRAG OVER - PREVENT THE DEFAULT "DROP", SO WE CAN DO OUR OWN
+			    i.ondragover = e => e.preventDefault();
+
+			    // (B7) ON DROP - DO SOMETHING
+			    i.ondrop = e => {
+			      e.preventDefault();
+			      if (i != current) {
+			        let currentpos = 0, droppedpos = 0;
+			        for (let it=0; it<items.length; it++) {
+			          if (current == items[it]) { currentpos = it; }
+			          if (i == items[it]) { droppedpos = it; }
+			        }
+			        if (currentpos < droppedpos) {
+			          i.parentNode.insertBefore(current, i.nextSibling);
+			        } else {
+			          i.parentNode.insertBefore(current, i);
+			        }
+			      }
+			    };
+			  }
+			}
+
+			slist(document.getElementById("sortlist"));
+		</script>	 -->
+
+		<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+		<script>
+			$(".sort_step").on("click", function (event) {
+				event.preventDefault(); 
+				if($(this).hasClass("active"))
+				{
+					$(this).text("Включить сортировку");
+					$(this).removeClass("active");
+					$( "#sortlist" ).sortable( "destroy" );
+				}
+				else
+				{
+					$(this).text("Отключить сортировку");
+					$(this).addClass("active");
+					$( "#sortlist" ).sortable({
+				      placeholder: "ui-state-highlight"
+				    });
+					$( "#sortlist" ).disableSelection();
+				}
+			});
+			
+		</script>
 	</body>
 </html>
