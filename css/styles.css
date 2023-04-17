@@ -19967,24 +19967,6 @@ button.copy span{
     color: #FFFFFF;
 }
 
-
-/* (B) DRAG-AND-DROP HINT */
-.step-simulator_items .step-simulator_item.hint {
-  border: 1px solid #ffc49a;
-  background: #feffb4;
-}
-.step-simulator_items .step-simulator_item.active {
-  border: 1px solid #ffa5a5;
-  background: #ffe7e7;
-}
-
-.ui-state-highlight {}
-.ui-sortable-handle{
-    cursor: grab;
-}
-
-
-
 button.step-simulator_item {
     padding: 80px 0;
     background: #EAE8F9;
@@ -22137,4 +22119,20 @@ form .form_btns input[type=file] + label,
 .simulator_point-form .line.select .nice-select.open ~ .label
 {
     color: var(--form_focus_color);
+}
+
+
+
+/* (B) DRAG-AND-DROP HINT */
+/*.step-simulator_items .step-simulator_item.hint {
+  border: 1px solid #ffc49a;
+  background: #feffb4;
+}
+.step-simulator_items .step-simulator_item.active {
+  border: 1px solid #ffa5a5;
+  background: #ffe7e7;
+}*/
+
+.ui-sortable-handle{
+    cursor: grab;
 }
