@@ -9,7 +9,7 @@ $(document).ready(function() {
             if($(".data_with_sidebar .steps").length>0)
             {   
                 
-                    var hash = window.location.hash;
+                    var hash = window.location.hash+"00";
                     if(hash)
                     {
                         var top = $(hash).position().top; // получаем координаты блока
@@ -34,7 +34,7 @@ $(window).on('resize', () => {
         if($(".data_with_sidebar .steps").length>0)
         {   
                 
-                var hash = window.location.hash;
+                var hash = window.location.hash+"00";
                 if(hash)
                 {
                     var top = $(hash).position().top; // получаем координаты блока
