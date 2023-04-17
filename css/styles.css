@@ -21673,7 +21673,7 @@ form .form_btns input[type=file] + label,
     position: relative;
 }
 .data_with_sidebar .steps .inner_steps{
-    overflow-y: auto;
+    overflow-y: scroll;
     height: 100%;
     padding-right: 8px;
 }
