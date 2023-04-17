@@ -19863,6 +19863,23 @@ button.copy span{
 }
 .step-simulator_head {
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sort_step{
+    width: 172px;
+    height: 34px;
+    border-radius: 17px;
+    background: var(--main_color);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 34px;
+    color: #FFFFFF;
+    flex-shrink: 0;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 10px;
 }
 .step-simulator_title {
     font-weight: 700;
