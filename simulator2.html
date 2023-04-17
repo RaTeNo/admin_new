@@ -331,8 +331,8 @@
 										<div class="step-simulator_title">Этапы симулятора <a href="" class="sort_step">Включить сортировку</a></div>
 										<div class="step-simulator_texts">Вы можете посмотреть каждый шаг симулятора и обсудить их со своими коллегами</div>
 									</div>
-									<div class="step-simulator_items ui-state-default-zone" id="sortlist">
-										<div class="step-simulator_item ui-state-default">
+									<div class="step-simulator_items -zone" id="sortlist">
+										<div class="step-simulator_item ">
 											<div class="step-simulator_img">
 												<img src="images/step1.jpg" alt="">
 											</div>	
@@ -348,7 +348,7 @@
 												</div>	
 											</div>											
 										</div>
-										<div class="step-simulator_item ui-state-default">
+										<div class="step-simulator_item ">
 											<div class="step-simulator_img step-simulator_img_bg">
 												<img src="images/step2.jpg" alt="">
 												<svg class="icon">
@@ -367,7 +367,7 @@
 												</div>	
 											</div>											
 										</div>
-										<div class="step-simulator_item step-simulator_item_bg_main ui-state-default">
+										<div class="step-simulator_item step-simulator_item_bg_main ">
 											<div class="step-simulator_img">
 												<svg class="icon">
 													<use xlink:href="images/sprite.svg#step3"></use>
@@ -385,7 +385,7 @@
 												</div>	
 											</div>											
 										</div>
-										<div class="step-simulator_item step-simulator_item_bg_gray ui-state-default">
+										<div class="step-simulator_item step-simulator_item_bg_gray ">
 											<div class="step-simulator_img">
 												<svg class="icon">
 													<use xlink:href="images/sprite.svg#step4"></use>
@@ -404,7 +404,7 @@
 												</div>	
 											</div>											
 										</div>
-										<div class="step-simulator_item step-simulator_item_bg_gray ui-state-default">
+										<div class="step-simulator_item step-simulator_item_bg_gray ">
 											<div class="step-simulator_img">
 												<svg class="icon">
 													<use xlink:href="images/sprite.svg#step2"></use>
@@ -423,7 +423,7 @@
 												</div>	
 											</div>											
 										</div>
-										<div class="step-simulator_item ui-state-default">
+										<div class="step-simulator_item ">
 											<div class="step-simulator_img">
 												<img src="images/step1.jpg" alt="">												
 											</div>	
@@ -635,10 +635,10 @@
 			  target.classList.add("slist");
 			  let items = target.querySelectorAll(".step-simulator_item"), current = null;
 
-			  // (B) MAKE ITEMS ui-state-default + SORTABLE
+			  // (B) MAKE ITEMS  + SORTABLE
 			  for (let i of items) {
-			    // (B1) ATTACH ui-state-default
-			    i.ui-state-default = true;
+			    // (B1) ATTACH 
+			    i. = true;
 
 			    // (B2) DRAG START - YELLOW HIGHLIGHT DROPZONES
 			    i.ondragstart = e => {
