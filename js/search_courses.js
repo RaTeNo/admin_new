@@ -19,9 +19,15 @@ $(() => {
 
 	        let	list2 = $(".courses:not(.not_my) .course.if_search .name")
 	        list2.each(function(index) {	
-			    let label = $(this).data("search");
+			    let label = $(this).data("search");		 
 
-			    let array = value.split(" ");
+			    if (label.toLowerCase().indexOf(value.toLowerCase()) == -1) {
+			        $(this).closest(".course").hide();
+			    } else {
+			        $(this).closest(".course").show().clone().appendTo(".found_course");			        
+			    }
+
+			    /*let array = value.split(" ");
 			    array = array.filter(Boolean);
 			    for(let i=0;i<array.length;i++)
 			    {	    	
@@ -31,7 +37,7 @@ $(() => {
 				        $(this).closest(".course").show().clone().appendTo(".found_course");
 				        break;
 				    }
-			    }	
+			    }*/	
 			});
 
 			$(".courses:not(.not_my)").each(function(index) {

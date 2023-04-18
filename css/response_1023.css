@@ -445,6 +445,7 @@
     }
 
     .data_with_sidebar .steps .step {
-        min-width: auto;
+        min-width: 150px;
+
     }
 }
