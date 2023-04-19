@@ -1193,6 +1193,7 @@
     }
     .photo-downloading_btns {
         flex-direction: column;
+        width: 100%;
     }
     .photo-downloading_btn:nth-child(1) {
         margin-right: 0px;
