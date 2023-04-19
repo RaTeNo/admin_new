@@ -2070,7 +2070,8 @@
         width: 20px;
         height: 20px;
         border-width: 3px;
-        text-indent: -9999px;
+        font-size: 10px;
+        line-height: 16px !important;
     }
 
 
