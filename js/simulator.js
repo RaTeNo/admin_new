@@ -59,16 +59,6 @@ $(window).on('resize', () => {
     }
     else
     {
-        $(".data_with_sidebar .steps").css("height", "auto");
-        if($(".data_with_sidebar .steps").length>0)
-        {                   
-            var hash = window.location.hash+"00";
-            if(hash)
-            {
-                var left = $(hash).position().left ; // получаем координаты блока
-                $('.inner_steps').animate({scrollLeft: left }, 800); // плавно переходим к блоку
-            }
-           
-        }    
+        $(".data_with_sidebar .steps").css("height", "auto");        
     }
 });
