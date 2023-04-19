@@ -422,6 +422,8 @@
 
     .data_with_sidebar .steps .inner_steps{
         display: flex;
+        overflow-x: scroll;
+        overflow-y: auto;
     }
 
     .data_with_sidebar .steps .step{
