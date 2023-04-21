@@ -1418,7 +1418,7 @@ aside .menu .item .icon9 > *
 
 aside .menu .item .icon10 > *
 {
-    height: 13px;
+    height: 35px;
 }
 
 aside .menu .item .icon11 > *
@@ -19629,7 +19629,7 @@ button.copy span{
 
 /* winner */
 .winner {
-    margin-bottom: 118px;
+    /*margin-bottom: 118px;*/
 }
 .winner_text {
     display: flex;
@@ -20522,7 +20522,7 @@ background: var(--main_color);
 
 .podcast-block_item {
     padding: 16px 20px;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #0A00C5;
+    background: var(--color_light);
     border-radius: 15px;
     margin-bottom: 25px;
     display: flex;
@@ -20575,21 +20575,28 @@ background: var(--main_color);
     display: flex;
     align-items: stretch;
     flex-wrap: wrap;
-    margin-left: -15px;
-    margin-bottom: -15px;
+    margin-left: -30px;
+    margin-bottom: -30px;
     margin-top: 20px;
 }
 .podcast-box_items > * {
-    width: calc(100%/3 - 15px);
+    width: calc(100%/3 - 30px);
     min-height: 87px;
-    margin-left: 15px;
-    margin-bottom: 15px;
+    margin-left: 30px;
+    margin-bottom: 30px;
     background: #FFFFFF;
     border-radius: 9px;
     padding: 10px 12px 14px;
     display: flex;
     align-items: center;
     position: relative;
+    box-shadow: 0px 8px 18px rgb(0 0 0 / 19%);
+    position: relative;
+    top: 0;
+    transition: .3s;
+}
+.podcast-box_item:hover{
+    top: -10px;
 }
 .podcast-box_item .icon {
     width: 25px;
@@ -21485,6 +21492,7 @@ form .form_btns input[type=file] + label,
     padding-left: 50px;
     padding-right: 60px;
     padding-bottom: 20px;
+    z-index: 10000;
 }
 
 .player_fixed .audio_media .media-mute{
@@ -22395,4 +22403,58 @@ form .form_btns input[type=file] + label,
 
 .upload_list_item + .upload_list_item{
     border-top: 1px solid #D3D3D3;
+}
+
+.upload_list_item .type{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 11px;
+    display: flex;
+    width: 30px;
+    height: 37px;
+    text-align: center;
+    border: 1.5px solid;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.upload_list_item .type.blue
+{
+    color: #199be2;
+}
+
+.upload_list_item .type.red
+{
+    color: #ff6363;
+}
+
+.upload_list_item .type.green
+{
+    color: #37d723;
+}
+
+.upload_list_item .type.orange
+{
+    color: #fea134;
+}
+
+
+.upload_list_item .type.icon
+{
+    border: none;
+    border-radius: 0;
+}
+
+.upload_list_item .type.icon svg
+{
+    color: currentColor;
+
+    display: block;
+
+    width: 28px;
+    height: 37px;
 }
