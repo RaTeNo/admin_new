@@ -2218,4 +2218,13 @@
         margin-bottom: 20px;
     }
 
+    .upload_list_item_buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .upload_list_item_buttons a + a{
+        margin-left: 0;
+    }
 }
