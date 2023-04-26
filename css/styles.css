@@ -22468,3 +22468,20 @@ form .form_btns input[type=file] + label,
     top: 0;
     right: 0;
 }
+
+.player_fixed_head{
+    display: flex;
+}
+
+.player_fixed_head img{
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 12px;
+}
+
+.player_fixed_info{
+    min-width: 0;
+}

@@ -6,6 +6,8 @@ $(document).ready(function() {
         $(".podcast_play").removeClass("last");
         $(".player_title").text($(this).data("title"));
         $(".player_desc").text($(this).data("cat"));
+        console.log($(this).data("img"));
+        $(".player_fixed_img").attr("src", $(this).data("img"));
         if($(this).hasClass("active"))
         {
             $(this).removeClass("active");
