@@ -17434,7 +17434,7 @@ background: #64C841;
 }
 .trainer_item-name a {
     display: block;
-    margin-top: 12px;
+    margin-top: 20px;
     font-weight: 700;
     font-size: 14px;
     line-height: 14px;
@@ -17443,7 +17443,7 @@ background: #64C841;
     color: #020027;
 }
 .trainer_item-desc {
-    margin-top: 8px;
+    margin-top: 20px;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
@@ -20586,7 +20586,7 @@ background: var(--main_color);
     margin-bottom: 30px;
     background: #FFFFFF;
     border-radius: 9px;
-    padding: 10px 12px 14px;
+    padding: 30px 10px;
     display: flex;
     align-items: center;
     position: relative;
@@ -20609,8 +20609,8 @@ background: var(--main_color);
 }
 .podcast-box_item-title {
     font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 15px;
+    line-height: 18px;
     color: #444B7E;
     margin-bottom: 3px;
 }
@@ -20620,8 +20620,8 @@ background: var(--main_color);
 }
 .podcast-box_item-date {
     font-weight: 500;
-    font-size: 11px;
-    line-height: 13px;
+    font-size: 14px;
+    line-height: 16px;
     color: #273179;
     opacity: 0.53;
     position: relative;
@@ -20641,8 +20641,8 @@ background: var(--main_color);
 }
 .podcast-box_item-text {
     font-weight: 500;
-    font-size: 11px;
-    line-height: 13px;
+    font-size: 14px;
+    line-height: 16px;
     color: #273179;
     opacity: 0.53;
     padding-left: 5px;
@@ -21566,7 +21566,7 @@ form .form_btns input[type=file] + label,
     transform: translateY(-50%);*/
     position: absolute;
     right: 0;
-    bottom: 10px;
+    top: -10px;
 }
 .trainer_item-info button .icon {
     width: 30px;
@@ -22457,4 +22457,14 @@ form .form_btns input[type=file] + label,
 
     width: 28px;
     height: 37px;
+}
+
+.mt20{
+    margin-top: 20px;
+}
+
+.stop_icon{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
