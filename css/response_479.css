@@ -1219,7 +1219,7 @@
 
 
     .player_fixed{
-        margin-left: 0px !important;
+        margin-left: -22px !important;
         padding-left: 20px;
         padding-right: 20px;
     }
