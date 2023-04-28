@@ -1,8 +1,9 @@
 $(document).ready(function() {
     var media = document.querySelector('.player_fixed audio, video');
 
-    $(".podcast_play").on("click", function (event) {
+    $(".podcast_play").on("click", function (event) {        
         event.preventDefault();        
+        $(".telegram_fixed, .buttonUp").hide();
         $(".podcast_play").removeClass("last");
         $(".player_title").text($(this).data("title"));
         $(".player_desc").text($(this).data("cat"));
