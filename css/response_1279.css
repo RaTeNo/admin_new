@@ -232,6 +232,7 @@
 
         scrollbar-color: transparent transparent !important;
         scrollbar-width: thin !important;
+        --courses_count: 6;
     }
 
     .courses .row::-webkit-scrollbar

@@ -17441,6 +17441,7 @@ background: #64C841;
     letter-spacing: -0.3px;
     text-decoration: none;
     color: #020027;
+    margin-right: 35px;
 }
 .trainer_item-desc {
     margin-top: 20px;
@@ -20866,7 +20867,7 @@ background: var(--main_color);
 .link-more {
     text-decoration: none;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 14px;
     color: #178EFF;
     border-bottom: 1px dashed #178EFF;
