@@ -20861,7 +20861,7 @@ background: var(--main_color);
     position: absolute;
 }
 .podcasts_item-right-item-info {
-    width: calc(100% - 82px);
+    width: calc(100% - 120px);
     position: relative;
 }
 .link-more {
@@ -22485,4 +22485,21 @@ form .form_btns input[type=file] + label,
 
 .player_fixed_info{
     min-width: 0;
+}
+
+.training-course_item-bottom{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #A09CBF;
+    border-top: 1px solid #DFDFDF;
+    padding-top: 15px;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.training-course_item-bottom.green{
+    color: #5FC024;
 }
