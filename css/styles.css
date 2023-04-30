@@ -22503,3 +22503,150 @@ form .form_btns input[type=file] + label,
 .training-course_item-bottom.green{
     color: #5FC024;
 }
+
+
+
+/* engagement */
+.engagement .block_top {
+    margin-bottom: 29px;
+}
+.engagement .block_title {
+    margin-bottom: 6px;
+}
+.engagement_items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-bottom: -20px;
+}
+.engagement_items > * {
+    width: calc(100%/2 - 20px);
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 16px;
+}
+.engagement_item-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+.engagement_item-icon {
+    width: 41px;
+    height: 41px;
+    background: rgba(11, 0, 216, 0.15);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.engagement_item-icon .icon {
+    width: 25px;
+    height: 25px;
+}
+.engagement_item-title {
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.3px;
+    color: #101010;   
+    margin-left: 16px;
+}
+.engagement_item-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.engagement_item-left {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.engagement_item-number {
+    font-family: 'Inter';
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.7px;
+    color: #292B4B;   
+}
+.engagement_item-text {
+    margin-left: 19px;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.3px;  
+    display: flex;
+    align-items: center;  
+}
+.engagement_item-text .icon {
+    width: 15px;
+    height: 15px;
+    display: block;
+    margin-right: 5px;
+    flex-shrink: 0;
+}
+.engagement_item-right {
+    background: rgba(120, 116, 163, 0.15);
+    border-radius: 47px;
+    padding: 3px 8px;  
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: #7874A3; 
+    white-space: nowrap; 
+}
+.engagement_item-bottom.green .engagement_item-text {
+    color: #5EC62D;
+}
+.engagement_item-bottom.green .engagement_item-right span {
+    color: #5EC62D;
+}
+.engagement_item-bottom.red .engagement_item-text {
+    color: #C62D2D;
+}
+.engagement_item-bottom.red .engagement_item-right span {
+    color: #FF7A00;
+}
+.engagement-block {
+    margin-top: 18px;
+}
+.engagement-block_items {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-left: -19px;
+    margin-bottom: -18px;
+}
+.engagement-block_items > * {
+    width: calc(100%/5 - 19px);
+    margin-left: 19px;
+    margin-bottom: 18px;
+    padding: 16px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;   
+}
+.engagement-block_item-number {
+    font-family: 'Inter';
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.7px;    
+    color: #292B4B;  
+    margin-right: 10px; 
+}
+.engagement-block_item-text {
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.3px;
+    color: #7874A3;
+}

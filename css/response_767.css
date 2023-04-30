@@ -2223,4 +2223,18 @@
     .upload_list_item_buttons a + a{
         margin-left: 0;
     }
+
+
+    .engagement_items {
+        margin-left: 0;
+    }
+    .engagement_items > * {
+        margin-left: 0;
+        width: 100%;
+    }
+    .engagement-block_items > * {
+        width: calc(100%/2 - 19px);
+    }
+
+
 }

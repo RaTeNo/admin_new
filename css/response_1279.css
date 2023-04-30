@@ -1839,4 +1839,10 @@
     }
 
 
+
+    .engagement-block_items > * {
+        width: calc(100%/4 - 19px);
+    }
+
+
 }

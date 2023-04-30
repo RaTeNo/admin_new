@@ -1284,4 +1284,17 @@
     .sort_step{
         display: none;
     }
+
+
+    .engagement_item-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .engagement_item-left {
+        margin-right: 0;
+        margin-bottom: 19px;
+    }
+
+
+
 }
