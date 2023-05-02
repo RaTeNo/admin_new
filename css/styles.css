@@ -20719,8 +20719,8 @@ background: var(--main_color);
 }
 .podcasts_item-left {
     display: flex;
-    align-items: center;
     text-decoration: none;
+    margin-right: 20px;
 }
 .podcasts_item-img {
     width: 149px;
@@ -20735,7 +20735,7 @@ background: var(--main_color);
 }
 .podcasts_item-info {
     margin-left: 22px;
-    max-width: 420px;
+    width: 360px;
 }
 .podcasts_item-title {
     font-weight: 700;
