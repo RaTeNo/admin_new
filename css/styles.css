@@ -20735,6 +20735,7 @@ background: var(--main_color);
 }
 .podcasts_item-info {
     margin-left: 22px;
+    max-width: 420px;
 }
 .podcasts_item-title {
     font-weight: 700;
@@ -22675,6 +22676,7 @@ form .form_btns input[type=file] + label,
     border-radius: 9px;
     margin-bottom: 16px;
     position: relative;
+    text-decoration: none;
 }
 .plan_item:last-child {
     margin-bottom: 0;
@@ -22729,6 +22731,8 @@ form .form_btns input[type=file] + label,
     font-size: 16px;
     line-height: 18px;
     letter-spacing: -0.3px;   
+    color: var(--text_color);
+    text-decoration: none;
 }
 .plan_item-step {
     font-family: 'Ubuntu';
@@ -22748,4 +22752,21 @@ form .form_btns input[type=file] + label,
 }
 .plan_item:nth-child(4) .plan_item-step {
     color: #9E9CAF;
+}
+
+.wrapper_head_courses_body{
+    margin-left: auto;
+        display: flex;
+}
+
+.wrapper_head_courses .select-right{
+    flex-direction: column;
+}
+
+.wrapper_head_courses .select-right + .select-right{
+    margin-left: 15px;
+}
+
+.wrapper_head_courses .select-right span{
+    margin-bottom: 10px;
 }

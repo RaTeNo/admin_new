@@ -1295,6 +1295,24 @@
         margin-bottom: 19px;
     }
 
+    .wrapper_head_courses{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+    .wrapper_head_courses_body{
+
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+    .select-right span{
+        display: block;
+    }
+
+    .wrapper_head_courses .card_lern{
+        display: none;
+    }
 
 
 }
