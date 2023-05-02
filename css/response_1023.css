@@ -448,6 +448,17 @@
 
     .data_with_sidebar .steps .step {
         min-width: 130px;
-
     }
+
+
+    .plan_item:nth-child(2):before {
+        width: calc(100% - 206px);
+    }
+    .plan_item-title,
+    .plan_item-step {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+
 }
