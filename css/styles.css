@@ -411,6 +411,7 @@ button
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+    flex-grow: 1;
 }
 
 .sub_title{
