@@ -411,6 +411,9 @@ button
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+
+}
+.wrapper_head_courses .page_title{
     flex-grow: 1;
 }
 
