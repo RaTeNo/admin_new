@@ -1082,3 +1082,23 @@ function startTimer() {
 }
 
 
+
+let TIME_LIMIT2 = 10;
+let timePassed2 = 0;
+let timeLeft2 = TIME_LIMIT2;
+startTimer2();
+
+function startTimer2() {
+	let timerInterval = null;
+	timerInterval = setInterval(() => {
+
+		// Количество времени, которое прошло, увеличивается на  1
+		timePassed2 = timePassed2 += 1;
+		timeLeft2 = TIME_LIMIT2 - timePassed2;
+		console.log(timeLeft2);
+		// Обновляем метку оставшегося времени
+		$(".new_load_title span").text(timeLeft2);
+	}, 1000);
+	setTimeout(() => { location.reload(); clearInterval(timerInterval); }, 10000);
+}
+
