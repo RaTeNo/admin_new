@@ -823,8 +823,10 @@ $(() => {
 		});
 	});
 
-
-	$('.js-example-basic-multiple').select2();
+	if($(".js-example-basic-multiple").length>0)
+	{
+		$('.js-example-basic-multiple').select2();
+	}
 
 
 
@@ -855,6 +857,21 @@ $(() => {
 			},
 		});
 	}
+
+
+
+	setTimeout(() => { 
+		$(".gpt_text_load").hide();
+		$(".gtp_complete").show();
+	}, 5000);
+
+	setTimeout(() => { 
+		$(".js-robot").fadeOut(400);
+		setTimeout(() => { 
+			$(".js-robot-answer").fadeIn();
+		}, 400);
+	}, 3000);
+
 
 })
 

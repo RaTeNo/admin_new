@@ -24143,3 +24143,206 @@ form .form_btns input[type=file] + label,
     margin-left: 16px;
     text-align: center;
 }
+
+
+.step_status {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 11px;
+    color: #FFFFFF;
+    border-radius: 59px;
+    display: inline-flex;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+.step_status .icon{
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    color: #fff;
+    display: block;
+}
+
+.step_status.read{
+    background: #44AB20;
+}
+
+.step_status.available{
+    background: #FF5C00;
+}
+
+.lecture_steps .step_status{
+    margin-top: 10px;
+}
+
+.gtp_message{
+    display: flex;
+    width: calc(100% - 65px);
+    margin-top: 15px;
+    margin-left: auto;
+}
+
+.gtp_message_animation{
+    width: 55px;
+    flex-shrink: 0;
+}
+
+.gtp_message_animation i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 -5%;
+    overflow: hidden;
+    margin-top: 6px;
+}
+
+.gtp_message_animation i .dot-flashing {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: var(--main_color);
+    color: #9880ff;
+    animation: dot-flashing 1s infinite linear alternate;
+    animation-delay: 0.5s;
+}
+
+.gtp_message_animation i .dot-flashing::before, .gtp_message_animation i .dot-flashing::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.gtp_message_animation i .dot-flashing::before {
+    left: -15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: var(--main_color);
+    color: #9880ff;
+    animation: dot-flashing 1s infinite alternate;
+    animation-delay: 0s;
+}
+
+.gtp_message_animation i .dot-flashing::after {
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: var(--main_color);
+    color: #9880ff;
+    animation: dot-flashing 1s infinite alternate;
+    animation-delay: 1s;
+}
+
+.gpt_text_load{
+    width: 300px;
+    background: #F2F0FF;
+    padding: 10px;
+    border-radius: 11px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #7D82AB;
+    display: flex;
+}
+
+@keyframes dot-flashing {
+  0% {
+    background-color: var(--main_color);
+  }
+  50%, 100% {
+    background-color: rgba(152, 128, 255, 0.2);
+  }
+}
+
+.gtp_complete_body{
+    display: flex;
+    width: 300px;
+    background: #F2F0FF;
+    padding: 10px;
+    border-radius: 11px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #7D82AB;
+    flex-wrap: wrap;
+}
+.gtp_complete_body img{
+    margin-right: 5px;
+}
+.gtp_complete_body button{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    padding: 9px 22px;
+    transition: color .2s linear;
+    border-radius: 16px;
+    background: var(--main_color);
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+
+.js-robot i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 -5%;
+    margin-top: 8px;
+}
+
+.js-robot i .dot-flashing {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: var(--main_color);
+    color: #9880ff;
+    animation: dot-flashing 1s infinite linear alternate;
+    animation-delay: 0.5s;
+}
+
+.js-robot i .dot-flashing::before, .js-robot i .dot-flashing::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.js-robot i .dot-flashing::before {
+    left: -15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: var(--main_color);
+    color: #9880ff;
+    animation: dot-flashing 1s infinite alternate;
+    animation-delay: 0s;
+}
+
+.js-robot i .dot-flashing::after {
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: var(--main_color);
+    color: #9880ff;
+    animation: dot-flashing 1s infinite alternate;
+    animation-delay: 1s;
+}
+
+.js-robot{
+    display: flex;
+}
+
+.js-robot i{
+    width: 55px;
+    display: block;
+    margin-left: 15px;
+}

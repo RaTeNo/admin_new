@@ -348,6 +348,26 @@
 											</div>
 										</div>
 
+										<div class="message animate__animated animate__fadeInUp">
+											<div class="photo">
+												<img data-src="images/tmp/person_photo.jpg" alt="" class="lozad">
+											</div>
+
+											<div class="info">
+												<div class="name">Василий Иванович</div>
+
+												<div class="text_message">
+													<div class="js-robot">
+														<i><div class="dot-flashing"></div></i>
+														<span>Ответь подготавливается</span>
+													</div>	
+													<div class="js-robot-answer" style="display: none;">
+														Прослушайте аудиосообщение и запишите свой ответПрослушайте аудиосообщение и запишите свой ответ
+													</div>													
+												</div>
+											</div>
+										</div>
+
 										<div class="message animate__animated animate__fadeInUp animate__delay-1s">
 											<div class="photo">
 												<img data-src="images/tmp/person_photo.jpg" alt="" class="lozad">
@@ -406,6 +426,34 @@
 														</div>																
 													</div>
 												</div>
+											</div>
+										</div>
+
+										<div class="message animate__animated animate__fadeInUp animate__delay-2s">
+											<div class="photo">
+												<img data-src="images/tmp/person_photo.jpg" alt="" class="lozad">
+											</div>
+
+											<div class="info">
+												<div class="name">Василий Иванович</div>
+
+												<div class="text_message">Хотите увидеть подсказку?</div>
+											</div>
+
+											<div class="gtp_message">										
+												<div class="gpt_text_load">													
+													<div class="gtp_message_animation"><i><div class="dot-flashing"></div></i></div>	
+													<div>Идет анализ вашего ответа. Подождите, для получения обратной связи</div>
+												</div>	
+
+												<div class="gtp_complete" style="display: none;">
+													<div class="gtp_complete_body">
+														<img src="images/gpt.png" alt="">
+														<span>Обратная связь готова</span>
+														<button data-content="#gpt_modal" class="modal_content">Посомтреть</button>
+													</div>	
+													
+												</div>																						
 											</div>
 										</div>
 									</div>
@@ -469,6 +517,13 @@
 		<div class="supports_error">
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
 		</div>
+
+
+		<section class="correction_modal" id="gpt_modal">			
+			<div class="correction_modal-title">Предложить исправление</div>											
+			<div class="correction_modal-text">Вы хотите оставить предложение или комментарий:</div>
+			
+		</section>
 
 
 		<section class="correction_modal" id="correction_modal">			
