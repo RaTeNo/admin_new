@@ -2,12 +2,12 @@ $(() => {
 	// Ширина окна для ресайза
 	WW = $(window).width()
 
-	$(".info_data_close").click(function(e){
+	$(".info_data_close").click(function (e) {
 		$(".info_data").hide();
 	});
 
-	$(".resend_link a").click(function(e){
-		e.preventDefault();		
+	$(".resend_link a").click(function (e) {
+		e.preventDefault();
 		TIME_LIMIT = 10;
 		timePassed = 0;
 		timeLeft = TIME_LIMIT;
@@ -23,11 +23,10 @@ $(() => {
 		$(".answer_btn").show();
 	});
 
-	if($(".sortable").length)
-	{
-		sortable('.sortable')[0].addEventListener('sortupdate', function(e) {
+	if ($(".sortable").length) {
+		sortable('.sortable')[0].addEventListener('sortupdate', function (e) {
 			$(".answer_btn").show();
-		});	
+		});
 	}
 
 	$('body').on('click', '.text_block_show_more', function (e) {
@@ -39,12 +38,10 @@ $(() => {
 	$('body').on('click', '.results .arrow', function (e) {
 		e.preventDefault()
 		$(this).parent().next().slideToggle();
-		if($(this).hasClass("open"))
-		{
+		if ($(this).hasClass("open")) {
 			$(this).removeClass("open");
 		}
-		else
-		{
+		else {
 			$(this).addClass("open");
 		}
 	});
@@ -53,11 +50,10 @@ $(() => {
 	$(".register .submit_btn").prop("disabled", true);
 
 	$('body').on('change', '#remember_check', function (e) {
-		if($("#remember_check").prop("checked")){
+		if ($("#remember_check").prop("checked")) {
 			$(".register .submit_btn").prop("disabled", false);
 		}
-		else
-		{
+		else {
 			$(".register .submit_btn").prop("disabled", true);
 		}
 	});
@@ -79,11 +75,10 @@ $(() => {
 	$('body').on('click', '.details_item-head', function (e) {
 		e.preventDefault()
 		$(this).next('.details_item-body').slideToggle();
-		if($(this).find(".details_item-link-yellow").hasClass("active"))
-		{
+		if ($(this).find(".details_item-link-yellow").hasClass("active")) {
 			$(this).find(".details_item-link-yellow").html('<span>Свернуть</span><svg class="icon"><use xlink:href="images/sprite.svg#turn"></use></svg>').removeClass("active");
 		}
-		else{
+		else {
 			$(this).find(".details_item-link-yellow").html('<span>Подробнее</span><svg class="icon"><use xlink:href="images/sprite.svg#link-more"></use></svg>').addClass("active");
 		}
 	});
@@ -113,9 +108,8 @@ $(() => {
 		$(this).toggleClass('open').next().slideToggle(300)
 	})
 
-	if($(".copy").length)
-	{
-		const clipboard =  new ClipboardJS('.copy');
+	if ($(".copy").length) {
+		const clipboard = new ClipboardJS('.copy');
 
 		clipboard.on('success', (e) => {
 			$(e.trigger).addClass('copied')
@@ -146,12 +140,12 @@ $(() => {
 		}
 	})
 
-	$(".faq_fast_list button, .faq_search").on("click", function(){
+	$(".faq_fast_list button, .faq_search").on("click", function () {
 
-		let id = "fast"+$(this).data("id");
+		let id = "fast" + $(this).data("id");
 
-		const $item = $("#"+id).closest('.accordion_item'),
-			$accordion = $("#"+id).closest('.accordion')
+		const $item = $("#" + id).closest('.accordion_item'),
+			$accordion = $("#" + id).closest('.accordion')
 
 		/*if ($item.hasClass('active')) {
 			$item.removeClass('active').find('.data').slideUp(300)
@@ -165,144 +159,140 @@ $(() => {
 
 		setTimeout(() => {
 			const el = document.getElementById(id);
-			el.scrollIntoView({block: "center", inline: "center", behavior: "smooth"});
+			el.scrollIntoView({ block: "center", inline: "center", behavior: "smooth" });
 		}, 400)
-		
+
 
 	});
 
-	$(".title_faq_result button").on("click", function(){
+	$(".title_faq_result button").on("click", function () {
 		$(".js-search").val("");
 		$(".title_faq").show();
-        $(".title_faq_result").hide();
-        let	list = $(".accordion_item");
-        list.each(function(index) {	
-		    $(this).show();		  	   
+		$(".title_faq_result").hide();
+		let list = $(".accordion_item");
+		list.each(function (index) {
+			$(this).show();
 		});
 	});
 
-	$('body').on("keyup", '.js-search', function(event) {
-        let value = $(this).val();
-        if(value=="")
-        {
-        	$(".title_faq").show();
-        	$(".title_faq_result").hide();
-        }
-        else
-        {        	
-	        $(".title_faq").hide();
-	        $(".title_faq_result").show();	
-        }
+	$('body').on("keyup", '.js-search', function (event) {
+		let value = $(this).val();
+		if (value == "") {
+			$(".title_faq").show();
+			$(".title_faq_result").hide();
+		}
+		else {
+			$(".title_faq").hide();
+			$(".title_faq_result").show();
+		}
 
-        let	list = $(".accordion_item");
-        list.each(function(index) {	
-		    let label = $(this).text();
-		    let array = value.split(" ");
-		   
-		    for(let i=0;i<array.length;i++)
-		    {		    	
-		    	if (label.toLowerCase().indexOf(array[i].toLowerCase()) == -1) {
-			        $(this).hide();
-			    } else {
-			        $(this).show();
-			    }
-		    }	
-		    /*if (label.toLowerCase().indexOf(value.toLowerCase()) == -1) {
-		        $(this).hide();
-		    } else {
-		        $(this).show();
-		    }*/
+		let list = $(".accordion_item");
+		list.each(function (index) {
+			let label = $(this).text();
+			let array = value.split(" ");
 
-		});
-    });  
-
-    $('body').on("keyup", '.js-search-tiket', function(event) {
-        let value = $(this).val();
-        if(value=="")
-        {
-        	$(".ticket").show();        	
-        }
-
-        let	list = $(".ticket");
-        list.each(function(index) {	
-		    let label = $(this).find(".ticket_name").text();
-		    if (label.toLowerCase().indexOf(value.toLowerCase()) == -1) {
-		        $(this).hide();
-		    } else {
-		        $(this).show();
-		    }		   
-		});
-    });  
-
-
-    /*$('body').on("keyup", '.js-search-courses', function(event) {
-        let value = $(this).val();
-      
-      	$(".title_courses_result span").text(value); 
-        if(value=="")
-        {
-        	$(".courses").show();
-        	$(".title_courses_result").hide();
-        }
-        else
-        {        	
-        	$(".courses").show();
-	        $(".title_courses_result").show();	
-        }*/
-
-
-        /*let	list = $(".training-course_item-title");
-        list.each(function(index) {	
-		    let label = $(this).text();
-		    let array = value.split(" ");
-		   
-		    for(let i=0;i<array.length;i++)
-		    {		    	
-		    	if (label.toLowerCase().indexOf(array[i].toLowerCase()) == -1) {
-			        $(this).parent().hide();
-			    } else {
-			        $(this).parent().show();
-			    }
-		    }	
-		});*/		
-
-		/*let	list2 = $(".courses .course .name");
-        list2.each(function(index) {	
-		    let label = $(this).text().trim();
-
-		    let array = value.split(" ");
-		    
-		    for(let i=0;i<array.length;i++)
-		    {		    	
-		    	
-		    	if (label.toLowerCase().indexOf(array[i].toLowerCase()) == -1) {
-			        $(this).closest(".course").hide();
-			    } else {
-			        $(this).closest(".course").show();
-			    }
-		    }	
-		});
-
-		$(".courses").each(function(index) {
-			let courses = $(this).find(".course");
-			let check = false;
-			courses.each(function(index) {
-				if ($(this).is(':visible')) {
-				    check = true;
+			for (let i = 0; i < array.length; i++) {
+				if (label.toLowerCase().indexOf(array[i].toLowerCase()) == -1) {
+					$(this).hide();
+				} else {
+					$(this).show();
 				}
-			});
-			if(!check)
-			{	
+			}
+			/*if (label.toLowerCase().indexOf(value.toLowerCase()) == -1) {
 				$(this).hide();
+			} else {
+				$(this).show();
+			}*/
+
+		});
+	});
+
+	$('body').on("keyup", '.js-search-tiket', function (event) {
+		let value = $(this).val();
+		if (value == "") {
+			$(".ticket").show();
+		}
+
+		let list = $(".ticket");
+		list.each(function (index) {
+			let label = $(this).find(".ticket_name").text();
+			if (label.toLowerCase().indexOf(value.toLowerCase()) == -1) {
+				$(this).hide();
+			} else {
+				$(this).show();
 			}
 		});
+	});
 
-		$(".title_courses_result button").on("click", function(){
-			$(".js-search-courses").val("");			
-	        $(".title_courses_result").hide();
-	        $(".course, .courses").show();
+
+	/*$('body').on("keyup", '.js-search-courses', function(event) {
+		let value = $(this).val();
+	  
+			$(".title_courses_result span").text(value); 
+		if(value=="")
+		{
+			$(".courses").show();
+			$(".title_courses_result").hide();
+		}
+		else
+		{        	
+			$(".courses").show();
+			$(".title_courses_result").show();	
+		}*/
+
+
+	/*let	list = $(".training-course_item-title");
+	list.each(function(index) {	
+		let label = $(this).text();
+		let array = value.split(" ");
+	   
+		for(let i=0;i<array.length;i++)
+		{		    	
+			if (label.toLowerCase().indexOf(array[i].toLowerCase()) == -1) {
+				$(this).parent().hide();
+			} else {
+				$(this).parent().show();
+			}
+		}	
+	});*/
+
+	/*let	list2 = $(".courses .course .name");
+	list2.each(function(index) {	
+		let label = $(this).text().trim();
+
+		let array = value.split(" ");
+	    
+		for(let i=0;i<array.length;i++)
+		{		    	
+			
+			if (label.toLowerCase().indexOf(array[i].toLowerCase()) == -1) {
+				$(this).closest(".course").hide();
+			} else {
+				$(this).closest(".course").show();
+			}
+		}	
+	});
+
+	$(".courses").each(function(index) {
+		let courses = $(this).find(".course");
+		let check = false;
+		courses.each(function(index) {
+			if ($(this).is(':visible')) {
+				check = true;
+			}
 		});
-    });  */
+		if(!check)
+		{	
+			$(this).hide();
+		}
+	});
+
+	$(".title_courses_result button").on("click", function(){
+		$(".js-search-courses").val("");			
+		$(".title_courses_result").hide();
+		$(".course, .courses").show();
+	});
+});  */
 
 
 
@@ -344,7 +334,7 @@ $(() => {
 					pause: 'images/sprite.svg#ic_pause',
 				},
 			})
-		})		
+		})
 	}
 
 
@@ -386,7 +376,7 @@ $(() => {
 	}
 
 	function drawLine(stem, option) {
-		
+
 		var pointA = stem.offset(),
 			pointB = option.offset()
 
@@ -491,8 +481,7 @@ $(() => {
 			}
 		}
 
-		if($(".stems li.matched").length==$(".stems li").length)
-		{	
+		if ($(".stems li.matched").length == $(".stems li").length) {
 			$(".answer_btn").show();
 		}
 	})
@@ -585,7 +574,7 @@ $(() => {
 		inits[i].load(el.getAttribute('data-file'))
 
 		inits[i].on('finish', function () {
-		    $('.audio_message .btn.active').toggleClass('active');
+			$('.audio_message .btn.active').toggleClass('active');
 		});
 
 		i++
@@ -612,19 +601,17 @@ $(() => {
 		let index = $(this).data('index')
 
 		$(this).toggleClass('active')
-		if($(this).hasClass("btn_new"))
-		{
-			newWave.playPause(newWave)	
+		if ($(this).hasClass("btn_new")) {
+			newWave.playPause(newWave)
 		}
-		else
-		{
+		else {
 			inits[index].playPause(inits[index])
 		}
-		
+
 	})
 
 
-	$(".test").on("click", function(e){
+	$(".test").on("click", function (e) {
 		e.preventDefault();
 		$(".messages").append('<div class="message"><div class="photo"><img src="images/tmp/person_photo.jpg"></div><div class="info"><div class="name">Василий Иванович</div><div class="audio_message"><button class="btn btn_new" data-index="1" data-action="play"><svg class="icon"><use xlink:href="images/sprite.svg#ic_play"></use></svg><svg class="icon"><use xlink:href="images/sprite.svg#ic_pause"></use></svg></button><div class="audio_wave audio_wave_new" data-file="https://wavesurfer-js.org/example/media/demo.wav"></div><div class="duration duration_new"></div></div></div>					</div>');
 
@@ -645,16 +632,16 @@ $(() => {
 		newWave.load(audio_wave_new.getAttribute('data-file'))
 
 		newWave.on('finish', function () {
-		    $('.audio_message .btn.active').toggleClass('active');
+			$('.audio_message .btn.active').toggleClass('active');
 		});
 
-		setTimeout(() => {			
+		setTimeout(() => {
 			$('.audio_message .duration_new').each(function () {
 				$(this).text(sec2time(newWave.getDuration()))
 
 			})
 			$(".btn_new").toggleClass('active');
-			newWave.playPause(newWave)	
+			newWave.playPause(newWave)
 		}, 1000)
 
 
@@ -707,7 +694,7 @@ $(() => {
 
 
 	// Клик по лайку
-	$(".likes button").click(function(e) {
+	$(".likes button").click(function (e) {
 		e.preventDefault();
 		$(".likes button").removeClass('active');
 		$(this).addClass('active');
@@ -751,7 +738,7 @@ $(() => {
 			src: '#confirm_modal2',
 			type: 'inline'
 		}]);
-		let timerId = setInterval(() => $("#time_counter").html($("#time_counter").html()-1), 1000);
+		let timerId = setInterval(() => $("#time_counter").html($("#time_counter").html() - 1), 1000);
 
 		// остановить вывод через 5 секунд
 		setTimeout(() => { clearInterval(timerId); Fancybox.close(); }, 45000);
@@ -762,7 +749,7 @@ $(() => {
 		Fancybox.show([{
 			src: '#modal_course',
 			type: 'inline'
-		}]);		
+		}]);
 	}
 
 
@@ -792,7 +779,7 @@ $(() => {
 	})
 
 
-	$('body').on('click', '.auth .form .view_btn', function (e) {	
+	$('body').on('click', '.auth .form .view_btn', function (e) {
 		e.preventDefault()
 
 		let parent = $(this).closest('.field')
@@ -804,9 +791,9 @@ $(() => {
 		$(this).toggleClass('active')
 	})
 
-    // Показать контент 
+	// Показать контент 
 	$(".hide-content").hide();
-	$(".link-more").click(function(e) {
+	$(".link-more").click(function (e) {
 		e.preventDefault();
 		$(this).next(".hide-content").slideToggle();
 		$(".link-more").addClass("active");
@@ -814,7 +801,7 @@ $(() => {
 
 
 	// Кнопка 'Вверх'
-	$('body').on('click', '.buttonUp button', function(e) {
+	$('body').on('click', '.buttonUp button', function (e) {
 		e.preventDefault()
 
 		$('body, html').stop(false, false).animate({
@@ -822,32 +809,50 @@ $(() => {
 		}, 1000)
 	})
 
+
+	// Скрол к блокам
+	$(".scroll").on("click", function (e) {
+		e.preventDefault();
+		let id = $(this).attr("href");
+
+		$("html, body").animate({
+			scrollTop: $(id).offset().top - 30
+		}, {
+			duration: 1500,
+			easing: "swing"
+		});
+	});
+
+
+	$('.js-example-basic-multiple').select2();
+
+
+
 	var locationHash = window.location.hash
 
 	if (locationHash && $('.faq .accordion').length) {
-		$(locationHash).addClass('active').find('.data').slideDown(300)	
+		$(locationHash).addClass('active').find('.data').slideDown(300)
 		$('html, body').stop().animate({ scrollTop: $(locationHash).offset().top }, 1000)
 	}
 
 	//слайдер на главной 
-	if($(".swiper").length)
-	{
-		const swiper = new Swiper('.swiper', {	 
-		  loop: true,
-		  autoplay: {
-		    delay: 5000,
-		  },
+	if ($(".swiper").length) {
+		const swiper = new Swiper('.swiper', {
+			loop: true,
+			autoplay: {
+				delay: 5000,
+			},
 
-		  // If we need pagination
-		  pagination: {
-		    el: '.swiper-pagination',
-		  },
+			// If we need pagination
+			pagination: {
+				el: '.swiper-pagination',
+			},
 
-		  // Navigation arrows
-		  navigation: {
-		    nextEl: '.swiper-button-next',
-		    prevEl: '.swiper-button-prev',
-		  },
+			// Navigation arrows
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
 		});
 	}
 
@@ -855,17 +860,17 @@ $(() => {
 
 
 
-$(".receiving-opinions button").click(function() { 
-    if ($(this).text() == "Открыть прием мнений") { 
-        $(this).text("Закрыть прием мнений"); 
-    } else { 
-        $(this).text("Открыть прием мнений"); 
-    }; 
+$(".receiving-opinions button").click(function () {
+	if ($(this).text() == "Открыть прием мнений") {
+		$(this).text("Закрыть прием мнений");
+	} else {
+		$(this).text("Открыть прием мнений");
+	};
 });
 
 
-$('.receiving-opinions button').on("click", function(){
-	$('.receiving-opinions .icon').toggle(); 
+$('.receiving-opinions button').on("click", function () {
+	$('.receiving-opinions .icon').toggle();
 });
 
 
@@ -911,9 +916,9 @@ $(window).on('load', () => {
 		setHeight2($(this));
 	})
 
-    setHeight($(".photo-downloading_btn"));
+	setHeight($(".photo-downloading_btn"));
 
-	
+
 
 })
 
@@ -969,7 +974,7 @@ $(window).on('resize', () => {
 			namesHeight2($(this), 100)
 		})
 
-		
+
 
 
 		// Перезапись ширины окна
@@ -978,9 +983,9 @@ $(window).on('resize', () => {
 })
 
 
-$(window).scroll(function(){
+$(window).scroll(function () {
 	// Кнопка 'Вверх'
-	if( $(window).scrollTop() > $(window).innerHeight() ) {
+	if ($(window).scrollTop() > $(window).innerHeight()) {
 		$('.buttonUp').fadeIn(300)
 	} else {
 		$('.buttonUp').fadeOut(200)
@@ -990,7 +995,7 @@ $(window).scroll(function(){
 
 $('body').on('click', '.detailed_item-link-right', function (e) {
 	e.preventDefault()
-	$(this).parent().parent().addClass('active');	
+	$(this).parent().parent().addClass('active');
 });
 
 // Выравнивание заголовокв
@@ -1018,7 +1023,7 @@ function namesHeight2(context, step) {
 
 	//$items.find('.name, .desc').height('auto')
 	$items.each(function () {
-	
+
 		setHeight($items.slice(start, finish))
 		setHeight($items.slice(start, finish))
 
@@ -1046,17 +1051,17 @@ let timeLeft = TIME_LIMIT;
 startTimer();
 
 function startTimer() {
-  let timerInterval = null;
-  timerInterval = setInterval(() => {
-    
-    // Количество времени, которое прошло, увеличивается на  1
-    timePassed = timePassed += 1;
-    timeLeft = TIME_LIMIT - timePassed;
-    
-    // Обновляем метку оставшегося времени
-    $(".resend span").text(timeLeft);
-  }, 1000);
-  setTimeout(() => { $(".resend").hide(); $(".resend_link").show(); clearInterval(timerInterval); }, 10000);
+	let timerInterval = null;
+	timerInterval = setInterval(() => {
+
+		// Количество времени, которое прошло, увеличивается на  1
+		timePassed = timePassed += 1;
+		timeLeft = TIME_LIMIT - timePassed;
+
+		// Обновляем метку оставшегося времени
+		$(".resend span").text(timeLeft);
+	}, 1000);
+	setTimeout(() => { $(".resend").hide(); $(".resend_link").show(); clearInterval(timerInterval); }, 10000);
 }
 
 

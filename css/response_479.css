@@ -1315,4 +1315,16 @@
     }
 
 
+    .uploaded-files_item-bottom {
+        justify-content: space-between;
+    }
+
+    .form-project button {
+        width: 100%;
+        display: block;
+    }
+    .projects_item-links {
+        margin-top: 10px;
+    }
+
 }

@@ -57,7 +57,7 @@
     -----------------*/
     .block_title
     {
-        font-size: 17px;
+        font-size: 20px;
         line-height: 21px;
 
         margin-bottom: 20px;
@@ -2235,6 +2235,94 @@
     .engagement-block_items > * {
         width: calc(100%/2 - 19px);
     }
+
+
+
+    .projects_items {
+        margin-left: 0;
+    }
+    .projects_items > * {
+        width: 100%;
+        margin-left: 0px;
+        padding: 8px;
+    }
+    .block_top-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .projects .select-right {
+        margin-left: 0;
+    }
+    .block_title-big {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .projects_item-title {
+        font-size: 16px;
+    }
+
+    .uploaded-files_items {
+        margin-left: 0;
+    }
+    .uploaded-files_items > * {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .tasks-block_info {
+        flex-wrap: wrap;
+    }
+    .tasks-block_info-label {
+        margin-top: 12px;
+    }
+
+
+    .task-block_items.classic .task-block_item-bottom {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .task-block_items.classic .projects_item-comment {
+        padding-top: 12px;
+        position: relative;
+        width: 100%;
+    }
+    .task-block_items.classic .projects_item-comment:before {
+        position: absolute;
+        content: "";
+        width: calc(100% + 28px);
+        height: 1px;
+        top: 0;
+        left: -14px;
+        background: #DFDFDF;
+    }
+    .task-block_items.classic .task-block_text {
+        margin-bottom: 15px;
+    }
+    .participants_items > * {
+        width: 100%;
+        margin-left: 0;
+    }
+    .participants_items {
+        margin-left: 0;
+    }
+
+    .project .select-right span {
+        display: block;
+    }
+    .project .select-right {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+    .project .projects_item-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .projects_item-links {
+        margin-top: 10px;
+    }
+
 
 
 }

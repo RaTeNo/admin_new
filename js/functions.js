@@ -68,6 +68,12 @@ $(() => {
 		Fancybox.close()
 	})
 
+	$('body').on('click', '.projects-modal_btn', function (e) {
+		e.preventDefault()
+
+		Fancybox.close()
+	})
+
 
 	// выбрать все checkbox`ы
 	$(".choose-link").click(function (e) {

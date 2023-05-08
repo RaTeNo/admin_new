@@ -1845,4 +1845,13 @@
     }
 
 
+    .uploaded-files_items > * {
+        width: calc(100%/3 - 19px);
+    }
+
+    .participants_items > * {
+        width: calc(100%/2 - 12px);
+    }
+
+
 }
