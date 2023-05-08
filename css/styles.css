@@ -24243,10 +24243,9 @@ form .form_btns input[type=file] + label,
     background: #F2F0FF;
     padding: 10px;
     border-radius: 11px;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 20px;
-    color: #7D82AB;
+    font-size: 18px;
+    line-height: 21px;
+    color: #061058;
     display: flex;
 }
 
@@ -24265,10 +24264,9 @@ form .form_btns input[type=file] + label,
     background: #F2F0FF;
     padding: 10px;
     border-radius: 11px;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 20px;
-    color: #7D82AB;
+    color: #061058;
+    font-size: 18px;
+    line-height: 21px;
     flex-wrap: wrap;
 }
 .gtp_complete_body img{

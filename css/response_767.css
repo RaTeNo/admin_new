@@ -2324,8 +2324,15 @@
     }
 
     .dialog .message .gpt_text_load, .dialog .message .gtp_complete_body{
-        width: 270px;
+        width: 220px;
     }
 
+    .gtp_message{
+        width: calc(100% - 55px);
+    }
+
+    .gtp_complete_body, .gpt_text_load{
+        font-size: 14px;
+    }
 
 }
