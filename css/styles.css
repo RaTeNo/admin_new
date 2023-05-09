@@ -24260,7 +24260,7 @@ form .form_btns input[type=file] + label,
 
 .gtp_complete_body{
     display: flex;
-    width: 300px;
+    width: 368px;
     background: #F2F0FF;
     padding: 10px;
     border-radius: 11px;
@@ -24343,6 +24343,11 @@ form .form_btns input[type=file] + label,
     width: 55px;
     display: block;
     margin-left: 15px;
+    flex-shrink: 0;
+}
+
+.js-robot-answer .media-player{
+    font-size: 14px;
 }
 
 

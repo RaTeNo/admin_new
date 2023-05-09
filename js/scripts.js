@@ -863,13 +863,19 @@ $(() => {
 	setTimeout(() => { 
 		$(".gpt_text_load").hide();
 		$(".gtp_complete").show();
-	}, 5000);
+	}, 3000);
 
 	setTimeout(() => { 
 		$(".js-robot").fadeOut(400);
 		setTimeout(() => { 
 			$(".js-robot-answer").fadeIn();
 		}, 400);
+	}, 3000);
+
+
+	setTimeout(() => { 
+		$(".message_video .info").remove();
+		$(".message_video .video_message").show();
 	}, 3000);
 
 
@@ -1095,10 +1101,10 @@ function startTimer2() {
 		// Количество времени, которое прошло, увеличивается на  1
 		timePassed2 = timePassed2 += 1;
 		timeLeft2 = TIME_LIMIT2 - timePassed2;
-		console.log(timeLeft2);
+		//console.log(timeLeft2);
 		// Обновляем метку оставшегося времени
 		$(".new_load_title span").text(timeLeft2);
 	}, 1000);
-	setTimeout(() => { location.reload(); clearInterval(timerInterval); }, 10000);
+	setTimeout(() => { /*location.reload();*/ clearInterval(timerInterval); }, 10000);
 }
 
