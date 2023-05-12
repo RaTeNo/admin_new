@@ -460,25 +460,7 @@
         line-height: 16px;
     }
 
-    .task-block_item {
-        width: 254px;
-        flex-shrink: 0;
-    }
-    .task-block_items {
-        flex-wrap: nowrap;
-        overflow-x: auto;
 
-    }
-    .task-block_items::-webkit-scrollbar { 
-        width: 0; 
-        display: none;
-    }
-    .task-block_items { 
-        -ms-overflow-style: none; 
-    }
-    .task-block_items { 
-        overflow: -moz-scrollbars-none; 
-    }
 
 
 }

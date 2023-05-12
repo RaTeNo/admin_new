@@ -1463,7 +1463,7 @@
     .modul_item-bottom-text br {
         display: none;
     }
-    .select-right span {
+    .task-block .select-right span {
         display: none;
     }
     .modul_item-bottom-info {
@@ -2240,11 +2240,15 @@
 
     .projects_items {
         margin-left: 0;
+        margin-bottom: 0;
     }
     .projects_items > * {
         width: 100%;
         margin-left: 0px;
-        padding: 8px;
+        margin-bottom: 0;
+    }
+    .projects_item + .projects_item {
+        margin-top: 16px;
     }
     .block_top-box {
         flex-direction: column;
@@ -2252,6 +2256,7 @@
     }
     .projects .select-right {
         margin-left: 0;
+        margin-top: 10px;
     }
     .block_title-big {
         font-size: 22px;
@@ -2263,19 +2268,27 @@
 
     .uploaded-files_items {
         margin-left: 0;
+        margin-bottom: 0;
     }
     .uploaded-files_items > * {
         width: 100%;
         margin-left: 0;
+        margin-bottom: 0;
     }
-
+    .uploaded-files_item + .uploaded-files_item { 
+        margin-top: 14px; 
+    } 
     .tasks-block_info {
         flex-wrap: wrap;
     }
-    .tasks-block_info-label {
-        margin-top: 12px;
+    .tasks-block_info {
+        flex-direction: column;
+        align-items: flex-start;
     }
-
+    .tasks-block_info-name {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
 
     .task-block_items.classic .task-block_item-bottom {
         flex-direction: column;
@@ -2306,13 +2319,21 @@
     .participants_items {
         margin-left: 0;
     }
+    .project .task-block .block_top-box {
+        flex-direction: row;
+    }
+    .project .nice-select {
+        font-size: 13px;
+        width: auto;
+        height: 41px;
+        padding: 7px 28px 7px 5px;
+    }
 
     .project .select-right span {
-        display: block;
+        display: none;
     }
     .project .select-right {
         margin-left: 0;
-        margin-top: 8px;
     }
 
     .project .projects_item-box {
@@ -2335,4 +2356,32 @@
         font-size: 14px;
     }
 
+    .rating-top_items {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rating-top_item:first-child {
+        margin-bottom: 7px;
+    }
+    .rating-top {
+        align-items: flex-start;
+    }
+
+    .message.success .buttons{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .message.success .buttons a + a{
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .message_sep{
+        margin-bottom: 40px;
+    }
+
+    .message_sep span{
+        margin-top: 0;
+    }
 }

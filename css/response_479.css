@@ -57,8 +57,8 @@
     -----------------*/
     .block_title
     {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 20px;
+        line-height: 23px;
     }
 
 
@@ -1026,8 +1026,9 @@
 
 
     .tooltip .tooltiptext {
-        margin-left: -250px;
-        top: 0;
+        margin-left: -115px;
+        top: 33px;
+    
     }
 
     .media-remaining-time{
@@ -1341,5 +1342,15 @@
         font-size: 16px;
         line-height: 18px;
     }
+
+
+    .changes_item {
+        padding: 0px;
+        background: none;
+    }
+    .changes_items {
+        margin-left: 20px;
+    }
+    
 
 }
