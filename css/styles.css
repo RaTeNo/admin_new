@@ -24599,7 +24599,7 @@ form .form_btns input[type=file] + label,
     display: inline-block;
     margin: 30px auto;
     position: relative;
-    top: 45px;
+    top: 47px;
 }
 
 .message.success .text_message{
