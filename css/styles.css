@@ -24505,9 +24505,10 @@ form .form_btns input[type=file] + label,
     background: #E9E8FF;
     border-radius: 19px;
     position: relative;
+    flex-shrink: 0;
 }
-.rating-top_icon::before {
-    width: 22px;
+.rating-top_icon_counter{
+     width: 22px;
     height: 22px;
     background: #E13050;
     border: 1.5px solid #FFFFFF;  
@@ -24524,6 +24525,24 @@ form .form_btns input[type=file] + label,
     top: -4px;
     right: -4px;
 }
+/*.rating-top_icon::before {
+    width: 22px;
+    height: 22px;
+    background: #E13050;
+    border: 1.5px solid #FFFFFF;  
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF; 
+    content: "2";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -4px;
+    right: -4px;
+}*/
 .rating-top_icon .icon {
     width: 49px;
     height: 49px;
