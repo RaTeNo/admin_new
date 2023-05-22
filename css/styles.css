@@ -17509,6 +17509,8 @@ background: #64C841;
 .trainer_item-link-left {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: -9px;
 }
 .trainer_item-link-left a:first-child {
     margin-right: 13px;
@@ -21586,6 +21588,7 @@ form .form_btns input[type=file] + label,
     line-height: 14px;
     color: var(--main_color);
     margin-left: 9px;
+    margin-bottom: 9px;
 }
 .trainer_item-btn.disabled {
     background: #D1CEEB;
