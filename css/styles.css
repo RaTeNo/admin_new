@@ -24676,3 +24676,8 @@ form .form_btns input[type=file] + label,
 .message.success .buttons a + a{
     margin-left: 15px;
 }
+
+.icon_setting{
+    width: 24px;
+    height: 24px;
+}
