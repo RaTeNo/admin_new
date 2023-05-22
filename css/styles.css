@@ -12948,6 +12948,24 @@ section.total {
     overflow: hidden;
 }
 
+.lecture_steps .steps + .steps{    
+    margin-top: 20px;
+}
+
+.lecture_steps .steps_sep
+{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.lecture_steps .steps_sep:before{
+    content: "";
+    border-top: 1px solid #eaeaea;
+    display: block;
+    width: calc(100%);
+    position: absolute;
+    left: 0;
+}   
+
 .lecture_steps .steps .step + .step:after{
     height: 100px;
 }
