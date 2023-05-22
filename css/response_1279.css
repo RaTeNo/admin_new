@@ -1874,6 +1874,9 @@
     .task-block_items { 
         overflow: -moz-scrollbars-none; 
     }
-
+    .engagement_item-right{
+        text-align: center;
+        white-space: unset;
+    }
 
 }
