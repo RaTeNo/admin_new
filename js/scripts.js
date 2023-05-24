@@ -800,6 +800,93 @@ $(() => {
 	});
 
 
+	$(".link-more").click(function (e) {
+		e.preventDefault();
+		$(".addition-base_item").removeClass("hide");
+	});
+
+
+	$('.addition_btn').click(function (e) {
+		e.preventDefault();
+		$('.addition form').addClass('active');
+		$('.addition_btn').remove();
+		$('.addition_arrow').show();
+    });
+
+	$('.addition form button').click(function (e) {
+		e.preventDefault();
+		$('.addition form .line').hide();
+		$('.addition form button.send').hide();
+		$(".js-more-addition").show();
+		$('.addition form .form-text').addClass('active');
+    });
+
+    $('.js-more-addition').click(function (e) {
+		e.preventDefault();
+		$(this).hide();
+		$('.addition form button.send').show();
+		$('.addition form .form-text').removeClass('active');
+		$('.addition form .line').show();
+    });
+
+	$('.education_btn').click(function (e) {
+		e.preventDefault();
+		$('.education form').addClass('active');
+		$('.education_btn').hide();
+		$('.education_no').show();
+    });
+
+    $('.education_no').click(function (e) {
+		e.preventDefault();
+		$('.education form').removeClass('active');
+		$('.education_btn').show();
+		$('.education_no').hide();
+    });
+
+    $(".js-next-gtp").click(function (e) {
+		e.preventDefault();
+		$(".education form").removeClass("active");
+		$(".education_no").hide();
+		$(".education_text").hide();
+		$(".education_text-loaded").css("display", "flex");
+		setTimeout(() => {
+			$(".education_text-loaded").hide();
+			$(".education_text-green").css("display", "flex");
+			$(".education_description").slideDown();
+			$(".education_more").show();
+		}, 3000);
+	});
+
+	$(".education_more").click(function (e) {
+		e.preventDefault();
+		$(".education_description").hide();
+		$('.education form').addClass('active');
+		$('.education_more').hide();
+		$('.education_no').show();
+		$(".education_text-green").hide();
+		$(".education_text").show();
+	});
+
+	$('.addition_arrow').click(function (e) {
+		e.preventDefault();
+		$('.addition form').slideToggle(300);
+    });
+
+    $(".read_more_dialog").click(function (e) {
+		e.preventDefault();
+		$(".hide_text").slideToggle();
+		if($(this).hasClass("active"))
+		{
+			$(this).removeClass("active").text("Читать все");
+		}
+		else
+		{
+			$(this).addClass("active").text("Свернуть");	
+		}
+		
+    });
+
+
 	// Кнопка 'Вверх'
 	$('body').on('click', '.buttonUp button', function (e) {
 		e.preventDefault()
@@ -835,6 +922,42 @@ $(() => {
 	if (locationHash && $('.faq .accordion').length) {
 		$(locationHash).addClass('active').find('.data').slideDown(300)
 		$('html, body').stop().animate({ scrollTop: $(locationHash).offset().top }, 1000)
+	}
+
+
+	// Табы
+	var locationHash = window.location.hash
+
+	$('body').on('click', '.tabs button', function (e) {
+		e.preventDefault()
+
+		if (!$(this).hasClass('active')) {
+			const $parent = $(this).closest('.tabs_container'),
+				activeTab = $(this).data('content'),
+				$activeTabContent = $(activeTab),
+				level = $(this).data('level')
+
+			$parent.find('.tabs:first button').removeClass('active')
+			$parent.find('.tab_content.' + level).removeClass('active')
+
+			$(this).addClass('active')
+			$activeTabContent.addClass('active')
+		}
+	})
+
+	if (locationHash && $('.tabs_container').length) {
+		const $activeTab = $('.tabs button[data-content=' + locationHash + ']'),
+			$activeTabContent = $(locationHash),
+			$parent = $activeTab.closest('.tabs_container'),
+			level = $activeTab.data('level')
+
+		$parent.find('.tabs:first button').removeClass('active')
+		$parent.find('.tab_content.' + level).removeClass('active')
+
+		$activeTab.addClass('active')
+		$activeTabContent.addClass('active')
+
+		$('html, body').stop().animate({ scrollTop: $activeTabContent.offset().top }, 1000)
 	}
 
 	//слайдер на главной 

@@ -2384,4 +2384,20 @@
     .message_sep span{
         margin-top: 0;
     }
+
+    .education form .line {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .analitics_titles {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .education_title {
+        font-size: 18px;
+        line-height: 21px;  
+    }
+
+
+
 }

@@ -1351,6 +1351,41 @@
     .changes_items {
         margin-left: 20px;
     }
-    
+
+
+    .addition form.active {
+        flex-direction: column;
+    }
+    .addition form button {
+        margin-top: 12px;
+    }
+    .addition_wrap {
+        flex-direction: column;
+    }
+    .addition_left {
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+
+    .tabs_container .tabs button {
+        font-size: 16px;
+        line-height: 21px;
+        margin-right: 6px;
+    }
+    .education_wrap {
+        flex-direction: column;
+    }
+    .education_left {
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+
+    .slider_home{
+        display: none;
+    }
+
+    .slider_mob{
+        display: block;
+    }
 
 }
