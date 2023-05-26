@@ -800,9 +800,43 @@ $(() => {
 	});
 
 
+	$(".task-page_btn button").click(function (e) {
+		e.preventDefault();
+		$('.solutions-tasks').addClass('active');
+		$(".solutions-tasks .solutions-tasks_wrap").show();
+		$(".solutions-tasks2 .solutions-tasks_wrap").hide();
+		setTimeout(() => {
+			$(".solutions-tasks .solutions-tasks_wrap").hide();
+			$(".solutions-tasks2 .solutions-tasks_wrap").show();
+			$('.solutions-tasks2').addClass('active');
+			$(".solutions-tasks .wrapper_head").hide();
+		}, 3000);
+	});
+
+	if($(".btn-clipboard").length)
+	{
+		new ClipboardJS('.btn-clipboard');
+
+		$(".btn-clipboard").click(function (e) {
+			e.preventDefault();
+		});
+	}
+	
+	$(".solutions-tasks_top-delete").click(function (e) {
+		e.preventDefault();
+		$(this).parent().parent().hide();
+	});
+
+
 	$(".link-more").click(function (e) {
 		e.preventDefault();
 		$(".addition-base_item").removeClass("hide");
+	});
+
+	$(".log_link-more").click(function (e) {
+		e.preventDefault();
+		$(".log_item").removeClass("hide");
+		$(".log_link-more").hide();
 	});
 
 
@@ -811,7 +845,7 @@ $(() => {
 		$('.addition form').addClass('active');
 		$('.addition_btn').remove();
 		$('.addition_arrow').show();
-    });
+	});
 
 	$('.addition form button').click(function (e) {
 		e.preventDefault();
@@ -819,31 +853,33 @@ $(() => {
 		$('.addition form button.send').hide();
 		$(".js-more-addition").show();
 		$('.addition form .form-text').addClass('active');
-    });
+	});
 
-    $('.js-more-addition').click(function (e) {
+	$('.js-more-addition').click(function (e) {
 		e.preventDefault();
 		$(this).hide();
 		$('.addition form button.send').show();
 		$('.addition form .form-text').removeClass('active');
 		$('.addition form .line').show();
-    });
+	});
 
 	$('.education_btn').click(function (e) {
 		e.preventDefault();
 		$('.education form').addClass('active');
 		$('.education_btn').hide();
 		$('.education_no').show();
-    });
+	});
 
-    $('.education_no').click(function (e) {
+	$('.education_no').click(function (e) {
 		e.preventDefault();
 		$('.education form').removeClass('active');
 		$('.education_btn').show();
 		$('.education_no').hide();
-    });
+	});
 
-    $(".js-next-gtp").click(function (e) {
+
+
+	$(".js-next-gtp").click(function (e) {
 		e.preventDefault();
 		$(".education form").removeClass("active");
 		$(".education_no").hide();
@@ -870,21 +906,19 @@ $(() => {
 	$('.addition_arrow').click(function (e) {
 		e.preventDefault();
 		$('.addition form').slideToggle(300);
-    });
+	});
 
-    $(".read_more_dialog").click(function (e) {
+	$(".read_more_dialog").click(function (e) {
 		e.preventDefault();
 		$(".hide_text").slideToggle();
-		if($(this).hasClass("active"))
-		{
+		if ($(this).hasClass("active")) {
 			$(this).removeClass("active").text("Читать все");
 		}
-		else
-		{
-			$(this).addClass("active").text("Свернуть");	
+		else {
+			$(this).addClass("active").text("Свернуть");
 		}
-		
-    });
+
+	});
 
 
 	// Кнопка 'Вверх'
@@ -910,8 +944,7 @@ $(() => {
 		});
 	});
 
-	if($(".js-example-basic-multiple").length>0)
-	{
+	if ($(".js-example-basic-multiple").length > 0) {
 		$('.js-example-basic-multiple').select2();
 	}
 
@@ -983,20 +1016,20 @@ $(() => {
 
 
 
-	setTimeout(() => { 
+	setTimeout(() => {
 		$(".gpt_text_load").hide();
 		$(".gtp_complete").show();
 	}, 3000);
 
-	setTimeout(() => { 
+	setTimeout(() => {
 		$(".js-robot").fadeOut(400);
-		setTimeout(() => { 
+		setTimeout(() => {
 			$(".js-robot-answer").fadeIn();
 		}, 400);
 	}, 3000);
 
 
-	setTimeout(() => { 
+	setTimeout(() => {
 		$(".message_video .info").remove();
 		$(".message_video .video_message").show();
 	}, 3000);

@@ -1357,7 +1357,7 @@
         flex-direction: column;
     }
     .addition form button {
-        margin-top: 12px;
+        width: 100%;
     }
     .addition_wrap {
         flex-direction: column;
@@ -1379,6 +1379,12 @@
         margin-right: 0;
         margin-bottom: 12px;
     }
+    .addition form .form-text.active {
+        display: flex;
+        justify-content: left;
+        width: 100%;
+        margin-bottom: 12px;
+    }
 
     .slider_home{
         display: none;
@@ -1387,5 +1393,84 @@
     .slider_mob{
         display: block;
     }
+
+    .division_items > * {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .division_items {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .division_item + .division_item {
+        margin-top: 45px;
+    }
+    .favourites_items > * {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .favourites_items {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .favourites_item + .favourites_item {
+        margin-top: 15px;
+    }
+    .intellect .education_links a {
+        width: 100%;
+        text-align: center;
+    }
+    .intellect .education_links {
+        flex-direction: column;
+        width: 100%;
+    }
+    .intellect .education_links a + a {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .task-page_form .nice-select {
+        width: 100%;
+    }
+    .solutions-tasks_top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .solutions-tasks_top-title {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .solutions-tasks_top-link {
+        width: 100%;
+        text-align: center;
+    }
+
+    .division-page .favourites_items > * {
+        width: 100%;
+    }
+
+    .setting-notes ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .setting-notes ul li button {
+        margin-left: 0;
+        margin-top: 7px;
+    }
+    .addition_btn {
+        width: 100%;
+        text-align: center;
+    }
+    .addition_arrow {
+        display: none !important;
+    }
+    .log_items {
+        margin-top: 12px;
+    }
+
+
+
 
 }

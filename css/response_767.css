@@ -2393,9 +2393,58 @@
         font-size: 18px;
         line-height: 21px;
     }
-    .education_title {
+    .education_title,
+    .intellect .block_title {
         font-size: 18px;
-        line-height: 21px;  
+        line-height: 21px;          
+    }
+    .intellect .block_text {
+        font-size: 12px;
+    }
+
+    .division_items > * {
+        width: calc(100%/2 - 22px);
+    }
+    .favourites_items > * {
+        width: calc(100%/2 - 16px);
+    }
+
+    .division-page .favourites_items > * {
+        width: calc(100%/2 - 16px);
+    }
+    .division-page_text {
+        padding-left: 0;
+    }
+    .intellect.division-page .courses_faq input {
+        margin-left: 0px;
+    }
+
+
+    .solutions-tasks_top-title a {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .solutions-tasks_top {
+        align-items: flex-start;
+    }
+    .solutions-tasks_top-delete {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .solutions-tasks2 .solutions-tasks_top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .additional-actions_btns {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .additional-actions_btns button + button {
+        margin-top: 10px;
+    }
+    .history-training_box-title {
+        font-size: 18px;
     }
 
 
