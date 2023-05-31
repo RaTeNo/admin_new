@@ -25132,7 +25132,6 @@ form .form_btns input[type=file] + label,
 }
 .education form .line {
     width: 100%;
-    display: flex;
     align-items: center;
     margin-bottom: 16px;
 }
