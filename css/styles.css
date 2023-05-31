@@ -4343,6 +4343,10 @@ aside .menu .sub_menu a.active
     text-decoration: none;
 }
 
+.lecture_steps .steps .step span.width100{
+    display: block;
+}
+
 .lecture_steps .steps .step:before
 {
     position: absolute;
