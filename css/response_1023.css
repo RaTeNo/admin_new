@@ -467,6 +467,26 @@
         margin-left: 40px;
     }
 
+    .equipment_items {
+        margin-left: 0;
+    }
+    .equipment_items > * {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .auth-new .contacts {
+        width: 100%;
+    }
+    .auth-new .contacts .info {
+        width: 100%;
+    }
+    .auth_img {
+        width: 100%;
+        padding: 60px 35px 35px 15px;
+    }
+
+
 
 
 
