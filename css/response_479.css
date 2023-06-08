@@ -1477,7 +1477,7 @@
 
 
     .wrapper_head_courses .page_title span {
-        max-width: calc(100%);
+        max-width: calc(100% - 40px);
     }
 
     

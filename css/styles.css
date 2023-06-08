@@ -24533,7 +24533,7 @@ form .form_btns input[type=file] + label,
     flex-shrink: 0;
 }
 .rating-top_icon_counter{
-     width: 22px;
+    min-width: 22px;
     height: 22px;
     background: #E13050;
     border: 1.5px solid #FFFFFF;  
