@@ -1480,6 +1480,13 @@
         max-width: calc(100% - 40px);
     }
 
+    .comments_wrap .addition_wrap{
+        align-items: flex-start;
+    }
+
+    .comments_wrap .comments{
+        margin-top: 10px;
+    }
     
 
 }
