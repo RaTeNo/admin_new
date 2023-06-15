@@ -1435,6 +1435,11 @@ aside .menu .item .icon14 > *
     height: 23px;
 }
 
+aside .menu .item .icon999
+{
+    height: 32px;
+}
+
 aside .menu .item .icon + span
 {
     max-width: calc(100% - 48px);
@@ -24779,7 +24784,6 @@ form .form_btns input[type=file] + label,
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
-    color: #AEACC8;
     width: 100%;
     resize: none;
     background: #FFFFFF;
