@@ -813,6 +813,10 @@ $(() => {
 		}, 3000);
 	});
 
+	$(".favourites_item-star").click(function (e) {
+		$(this).toggleClass("active");
+	});
+
 	if($(".btn-clipboard").length)
 	{
 		new ClipboardJS('.btn-clipboard');

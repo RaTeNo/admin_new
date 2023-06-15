@@ -25664,12 +25664,16 @@ form .form_btns input[type=file] + label,
     letter-spacing: -0.3px;
     color: #020027;
     margin-bottom: 14px;
+    text-decoration: none;
+    display: block;
 }
 .favourites_item-text {
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     color: #9B99B7;
+    text-decoration: none;
+    display: block;
 }
 .favourites_item-left {
     position: absolute;
@@ -25704,9 +25708,24 @@ form .form_btns input[type=file] + label,
     background: rgba(255, 184, 0, 0.2);
     position: relative;
 }
+.favourites_item-star{
+    cursor: pointer;
+}
 .favourites_item-star .icon {
     width: 22px;
     height: 22px;
+}
+.favourites_item-star .icon{
+    display: none;
+}
+.favourites_item-star .icon + .icon{
+    display: block;
+}
+.favourites_item-star.active .icon{
+    display: block;
+}
+.favourites_item-star.active .icon + .icon{
+    display: none;
 }
 .favourites_item-label.red:before {
     position: absolute;
