@@ -1487,6 +1487,11 @@
     .comments_wrap .comments{
         margin-top: 10px;
     }
-    
-
+    .task-page_form .line .line-box{
+        width: 100%;
+    }
+    .task-page_form .line .line-box + .line-box {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
 }
