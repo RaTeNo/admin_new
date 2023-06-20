@@ -25689,6 +25689,7 @@ form .form_btns input[type=file] + label,
     background: rgba(255, 43, 94, 0.2);
     border-radius: 59px;
     margin-right: 8px;
+    max-width: 220px;
 }
 .favourites_item-label.red {
     color: #FF2B5E;
@@ -25806,7 +25807,7 @@ form .form_btns input[type=file] + label,
 .division_item-icon {
     width: 48px;
     height: 48px;
-    background: rgba(255, 43, 94, 0.15);
+   /* background: rgba(255, 43, 94, 0.15);*/
     border-radius: 7px;
     display: flex;
     align-items: center;
@@ -25833,6 +25834,7 @@ form .form_btns input[type=file] + label,
     color: #000;
     opacity: 0.5;
 }
+/*
 .division_item.red .division_item-icon {
     background: rgba(255, 43, 94, 0.15);
 }
@@ -25854,7 +25856,7 @@ form .form_btns input[type=file] + label,
 .division_item.skyblue .division_item-icon {
     background: rgba(30, 196, 233, 0.15);
 }
-
+*/
 .division-page_text {
     font-weight: 400;
     font-size: 14px;
@@ -27150,7 +27152,7 @@ form .form_btns input[type=file] + label,
 }
 
 
-.progress{
+.course_info .progress{
     background: #FFFFFF;
     border: 1px solid #E6E6E6;
     border-radius: 7px;
@@ -27169,6 +27171,13 @@ form .form_btns input[type=file] + label,
     margin-right: 10px;
 }
 
-.progress + .progress{
+.course_info .progress + .progress{
     margin-left: 10px;
+}
+
+.division_item-icon img{
+	max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 7px;
 }
