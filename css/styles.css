@@ -27004,7 +27004,7 @@ form .form_btns input[type=file] + label,
     flex-direction: column;
 }
 .auth_img {
-    max-width: 900px;
+    max-width: 100%;
     position: relative;
     margin: 35px;
 }
