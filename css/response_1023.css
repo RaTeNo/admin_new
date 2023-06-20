@@ -482,8 +482,7 @@
         width: 100%;
     }
     .auth_img {
-        width: 100%;
-        padding: 60px 35px 35px 15px;
+         width: auto;
     }
 
 

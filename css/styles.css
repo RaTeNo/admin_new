@@ -3860,7 +3860,7 @@ aside .menu .sub_menu a.active
 }
 
 .files .list .file:hover{
-	top:0;
+    top:0;
 }
 
 
@@ -10117,17 +10117,15 @@ aside .menu .sub_menu a.active
 .auth .contacts
 {
     display: flex;
-
     width: 475px;
     max-width: 100%;
     padding: 24px;
-
     border-left: 2px solid #020027;
-
     justify-content: center;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+    z-index: 3;
 }
 
 .auth .contacts .info
@@ -10170,7 +10168,7 @@ aside .menu .sub_menu a.active
 
 .auth .contacts .item .name
 {
-    color: #020027;
+    color: #fff;
     font-size: 20px;
     font-weight: bold;
     line-height: 19px;
@@ -10184,8 +10182,7 @@ aside .menu .sub_menu a.active
     line-height: 21px;
 
     margin-top: 15px;
-
-    opacity: .5;
+    color: #fff;
 }
 
 
@@ -11574,19 +11571,19 @@ footer .logo
 }
 
 .message_new svg{
-	width: 25px;
-	height: 25px;
-	margin-right: 10px;
-	flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    flex-shrink: 0;
 }
 
 .message_new.warning{
-	justify-content: flex-start;
-	align-items: center;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .message_new.warning button{
-	margin-left: auto;
+    margin-left: auto;
 }
 
 .audio-record .loading svg
@@ -12234,7 +12231,7 @@ section.total {
 
 
 .mob_header .logo{
-	max-width: 160px;
+    max-width: 160px;
     height: 50px;
     margin-left: 30px;
     display: flex;
@@ -14129,8 +14126,8 @@ background: #64C841;
 .statistic table{
     border: 0.689286px solid #C8D2DA;
     width: 100%;
-	margin-bottom: 24px;
-	border-collapse: collapse; 
+    margin-bottom: 24px;
+    border-collapse: collapse; 
 }
 .statistic table thead {
     background: var(--main_color);
@@ -15233,7 +15230,7 @@ background: #64C841;
 }
 
 .details-modal .video_message svg{
-	width: 19px;
+    width: 19px;
     height: 19px;
     margin-right: 5px;
 }
@@ -18643,8 +18640,8 @@ button.copy span{
 }
 .create-report table{
     width: 100%;
-	margin-bottom: 24px;
-	border-collapse: collapse; 
+    margin-bottom: 24px;
+    border-collapse: collapse; 
     border-radius: 10px;
 }
 .create-report table thead {
@@ -19653,15 +19650,15 @@ button.copy span{
 }
 
 .slider + .welcome{
-	margin-top: 20px;
+    margin-top: 20px;
 }
 
 .title_courses_result + .not_my{
-	margin-top: 0;
+    margin-top: 0;
 }
 
 .title_courses_result[style="display: block;"] + .not_my{
-	margin-top: 40px;
+    margin-top: 40px;
 }
 
 
@@ -20171,19 +20168,19 @@ button.step-simulator_item span {
 }
 
 .info_sim_content{
-	padding:24px;
-	padding-top: 0;
-	margin-top: -15px;
+    padding:24px;
+    padding-top: 0;
+    margin-top: -15px;
 }
 
 .image_info_sim{
-	margin-top: 30px;
-	position: relative;
+    margin-top: 30px;
+    position: relative;
 }
 
 .image_info_sim img{
-	width: 100%;
-	max-width: 100%;
+    width: 100%;
+    max-width: 100%;
 }
 
 .image_info_sim .tooltype
@@ -20207,7 +20204,7 @@ border: 5px solid #FFFFFF;
 }
 /*
 .image_info_sim .tooltype:after{
-	content: "";
+    content: "";
     border: 5px solid var(--main_color);
     width: 35px;
     height: 35px;
@@ -20217,41 +20214,41 @@ border: 5px solid #FFFFFF;
 
 .tooltype::after,
 .tooltype::before {
-	content: '';
-	position: absolute;
-	border: 5px solid var(--main_color);
-	left: -20px;
-	opacity: 0;
-	right: -20px;
-	top: -20px;
-	bottom: -20px;
-	border-radius: 50%;
-	animation: pulse 2.5s linear infinite;
+    content: '';
+    position: absolute;
+    border: 5px solid var(--main_color);
+    left: -20px;
+    opacity: 0;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    animation: pulse 2.5s linear infinite;
 }
 
 .tooltype::after {
-	animation-delay: 1.25s;
+    animation-delay: 1.25s;
 }
 
 @keyframes pulse {
-	0% {
-		transform: scale(0.5);
-		opacity: 0;
-	}
-	50% {
-		opacity: 1;
-	}
-	100% {
-		transform: scale(1.2);
-		opacity: 0;
-	}
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
 }
 
 .image_info_sim .tooltype.active{
-	background: #fff;
+    background: #fff;
 }
 
-.info_sim_content button{	
+.info_sim_content button{   
 background: var(--main_color);
     border-radius: 77px;
     font-weight: 500;
@@ -20266,7 +20263,7 @@ background: var(--main_color);
 }
 
 .simulator_point{
-	display: none;
+    display: none;
     padding: 23px 20px 24px;
     background: #FFFFFF;
     border-radius: 15px;
@@ -20275,7 +20272,7 @@ background: var(--main_color);
 }
 
 .simulator_point-title{
-	font-weight: 700;
+    font-weight: 700;
     font-size: 20px;
     line-height: 23px;
     padding-bottom: 21px;
@@ -20303,21 +20300,21 @@ background: var(--main_color);
 }
 
 .simulator_point-text p{
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 .simulator_point-text .audio_media{
-	background: #F3F3FF;
+    background: #F3F3FF;
     border-radius: 8px;
     padding: 15px;
 }
 
 .simulator_action_debug .prompt_desc{
-	border-bottom: 1px solid #d0d0d0;
-	padding: 0 20px 20px;
+    border-bottom: 1px solid #d0d0d0;
+    padding: 0 20px 20px;
 }
 
 .simulator_point-button{
-	background: var(--main_color);
+    background: var(--main_color);
     border-radius: 77px;
     font-weight: 500;
     font-size: 12px;
@@ -20330,12 +20327,12 @@ background: var(--main_color);
     margin-top: 20px;
 }
 .simulator_point-button-wrap{
-	position: relative;
+    position: relative;
     padding-top: 1px;
     margin-top: 20px;
 }
 .simulator_point-button-wrap:before{
-	position: absolute;
+    position: absolute;
     content: "";
     width: calc(100% + 40px);
     height: 1px;
@@ -20388,7 +20385,7 @@ background: var(--main_color);
 }
 
 .simulator_point-form textarea {
-	color: var(--text_color);
+    color: var(--text_color);
     font-family: var(--font_family);
     font-size: 14px;
     line-height: 16px;
@@ -21930,9 +21927,9 @@ form .form_btns input[type=file] + label,
 
 /**/
 
-.trainer_item{	
+.trainer_item{  
     container-type: inline-size;
-  	container-name: simulator;
+    container-name: simulator;
 }
 
 @container simulator (max-width: 285px) {
@@ -21941,13 +21938,13 @@ form .form_btns input[type=file] + label,
     }
 
     .trainer_item-btn{
-    	margin-top: 5px;
-    	min-width: 90px;
-    	justify-content: center;
+        margin-top: 5px;
+        min-width: 90px;
+        justify-content: center;
     }
 
     .trainer_item-btn-study{
-    	margin-top: 0;
+        margin-top: 0;
     }
 }
 
@@ -21990,7 +21987,7 @@ form .form_btns input[type=file] + label,
 }
 
 .read-more__item + .read-more__item{
-	margin-top: 15px;
+    margin-top: 15px;
 }
 
 .read-more__item img {
@@ -26988,7 +26985,6 @@ form .form_btns input[type=file] + label,
     padding: 35px;
 }
 .auth_img {
-    padding: 60px 35px 35px;
 }
 .auth_logo-desc {
     position: absolute;
@@ -26997,36 +26993,49 @@ form .form_btns input[type=file] + label,
 }
 .auth-new .contacts {
     width: 100%;
-    padding: 12px 35px 53px;
     border-left: none;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
 }
 .auth-new .contacts .info {
     width: 100%;
     display: flex;
+    flex-direction: column;
 }
 .auth_img {
-    width: 685px;
+    max-width: 900px;
+    position: relative;
+    margin: 35px;
 }
+.auth_img:before{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    border-radius: 20px;
+    z-index: 2;
+}
+
 .auth-new .auth_img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
+    display: block;
+    top: 0;
+    z-index: 1;
 }
 .auth-new .contacts .info .item:first-child {
-    margin-right: auto;
-    margin-left: 0;
+    margin-right: 50px;
 }
 .auth-new .contacts .item {
-    margin-top: 0px;
-    margin-left: 50px;
+    margin-top: 25px;
 }
-.auth-new .contacts .item:nth-child(2) {
-    text-align: end;
-}
-.auth-new .contacts .item:nth-child(3) {
-    text-align: end;
-}
+
 .auth-new .login {
     margin-top: 80px;
 }
@@ -27039,4 +27048,8 @@ form .form_btns input[type=file] + label,
 
 .comments_wrap .comments{
     margin-top: 24px;
+}
+
+.auth-new .contacts .info .col_items{
+    display: flex;
 }
