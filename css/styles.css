@@ -26985,6 +26985,7 @@ form .form_btns input[type=file] + label,
 }
 .auth .data {
     padding: 35px;
+    margin-top: 100px;
 }
 .auth_img {
 }
@@ -27060,7 +27061,7 @@ form .form_btns input[type=file] + label,
     margin-top: 30px;
 }
 
-.step-simulator-archive .step-simulator_item:after{   
+.step-simulator-archive .step-simulator_item:after, .step-simulator_item_archive:after{   
     content: "";
     position: absolute;
     display: block;
@@ -27074,7 +27075,7 @@ form .form_btns input[type=file] + label,
 }
 
 
-.step-simulator-archive .step-simulator_item:before{
+.step-simulator-archive .step-simulator_item:before, .step-simulator_item_archive:before{
     content: "В архиве";
     background: #FF5F1B;
     border-radius: 6px;
