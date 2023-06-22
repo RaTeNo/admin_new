@@ -26069,7 +26069,8 @@ form .form_btns input[type=file] + label,
     opacity: 1;
 }
 .task-page_form .line .line-box + .line-box {
-    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
 .task-page_form .nice-select {
     -webkit-tap-highlight-color: transparent;

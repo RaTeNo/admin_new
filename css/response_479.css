@@ -1489,9 +1489,10 @@
     }
     .task-page_form .line .line-box{
         width: 100%;
+        margin-bottom: 0;
     }
     .task-page_form .line .line-box + .line-box {
         margin-left: 0px;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 }
