@@ -25922,14 +25922,12 @@ form .form_btns input[type=file] + label,
 .task-page_form .line .field input {
     width: 100%;
     background: #FFFFFF;
-    opacity: 0.5;
     border: 1px solid #7874A3;
     border-radius: 9px;
     font-family: 'Ubuntu';
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
-    color: #7874A3;
     padding: 14px;
 }
 .task-page_form .line .field textarea {
