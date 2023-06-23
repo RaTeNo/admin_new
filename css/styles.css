@@ -26993,6 +26993,10 @@ form .form_btns input[type=file] + label,
     left: 47px;
     top: 45px;
 }
+
+.auth_logo-desc img{
+    max-height: 50px;
+}
 .auth-new .contacts {
     width: 100%;
     border-left: none;
