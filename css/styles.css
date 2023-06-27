@@ -26853,6 +26853,8 @@ form .form_btns input[type=file] + label,
     display: block;
     border-radius: 11px;
     width: 100%;
+        height: 350px;
+    object-fit: cover;
 }
 .catalog_page-box-gallery-title {
     margin-top: 19px;
