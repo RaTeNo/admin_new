@@ -26731,6 +26731,7 @@ form .form_btns input[type=file] + label,
     width: 100%;
     height: 100%;
     border-radius: 7px;
+    object-fit: cover;
 }
 .catalog_page-top-info {
     margin-left: 24px;
@@ -26839,6 +26840,7 @@ form .form_btns input[type=file] + label,
 .catalog_page-box-gallery {
     display: flex;
     margin-left: -26px;
+    flex-wrap: wrap;
 }
 .catalog_page-box-gallery > * {
     margin-left: 26px;
