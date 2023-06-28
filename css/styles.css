@@ -26845,6 +26845,8 @@ form .form_btns input[type=file] + label,
 .catalog_page-box-gallery > * {
     margin-left: 26px;
     width: calc(100%/3 - 26px);
+    max-width: 400px;
+    margin-bottom: 26px;
 }
 .catalog_page-box-gallery a {
     text-decoration: none;
@@ -27188,4 +27190,23 @@ form .form_btns input[type=file] + label,
     height: auto;
     object-fit: contain;
     border-radius: 7px;
+}
+
+.list_hash{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: -10px;
+	margin-top: 20px;
+
+}
+
+.list_hash * {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background: var(--color_light);
+    padding: 7px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #646388;
+	font-size: 11px;
 }
