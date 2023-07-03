@@ -12,7 +12,7 @@ $(() => {
 			}
 			
 			if(selected_text != "") {
-				$(".add_comment textarea").val(selected_text);
+				$(".add_comment textarea").val("\""+selected_text+"\"\n-\n");
 				$("html, body").animate({
 					scrollTop: $(".add_comment").offset().top - 30
 				}, {
