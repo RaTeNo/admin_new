@@ -2,6 +2,29 @@ $(() => {
 	// Ширина окна для ресайза
 	WW = $(window).width()
 
+	$('body').keyup(function(event) {
+  		if(event.keyCode == 13) {
+			var selected_text = "";		
+			if(window.getSelection) {			
+				selected_text = window.getSelection().toString();		
+			} else if(document.selection && document.selection.type != "Control") {			
+				selected_text = document.selection.createRange().text;		
+			}
+			
+			if(selected_text != "") {
+				$(".add_comment textarea").val(selected_text);
+				$("html, body").animate({
+					scrollTop: $(".add_comment").offset().top - 30
+				}, {
+					duration: 1500,
+					easing: "swing"
+				});
+			}
+		}
+	});
+
+
+
 	$(".info_data_close").click(function (e) {
 		$(".info_data").hide();
 	});
