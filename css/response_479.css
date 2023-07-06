@@ -1475,10 +1475,11 @@
         margin-top: 6px;
     }
 
-
+    .wrapper_head_courses .page_title{
+        width: 100%;
+    }
     .wrapper_head_courses .page_title span {
         max-width: calc(100% - 40px);
-        max-width: 100%;
     }
 
     .comments_wrap .addition_wrap{
