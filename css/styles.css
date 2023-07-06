@@ -26655,6 +26655,8 @@ form .form_btns input[type=file] + label,
     background: #FFFFFF;
     border-radius: 15px; 
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
 }
 .catalog_item-top {
     display: flex;
@@ -26696,6 +26698,7 @@ form .form_btns input[type=file] + label,
     font-size: 14px;
     line-height: 16px;
     color: #030303;
+    margin-top: auto;
 }
 .catalog_item-bottom::before {
     position: absolute;
@@ -27046,7 +27049,6 @@ form .form_btns input[type=file] + label,
 }
 
 .auth-new .login {
-    margin-top: 80px;
 }
 
 

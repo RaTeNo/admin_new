@@ -1110,7 +1110,7 @@
     .mobile_logo{
         display: flex;
         justify-content: center;
-        padding: 40px 0 0;
+        padding: 40px 0 30px;
         max-width: 300px;
         margin: auto;
     }
@@ -2569,7 +2569,7 @@
         margin-top: 0px;
     } */
     .auth-new .login {
-        margin-top: 30px;
+        margin-top: 0px;
     }
 
     .auth-new .contacts .info .col_items{
