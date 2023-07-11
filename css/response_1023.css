@@ -484,7 +484,9 @@
     .auth_img {
          width: auto;
     }
-
+    .education_related_item{
+        width: calc(100%/2 - 6px);
+    }
 
 
 

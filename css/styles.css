@@ -27209,3 +27209,63 @@ form .form_btns input[type=file] + label,
     color: #646388;
 	font-size: 11px;
 }
+
+.education_description_sep{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 1px;
+}
+
+.education_description_sep:after{
+    position: absolute;
+    content: "";
+    width: calc(100% + 24px);
+    height: 1px;
+    background: #CDCDCD;
+    left: -12px;
+    top: 0;
+}
+
+.education_description-title_mt20{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.education_related{
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.education_related_item{
+    width: calc(100%/3 - 8px);
+    align-items: center;
+    display: inline-flex;
+    border-radius: 10px;
+    background: #F3F2FC;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.education_related_img{
+    object-fit: cover;
+    width: 87px;
+    flex-shrink: 0;
+    margin-right: 12px;
+}
+
+.education_related_img img{
+    object-fit: contain;
+    max-width: 100%;
+    border-radius: 5px;
+    display: block;
+}
+
+.education_related_title{
+    color: #020027;
+    font-size: 14px;
+    font-weight: 700;
+
+}
