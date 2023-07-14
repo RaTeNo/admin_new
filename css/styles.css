@@ -20079,6 +20079,13 @@ button.step-simulator_item span {
     margin-top: auto;
     position: relative;
 }
+.step-simulator_bottom2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    position: relative;
+}
 .step-simulator_text {
     font-weight: 500;
     font-size: 16px;
@@ -21718,6 +21725,7 @@ form .form_btns input[type=file] + label,
     padding:12px;
     padding-right: 8px;
     position: relative;
+    min-height: 600px;
 }
 .data_with_sidebar .steps .inner_steps{
     overflow-y: scroll;
@@ -27268,4 +27276,13 @@ form .form_btns input[type=file] + label,
     font-size: 14px;
     font-weight: 700;
 
+}
+.step-simulator_comment_new{
+    margin-right: 10px;
+}
+
+.step-simulator_comment_new svg{
+    width: 20px;
+    height: 20px;
+    color: var(--main_color);
 }
