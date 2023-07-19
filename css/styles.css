@@ -1813,7 +1813,7 @@ aside .menu .sub_menu a.active
 .text_block img
 {
     display: block;
-
+    width: 100%;
     max-width: 100%;
 }
 
@@ -26675,6 +26675,7 @@ form .form_btns input[type=file] + label,
     width: 83px;
     height: 83px;
     flex-shrink: 0;
+    align-self: baseline;
 }
 .catalog_item-img img {
     width: 100%;
