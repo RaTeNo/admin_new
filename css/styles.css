@@ -12158,10 +12158,7 @@ section.total {
     top: 14px;
 }
 
-.accordion_item .head .edit_faq svg{
-    width: 19px;
-    height: 19px;
-}
+
 
 .accordion_item.active .head .icon{
     transform: rotate(0deg);
@@ -27374,4 +27371,74 @@ form .form_btns input[type=file] + label,
     background: #DFDFDF;
     top: 0;
     left: -18px;
+}
+
+
+.likes{
+    display: inline-flex;
+    margin: 0 10px;
+    margin-top: 10px;
+    color: #7874A3;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.likes .like{
+    margin-right: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+}
+.likes .like svg{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+
+.likes .like.active{
+    color: var(--main_color);
+}
+
+.likes .like.active svg{
+    fill: var(--main_color);
+}
+
+.likes .dislike{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.likes .dislike svg{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.likes .dislike.active{
+    color: var(--main_color);
+}
+
+.likes .dislike.active svg{
+    fill: var(--main_color);
+}
+
+.edit_faq{
+    cursor: pointer;
+    display: flex;
+}
+
+.edit_faq svg{
+    width: 19px;
+    height: 19px;
+    margin-right: 5px;
+}
+
+.edit_faq span{
+    border-bottom: 1px dashed var(--main_color);
 }
