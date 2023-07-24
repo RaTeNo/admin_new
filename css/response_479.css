@@ -907,7 +907,7 @@
 
 
     .accordion_item .head .title{
-    	padding-right: 30px;
+    	padding-right: 80px;
     }
 
    
@@ -1496,5 +1496,9 @@
     .task-page_form .line .line-box + .line-box {
         margin-left: 0px;
         margin-top: 10px;
+    }
+
+    .accordion_item .head .edit_faq{
+        top:16px;
     }
 }

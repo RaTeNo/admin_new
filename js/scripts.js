@@ -145,6 +145,10 @@ $(() => {
 		})
 	}
 
+	$('body').on('click', '.accordion .accordion_item .head .edit_faq', function (e) {
+		e.stopPropagation();		
+	})
+
 
 	// Аккордион
 	$('body').on('click', '.accordion .accordion_item .head', function (e) {
