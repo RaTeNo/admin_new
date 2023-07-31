@@ -10504,6 +10504,8 @@ aside .menu .sub_menu a.active
     width: 100%;
 
     opacity: .8;
+
+    overflow-wrap: break-word;
 }
 
 
