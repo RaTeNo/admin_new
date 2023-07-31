@@ -418,6 +418,7 @@
     .data_with_sidebar .steps{
         width: 100%;
         margin-bottom: 20px;
+        min-height: auto;
     }
 
     .data_with_sidebar .steps .inner_steps{
