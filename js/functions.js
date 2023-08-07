@@ -130,13 +130,13 @@ $(() => {
 		$('.mini_modal_btn').removeClass('active')
 	})
 
+	
 	// Моб. версия
-	fiestResize = false
+	fakeResize = false
+	fakeResize2 = true
 
-	if ($(window).width() < 375) {
-		$('meta[name=viewport]').attr('content', 'width=375, user-scalable=no')
-
-		fiestResize = true
+	if (document.body.clientWidth < 375) {
+		document.getElementsByTagName('meta')['viewport'].content = 'width=375, user-scalable=no'
 	}
 })
 

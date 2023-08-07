@@ -1,6 +1,20 @@
+// Ширина окна для ресайза
+WW = window.innerWidth || document.clientWidth || document.getElementsByTagName('body')[0].clientWidth
+WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight
 $(() => {
-	// Ширина окна для ресайза
-	WW = $(window).width()
+
+	$(".idea_check-bottom button").click(function (e) {
+		$(".commission-decision, .idea_form").hide();
+		$(".new_load").show();
+
+		setTimeout(() => {
+			$(".new_load").hide();
+			$(".idea_form2").show();
+		}, 3000);
+
+	});
+
+	
 
 	$('body').keyup(function(event) {
   		if(event.keyCode == 13) {
@@ -1134,16 +1148,30 @@ $(window).on('load', () => {
 
 
 
-$(window).on('resize', () => {
-	if (typeof WW !== 'undefined' && WW != $(window).width()) {
-		// Моб. версия
-		if (!fiestResize) {
-			$('meta[name=viewport]').attr('content', 'width=device-width, initial-scale=1, maximum-scale=1')
-			if ($(window).width() < 375) $('meta[name=viewport]').attr('content', 'width=375, user-scalable=no')
 
-			fiestResize = true
+$(window).on('resize', () => {
+	WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight
+	let windowW = window.outerWidth
+
+	if (typeof WW !== 'undefined' && WW != windowW) {
+		// Перезапись ширины окна
+		WW = window.innerWidth || document.clientWidth || document.getElementsByTagName('body')[0].clientWidth
+
+		// Моб. версия
+		if (!fakeResize) {
+			fakeResize = true
+			fakeResize2 = false
+
+			document.getElementsByTagName('meta')['viewport'].content = 'width=device-width, initial-scale=1, maximum-scale=1'
+		}
+
+		if (!fakeResize2) {
+			fakeResize2 = true
+
+			if (windowW < 360) document.getElementsByTagName('meta')['viewport'].content = 'width=360, user-scalable=no'
 		} else {
-			fiestResize = false
+			fakeResize = false
+			fakeResize2 = true
 		}
 
 
@@ -1184,11 +1212,6 @@ $(window).on('resize', () => {
 			namesHeight2($(this), 100)
 		})
 
-
-
-
-		// Перезапись ширины окна
-		WW = $(window).width()
 	}
 })
 
