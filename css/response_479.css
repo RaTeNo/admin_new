@@ -1501,4 +1501,43 @@
     .accordion_item .head .edit_faq{
         top:16px;
     }
+
+
+
+    .myideas_item-left {
+        width: 100%;
+    }
+    .myideas_item {
+        flex-wrap: wrap;
+    }
+    .myideas_item-date {
+        text-align: start;
+        margin-top: 10px;
+    }
+    .myideas_item-right {
+        align-items: flex-start;
+    }
+    .ideas-catalog_items > * {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .ideas-counter_items {
+        margin-left: 0;
+    }
+    .ideas-counter_items > * {
+        width: 100%;
+        margin-left: 0;
+    }
+    .idea-block_item-status {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .idea-page .idea-block_item-label {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+
+
+
 }
