@@ -2635,7 +2635,7 @@
         align-items: flex-start;
     }
     .idea-head_left {
-        margin-bottom: 15px;
+        margin-bottom: 15px !important;
     }
     .idea-head .select-right {
         margin-left: 0;

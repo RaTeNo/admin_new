@@ -27817,7 +27817,11 @@ form .form_btns input[type=file] + label,
     margin-top: 10px;
 }
 
-
+.tabs_container_ideas{
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
 .idea-head {
     display: flex;
     align-items: center;
@@ -27828,8 +27832,9 @@ form .form_btns input[type=file] + label,
     padding: 4px;
     border-radius: 39px;
     background: #E8E6F4;
+    margin: 0 !important;
 }
-.idea-head_left a {
+.tabs_container .idea-head_left button {
     text-decoration: none;
     color: #7D85C5;
     font-size: 14px;
@@ -27838,12 +27843,16 @@ form .form_btns input[type=file] + label,
     border-radius: 55px;
     transition: all .4s;
     display: inline-block;
+    line-height: normal;
+    opacity: 1;
+    margin-right: 0;
+    letter-spacing: inherit;
 }
-.idea-head_left a:hover {
+.tabs_container .idea-head_left button:hover {
     background: var(--main_color);
     color: #fff;
 }
-.idea-head_left a.active {
+.tabs_container .idea-head_left button.active {
     background: var(--main_color);
     color: #fff;
 }
@@ -27893,6 +27902,10 @@ form .form_btns input[type=file] + label,
 
 .idea-block {
     margin-top: 30px;
+    display: none;
+}
+.idea-block.active{
+    display: block;
 }
 .idea-block_item {
     padding: 16px 16px 19px 24px;

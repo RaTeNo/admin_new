@@ -1372,6 +1372,14 @@
         line-height: 21px;
         margin-right: 6px;
     }
+
+    .tabs_container .idea-head_left button {
+        font-size: 14px;
+        line-height: inherit;
+        margin-right: 0;
+    }
+
+
     .education_wrap {
         flex-direction: column;
     }
