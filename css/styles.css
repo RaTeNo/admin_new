@@ -27898,11 +27898,12 @@ form .form_btns input[type=file] + label,
     line-height: 21px;
     color: #637191;
 }
-
+.tabs_container .idea-block{
+    display: none
+}
 
 .idea-block {
     margin-top: 30px;
-    display: none;
 }
 .idea-block.active{
     display: block;
