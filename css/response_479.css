@@ -1545,7 +1545,19 @@
         margin-top: 15px;
     }
 
+    .edit_idea_buttons{
+        flex-direction: column;
+    }
 
+    .edit_idea_buttons .idea-block_link{
+        margin-top: 10px;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .edit_idea_buttons .idea-block_link + .idea-block_link{
+        margin-top: 0;
+    }
 
 
 }

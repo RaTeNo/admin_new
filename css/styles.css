@@ -11902,6 +11902,7 @@ section.total {
 .total_file_desc .links > * {
     margin-bottom: 10px;
     margin-left: 10px;
+    width: 130px;
 }
 
 .total_file_desc .links a {
@@ -28006,6 +28007,7 @@ form .form_btns input[type=file] + label,
     width: 100%;
     height: 100%;   
     object-fit: cover; 
+    border-radius: 50%;
 }
 .idea-block_item-author-info {
     margin-left: 10px;
@@ -28443,13 +28445,13 @@ form .form_btns input[type=file] + label,
     padding-bottom: 23px;
 }
 .suggestion_description:before {
-    position: absolute;
+    /*position: absolute;
     content: "";
     background: #DFDFDF;
     width: calc(100% + 36px);
     height: 1px;
     bottom: 0;
-    left: -18px;
+    left: -18px;*/
 }
 .suggestion_description-item {
     color: #515784;
@@ -28509,4 +28511,11 @@ form .form_btns input[type=file] + label,
     margin-top: 15px;
     display: inline-block;   
     color: #7874A3;
+}
+.edit_idea_buttons{
+    display: flex;
+}
+
+.edit_idea_buttons * + * {
+    margin-left: 10px;
 }
