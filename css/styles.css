@@ -2970,7 +2970,10 @@ aside .menu .sub_menu a.active
 
 .articles .article .author img{
     margin-right: 5px;
-    border-radius: 7px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    height: 25px;
+    object-fit: cover;
 }
 
 .articles .article .comment_news svg
@@ -6809,6 +6812,7 @@ aside .menu .sub_menu a.active
 
     border-radius: 16px;
     background: #1bcc53;
+    margin-right: 10px;
 }
 
 
@@ -6831,6 +6835,7 @@ aside .menu .sub_menu a.active
 .workbook .item .link.blue
 {
     color: #178eff;
+    margin-right: 15px;
 }
 
 
@@ -27921,6 +27926,7 @@ form .form_btns input[type=file] + label,
     margin-bottom: 11px;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 .idea-block_item-title {
     color: #000;
@@ -28518,4 +28524,11 @@ form .form_btns input[type=file] + label,
 
 .edit_idea_buttons * + * {
     margin-left: 10px;
+}
+
+.flex.py-5.justify-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
 }
