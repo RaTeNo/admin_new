@@ -6824,7 +6824,7 @@ aside .menu .sub_menu a.active
 
     display: inline-block;
 
-    margin-top: 30px;
+    margin-top: 25px;
 
     vertical-align: top;
     text-decoration: none;
@@ -28531,4 +28531,13 @@ form .form_btns input[type=file] + label,
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
+}
+
+.comment_files{
+    width: 100%;
+    margin-top: 10px;
+}
+
+ .comments .comment  .comment_files .name{
+    font-size: 14px;
 }
