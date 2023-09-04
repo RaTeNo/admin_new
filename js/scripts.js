@@ -15,6 +15,7 @@ $(() => {
 
 	
 
+	
 	$(".idea_check-bottom button").click(function (e) {
 		$(".commission-decision, .idea_form").hide();
 		$(".new_load").show();
