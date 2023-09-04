@@ -3,6 +3,18 @@ WW = window.innerWidth || document.clientWidth || document.getElementsByTagName(
 WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight
 $(() => {
 
+
+	$(".inner_steps .step").click(function (e) {
+		e.preventDefault();
+		let id = $(this).data("id");
+		$(".steps_data_js").fadeOut(200);
+		setTimeout(() => {
+			$(".steps_data_js[data-id='"+id+"']").fadeIn(200);
+		}, 200);
+	});
+
+	
+
 	$(".idea_check-bottom button").click(function (e) {
 		$(".commission-decision, .idea_form").hide();
 		$(".new_load").show();

@@ -28541,3 +28541,7 @@ form .form_btns input[type=file] + label,
  .comments .comment  .comment_files .name{
     font-size: 14px;
 }
+
+.steps_data_js{
+    display: none;
+}

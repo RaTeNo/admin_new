@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    setTimeout(() => {
+   /* setTimeout(() => {
         if($(window).width()>1023)
         {
             const elHeight = $(".data_with_sidebar .data").outerHeight();
@@ -32,7 +32,7 @@ $(document).ready(function() {
                
             }    
         }
-    }, 1000)
+    }, 1000)*/
 
    
 });
