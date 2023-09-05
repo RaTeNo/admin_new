@@ -20207,6 +20207,7 @@ button.step-simulator_item span {
 .image_info_sim img{
     width: 100%;
     max-width: 100%;
+    border-radius: 14px;
 }
 
 .image_info_sim .tooltype
@@ -28543,5 +28544,9 @@ form .form_btns input[type=file] + label,
 }
 
 .steps_data_js{
+    display: none;
+}
+
+.comments_data_js{
     display: none;
 }

@@ -4,14 +4,6 @@ WH = window.innerHeight || document.clientHeight || document.getElementsByTagNam
 $(() => {
 
 
-	$(".inner_steps .step").click(function (e) {
-		e.preventDefault();
-		let id = $(this).data("id");
-		$(".steps_data_js").fadeOut(200);
-		setTimeout(() => {
-			$(".steps_data_js[data-id='"+id+"']").fadeIn(200);
-		}, 200);
-	});
 
 	
 
