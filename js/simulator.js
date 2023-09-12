@@ -1,5 +1,18 @@
 $(document).ready(function() {
 
+    $('body').on('click', '.steps_stage .step_stage:not(.active)', function (e) {
+        var date = new Date();
+        $(this).addClass("active").find("use").attr("xlink:href","images/sprite.svg#training_ok");
+        $(this).find(".step_stage_time").text("Выполнено в " +  date.getHours() + ":"+  date.getMinutes());
+
+        if($(".steps_stage .step_stage:not(.active)").length==0)
+        {
+            let id = $(this).closest(".steps_data_js").data("id");
+            $(".inner_steps .step[data-id='"+id+"']").removeClass("error").addClass("complete").find("use").attr("xlink:href","images/sprite.svg#step_complete");
+        }
+    });
+
+
     $(".inner_steps .step").click(function (e) {
         e.preventDefault();
         let id = $(this).data("id");

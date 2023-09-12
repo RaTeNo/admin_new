@@ -756,8 +756,10 @@
 		<script type="text/javascript">
 			$(document).ready(function(){
 				let $slickElement = $('.slick');					
+				let cur = 0;
 
-				$slickElement.on("init reInit afterChange", function(event, slick){
+				$slickElement.on("init reInit", function(event, slick, currentSlide, nextSlide){
+					cur = currentSlide;
 					if($(".btn-prev").next().hasClass("count_slider"))
 					{
 				    	$(".count_slider").text(parseInt(slick.currentSlide + 1) + ' из ' + slick.slideCount);
@@ -767,9 +769,26 @@
 						$(".btn-prev").after("<div class='count_slider'></div>");
 					    $(".count_slider").text(parseInt(slick.currentSlide + 1) + ' из ' + slick.slideCount);
 					}
-					$('audio').each(function(){
-                		this.pause();
-                	});
+				});
+
+				$slickElement.on("afterChange", function(event, slick, currentSlide, nextSlide){
+					if($(".btn-prev").next().hasClass("count_slider"))
+					{
+				    	$(".count_slider").text(parseInt(slick.currentSlide + 1) + ' из ' + slick.slideCount);
+					}
+					else
+					{						
+						$(".btn-prev").after("<div class='count_slider'></div>");
+					    $(".count_slider").text(parseInt(slick.currentSlide + 1) + ' из ' + slick.slideCount);
+					}
+
+					if(cur!=slick.currentSlide)
+					{
+						$('audio').each(function(){						
+	                		this.pause();
+	                	});
+	                	cur = slick.currentSlide;
+                	}
 				});
 
 				$slickElement.slick({

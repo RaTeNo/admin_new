@@ -422,12 +422,12 @@
 
 								<section class="steps">
 									<div class="inner_steps">
-										<a href="" class="step complete" id="step100" data-id="1">
+										<a href="" class="step error" id="step100" data-id="1">
 											<div class="step_header">
 												<div class="step_number">1</div>
 												<div class="step_status">
 													<svg class="icon">
-														<use xlink:href="images/sprite.svg#step_complete"></use>
+														<use xlink:href="images/sprite.svg#step_error"></use>
 													</svg>
 												</div>
 											</div>
@@ -698,6 +698,67 @@
 										</div>
 									</div>
 
+
+									<div class="warning_training">
+										<div class="warning_training_title">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#warning_training"></use>
+											</svg>
+											Важно помнить!
+										</div>
+										<p>Загораются лампочки: Передача «Высокая», Холодильная установка «Стоп», тормоз «Отключен», барабан «Выключен»</p>
+									</div>
+
+
+									<div class="warning_training">
+										<div class="warning_training_title">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#error_training"></use>
+											</svg>
+											Безопасность
+										</div>
+										<p>Заполнение емкости не более ¾ объема.</p>
+
+										<p>При применении нефраса для освежения деталей покрышки не допускать разбрызгивания, розлива.</p>
+
+										<p>В случае розлива нефраса руководствоваться инструкцией О-31.
+											При уходе с рабочего места закрыть емкость с нефрасом</p>
+									</div>
+
+									<div class="warning_training steps_stage">
+										<div class="steps_stage_title">
+											Шаги данного этапа
+										</div>
+
+										<div class="step_stage">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#training_not"></use>
+											</svg>
+											<div class="step_stage_body">
+												1. Подключить станок к электропитанию
+												<div class="step_stage_time"></div>
+											</div>
+										</div>
+										<div class="step_stage">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#training_not"></use>
+											</svg>
+											<div class="step_stage_body">
+												2. Подключить станок к электропитанию
+												<div class="step_stage_time"></div>
+											</div>
+										</div>
+										<div class="step_stage">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#training_not"></use>
+											</svg>
+											<div class="step_stage_body">
+												3. Подключить станок к электропитанию
+												<div class="step_stage_time"></div>
+											</div>
+										</div>
+									</div>
+
 									<div class="info_sim_content">
 
 										<div class="image_info_sim">
@@ -710,6 +771,13 @@
 												style="top:70%; left:30%; position: absolute;"></div>
 											<div class="tooltype" data-id="#type4"
 												style="top:40%; left:50%; position: absolute;"></div>
+
+											<div class="full_screen modal_btn" data-content="#info_sim_modal">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#full_screen"></use>
+												</svg>
+												На весь экран
+											</div>
 										</div>
 
 										<button>Закончить ознакомление и перейти далее</button>
@@ -829,6 +897,83 @@
 										</li>
 									</ul>
 								</div>
+
+								<div class="warning_training">
+									<div class="warning_training_title">										
+										Рабочие действия
+										<div class="additional-actions_btns">
+											<button>Добавить рабочее действие</button>
+										</div>
+									</div>
+									<div class="warning_training_list">
+										<ul>
+											<li>
+												<div class="handle">
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#sort"></use>
+													</svg>
+												</div>
+												<span>Подсолнечное масло</span>
+												<button>Редактировать</button>
+												<button>Архивировать</button>
+											</li>
+											<li>
+												<div class="handle">
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#sort"></use>
+													</svg>
+												</div>
+												<span>Говядина</span>
+												<button>Редактировать</button>
+												<button>Архивировать</button>
+											</li>
+											<li>
+												<div class="handle">
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#sort"></use>
+													</svg>
+												</div>
+												<span>Свинина</span>
+												<button>Редактировать</button>
+												<button>Архивировать</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+
+								<div class="warning_training">
+									<div class="warning_training_title">
+										<svg class="icon">
+											<use xlink:href="images/sprite.svg#warning_training"></use>
+										</svg>
+										Важно помнить!
+										<div class="additional-actions_btns">
+											<button class="modal_btn" data-content="#correction_modal">Редактировать</button>
+										</div>
+									</div>
+									<p>Загораются лампочки: Передача «Высокая», Холодильная установка «Стоп», тормоз «Отключен», барабан «Выключен»</p>
+								</div>
+
+
+								<div class="warning_training">
+									<div class="warning_training_title">
+										<svg class="icon">
+											<use xlink:href="images/sprite.svg#error_training"></use>
+										</svg>
+										Безопасность
+										<div class="additional-actions_btns">
+											<button>Редактировать</button>
+										</div>
+									</div>
+									<p>Заполнение емкости не более ¾ объема.</p>
+
+									<p>При применении нефраса для освежения деталей покрышки не допускать разбрызгивания, розлива.</p>
+
+									<p>В случае розлива нефраса руководствоваться инструкцией О-31.
+										При уходе с рабочего места закрыть емкость с нефрасом</p>
+								</div>
+
 								<div class="additional-actions">
 									<div class="additional-actions_title">Дополнительные действия</div>
 									<div class="additional-actions_btns">
@@ -1321,6 +1466,36 @@
 		</div>
 	</section>
 
+	<section class="info_sim_modal" id="info_sim_modal">
+		<div class="image_info_sim">
+			<img data-src="images/info_sim.jpg" alt="" class="lozad" style="aspect-ratio: 604/293;">
+			<div class="tooltype bg" data-id="#type1"
+				style="top:30%; left:30%; position: absolute;">1</div>
+			<div class="tooltype" data-id="#type2"
+				style="top:50%; left:60%; position: absolute;"></div>
+			<div class="tooltype" data-id="#type3"
+				style="top:70%; left:30%; position: absolute;"></div>
+			<div class="tooltype" data-id="#type4"
+				style="top:40%; left:50%; position: absolute;"></div>
+		</div>
+	</section>
+
+	<section class="correction_modal" id="correction_modal">			
+		<div class="correction_modal-title">Редактировать</div>											
+		<div class="correction_modal-text">Текст</div>
+		<form class="correction_modal-form">
+			<div class="line">
+				<div class="field">
+					<textarea placeholder="Текст"></textarea>
+				</div>
+			</div>	
+			<div class="correction_modal-btns">
+				<a href="#" class="correction_modal-form-btn active">
+					<span>Отправить</span>					
+				</a>			
+			</div>							
+		</form>
+	</section>
 
 	<!-- Подключение javascript файлов -->
 	<script src="js/jquery-3.5.0.min.js"></script>
@@ -1334,6 +1509,15 @@
 	<script src="js/scripts.js"></script>
 	<script src="js/simulator_action.js"></script>
 	<script src="js/simulator.js"></script>
+	 <script src="https://unpkg.com/sortablejs-make/Sortable.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-sortablejs@latest/jquery-sortable.js"></script>
+
+	<script type="text/javascript">
+		$('.warning_training_list ul').sortable({
+			handle: '.handle', // handle's class
+		    animation: 150
+		});
+	</script>
 </body>
 
 </html>

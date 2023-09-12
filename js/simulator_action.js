@@ -4,7 +4,7 @@ $(() => {
     $(".image_info_sim .tooltype").on("click", function(){
 		let id = $(this).data("id");
 
-		Fancybox.close()
+		
 		Fancybox.show([{
 			src: id,
 			type: 'inline'
