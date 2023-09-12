@@ -489,7 +489,9 @@
         width: calc(100%/2 - 6px);
     }
 
-
+    .full_screen{
+        display: none !important;
+    }
 
 
 }
