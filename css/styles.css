@@ -21774,7 +21774,7 @@ form .form_btns input[type=file] + label,
     display: block;
     text-decoration: none;
     color: #3D3D3D;
-
+    border-left: 6px solid var(--main_color);
 }
 
 .data_with_sidebar .steps .step + .step{
@@ -21791,6 +21791,14 @@ form .form_btns input[type=file] + label,
 
 .data_with_sidebar .steps .step.active{
     border-left: 6px solid var(--main_color);
+}
+
+.data_with_sidebar .steps .step_status{
+    display: none;
+}
+
+.data_with_sidebar .steps .step.error .step_status, .data_with_sidebar .steps .step.complete .step_status{
+    display: block;
 }
 
 .data_with_sidebar .step_header{
@@ -28709,4 +28717,8 @@ form .form_btns input[type=file] + label,
 
 .info_sim_modal{
     display: none;
+}
+
+.warning_training_list .handle{
+    cursor: grab;
 }
