@@ -28572,7 +28572,7 @@ form .form_btns input[type=file] + label,
     margin-top:0;
 }
 
-.warning_training_title{
+.warning_training_title, .setting-notes_title{
     display: flex;
     font-size: 18px;
     font-weight: 700;
@@ -28580,7 +28580,7 @@ form .form_btns input[type=file] + label,
     margin-bottom: 10px;
 }
 
-.warning_training_title .icon{
+.warning_training_title .icon, .setting-notes_title .icon{
     width: 34px;
     height: 34px;
     margin-right: 10px;
