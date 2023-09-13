@@ -3,7 +3,7 @@ $(document).ready(function() {
     $('body').on('click', '.steps_stage .step_stage:not(.active)', function (e) {
         var date = new Date();
         $(this).addClass("active").find("use").attr("xlink:href","images/sprite.svg#training_ok");
-        let min = date.getHours();
+        let min = date.getMinutes();
         if(min<10)
         {
             min = "0"+min;
