@@ -20137,7 +20137,7 @@ button.step-simulator_item span {
     display: flex;
     align-items: center;
     text-decoration: none;
-    margin-right: 50px;
+    margin-right: 10px;
 }
 .step-simulator_comment span {    
     display: block;
@@ -28584,12 +28584,22 @@ form .form_btns input[type=file] + label,
     width: 34px;
     height: 34px;
     margin-right: 10px;
+     color: var(--main_color);
 }
 
 .steps_stage_title{
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 20px;
+    align-items: center;
+    display: flex;
+}
+
+.steps_stage_title .icon{
+    width: 34px;
+    height: 34px;
+    margin-right: 10px;
+    color: var(--main_color);
 }
 
 .step_stage{
