@@ -3,7 +3,12 @@ $(document).ready(function() {
     $('body').on('click', '.steps_stage .step_stage:not(.active)', function (e) {
         var date = new Date();
         $(this).addClass("active").find("use").attr("xlink:href","images/sprite.svg#training_ok");
-        $(this).find(".step_stage_time").text("Выполнено в " +  date.getHours() + ":"+  date.getMinutes());
+        let min = date.getHours();
+        if(min<10)
+        {
+            min = "0"+min;
+        }
+        $(this).find(".step_stage_time").text("Выполнено в " +  date.getHours() + ":"+  min);
 
         if($(".steps_stage .step_stage:not(.active)").length==0)
         {
