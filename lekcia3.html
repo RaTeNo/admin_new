@@ -330,6 +330,25 @@
 											<div class="slick_wrap">
 												<div class="slick">
 													<div class="slick_item">
+														<div class="presentation presentation1">
+															<div class="presentation_wrap">
+																<div class="presentation_left">
+																	<img src="images/image7.jpg" alt="">
+																	<div class="presentation_title">
+																		Требования пожарной безопасности
+																	</div>
+																	<div class="presentation_text">
+																		<p>Инструкция ИОТ-18/27 о мерах пожарной безопасности в АО «Волтайр-Пром» </p>
+																	</div>
+																</div>
+																<div class="presentation_right">
+																	<div class="presentation_img"><img src="images/Rectangle 2091.jpg" alt=""></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="slick_item">
 														<div class="slick_image">
 															<a href="images/tmp/1.jpg" data-fancybox2>
 																<img src="images/tmp/1.jpg" alt="">
@@ -338,7 +357,7 @@
 														</div>
 														<div class="slick_player">
 															<div class="audio_media">
-																<audio controls src="images/t-rex-roar.mp3">
+																<audio controls src="sounds/Manntra - Oyka!.mp3" onplaying="stopOther(this)">
 																	Your browser does not support the
 																	<code>audio</code> element.
 																</audio>
@@ -354,7 +373,7 @@
 														</div>
 														<div class="slick_player">
 															<div class="audio_media">
-																<audio controls src="images/t-rex-roar.mp3">
+																<audio controls src="sounds/Manntra - Königsmord.mp3"  onplaying="stopOther(this)">
 																	Your browser does not support the
 																	<code>audio</code> element.
 																</audio>
@@ -390,11 +409,7 @@
 														</div>
 													</div>
 
-													<div class="slick_item">
-														<div class="html_code">
-															<code>html_code</code>
-														</div>
-													</div>
+													
 
 												</div>
 												<div class="nav_slick">
@@ -754,12 +769,21 @@
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script type="text/javascript">
+			function stopOther(el){
+				$('audio').each(function(){	
+					if(this!=el)
+					{
+            			this.pause();
+					}			
+            	});
+			}
+
 			$(document).ready(function(){
 				let $slickElement = $('.slick');					
 				let cur = 0;
 
 				$slickElement.on("init reInit", function(event, slick, currentSlide, nextSlide){
-					cur = currentSlide;
+					
 					if($(".btn-prev").next().hasClass("count_slider"))
 					{
 				    	$(".count_slider").text(parseInt(slick.currentSlide + 1) + ' из ' + slick.slideCount);
@@ -782,13 +806,15 @@
 					    $(".count_slider").text(parseInt(slick.currentSlide + 1) + ' из ' + slick.slideCount);
 					}
 
+					/*console.log(cur);
+					console.log(slick.currentSlide);
 					if(cur!=slick.currentSlide)
 					{
 						$('audio').each(function(){						
 	                		this.pause();
 	                	});
 	                	cur = slick.currentSlide;
-                	}
+                	}*/
 				});
 
 				$slickElement.slick({
@@ -800,6 +826,7 @@
 		            prevArrow: '<button id="prev" type="button" class="btn btn-juliet btn-prev"><svg><use xlink:href="images/sprite.svg#ic_slick_prev"></use></svg></button>',
 		            nextArrow: '<button id="next" type="button" class="btn btn-juliet btn-next"><svg><use xlink:href="images/sprite.svg#ic_slick_next"></use></svg></button>'
 				});
+
 
 
 				
