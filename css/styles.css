@@ -28792,6 +28792,10 @@ form .form_btns input[type=file] + label,
 	position: relative;
 }	
 
+.presentation_right{
+	flex-shrink: 0;
+}
+
 @container presentations (max-width: 900px) {
  	.presentation_title{
  		font-size: 40px;
