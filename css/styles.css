@@ -28619,6 +28619,7 @@ form .form_btns input[type=file] + label,
     width: 30px;
     height: 30px;
     margin-right: 10px;
+    flex-shrink:0;
 }
 
 .step_stage_body{
@@ -28703,6 +28704,7 @@ form .form_btns input[type=file] + label,
     line-height: 16px;
     color: #3D3D3D;
     display: flex;
+    align-items: flex-start;
 }
 
 .warning_training_list ul li button {
