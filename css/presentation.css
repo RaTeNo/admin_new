@@ -17,6 +17,10 @@
 	width: auto;
 }
 
+.presentation .presentation_right{
+    position: relative;
+}
+
 .presentation_title{
 	color: #353535;
 	font-size: 46px;
@@ -111,16 +115,17 @@
     z-index: 1;
     position: relative;
 }
-.presentation3 .presentation_img:before {
+
+.presentation3:after {
     content: "";
-    width: calc(100% + 60px);
+    width: calc(25%);
     display: block;
-    height: calc(100% + 240px);
-    top: -120px;
-    left: 50%;
+    height: calc(100%);    
+    right: 0%;
     background: #214A76;
     position: absolute;
-    z-index: -1;
+    z-index: 0;
+    top:0;
 }
 .presentation3 {
     position: relative;
