@@ -28742,7 +28742,7 @@ form .form_btns input[type=file] + label,
 .presentation_wrap{
 	display: flex;
 	padding: 60px;
-	gap:35px;
+	gap:65px;
 	background: #fff;
 	align-items: center;
 }
@@ -28795,6 +28795,81 @@ form .form_btns input[type=file] + label,
 .presentation_right{
 	flex-shrink: 0;
 }
+.presentation ul {
+    list-style: none;
+}
+.presentation ul li {
+    display: flex;
+}
+.presentation ul li img {
+    display: block;
+    width: 27px;
+    height: 27px;
+    margin-right: 15px;
+}
+.text_block .presentation2 ul li:before {
+    display: none;
+}
+.text_block .presentation2 ul li {
+    padding-left: 0;
+    color: #214A76;
+    font-family: "Ubuntu";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.text_block .presentation2 ul li + li {
+    margin-top: 34px;
+}
+.presentation2 .presentation_wrap {
+    padding: 0;
+    align-items: inherit;
+}
+.presentation2 .presentation_img {
+    position: relative;
+    height: 100%;
+}
+.presentation2 .presentation_img img {
+    height: 100%;
+    width: 100%;
+}
+.presentation2 .presentation_left {
+    padding: 84px 98px 96px 0px;
+}
+
+.presentation3 .presentation_wrap {
+    padding: 120px 60px 120px 120px;
+}
+.presentation3 .presentation_img {
+    z-index: 1;
+    position: relative;
+}
+.presentation3 .presentation_img:before {
+    content: "";
+    width: calc(100% + 60px);
+    display: block;
+    height: calc(100% + 240px);
+    top: -120px;
+    left: 50%;
+    background: #214A76;
+    position: absolute;
+    z-index: -1;
+}
+.presentation3 {
+    position: relative;
+}
+.presentation3:before {
+    position: absolute;
+    content: "";
+    width: 38px;
+    height: 176px;
+    top: 0;
+    left: 0;
+    background: #EF4D53;
+    z-index: 1;
+}
+
 
 @container presentations (max-width: 900px) {
  	.presentation_title{
@@ -28805,6 +28880,20 @@ form .form_btns input[type=file] + label,
  	.presentation_text p{
  		font-size: 18px;
  	}
+     .text_block .presentation2 ul li {
+        font-size: 18px;
+     }
+
+
+     .presentation3 .presentation_wrap {
+        padding: 60px;
+     }
+     .presentation2 .presentation_right {
+        width: calc(100% - 400px);
+     }
+     .presentation2 .presentation_left {
+        padding: 60px 60px 60px 0;
+     }
 }
 
 @container presentations (max-width: 700px) {	
@@ -28819,6 +28908,9 @@ form .form_btns input[type=file] + label,
  	.presentation_text p{
  		font-size: 16px;
  	}
+     .text_block .presentation2 ul li {
+        font-size: 16px;
+     }
 }
 
 @container presentations (max-width: 600px) {
@@ -28829,6 +28921,25 @@ form .form_btns input[type=file] + label,
 	.presentation1 .presentation_img:before{
 		display: none;
 	}
+    .presentation3 .presentation_img:before {
+        width: 100%;
+        height: calc(100% + 40px);
+        top: -20px;
+        left: 40px;
+    }
+    .presentation3 .presentation_wrap {
+        flex-direction: column;
+    }
+    .presentation2 .presentation_wrap {
+        padding: 60px;
+    }
+    .presentation2 .presentation_left {
+        padding: 0px;
+     }
+     .presentation2 .presentation_right {
+        width: 100%;
+     }
+
 }
 
 @container presentations (max-width: 500px) {	
@@ -28836,4 +28947,11 @@ form .form_btns input[type=file] + label,
 	.presentation_title{
 		margin-bottom: 20px;
 	}
+    .presentation2 .presentation_wrap,
+    .presentation3 .presentation_wrap {
+        padding: 30px;
+    }
+    .presentation3:before  {
+        width: 15px;
+    }
 }
