@@ -9,6 +9,7 @@
 	gap:65px;
 	background: #fff;
 	align-items: center;
+    overflow: hidden;
 }
 
 .presentation_left img{
