@@ -28648,6 +28648,10 @@ form .form_btns input[type=file] + label,
     cursor: pointer;
 }
 
+.full_screen span{
+    display: none;
+}
+
 .full_screen .icon{
     width: 25px;
     height: 25px;
@@ -28755,6 +28759,10 @@ form .form_btns input[type=file] + label,
     position: relative;
 }
 
+.adding_item_img{
+    position: relative;
+}
+
 .adding_item img{
     max-width: 100%;
     object-fit: cover;
@@ -28779,4 +28787,11 @@ bottom: 20px;
 .count_points svg{
     width: 30px;
     height: 30px;
+}
+
+.adding_item_text{
+    color: #3D3D3D;
+    font-size: 14px;
+    line-height: 15px; 
+    margin-top:15px;
 }

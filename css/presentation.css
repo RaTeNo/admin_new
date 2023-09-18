@@ -2,6 +2,7 @@
 
 
 :root {
+	--text: black;
     --bg2: #EF4D53;
     --bg3: #214A76;
 }
@@ -38,7 +39,7 @@
 }
 
 .presentation_text p{
-	color: var(--bg3);
+	color: var(--text);
 	font-size: 22px;
 	line-height: normal;
 }
@@ -102,14 +103,12 @@
 }
 .presentation2 .presentation_wrap {
     padding: 0;
-    align-items: inherit;
 }
 .presentation2 .presentation_img {
     position: relative;
     height: 100%;
 }
 .presentation2 .presentation_img img {
-    height: 100%;
     width: 100%;
 }
 .presentation2 .presentation_left {
@@ -311,6 +310,7 @@
     margin-bottom: 44px;
     display: block;
     position: relative;
+    min-height: 70px;
 }
 .presentation8 ol li {
     padding-left: 125px;
@@ -589,6 +589,10 @@
     .presentation9 .presentation_img:last-child {
         margin-left: 0px;
         margin-top: 45px;
+    }
+
+    .presentation11 .presentation_right{
+    	padding: 0;
     }
 
 
