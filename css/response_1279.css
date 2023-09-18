@@ -1918,9 +1918,38 @@
 
     .idea-head_left {
         border-radius: 10px;
+    }  
+
+
+
+}
+
+
+@media (max-width: 1279px) and (min-width:1023px)
+{
+
+    aside{
+        width: 80px;
     }
 
+    .content_flex .content{
+        width: calc(100% - 80px);
+    }
 
+    aside .menu .item .icon + span{
+        display: none;
+    }
 
+    aside .menu .sub_menu, aside .menu .item .arrow{
+        display: none !important;
+    }
 
+    aside .menu .item .icon{
+        flex-shrink: 0;
+    }
+
+    aside .menu .item > a {
+        padding: 0 26px !important;
+        margin: 0 !important;
+    }
 }

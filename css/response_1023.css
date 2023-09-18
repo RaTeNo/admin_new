@@ -493,5 +493,8 @@
         display: none !important;
     }
 
+    .adding_item .full_screen{
+        display: flex !important;
+    }
 
 }

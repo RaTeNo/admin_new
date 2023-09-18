@@ -28736,3 +28736,47 @@ form .form_btns input[type=file] + label,
 }
 
 
+.adding_photos{
+    margin-top: 40px;
+}
+
+.adding_gallery{
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    gap:16px;
+}
+
+.adding_item{
+    width: calc(100%/3 - 12px);
+    position: relative;
+}
+
+.adding_item img{
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+.count_points{
+bottom: 20px;
+    position: absolute;
+    right: 20px;
+    border-radius: 9px;
+    background: #DEDCF2;
+    box-shadow: 0px 4px 23px 0px rgba(0, 0, 0, 0.25);
+    padding: 8px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.count_points svg{
+    width: 30px;
+    height: 30px;
+}
