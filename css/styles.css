@@ -28766,6 +28766,7 @@ form .form_btns input[type=file] + label,
     object-fit: cover;
     display: block;
     border-radius: 10px;
+    width: 100%;
 }
 
 .count_points{
