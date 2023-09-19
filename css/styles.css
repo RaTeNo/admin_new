@@ -1852,7 +1852,7 @@ aside .menu .sub_menu a.active
 .text_block ul li
 {
     color: #505261;
-    font-weight: bold;
+   /* font-weight: bold;*/
     line-height: 19px;
 
     position: relative;
@@ -1909,7 +1909,7 @@ aside .menu .sub_menu a.active
 .text_block ol li
 {
     color: #505261;
-    font-weight: bold;
+    /*font-weight: bold;*/
     line-height: 19px;
 
     position: relative;
@@ -28648,9 +28648,6 @@ form .form_btns input[type=file] + label,
     cursor: pointer;
 }
 
-.full_screen span{
-    display: none;
-}
 
 .full_screen .icon{
     width: 25px;
@@ -28794,4 +28791,9 @@ bottom: 20px;
     font-size: 14px;
     line-height: 15px; 
     margin-top:15px;
+}
+
+.image_info_sim{
+    color: #fff;
+    margin-top: 20px;
 }

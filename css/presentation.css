@@ -91,7 +91,7 @@
 }
 .text_block .presentation ul li {
     padding-left: 0;
-    color: var(--bg3);
+    color: var(--text);
     font-family: "Ubuntu";
     font-size: 22px;
     font-style: normal;
@@ -107,6 +107,7 @@
 .presentation2 .presentation_img {
     position: relative;
     height: 100%;
+    border-right: 20px solid var(--bg2);
 }
 .presentation2 .presentation_img img {
     width: 100%;
