@@ -10,6 +10,8 @@
 .presentation{	
 	container-type: inline-size;
     container-name: presentations;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
 }
 .presentation_wrap{
 	display: flex;
