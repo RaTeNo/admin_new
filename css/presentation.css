@@ -225,7 +225,7 @@
     position: relative;
 }
 .presentation6 .presentation_subtitle {
-    color: var(--bg3);
+    color:  var(--text);
     font-family: "Ubuntu";
     font-size: 24px;
     font-style: normal;
@@ -263,7 +263,7 @@
 .presentation ol li { 
     list-style-type: none; 
     padding-left: 92px;
-    color: var(--bg3);
+    color: var(--text);
     font-family: "Ubuntu";
     font-size: 22px;
     font-style: normal;
