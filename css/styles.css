@@ -546,7 +546,7 @@ button
 --------------*/
 .fancybox__backdrop
 {
-    background: rgba(0,0,0,.54);
+    background: rgba(0,0,0,.80);
 }
 
 
@@ -28800,3 +28800,7 @@ bottom: 20px;
     margin-top: 20px;
 }
 
+.info_sim_modal .is-close{
+    background: var(--main_color) !important;
+    color:#fff !important;
+}
