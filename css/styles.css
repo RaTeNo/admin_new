@@ -27563,6 +27563,10 @@ form .form_btns input[type=file] + label,
 .ideas-counter_item:nth-child(4) .ideas-counter_item-icon {
     background: #1AC317;
 }
+
+.ideas-counter_item:nth-child(5) .ideas-counter_item-icon{
+	background: #EA2626;
+}
 .ideas-counter_item-icon .icon {
     width: 23px;
     height: 23px;
