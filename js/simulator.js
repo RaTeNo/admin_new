@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     $('body').on('click', '.steps_stage .step_stage:not(.active)', function (e) {
         var date = new Date();
-        $(this).addClass("active").find("use").attr("xlink:href","images/sprite.svg#training_ok");
+        $(this).addClass("active").find(".icon:not(.icon_has_img) use").attr("xlink:href","images/sprite.svg#training_ok");
         let min = date.getMinutes();
         if(min<10)
         {
@@ -20,6 +20,8 @@ $(document).ready(function() {
 
     $(".inner_steps .step").click(function (e) {
         e.preventDefault();
+        $(".inner_steps .step").removeClass("current");
+        $(this).addClass("current");
         let id = $(this).data("id");
         $(".steps_data_js").fadeOut(200).removeClass("active");
         setTimeout(() => {

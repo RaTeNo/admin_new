@@ -21793,6 +21793,17 @@ form .form_btns input[type=file] + label,
     border-left: 6px solid var(--main_color);
 }
 
+.data_with_sidebar .steps .step.current{
+    border-left: 6px solid var(--main_color);
+    background: var(--main_color);
+    color:#fff;
+}
+
+.data_with_sidebar .step.current .step_number{
+	background: #fff;
+	color:var(--main_color);
+}
+
 .data_with_sidebar .steps .step_status{
     display: none;
 }
@@ -28807,4 +28818,24 @@ bottom: 20px;
 .info_sim_modal .is-close{
     background: var(--main_color) !important;
     color:#fff !important;
+}
+
+.addition_print{
+	margin-top: 30px;
+}
+
+.print_btn{
+	padding: 8px 21px;
+    background: var(--main_color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    border-radius: 55px;
+    text-decoration: none;
+}
+
+.icon_has_img{
+	position: relative;
+	top:10px;
 }
