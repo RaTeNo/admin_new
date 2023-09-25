@@ -1592,4 +1592,9 @@
         display: none;
     }
 
+    .sub_title_button{
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

@@ -21794,7 +21794,7 @@ form .form_btns input[type=file] + label,
 }
 
 .data_with_sidebar .steps .step.current{
-    border-left: 6px solid var(--main_color);
+    border-left: 6px solid color-mix(in oklab, var(--main_color), white 60%);
     background: var(--main_color);
     color:#fff;
 }
@@ -28838,4 +28838,74 @@ bottom: 20px;
 .icon_has_img{
 	position: relative;
 	top:10px;
+}
+
+.task-block_comment .icon_drag{
+	width: 23px;
+	height: 23px;
+	cursor: all-scroll;
+}
+
+.tasks_status{
+	margin-bottom: 20px;
+}
+
+.tasks_status span {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #0F7DFF;
+    padding: 3px 7px 3px 16px;
+    background: rgba(15, 125, 255, 0.2);
+    border-radius: 59px;
+    position: relative;
+}
+
+.tasks_status span:before {
+    position: absolute;
+    content: "";
+    background: #0F7DFF;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.task-block_info .projects_item-author{
+	margin-bottom: 27px;
+}
+.sub_title_button{
+	display: flex;
+	gap:15px;
+	justify-content: space-between;
+}
+.button_repeat{
+	padding: 8px 21px;
+    background: var(--main_color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    border-radius: 55px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.button_repeat .icon{
+	width: 19px;
+	height: 19px;
+	flex-shrink: 0;
+	margin-right: 10px;
+}
+
+.mb0{
+	margin-bottom: 0 !important;
+	margin-top: 0 !important;
+}
+
+.sub_title_button{
+	margin-bottom: 30px;
 }
