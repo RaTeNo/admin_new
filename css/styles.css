@@ -27533,7 +27533,7 @@ form .form_btns input[type=file] + label,
     margin-left: -25px;
 }
 .ideas-counter_items > * {
-    width: calc(100%/4 - 25px);
+    width: calc(100%/5 - 25px);
     margin-left: 25px;
     display: flex;
     border-radius: 15px;
