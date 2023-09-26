@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     $('body').on('click', '.steps_stage .step_stage:not(.active)', function (e) {
         var date = new Date();
-        $(this).addClass("active").find(".icon:not(.icon_has_img) use").attr("xlink:href","images/sprite.svg#training_ok");
+        $(this).addClass("active").find(".icon_change use").attr("xlink:href","images/sprite.svg#training_ok");
         let min = date.getMinutes();
         if(min<10)
         {
@@ -34,7 +34,7 @@ $(document).ready(function() {
         }, 200);
 
         setTimeout(() => {    
-            if($(window).width()>1023)
+            if($(window).width()>1279)
             {        
                 const elHeight = $(".data_with_sidebar .data.active").outerHeight();
                 $(".data_with_sidebar .steps").outerHeight(elHeight);
@@ -45,7 +45,7 @@ $(document).ready(function() {
 
 
     setTimeout(() => {
-        if($(window).width()>1023)
+        if($(window).width()>1279)
         {
             const elHeight = $(".data_with_sidebar .data").outerHeight();
             $(".data_with_sidebar .steps").outerHeight(elHeight);
@@ -83,7 +83,7 @@ $(document).ready(function() {
 });
 
 $(window).on('resize', () => {
-    if($(window).width()>1023)
+    if($(window).width()>1279)
     {
 
         const elHeight = $(".data_with_sidebar .data").outerHeight();

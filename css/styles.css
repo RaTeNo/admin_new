@@ -23050,6 +23050,7 @@ form .form_btns input[type=file] + label,
 }
 .projects_item-desc {
     margin-left: 14px;
+    max-width: calc(100% - 50px);
 }
 .projects_item-name {
     font-weight: 700;
@@ -23057,6 +23058,10 @@ form .form_btns input[type=file] + label,
     line-height: 19px;
     letter-spacing: -0.3px;
     color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
 }
 .projects_item-post {
     font-weight: 400;
@@ -28621,9 +28626,10 @@ form .form_btns input[type=file] + label,
     border-radius: 6px;
     background: #F3F3FF;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding: 20px;
     cursor: pointer;
+    flex-wrap: wrap;
 }
 
 .step_stage + .step_stage{
@@ -28640,6 +28646,8 @@ form .form_btns input[type=file] + label,
 .step_stage_body{
     font-size: 15px;
     font-weight: 700;
+    max-width: calc(100% - 65px);
+    position: relative;
 }
 
 .step_stage_time{
@@ -28836,8 +28844,11 @@ bottom: 20px;
 }
 
 .icon_has_img{
-	position: relative;
-	top:10px;
+    position: relative;
+    top: -5px;
+    position: absolute;
+    right: -35px;
+    margin-right: 0 !important;
 }
 
 .task-block_comment .icon_drag{
@@ -28880,6 +28891,7 @@ bottom: 20px;
 	display: flex;
 	gap:15px;
 	justify-content: space-between;
+	margin-top: -20px;
 }
 .button_repeat{
 	padding: 8px 21px;
@@ -29001,4 +29013,37 @@ bottom: 20px;
 }
 .training-plan_item:nth-child(5):before {
     display: none;
+}
+
+.step_stage_img{
+	width: 100%;
+	margin-top: 50px;		
+    position: relative;
+}
+
+.step_stage_img_wrap{
+	position: relative;
+	width: 230px;
+	height: 230px;
+}
+
+.step_stage_img:before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 36px);
+    height: 1px;
+    top: -25px;
+    left: -18px;
+    background: #DFDFDF;
+}
+
+.step_stage_img img{
+	width: 230px;
+	height: 230px;
+	border-radius: 8px;
+	object-fit: cover;
+}
+
+.step_stage_img .full_screen{
+	padding-right: 0;
 }

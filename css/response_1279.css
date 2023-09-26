@@ -1939,7 +1939,56 @@
         display: none;
     }
 
+    .data_with_sidebar{
+        flex-direction: column;
+    }
 
+    .data_with_sidebar .steps{
+        width: 100%;
+        margin-bottom: 20px;
+        min-height: auto;
+    }
+
+    .data_with_sidebar .steps .inner_steps{
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: auto;
+    }
+
+    .data_with_sidebar .steps .step{
+        min-width: 240px;
+    }
+
+    .data_with_sidebar .steps .step + .step{
+        margin-top: 0;
+        margin-left: 15px;
+    }
+
+    .data_with_sidebar .steps .inner_steps{
+        padding-right: 0;
+        padding-bottom: 8px;
+    }
+     .step_title{
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .data_with_sidebar .steps .step {
+        min-width: 130px;
+    }
+
+    .course_info .thumb{
+        width: 100%;
+        padding-bottom: 53%;
+        height: auto;
+    }
+
+    .course_info .thumb + * {
+        width: 100%;
+        margin-top: 16px;
+    }
 
 
 
