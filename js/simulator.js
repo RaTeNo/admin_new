@@ -1,6 +1,11 @@
 $(document).ready(function() {
 
     $('body').on('click', '.steps_stage .step_stage:not(.active)', function (e) {
+        var target =  $(e.target);        
+        if(target.closest(".step_stage_img").length !== 0)
+        {
+            return;
+        }
         var date = new Date();
         $(this).addClass("active").find(".icon_change use").attr("xlink:href","images/sprite.svg#training_ok");
         let min = date.getMinutes();
@@ -16,6 +21,8 @@ $(document).ready(function() {
             $(".inner_steps .step[data-id='"+id+"']").removeClass("error").addClass("complete").find("use").attr("xlink:href","images/sprite.svg#step_complete");
         }
     });
+
+
 
 
     $(".inner_steps .step").click(function (e) {
