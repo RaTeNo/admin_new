@@ -1597,4 +1597,27 @@
         align-items: center;
     }
 
+
+    .training-plan_items > * {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .training-plan_items {
+        margin-left: 0;
+    }
+    .training-plan_item:before,
+    .training-plan_item:nth-child(4):before {
+        display: none;
+    }
+    .training-plan {
+        padding: 10px;
+    }
+
+
+
+
+
+
+
 }
