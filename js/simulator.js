@@ -99,7 +99,7 @@ $(document).ready(function() {
 
             }  */
         }
-    }, 0)
+    }, 1000)
 
 
 });
