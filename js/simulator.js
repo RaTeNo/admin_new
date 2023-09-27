@@ -8,7 +8,7 @@ $(document).ready(function() {
         }
         var date = new Date();
         // $(this).addClass("active").find(".icon_change use").attr("xlink:href","/images/sprite.svg#training_ok");
-        $(this).addClass("active").find(".icon:not(.icon_has_img) use").attr("xlink:href","/images/sprite.svg#training_ok");
+        $(this).addClass("active").find(".icon_change use").attr("xlink:href","images/sprite.svg#training_ok");
         let min = date.getMinutes();
         if(min<10)
         {
