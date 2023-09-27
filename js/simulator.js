@@ -69,7 +69,7 @@ $(document).ready(function() {
     setTimeout(() => {
         if($(window).width()>1279)
         {
-            const elHeight = $(".data_with_sidebar .data").outerHeight();
+            const elHeight = $('.data_with_sidebar .data.active').outerHeight();
             $(".data_with_sidebar .steps").outerHeight(elHeight);
 
 
