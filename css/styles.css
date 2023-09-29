@@ -25856,8 +25856,8 @@ form .form_btns input[type=file] + label,
     width: 71px;
 }
 .division_item-icon {
-    width: 48px;
-    height: 48px;
+    width: 100px;
+    height: 100px;
    /* background: rgba(255, 43, 94, 0.15);*/
     border-radius: 7px;
     display: flex;
