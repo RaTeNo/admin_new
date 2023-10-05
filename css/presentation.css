@@ -716,6 +716,10 @@
     z-index: -1;
 }
 
+.presentation17 .presentation_img img{
+    border-radius: 50%;
+}
+
 
 
 
@@ -963,7 +967,7 @@
     content: "";
     width: calc(100% - 100px);
     height: calc(100% + 32px);
-    background: #EF4D53;
+    background: var(--bg2);
     top: -16px;
     left: -16px;
     z-index: -1;
@@ -1133,21 +1137,21 @@
 .presentation24 .circle3 span:nth-child(1) {
     width: 638px;
     height: 638px;    
-    border: 85px solid rgba(239, 77, 83, 0.40);
+    border: 85px solid color-mix(in oklab, var(--bg3), white 40%);
     bottom: -380px;
     right: -380px;
 }
 .presentation24 .circle3 span:nth-child(2) {
     width: 468px;
     height: 468px;    
-    border: 85px solid rgba(239, 77, 83, 0.60);
+    border: 85px solid color-mix(in oklab, var(--bg3), white 60%);
     bottom: -295px;
     right: -295px;
 }
 .presentation24 .circle3 span:nth-child(3) {
     width: 298px;
     height: 298px;    
-    border: 85px solid rgba(239, 77, 83, 0.80);
+    border: 85px solid color-mix(in oklab, var(--bg3), white 80%);
     bottom: -210px;
     right: -210px;
 }
@@ -1592,21 +1596,21 @@
 .presentation35 .circle4 span:nth-child(1) {
     width: 638px;
     height: 638px;    
-    border: 85px solid rgba(239, 77, 83, 0.40);
+    border: 85px solid color-mix(in oklab, var(--bg2), white 40%);
     bottom: -320px;
     left: -320px;
 }
 .presentation35 .circle4 span:nth-child(2) {
     width: 468px;
     height: 468px;    
-    border: 85px solid rgba(239, 77, 83, 0.60);
+    border: 85px solid color-mix(in oklab, var(--bg2), white 60%);
     bottom: -235px;
     left: -235px;
 }
 .presentation35 .circle4 span:nth-child(3) {
     width: 298px;
     height: 298px;    
-    border: 85px solid rgba(239, 77, 83, 0.80);
+    border: 85px solid color-mix(in oklab, var(--bg2), white 80%);
     bottom: -150px;
     left: -150px;
 }
@@ -1734,28 +1738,28 @@
 .presentation37 .circle4 span:nth-child(1) {
     width: 638px;
     height: 638px;    
-    border: 85px solid rgba(33, 74, 118, 0.40);
+    border: 85px solid color-mix(in oklab, var(--bg2), white 20%);
     top: -220px;
     right: -50px;
 }
 .presentation37 .circle4 span:nth-child(2) {
     width: 468px;
     height: 468px;    
-    border: 85px solid rgba(33, 74, 118, 0.60);
+    border: 85px solid color-mix(in oklab, var(--bg2), white 40%);
     top: -135px;
     right: 35px;
 }
 .presentation37 .circle4 span:nth-child(3) {
     width: 298px;
     height: 298px;    
-    border: 85px solid rgba(33, 74, 118, 0.80);
+    border: 85px solid color-mix(in oklab, var(--bg2), white 60%);
     top: -50px;
     right: 120px;
 }
 .presentation37 .circle4 span:nth-child(4) {
     width: 128px;
     height: 128px;    
-    border: 85px solid rgba(33, 74, 118, 1);
+    border: 85px solid color-mix(in oklab, var(--bg2), white 80%);
     top: 20px;
     right: 180px;
 }
@@ -2012,6 +2016,10 @@
 }
 .presentation42 .presentation_left {
     width: 50%;
+}
+
+.presentation42 .presentation_img img{
+    border-radius: 50%;
 }
 
 
@@ -2279,8 +2287,9 @@
     background: url(../images/titik.svg);
 }
 
-
-
+.presentation46 .presentation_item-img img{
+    width: 100%;
+}
 
 
 .presentation47 .presentation_wrap {
@@ -2491,19 +2500,23 @@
 .presentation51 .presentation_items {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -19px;
-    margin-bottom: -22px;
+    gap:19px;
+
 }
 .presentation51 .presentation_items > * {
     display: flex;
-    width: calc(100%/2 - 19px);
-    margin-left: 19px;
-    margin-bottom: 22px;
+    width: calc(100%/2 - 19px);  
     min-height: 203px;
     z-index: 1;
 }
 .presentation51 .presentation_item-img {
     flex-shrink: 0;
+    width: 282px;
+
+}
+.presentation51 .presentation_item-img img{
+    height: 100%;
+    object-fit: cover;
 }
 .presentation51 .presentation_item-text {
     padding: 24px 40px 20px 30px;
