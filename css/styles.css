@@ -19658,6 +19658,7 @@ button.copy span{
 .slider .swiper-slide img{
     max-width: 100%;
     display: block;
+    width: 100%;
 }
 
 .swiper-button-next, .swiper-button-prev{
@@ -25830,7 +25831,7 @@ form .form_btns input[type=file] + label,
     text-decoration: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 .division_item::before {
     position: absolute;
@@ -25856,7 +25857,7 @@ form .form_btns input[type=file] + label,
     width: 71px;
 }
 .division_item-icon {
-    width: 100px;
+    width: 177px;
     height: 100px;
    /* background: rgba(255, 43, 94, 0.15);*/
     border-radius: 7px;
@@ -25864,6 +25865,7 @@ form .form_btns input[type=file] + label,
     align-items: center;
     justify-content: center;
     margin-bottom: 21px;
+    max-width: 100%;
 }
 .division_item-icon .icon {
     width: 30px;
@@ -27975,6 +27977,7 @@ form .form_btns input[type=file] + label,
     display: inline-block;
     line-height: 28px;
     margin-left: 9px;
+    white-space: nowrap;
 }
 .idea-block_item-label.yellow {
     background: #FFC221;
