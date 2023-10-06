@@ -1585,7 +1585,7 @@
     </symbol>
 
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94 101" id="titik3">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94 101" id="titik3">
       <rect x="0.351166" width="4.45946" height="4.45946" rx="1.34409" fill="var(--bg2)"/>
       <rect x="18.1893" width="4.45946" height="4.45946" rx="1.34409" fill="var(--bg2)"/>
       <rect x="36.0275" width="4.45946" height="4.45946" rx="1.34409" fill="var(--bg2)"/>
