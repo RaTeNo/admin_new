@@ -5,9 +5,6 @@ $(() => {
 
 
 
-	$(".trainer_step_button").click(function (e) {
-		$(this).parent().removeClass("active").next().addClass("active");
-	});
 
 	
 	$(".idea_check-bottom button").click(function (e) {
