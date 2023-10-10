@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     $('body').on('click', '.steps_stage .step_stage:not(.active)', function (e) {
         var target =  $(e.target);
-        if(target.closest(".step_stage_img").length !== 0)
+        if(target.closest(".step_stage_img").length !== 0 || target.closest(".step_stage_video").length !== 0)
         {
             return;
         }
