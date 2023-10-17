@@ -300,6 +300,17 @@
     color: #fff;
 }
 
+.landing .presentation19.presentation:nth-child(2n) .presentation_wrap{
+    background: #fff;
+}
+
+.presentation19 .presentation_title{
+    color: #292929 !important;
+}
+
+.landing .presentation19.presentation:nth-child(2n) .presentation_items > *{
+    background: #fff !important;
+}
 
 
 .presentation2 .presentation_right .presentation_img img {
