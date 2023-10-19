@@ -330,7 +330,7 @@
     width: 808px;
     height: 808px;
     border-radius: 100%;
-    border: 167px solid color-mix(in oklab, var(--bg3), white 14%);
+    border: 167px solid color-mix(in oklab, var(--bg3), white 80%);
     top: -61%;
     right: -31%;
     z-index: 0;
@@ -341,11 +341,20 @@
     width: 808px;
     height: 808px;
     border-radius: 100%;
-    border: 167px solid color-mix(in oklab, var(--bg3), white 14%);
+    border: 167px solid color-mix(in oklab, var(--bg3), white 80%);
     bottom: -61%;
     left: -31%;
     z-index: 0;
 }
+
+.landing .presentation2:nth-child(2n) .presentation_wrap:before {
+    border: 167px solid color-mix(in oklab, var(--bg3), white 20%);
+}
+
+.landing .presentation2:nth-child(2n) .presentation_wrap:after{
+    border: 167px solid color-mix(in oklab, var(--bg3), white 20%);
+}
+
 .presentation ul {
     list-style: none;
 }
@@ -596,6 +605,7 @@
 .presentation7 .presentation_items > * {    
     margin-left: 34px;
     margin-bottom: 34px;
+    flex:1;
 }
 .presentation_item-text {
 	margin-top: 22px;
@@ -688,6 +698,7 @@
     border: 1px solid var(--bg3);
     background: #fff;
     margin-left: 20px;
+    flex: 1;
 }
 .presentation9 .presentation_item-title {
     margin-top: 29px;
@@ -978,6 +989,7 @@
 
     margin-left: 17px;
     margin-bottom: 17px;
+    flex: 1;
 }
 .presentation_item-text {
     color:  var(--text);
@@ -1039,6 +1051,7 @@
 .presentation15 .presentation_items > * {
     margin-left: 17px;
     margin-bottom: 17px;
+    flex: 1;
 }
 .slick-slide:nth-child(2n) .presentation15 .presentation_wrap:before {
 	background: #fff;
@@ -1565,6 +1578,8 @@
 
 
 
+
+
 .presentation25 .presentation_wrap {
     position: relative;
     display: flex;
@@ -1853,8 +1868,7 @@
         margin-left: -20px;
         margin-bottom: -20px;
     }
-    .presentation20 .presentation_items > * {
-        width: calc(100%/2 - 20px);
+    .presentation20 .presentation_items > * {        
         margin-left: 20px;
         margin-bottom: 20px;
     }
