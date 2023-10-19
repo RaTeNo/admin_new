@@ -598,14 +598,13 @@
     z-index: -1;
 }
 .presentation7 .presentation_items {
-    display: flex;
-    margin-left: -34px;
-    margin-bottom: -34px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    width: 100%;
+    gap: 30px;
 }
 .presentation7 .presentation_items > * {    
-    margin-left: 34px;
-    margin-bottom: 34px;
-    flex:1;
+
 }
 .presentation_item-text {
 	margin-top: 22px;
@@ -689,15 +688,15 @@
     z-index: -1;
 }
 .presentation9 .presentation_items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
     width: 100%;
-    display: flex;
-    margin-left: -20px;
+    gap: 30px;
 }
 .presentation9 .presentation_items > * {
     padding: 46px 36px 53px;
     border: 1px solid var(--bg3);
     background: #fff;
-    margin-left: 20px;
     flex: 1;
 }
 .presentation9 .presentation_item-title {
@@ -929,9 +928,9 @@
 }
 .presentation13 .presentation_items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
     width: 100%;
-    gap:30px;
+    gap: 30px;
 }
 .presentation13 .presentation_items > * {
 
@@ -981,15 +980,13 @@
     z-index: -1;
 }
 .presentation14 .presentation_items {
-    display: flex;
-    margin-left: -17px;
-    margin-bottom: -17px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    width: 100%;
+    gap: 30px;
 }
 .presentation14 .presentation_items > * {
 
-    margin-left: 17px;
-    margin-bottom: 17px;
-    flex: 1;
 }
 .presentation_item-text {
     color:  var(--text);
@@ -1044,14 +1041,13 @@
     z-index: -1;
 }
 .presentation15 .presentation_items {
-    display: flex;
-    margin-left: -17px;
-    margin-bottom: -17px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    width: 100%;
+    gap: 30px;
 }
 .presentation15 .presentation_items > * {
-    margin-left: 17px;
-    margin-bottom: 17px;
-    flex: 1;
+
 }
 .slick-slide:nth-child(2n) .presentation15 .presentation_wrap:before {
 	background: #fff;
@@ -1098,15 +1094,13 @@
     z-index: -1;
 }
 .presentation16 .presentation_items {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -17px;
-    margin-bottom: -17px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    width: 100%;
+    gap: 30px;
 }
 .presentation16 .presentation_items > * {
-    width: calc(100%/2 - 17px);
-    margin-left: 17px;
-    margin-bottom: 17px;
+
 }
 .slick-slide:nth-child(2n) .presentation16 .presentation_wrap:before {
 	background: #fff;
@@ -1141,13 +1135,14 @@
     right: -200px;
 }
 .presentation17 .presentation_items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 19px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    width: 100%;
+    gap: 30px;
 }
 .presentation17 .presentation_items > * {
     display: flex;
-    width: calc(100%/2 - 19px);  
+    width: 100%;  
     min-height: 203px;
     z-index: 1;
 }
@@ -1319,7 +1314,7 @@
 }
 .presentation20 .presentation_items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
     width: 100%;
     gap:30px;
 }
@@ -1845,9 +1840,13 @@
     .presentation6 .presentation_box {
         padding: 60px;
     }
-    .presentation7 .presentation_items > * {
-        width: calc(100%/2 - 34px);
+
+    .presentation7 .presentation_items {
+        margin-bottom: 0;
+        margin-left: 0;
+        grid-template-columns: 1fr 1fr;
     }
+  
     .presentation8 .presentation_title {
         margin-bottom: 10px;
     }
@@ -1873,17 +1872,14 @@
         margin-bottom: 20px;
     }
     .presentation9 .presentation_items {
-        margin-left: 0;
-        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
     }
     .presentation9 .presentation_items > * {
         padding: 20px;
         width: 100%;
         margin-left: 0;
     }
-    .presentation9 .presentation_item + .presentation_item {
-        margin-top: 20px;
-    }
+
     .presentation13 .presentation_wrap .icon {
         display: none;
     }
@@ -2010,9 +2006,7 @@
     .presentation_text {
         margin-bottom: 20px;
     }
-    .presentation13 .presentation_items {
-        grid-template-columns: 1fr;
-    }
+
     .presentation13 .presentation_img + .presentation_img {
         
     }
@@ -2185,6 +2179,14 @@
         padding: 20px;
     }
 
+    .presentation9 .presentation_items{
+        grid-template-columns: 1fr;
+    }
+
+    .presentation13 .presentation_items {
+        grid-template-columns: 1fr;
+    }
+
 
 
 
@@ -2239,9 +2241,7 @@
         display: none;
     }
     .presentation7 .presentation_items {
-        margin-left: 0;
-        margin-bottom: 0;
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
     .presentation7 .presentation_items > * {
         width: 100%;
@@ -2258,50 +2258,23 @@
         font-size: 18px;
     }
     .presentation17 .presentation_items {
-        margin-left: 0;
-        margin-bottom: 0;
+       grid-template-columns: 1fr;
     }
-    .presentation17 .presentation_items > * {
-        margin-left: 0;
-        margin-bottom: 0;
-        width: 100%;
-    }
-    .presentation16 .presentation_items > * {
-        width: 100%;
-        margin-left: 0px;
-        margin-bottom: 0px;
-    }
+
     .presentation16 .presentation_items {
-        margin-left: 0px;
-        margin-bottom: 0px;
+        grid-template-columns: 1fr;
     }
-    .presentation16 .presentation_item + .presentation_item {
-        margin-top: 20px;
-    }
-    .presentation15 .presentation_items > * {
-        width: 100%;
-        margin-left: 0px;
-        margin-bottom: 0px;
-    }
+
     .presentation15 .presentation_items {
-        margin-left: 0px;
-        margin-bottom: 0px;        
-        flex-direction: column;
+        grid-template-columns: 1fr;
 
     }
     .presentation15 .presentation_item + .presentation_item {
         margin-top: 20px;
     }
-    .presentation14 .presentation_items > * {
-        width: 100%;
-        margin-left: 0px;
-        margin-bottom: 0px;
-    }
-    .presentation14 .presentation_items {
-        margin-left: 0px;
-        margin-bottom: 0px;
 
-        flex-direction: column;
+    .presentation14 .presentation_items {
+         grid-template-columns: 1fr;
     }
     .presentation14 .presentation_item + .presentation_item {
         margin-top: 20px;
