@@ -3,113 +3,66 @@
 @font-face {
     font-family: 'SF Pro Display';
     src: url('../fonts/SFProDisplay-Medium.eot');
-    src: local('SF Pro Display Medium'), local('SFProDisplay-Medium'),
-        url('../fonts/SFProDisplay-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/SFProDisplay-Medium.woff2') format('woff2'),
-        url('../fonts/SFProDisplay-Medium.woff') format('woff'),
-        url('../fonts/SFProDisplay-Medium.ttf') format('truetype');
+    src: local('SF Pro Display Medium'), local('SFProDisplay-Medium'), url('../fonts/SFProDisplay-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/SFProDisplay-Medium.woff2') format('woff2'), url('../fonts/SFProDisplay-Medium.woff') format('woff'), url('../fonts/SFProDisplay-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'SF Pro Display';
     src: url('../fonts/SFProDisplay-Heavy.eot');
-    src: local('SF Pro Display Heavy'), local('SFProDisplay-Heavy'),
-        url('../fonts/SFProDisplay-Heavy.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/SFProDisplay-Heavy.woff2') format('woff2'),
-        url('../fonts/SFProDisplay-Heavy.woff') format('woff'),
-        url('../fonts/SFProDisplay-Heavy.ttf') format('truetype');
+    src: local('SF Pro Display Heavy'), local('SFProDisplay-Heavy'), url('../fonts/SFProDisplay-Heavy.eot?#iefix') format('embedded-opentype'), url('../fonts/SFProDisplay-Heavy.woff2') format('woff2'), url('../fonts/SFProDisplay-Heavy.woff') format('woff'), url('../fonts/SFProDisplay-Heavy.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'SF Pro Display';
     src: url('../fonts/SFProDisplay-Thin.eot');
-    src: local('SF Pro Display Thin'), local('SFProDisplay-Thin'),
-        url('../fonts/SFProDisplay-Thin.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/SFProDisplay-Thin.woff2') format('woff2'),
-        url('../fonts/SFProDisplay-Thin.woff') format('woff'),
-        url('../fonts/SFProDisplay-Thin.ttf') format('truetype');
+    src: local('SF Pro Display Thin'), local('SFProDisplay-Thin'), url('../fonts/SFProDisplay-Thin.eot?#iefix') format('embedded-opentype'), url('../fonts/SFProDisplay-Thin.woff2') format('woff2'), url('../fonts/SFProDisplay-Thin.woff') format('woff'), url('../fonts/SFProDisplay-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'SF Pro Display';
     src: url('../fonts/SFProDisplay-Light.eot');
-    src: local('SF Pro Display Light'), local('SFProDisplay-Light'),
-        url('../fonts/SFProDisplay-Light.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/SFProDisplay-Light.woff2') format('woff2'),
-        url('../fonts/SFProDisplay-Light.woff') format('woff'),
-        url('../fonts/SFProDisplay-Light.ttf') format('truetype');
+    src: local('SF Pro Display Light'), local('SFProDisplay-Light'), url('../fonts/SFProDisplay-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/SFProDisplay-Light.woff2') format('woff2'), url('../fonts/SFProDisplay-Light.woff') format('woff'), url('../fonts/SFProDisplay-Light.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'SF Pro Display';
     src: url('../fonts/SFProDisplay-Bold.eot');
-    src: local('SF Pro Display Bold'), local('SFProDisplay-Bold'),
-        url('../fonts/SFProDisplay-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/SFProDisplay-Bold.woff2') format('woff2'),
-        url('../fonts/SFProDisplay-Bold.woff') format('woff'),
-        url('../fonts/SFProDisplay-Bold.ttf') format('truetype');
+    src: local('SF Pro Display Bold'), local('SFProDisplay-Bold'), url('../fonts/SFProDisplay-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/SFProDisplay-Bold.woff2') format('woff2'), url('../fonts/SFProDisplay-Bold.woff') format('woff'), url('../fonts/SFProDisplay-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'SF Pro Display';
     src: url('../fonts/SFProDisplay-Black.eot');
-    src: local('SF Pro Display Black'), local('SFProDisplay-Black'),
-        url('../fonts/SFProDisplay-Black.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/SFProDisplay-Black.woff2') format('woff2'),
-        url('../fonts/SFProDisplay-Black.woff') format('woff'),
-        url('../fonts/SFProDisplay-Black.ttf') format('truetype');
+    src: local('SF Pro Display Black'), local('SFProDisplay-Black'), url('../fonts/SFProDisplay-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/SFProDisplay-Black.woff2') format('woff2'), url('../fonts/SFProDisplay-Black.woff') format('woff'), url('../fonts/SFProDisplay-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'SF Pro Display';
     src: url('../fonts/SFProDisplay-Ultralight.eot');
-    src: local('SF Pro Display Ultralight'), local('SFProDisplay-Ultralight'),
-        url('../fonts/SFProDisplay-Ultralight.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/SFProDisplay-Ultralight.woff2') format('woff2'),
-        url('../fonts/SFProDisplay-Ultralight.woff') format('woff'),
-        url('../fonts/SFProDisplay-Ultralight.ttf') format('truetype');
+    src: local('SF Pro Display Ultralight'), local('SFProDisplay-Ultralight'), url('../fonts/SFProDisplay-Ultralight.eot?#iefix') format('embedded-opentype'), url('../fonts/SFProDisplay-Ultralight.woff2') format('woff2'), url('../fonts/SFProDisplay-Ultralight.woff') format('woff'), url('../fonts/SFProDisplay-Ultralight.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'SF Pro Display';
     src: url('../fonts/SFProDisplay-Semibold.eot');
-    src: local('SF Pro Display Semibold'), local('SFProDisplay-Semibold'),
-        url('../fonts/SFProDisplay-Semibold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/SFProDisplay-Semibold.woff2') format('woff2'),
-        url('../fonts/SFProDisplay-Semibold.woff') format('woff'),
-        url('../fonts/SFProDisplay-Semibold.ttf') format('truetype');
+    src: local('SF Pro Display Semibold'), local('SFProDisplay-Semibold'), url('../fonts/SFProDisplay-Semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/SFProDisplay-Semibold.woff2') format('woff2'), url('../fonts/SFProDisplay-Semibold.woff') format('woff'), url('../fonts/SFProDisplay-Semibold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'SF Pro Display';
     src: url('../fonts/SFProDisplay-Regular.eot');
-    src: local('SF Pro Display Regular'), local('SFProDisplay-Regular'),
-        url('../fonts/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
-        url('../fonts/SFProDisplay-Regular.woff') format('woff'),
-        url('../fonts/SFProDisplay-Regular.ttf') format('truetype');
+    src: local('SF Pro Display Regular'), local('SFProDisplay-Regular'), url('../fonts/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/SFProDisplay-Regular.woff2') format('woff2'), url('../fonts/SFProDisplay-Regular.woff') format('woff'), url('../fonts/SFProDisplay-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-
-
-
 /* :root {
 	--text: #173A60;
     --bg2: #EF4D53;
@@ -117,94 +70,88 @@
 } */
 
 :root {
-	--text: #173A60;
+    --text: #173A60;
     --bg2: green;
     --bg3: red;
 }
-
-.presentation{	
-	container-type: inline-size;
+.presentation {
+    container-type: inline-size;
     container-name: presentations;
     border-radius: 12px 12px 0 0;
     overflow: hidden;
 }
-.presentation_wrap{
-	display: flex;
-	padding: 70px;
-	gap:65px;
-	background: #fff;
-	align-items: center;
+.presentation_wrap {
+    display: flex;
+    padding: 70px;
+    gap: 65px;
+    background: #fff;
+    align-items: center;
     overflow: hidden;
 }
-
-.presentation .presentation_right{
+.presentation .presentation_right {
     position: relative;
 }
-
-.presentation_title{
-	font-family: "SF Pro Display";
-	font-size: 46px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: 40px;
-	letter-spacing: -1px;
-	color: #292929;
-	margin-bottom: 40px;
+.presentation_title {
+    font-family: "SF Pro Display";
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: -1px;
+    color: #292929;
+    margin-bottom: 40px;
     z-index: 2;
     position: relative;
 }
 .presentation_text {
-	margin-bottom: 44px;
+    margin-bottom: 44px;
 }
-.presentation_text p{
-	font-family: "SF Pro Display";
-	font-size: 22px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
-	color: var(--text);
+.presentation_text p {
+    font-family: "SF Pro Display";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--text);
 }
-
-.presentation_text * + * {
-	margin-top: 20px;
+.presentation_text *+* {
+    margin-top: 20px;
 }
-
-.presentation_img{
-	position: relative;
+.presentation_img {
+    position: relative;
 }
-
-.presentation_right{
-	flex-shrink: 0;
-	max-width: 50%;
+.presentation_right {
+    flex-shrink: 0;
+    max-width: 50%;
 }
 .presentation_logo {
-	display: flex;
-	align-items: flex-end;
-	margin-bottom: 41px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 41px;
 }
 .presentation_logo .icon2 {
-	fill: var(--bg3);
-	display: block;
-	width: 214px;
-	height: 47px;
+    fill: var(--bg3);
+    display: block;
+    width: 214px;
+    height: 47px;
 }
 .presentation_logo .icon1 {
-	fill: #000;
-	display: block;
-	width: 56px;
-	height: 56px;
+    fill: #000;
+    display: block;
+    width: 56px;
+    height: 56px;
 }
 .button-arrow img {
-	width: 82px;
-	height: 82px;
+    width: 82px;
+    height: 82px;
 }
 .presentation1 .presentation_left {
-	overflow: hidden;
-	padding: 40px 0 40px 40px;
+    overflow: hidden;
+    padding: 40px 0 40px 40px;
 }
 .presentation1 .presentation_left .presentation_img {
-	position: relative;
-	z-index: 1;
+    position: relative;
+    z-index: 1;
 }
 .presentation1 .presentation_img img {
     aspect-ratio: 530/380;
@@ -213,16 +160,16 @@
 }
 .presentation1 .presentation_left .presentation_img:before {
     position: absolute;
-    width: calc(100% + 40px);
+    width: calc(100%);
     height: calc(100% + 80px);
     content: "";
     top: -40px;
     left: -40px;
     background: var(--bg3);
-	z-index: -1;	
+    z-index: -1;
 }
 .presentation1 .presentation_left .presentation_img::after {
-    position: absolute;
+    /*position: absolute;
     width: 607px;
     height: 607px;
     content: "";
@@ -230,7 +177,7 @@
     left: -62px;
     border-radius: 50%;
     border: 109px solid	color-mix(in oklab, var(--bg3), white 14%);
-	z-index: -1;
+	z-index: -1;*/
 }
 .button-arrow {
     width: 83px;
@@ -251,75 +198,67 @@
     z-index: 2;
     flex-shrink: 0;
 }
-
 .slick-slide:nth-child(2n) .presentation_wrap {
-	background: var(--bg3);
+    background: var(--bg3);
 }
 .slick-slide:nth-child(2n) .presentation_left .presentation_img:before {
     background: var(--bg2);
 }
 .slick-slide:nth-child(2n) .presentation_left .presentation_img::after {
-    border: 109px solid	color-mix(in oklab, var(--bg2), white 14%);
+    border: 109px solid color-mix(in oklab, var(--bg2), white 14%);
 }
 .slick-slide:nth-child(2n) .presentation_logo .icon2 {
-	fill: #fff;
+    fill: #fff;
 }
 .slick-slide:nth-child(2n) .presentation_title {
-	color: #fff;
+    color: #fff;
 }
 .slick-slide:nth-child(2n) .presentation_text p {
-	color: #fff;
+    color: #fff;
 }
 .slick-slide:nth-child(2n) .presentation_item-name {
     color: #fff;
 }
-
-
 .landing .presentation:nth-child(2n) {
     background: var(--bg3);
 }
 .landing .presentation:nth-child(2n) .presentation_wrap {
-	background: var(--bg3);
+    background: var(--bg3);
 }
 .landing .presentation:nth-child(2n) .presentation_left .presentation_img:before {
     background: var(--bg2);
 }
 .landing .presentation:nth-child(2n) .presentation_left .presentation_img::after {
-    border: 109px solid	color-mix(in oklab, var(--bg2), white 14%);
+    border: 109px solid color-mix(in oklab, var(--bg2), white 14%);
 }
 .landing .presentation:nth-child(2n) .presentation_logo .icon2 {
-	fill: #fff;
+    fill: #fff;
 }
 .landing .presentation:nth-child(2n) .presentation_title {
-	color: #fff;
+    color: #fff;
 }
 .landing .presentation:nth-child(2n) .presentation_text p {
-	color: #fff;
+    color: #fff;
 }
 .landing .presentation:nth-child(2n) .presentation_item-name {
     color: #fff;
 }
-
-.landing .presentation19.presentation:nth-child(2n) .presentation_wrap{
+.landing .presentation19.presentation:nth-child(2n) .presentation_wrap {
     background: #fff;
 }
-
-.presentation19 .presentation_title{
+.presentation19 .presentation_title {
     color: #292929 !important;
 }
-
-.landing .presentation19.presentation:nth-child(2n) .presentation_items > *{
+.landing .presentation19.presentation:nth-child(2n) .presentation_items>* {
     background: #fff !important;
 }
-
-
 .presentation2 .presentation_right .presentation_img img {
-	border-radius: 50%;
+    border-radius: 50%;
     aspect-ratio: 1;
     object-fit: cover;
 }
 .presentation2 .presentation_wrap {
-	position: relative;
+    position: relative;
 }
 .presentation2 .presentation_left {
     z-index: 5;
@@ -346,15 +285,12 @@
     left: -31%;
     z-index: 0;
 }
-
 .landing .presentation2:nth-child(2n) .presentation_wrap:before {
     border: 167px solid color-mix(in oklab, var(--bg3), white 20%);
 }
-
-.landing .presentation2:nth-child(2n) .presentation_wrap:after{
+.landing .presentation2:nth-child(2n) .presentation_wrap:after {
     border: 167px solid color-mix(in oklab, var(--bg3), white 20%);
 }
-
 .presentation ul {
     list-style: none;
 }
@@ -371,7 +307,7 @@
     fill: var(--bg2);
 }
 .text_block .presentation ul li:before {
-	display: none;
+    display: none;
 }
 .presentation ul .icon {
     width: 27px;
@@ -383,33 +319,29 @@
 .presentation ul li {
     display: flex;
 }
-.text_block .presentation ul li + li {
+.text_block .presentation ul li+li {
     margin-top: 27px;
 }
 .landing .presentation:nth-child(2n) ul li {
-	color: #fff;
+    color: #fff;
 }
 .landing .presentation:nth-child(2n) .presentation_left {
-	z-index: 3;
-	position: relative;
+    z-index: 3;
+    position: relative;
 }
-
-
 .slick-slide:nth-child(2n) ul li {
-	color: #fff;
+    color: #fff;
 }
 .slick-slide:nth-child(2n) .presentation_left {
-	z-index: 3;
-	position: relative;
+    z-index: 3;
+    position: relative;
 }
 .slick-slide:nth-child(2n) .presentation_wrap:before {
     opacity: 1;
 }
-
-
 .presentation3 .presentation_wrap {
-	flex-direction: column;
-	gap: 10px;
+    flex-direction: column;
+    gap: 10px;
 }
 .presentation3 ul .icon {
     width: 83px;
@@ -419,53 +351,49 @@
     margin-right: 26px;
 }
 .presentation_info-title {
-	color: #292929;
-	font-family: "SF Pro Display";
-	font-size: 28px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: 142.857%;	
-	margin-bottom: 10px;
+    color: #292929;
+    font-family: "SF Pro Display";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 142.857%;
+    margin-bottom: 10px;
 }
 .presentation_info-text {
-	color:  var(--text);
-	font-family: "SF Pro Display";
-	font-size: 22px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
+    color: var(--text);
+    font-family: "SF Pro Display";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
-
 .slick-slide:nth-child(2n) .presentation .presentation_info-title {
-	color: #fff;
+    color: #fff;
 }
 .slick-slide:nth-child(2n) .presentation .presentation_info-text {
-	color: #fff;
+    color: #fff;
 }
 .landing .presentation:nth-child(2n) .presentation_info-title {
-	color: #fff;
+    color: #fff;
 }
 .landing .presentation:nth-child(2n) .presentation_info-text {
-	color: #fff;
+    color: #fff;
 }
-
-
-
 .presentation_img {
-	position: relative;
-	z-index: 2;
+    position: relative;
+    z-index: 2;
 }
 .presentation4 .presentation_box {
-	padding: 70px;
-	background: var(--bg3);
+    padding: 70px;
+    background: var(--bg3);
 }
 .presentation4 .presentation_wrap {
-	padding: 50px;
+    padding: 50px;
     position: relative;
     overflow: visible;
 }
 .presentation4 .presentation_right {
-	padding-right: 50px;
+    padding-right: 50px;
 }
 .presentation4 .presentation_right:before {
     width: 246px;
@@ -477,7 +405,7 @@
     transform: translateY(-50%);
     background: var(--bg2);
 }
-.presentation4 .presentation_wrap .icon{
+.presentation4 .presentation_wrap .icon {
     top: 0px;
     right: -155px;
     position: absolute;
@@ -488,57 +416,47 @@
     object-fit: cover;
     height: 100%;
 }
-
 .slick-slide:nth-child(2n) .presentation .presentation_box {
-	background: #fff;
+    background: #fff;
 }
 .slick-slide:nth-child(2n) .presentation .presentation_wrap {
-	background: var(--bg3);
+    background: var(--bg3);
 }
-
 .landing .presentation:nth-child(2n) .presentation_box {
-	background: #fff;
+    background: #fff;
 }
-
-
-
-
 .presentation5 .presentation_wrap {
-	flex-direction: column;
-	gap: 0px;
+    flex-direction: column;
+    gap: 0px;
 }
 .presentation5 .presentation_text {
-	text-align: center;
+    text-align: center;
 }
 .presentation5 .presentation_img {
-	width: 100%;
+    width: 100%;
 }
-
-.landing .presentation:nth-child(2n).presentation5 .presentation_wrap  {
-	background: var(--bg3);
+.landing .presentation:nth-child(2n).presentation5 .presentation_wrap {
+    background: var(--bg3);
 }
-
-.slick-slide:nth-child(2n) .presentation5 .presentation_wrap  {
-	background: var(--bg3);
+.slick-slide:nth-child(2n) .presentation5 .presentation_wrap {
+    background: var(--bg3);
 }
 .presentation5 .presentation_img img {
     aspect-ratio: 1131/316;
     object-fit: cover;
     height: 100%;
 }
-
-
 .presentation6 .presentation_box {
-	padding: 120px;  
+    padding: 120px;
     position: relative;
     z-index: 2;
 }
 .presentation6 .presentation_wrap {
-	padding: 50px;
-	flex-direction: column;
-	z-index: 22;
-	position: relative;
-	overflow: visible;
+    padding: 50px;
+    flex-direction: column;
+    z-index: 22;
+    position: relative;
+    overflow: visible;
     background: var(--bg3);
 }
 .presentation6 .presentation_box:before {
@@ -549,7 +467,7 @@
     top: 50px;
     left: 50px;
     background: var(--bg2);
-	z-index: -1;		
+    z-index: -1;
 }
 .presentation6 .presentation_title {
     width: 65%;
@@ -562,11 +480,8 @@
     background: var(--bg3);
 }
 .slick-slide:nth-child(2n) .presentation6 .presentation_box {
-	background: var(--bg3);
+    background: var(--bg3);
 }
-
-
-
 .presentation7 .presentation_wrap {
     position: relative;
     flex-direction: column;
@@ -602,59 +517,54 @@
     width: 100%;
     gap: 30px;
 }
-.presentation7 .presentation_items > * {    
-
-}
+.presentation7 .presentation_items>* {}
 .presentation_item-text {
-	margin-top: 22px;
-	color: var(--text);
-	font-family: "SF Pro Display";
-	font-size: 22px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;	
+    margin-top: 22px;
+    color: var(--text);
+    font-family: "SF Pro Display";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
-.slick-slide:nth-child(2n) .presentation ol li, 
-.slick-slide:nth-child(2n) .presentation ul li {
+.slick-slide:nth-child(2n) .presentation ol li, .slick-slide:nth-child(2n) .presentation ul li {
     color: #fff;
 }
 .presentation7 .presentation_item-img img {
     aspect-ratio: 259/270;
     object-fit: cover;
 }
-
-
 .presentation8 .presentation_box {
     padding: 70px;
-    background: #fff;    
+    background: #fff;
 }
 .landing .presentation:nth-child(2n).presentation8 .presentation_box {
     padding: 70px;
-    background: var(--bg3);    
+    background: var(--bg3);
 }
 .slick-slide:nth-child(2n) .presentation8 .presentation_box {
     padding: 70px;
-    background: var(--bg3);    
+    background: var(--bg3);
 }
 .presentation8 .presentation_left {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 15px;
 }
 .presentation8 .presentation_left .presentation_img:nth-child(1) {
-	grid-column: 1;
+    grid-column: 1;
     grid-row: 1;
 }
 .presentation8 .presentation_left .presentation_img:nth-child(3) {
-	grid-column: 2;
+    grid-column: 2;
     grid-row: 1/3;
-	width: 100%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
 .presentation8 .presentation_left .presentation_img:nth-child(2) {
-	grid-column: 1;
+    grid-column: 1;
     grid-row: 2;
 }
 .text_block .presentation8 img {
@@ -666,9 +576,6 @@
     gap: 25px;
     padding: 0;
 }
-
-
-
 .presentation9 .presentation_wrap {
     flex-direction: column;
     align-items: flex-start;
@@ -692,7 +599,7 @@
     width: 100%;
     gap: 30px;
 }
-.presentation9 .presentation_items > * {
+.presentation9 .presentation_items>* {
     padding: 46px 36px 53px;
     border: 1px solid var(--bg3);
     background: #fff;
@@ -700,10 +607,10 @@
 }
 .presentation9 .presentation_item-title {
     margin-top: 29px;
-    color:  #1E1B39;
+    color: #1E1B39;
     font-size: 30px;
     font-weight: 700;
-    line-height: 36.18px; 
+    line-height: 36.18px;
 }
 .presentation9 .presentation_item-text {
     margin-top: 15px;
@@ -717,10 +624,10 @@
     height: 45px;
     fill: var(--bg2);
 }
-.landing .presentation:nth-child(2n) .presentation_items > * {
+.landing .presentation:nth-child(2n) .presentation_items>* {
     background: var(--bg3);
 }
-.slick-slide:nth-child(2n) .presentation_items > * {
+.slick-slide:nth-child(2n) .presentation_items>* {
     background: var(--bg3);
 }
 .landing .presentation:nth-child(2n) .presentation_item-title {
@@ -735,11 +642,6 @@
 .slick-slide:nth-child(2n) .presentation_item-text {
     color: #fff;
 }
-
-
-
-
-
 .presentation10 .presentation_wrap {
     flex-direction: column;
     align-items: flex-start;
@@ -778,7 +680,7 @@
     line-height: 42px;
     font-family: "SF Pro Display";
 }
-.presentation ol li + li {
+.presentation ol li+li {
     margin-top: 40px;
 }
 .presentation10 .presentation_wrap:before {
@@ -792,17 +694,12 @@
     top: -61%;
     right: -31%;
 }
-
-.presentation10 ol li{
-	min-height: 42px;
+.presentation10 ol li {
+    min-height: 42px;
 }
-
-
 .landing .presentation:nth-child(2n) ol li {
-	color: #fff;
+    color: #fff;
 }
-
-
 .presentation11 .presentation_wrap {
     flex-direction: column;
     align-items: flex-start;
@@ -810,8 +707,7 @@
     z-index: 55;
     position: relative;
 }
-.presentation11 .circle1 span,
-.presentation11 .circle2 span {
+.presentation11 .circle1 span, .presentation11 .circle2 span {
     display: block;
     border-radius: 50%;
     position: absolute;
@@ -819,46 +715,51 @@
 }
 .presentation11 .circle1 span:nth-child(1) {
     width: 638px;
-    height: 638px;    
+    height: 638px;
     border: 85px solid color-mix(in oklab, var(--bg3), white 80%);
     top: -380px;
     right: -380px;
+    opacity: 0.3;
 }
 .presentation11 .circle1 span:nth-child(2) {
     width: 468px;
-    height: 468px;    
+    height: 468px;
     border: 85px solid color-mix(in oklab, var(--bg3), white 60%);
     top: -295px;
     right: -295px;
+    opacity: 0.3;
 }
 .presentation11 .circle1 span:nth-child(3) {
     width: 298px;
-    height: 298px;    
+    height: 298px;
     border: 85px solid color-mix(in oklab, var(--bg3), white 40%);
     top: -210px;
     right: -210px;
+    opacity: 0.3;
 }
-
 .presentation11 .circle2 span:nth-child(1) {
     width: 638px;
-    height: 638px;    
+    height: 638px;
     border: 85px solid color-mix(in oklab, var(--bg2), white 60%);
     bottom: -400px;
     left: -350px;
+    opacity: 0.3;
 }
 .presentation11 .circle2 span:nth-child(2) {
     width: 468px;
-    height: 468px;    
+    height: 468px;
     border: 85px solid color-mix(in oklab, var(--bg2), white 40%);
     bottom: -315px;
     left: -265px;
+    opacity: 0.3;
 }
 .presentation11 .circle2 span:nth-child(3) {
     width: 298px;
-    height: 298px;    
+    height: 298px;
     border: 85px solid color-mix(in oklab, var(--bg2), white 20%);
     bottom: -230px;
     left: -180px;
+    opacity: 0.3;
 }
 .presentation11 .presentation_item-title {
     color: #292929;
@@ -866,29 +767,23 @@
     font-size: 28px;
     font-style: normal;
     font-weight: 800;
-    line-height: 142.857%   
+    line-height: 142.857%
 }
-
-.presentation11 ul .icon{
-	margin-top: 5px;
+.presentation11 ul .icon {
+    margin-top: 5px;
 }
-
-
-
-
 .presentation12 .presentation_left {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.presentation12 .presentation_left .presentation_img:nth-child(1),
-.presentation12 .presentation_left .presentation_img:nth-child(2) {
+.presentation12 .presentation_left .presentation_img:nth-child(1), .presentation12 .presentation_left .presentation_img:nth-child(2) {
     width: calc(100%/2 - 12px);
     margin-bottom: 25px;
     aspect-ratio: 269/191;
 }
 .presentation12 .presentation_left .presentation_img:nth-child(3) {
-    width: 100%;    
+    width: 100%;
 }
 .presentation12 .presentation_left .presentation_img:nth-child(1) img {
     aspect-ratio: 269/191;
@@ -905,13 +800,9 @@
     object-fit: cover;
     height: 100%;
 }
-
-.presentation12 .presentation_text{
-	margin-bottom: 0;
+.presentation12 .presentation_text {
+    margin-bottom: 0;
 }
-
-
-
 .presentation13 .presentation_wrap {
     flex-direction: column;
     align-items: flex-start;
@@ -944,18 +835,12 @@
     width: 100%;
     gap: 30px;
 }
-.presentation13 .presentation_items > * {
-
-}
+.presentation13 .presentation_items>* {}
 .presentation13 .presentation_img img {
     aspect-ratio: 365/179;
     object-fit: cover;
     height: 100%;
 }
-
-
-
-
 .presentation14 .presentation_wrap {
     flex-direction: column;
     align-items: flex-start;
@@ -975,10 +860,10 @@
     z-index: 0;
 }
 .slick-slide:nth-child(2n) .presentation14 .presentation_wrap:before {
-	background: #fff;
+    background: #fff;
 }
 .landing .presentation:nth-child(2n).presentation14 .presentation_wrap:before {
-	background: #fff;
+    background: #fff;
 }
 .presentation14 .presentation_wrap:after {
     position: absolute;
@@ -997,11 +882,9 @@
     width: 100%;
     gap: 30px;
 }
-.presentation14 .presentation_items > * {
-
-}
+.presentation14 .presentation_items>* {}
 .presentation_item-text {
-    color:  var(--text);
+    color: var(--text);
     font-family: "SF Pro Display";
     font-size: 22px;
     font-style: normal;
@@ -1009,25 +892,19 @@
     line-height: normal;
 }
 .slick-slide:nth-child(2n) .presentation_item-text {
-	color: #fff;
+    color: #fff;
 }
 .landing .presentation:nth-child(2n) .presentation_item-text {
-	color: #fff;
+    color: #fff;
 }
 .presentation14 .presentation_item-img img {
     aspect-ratio: 350/270;
     object-fit: cover;
     height: 100%;
 }
-
-.slick-slide:nth-child(2n) .presentation17 .presentation_item-text{
-	color:#000;
+.slick-slide:nth-child(2n) .presentation17 .presentation_item-text {
+    color: #000;
 }
-
-
-
-
-
 .presentation15 .presentation_wrap {
     flex-direction: column;
     align-items: flex-start;
@@ -1063,24 +940,18 @@
     width: 100%;
     gap: 30px;
 }
-.presentation15 .presentation_items > * {
-
-}
+.presentation15 .presentation_items>* {}
 .slick-slide:nth-child(2n) .presentation15 .presentation_wrap:before {
-	background: #fff;
+    background: #fff;
 }
 .landing .presentation:nth-child(2n).presentation15 .presentation_wrap:before {
-	background: #fff;
+    background: #fff;
 }
 .presentation15 .presentation_item-img img {
     aspect-ratio: 552/270;
     object-fit: cover;
     height: 100%;
 }
-
-
-
-
 .presentation16 .presentation_wrap {
     flex-direction: column;
     align-items: flex-start;
@@ -1116,23 +987,18 @@
     width: 100%;
     gap: 30px;
 }
-.presentation16 .presentation_items > * {
-
-}
+.presentation16 .presentation_items>* {}
 .slick-slide:nth-child(2n) .presentation16 .presentation_wrap:before {
-	background: #fff;
+    background: #fff;
 }
 .landing .presentation:nth-child(2n).presentation16 .presentation_wrap::before {
-	background: #fff;
+    background: #fff;
 }
 .presentation16 .presentation_item-img img {
     aspect-ratio: 552/270;
     object-fit: cover;
     height: 100%;
 }
-
-
-
 .presentation17 .presentation_wrap {
     flex-direction: column;
     align-items: flex-start;
@@ -1157,16 +1023,16 @@
     width: 100%;
     gap: 30px;
 }
-.presentation17 .presentation_items > * {
+.presentation17 .presentation_items>* {
     display: flex;
-    width: 100%;  
+    width: 100%;
     min-height: 203px;
     z-index: 1;
 }
 .presentation17 .presentation_item-img {
     width: 50%;
 }
-.presentation17 .presentation_item-img img{
+.presentation17 .presentation_item-img img {
     height: 100%;
     object-fit: cover;
 }
@@ -1200,11 +1066,6 @@
     object-fit: cover;
     height: 100%;
 }
-
-
-
-
-
 .presentation18 .presentation_img {
     position: relative;
     z-index: 55;
@@ -1260,10 +1121,6 @@
     object-fit: cover;
     height: 100%;
 }
-
-
-
-
 .presentation19 .presentation_wrap {
     flex-direction: column;
     align-items: center;
@@ -1276,7 +1133,7 @@
     flex-wrap: wrap;
     width: 100%;
 }
-.presentation19 .presentation_items > * {
+.presentation19 .presentation_items>* {
     width: calc(100%/4 - 10px);
     height: 108px;
     padding: 7px 10px;
@@ -1292,11 +1149,6 @@
 .presentation19 .presentation_title {
     text-align: center;
 }
-
-
-
-
-
 .presentation20 .presentation_wrap {
     padding: 70px;
     flex-direction: column;
@@ -1333,11 +1185,9 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
     width: 100%;
-    gap:30px;
+    gap: 30px;
 }
-.presentation20 .presentation_items > * {
-
-}
+.presentation20 .presentation_items>* {}
 .presentation20 .presentation_item-img {
     position: relative;
     margin-bottom: 23px;
@@ -1358,7 +1208,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: -0.44px;  
+    letter-spacing: -0.44px;
     padding-bottom: 13px;
     margin-bottom: 23px;
     border-bottom: 3px solid var(--bg2);
@@ -1369,17 +1219,13 @@
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;  
+    line-height: normal;
 }
 .presentation20 .presentation_item-img img {
     aspect-ratio: 237/203;
     object-fit: cover;
     height: 100%;
 }
-
-
-
-
 .presentation21 .presentation_wrap {
     padding: 0;
     margin-bottom: 50px;
@@ -1426,14 +1272,10 @@
 .presentation21 .presentation_bottom-img img {
     aspect-ratio: 1140/324;
     object-fit: cover;
-    height: 100%;   
+    height: 100%;
 }
-
-
-
-
 .presentation22 .presentation_wrap {
-	position: relative;
+    position: relative;
 }
 .presentation22 .presentation_img {
     position: relative;
@@ -1492,13 +1334,11 @@
 .presentation22 .presentation_img img {
     aspect-ratio: 520/357;
     object-fit: cover;
-    height: 100%;   
+    height: 100%;
 }
 .presentation22 .presentation_right {
     max-width: 100%;
 }
-
-
 .presentation23 .presentation_wrap {
     flex-direction: column;
     align-items: flex-start;
@@ -1514,24 +1354,27 @@
 }
 .presentation23 .circle1 span:nth-child(1) {
     width: 638px;
-    height: 638px;    
+    height: 638px;
     border: 85px solid color-mix(in oklab, var(--bg3), white 80%);
     top: -380px;
     right: -380px;
+    opacity: 0.3;
 }
 .presentation23 .circle1 span:nth-child(2) {
     width: 468px;
-    height: 468px;    
+    height: 468px;
     border: 85px solid color-mix(in oklab, var(--bg3), white 60%);
     top: -295px;
     right: -295px;
+    opacity: 0.3;
 }
 .presentation23 .circle1 span:nth-child(3) {
     width: 298px;
-    height: 298px;    
+    height: 298px;
     border: 85px solid color-mix(in oklab, var(--bg3), white 40%);
     top: -210px;
     right: -210px;
+    opacity: 0.3;
 }
 .presentation23 ul .icon {
     display: block;
@@ -1539,17 +1382,13 @@
     width: 27px;
     height: 27px;
 }
-
-
-
-
 .presentation24 .presentation_wrap {
     padding: 0;
     margin-top: 60px;
     align-items: center;
     z-index: 1;
     position: relative;
-    overflow: visible;    
+    overflow: visible;
 }
 .presentation24 .presentation_box {
     padding: 70px;
@@ -1583,15 +1422,8 @@
 .presentation24 .presentation_bottom-img img {
     aspect-ratio: 1140/318;
     object-fit: cover;
-    height: 100%;   
+    height: 100%;
 }
-
-
-
-
-
-
-
 .presentation25 .presentation_wrap {
     position: relative;
     display: flex;
@@ -1599,9 +1431,7 @@
     align-items: flex-start;
     gap: 0;
 }
-.presentation25 .circle1 span,
-.presentation25 .circle2 span,
-.presentation25 .circle3 span {
+.presentation25 .circle1 span, .presentation25 .circle2 span, .presentation25 .circle3 span {
     display: block;
     border-radius: 50%;
     position: absolute;
@@ -1658,24 +1488,27 @@
 }
 .presentation25 .circle3 span:nth-child(1) {
     width: 638px;
-    height: 638px;    
+    height: 638px;
     border: 85px solid color-mix(in oklab, var(--bg2), white 80%);
     bottom: -380px;
     right: -380px;
+    opacity: 0.3;
 }
 .presentation25 .circle3 span:nth-child(2) {
     width: 468px;
-    height: 468px;    
+    height: 468px;
     border: 85px solid color-mix(in oklab, var(--bg2), white 60%);
     bottom: -295px;
     right: -295px;
+    opacity: 0.3;
 }
 .presentation25 .circle3 span:nth-child(3) {
     width: 298px;
-    height: 298px;    
+    height: 298px;
     border: 85px solid color-mix(in oklab, var(--bg2), white 40%);
     bottom: -210px;
     right: -210px;
+    opacity: 0.3;
 }
 .presentation25 .presentation_title {
     max-width: 415px;
@@ -1688,10 +1521,6 @@
 .presentation25 .circle3 {
     z-index: 0;
 }
-
-
-
-
 .presentation26 .presentation_box::after {
     width: 100%;
     height: 104px;
@@ -1719,7 +1548,7 @@
     content: "";
     position: absolute;
     bottom: 0px;
-    left: 148px;    
+    left: 148px;
     background: var(--bg3);
     z-index: 0;
 }
@@ -1738,13 +1567,8 @@
 .presentation26 .presentation_img img {
     aspect-ratio: 570/435;
     object-fit: cover;
-    height: 100%;   
+    height: 100%;
 }
-
-
-
-
-
 .presentation27 .presentation_box {
     position: relative;
     background: #fff;
@@ -1759,7 +1583,7 @@
     margin-bottom: -17px;
     position: relative;
 }
-.presentation27 .presentation_right > * {
+.presentation27 .presentation_right>* {
     width: calc(100%/2 - 17px);
     margin-left: 17px;
     margin-bottom: 17px;
@@ -1775,29 +1599,26 @@
     width: 27px;
     height: 27px;
 }
-
-
-
 .presentation28 .presentation_left {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 15px;
 }
 .presentation28 .presentation_left .presentation_img:nth-child(1) {
-	grid-column: 1;
+    grid-column: 1;
     grid-row: 1;
 }
 .presentation28 .presentation_left .presentation_img:nth-child(2) {
-	grid-column: 2;
+    grid-column: 2;
     grid-row: 1;
 }
 .presentation28 .presentation_left .presentation_img:nth-child(3) {
-	grid-column: 1;
+    grid-column: 1;
     grid-row: 2;
 }
 .presentation28 .presentation_left .presentation_img:nth-child(4) {
-	grid-column: 2;
+    grid-column: 2;
     grid-row: 2;
 }
 .text_block .presentation28 img {
@@ -1805,16 +1626,9 @@
     height: 100%;
     aspect-ratio: 270/231;
 }
-.presentation28 ol li + li {
+.presentation28 ol li+li {
     margin-top: 24px;
 }
-
-
-
-
-
-
-
 @container presentations (max-width: 1100px) {
     .presentation_wrap {
         padding: 30px;
@@ -1857,13 +1671,11 @@
     .presentation6 .presentation_box {
         padding: 60px;
     }
-
     .presentation7 .presentation_items {
         margin-bottom: 0;
         margin-left: 0;
         grid-template-columns: 1fr 1fr;
     }
-  
     .presentation8 .presentation_title {
         margin-bottom: 10px;
     }
@@ -1873,7 +1685,7 @@
     .slick-slide:nth-child(2n) .presentation8 .presentation_box {
         padding: 20px;
     }
-    .presentation17 .presentation_items > * {
+    .presentation17 .presentation_items>* {
         flex-direction: column;
     }
     .presentation17 .presentation_item-text {
@@ -1884,26 +1696,24 @@
         margin-left: -20px;
         margin-bottom: -20px;
     }
-    .presentation20 .presentation_items > * {        
+    .presentation20 .presentation_items>* {
         margin-left: 20px;
         margin-bottom: 20px;
     }
     .presentation9 .presentation_items {
         grid-template-columns: 1fr 1fr;
     }
-    .presentation9 .presentation_items > * {
+    .presentation9 .presentation_items>* {
         padding: 20px;
         width: 100%;
         margin-left: 0;
     }
-
     .presentation13 .presentation_wrap .icon {
         display: none;
     }
     .presentation13 .presentation_wrap:before {
         display: none;
     }
-
     .presentation21 .presentation_box {
         padding: 30px;
     }
@@ -1943,7 +1753,7 @@
         align-items: flex-start;
     }
     .presentation28 .presentation_right {
-        max-width: 100%;        
+        max-width: 100%;
     }
     .presentation22 .presentation_wrap {
         flex-direction: column;
@@ -1963,21 +1773,11 @@
     .presentation8 .presentation_box {
         padding: 30px;
     }
-
-    .presentation13 .presentation_title{
-    	width: 100%;
+    .presentation13 .presentation_title {
+        width: 100%;
     }
-
-
-
-
-} 
-
-
-
-
+}
 @container presentations (max-width: 900px) {
-
     .presentation4 .presentation_right:before {
         display: none;
     }
@@ -2016,8 +1816,7 @@
         top: 20px;
         left: 20px;
     }
-    .presentation ol li,
-    .presentation ul li {
+    .presentation ol li, .presentation ul li {
         font-size: 20px;
     }
     .presentation11 .presentation_item-title {
@@ -2026,11 +1825,8 @@
     .presentation_text {
         margin-bottom: 20px;
     }
-
-    .presentation13 .presentation_img + .presentation_img {
-        
-    }
-    .presentation13 .presentation_items > * {
+    .presentation13 .presentation_img+.presentation_img {}
+    .presentation13 .presentation_items>* {
         width: 100%;
         margin-left: 0px;
         margin-bottom: 0px;
@@ -2038,10 +1834,7 @@
     .presentation10 .presentation_wrap:before {
         display: none;
     }
-    .presentation21 .presentation_wrap,
-    .presentation22 .presentation_wrap,
-    .presentation24 .presentation_wrap,
-    .presentation25 .presentation_wrap {
+    .presentation21 .presentation_wrap, .presentation22 .presentation_wrap, .presentation24 .presentation_wrap, .presentation25 .presentation_wrap {
         gap: 20px;
     }
     .presentation27 .presentation_right {
@@ -2064,7 +1857,7 @@
     }
     .presentation6 .presentation_wrap {
         padding: 30px;
-    }  
+    }
     .presentation11 .circle1 span:nth-child(1) {
         border: 85px solid color-mix(in oklab, var(--bg3), white 15%);
     }
@@ -2113,18 +1906,8 @@
         border: 85px solid color-mix(in oklab, var(--bg2), white 40%);
         opacity: 0.3
     }
-
-
-
-
-
-} 
-
-
-
-
+}
 @container presentations (max-width: 700px) {
-
     .presentation_wrap {
         flex-direction: column-reverse;
         gap: 30px;
@@ -2147,37 +1930,32 @@
         margin-left: 0;
         grid-template-columns: 1fr;
     }
-    .presentation20 .presentation_items > * {
+    .presentation20 .presentation_items>* {
         width: 100%;
         margin-left: 0px;
         margin-bottom: 0px;
     }
-    .presentation20 .presentation_item + .presentation_item {
-       
-    }
+    .presentation20 .presentation_item+.presentation_item {}
     .presentation20 .presentation_item-img {
         margin-bottom: 10px;
     }
     .presentation20 .presentation_wrap:before {
         right: 50%;
     }
-    .presentation19 .presentation_items > * {
+    .presentation19 .presentation_items>* {
         width: calc(100%/2 - 10px);
         height: 80px;
     }
     .presentation17 .presentation_wrap:before {
         right: 50%;
     }
-    .presentation16 .presentation_wrap:after,
-    .presentation16 .presentation_wrap:before {
+    .presentation16 .presentation_wrap:after, .presentation16 .presentation_wrap:before {
         display: none;
     }
-    .presentation15 .presentation_wrap:before,
-    .presentation15 .presentation_wrap:after {
+    .presentation15 .presentation_wrap:before, .presentation15 .presentation_wrap:after {
         display: none;
     }
-    .presentation14 .presentation_wrap:after,
-    .presentation14 .presentation_wrap:before {
+    .presentation14 .presentation_wrap:after, .presentation14 .presentation_wrap:before {
         display: none;
     }
     .presentation_title br {
@@ -2204,25 +1982,14 @@
     .presentation8 .presentation_box {
         padding: 20px;
     }
-
-    .presentation9 .presentation_items{
+    .presentation9 .presentation_items {
         grid-template-columns: 1fr;
     }
-
     .presentation13 .presentation_items {
         grid-template-columns: 1fr;
     }
-
-
-
-
-} 
-
-
-
-
+}
 @container presentations (max-width: 600px) {
-
     .presentation_wrap {
         padding: 20px;
     }
@@ -2262,19 +2029,18 @@
     .presentation6 .presentation_box {
         padding: 20px;
     }
-    .presentation7 .presentation_wrap:before,
-    .presentation7 .presentation_wrap:after {
+    .presentation7 .presentation_wrap:before, .presentation7 .presentation_wrap:after {
         display: none;
     }
     .presentation7 .presentation_items {
         grid-template-columns: 1fr;
     }
-    .presentation7 .presentation_items > * {
+    .presentation7 .presentation_items>* {
         width: 100%;
         margin-left: 0;
         margin-bottom: 0;
     }
-    .presentation7 .presentation_item + .presentation_item {
+    .presentation7 .presentation_item+.presentation_item {
         margin-top: 20px;
     }
     .presentation ol li, .presentation ul li {
@@ -2284,25 +2050,21 @@
         font-size: 18px;
     }
     .presentation17 .presentation_items {
-       grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
-
     .presentation16 .presentation_items {
         grid-template-columns: 1fr;
     }
-
     .presentation15 .presentation_items {
         grid-template-columns: 1fr;
-
     }
-    .presentation15 .presentation_item + .presentation_item {
+    .presentation15 .presentation_item+.presentation_item {
         margin-top: 20px;
     }
-
     .presentation14 .presentation_items {
-         grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
-    .presentation14 .presentation_item + .presentation_item {
+    .presentation14 .presentation_item+.presentation_item {
         margin-top: 20px;
     }
     .presentation_item-title {
@@ -2313,13 +2075,10 @@
         margin-top: 10px;
         font-size: 18px;
     }
-    .presentation ol li + li {
+    .presentation ol li+li {
         margin-top: 15px;
-    } 
-    .presentation9 .presentation_items > * {
+    }
+    .presentation9 .presentation_items>* {
         padding: 15px;
     }
-
-
-
-} 
+}
