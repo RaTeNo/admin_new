@@ -404,7 +404,6 @@
 }
 .slick-slide:nth-child(2n) .presentation_wrap:before {
     opacity: 1;
-	z-index: 0;
 }
 
 
@@ -794,6 +793,11 @@
     right: -31%;
 }
 
+.presentation10 ol li{
+	min-height: 42px;
+}
+
+
 .landing .presentation:nth-child(2n) ol li {
 	color: #fff;
 }
@@ -865,6 +869,10 @@
     line-height: 142.857%   
 }
 
+.presentation11 ul .icon{
+	margin-top: 5px;
+}
+
 
 
 
@@ -896,6 +904,10 @@
     aspect-ratio: 570/191;
     object-fit: cover;
     height: 100%;
+}
+
+.presentation12 .presentation_text{
+	margin-bottom: 0;
 }
 
 
@@ -1007,6 +1019,11 @@
     object-fit: cover;
     height: 100%;
 }
+
+.slick-slide:nth-child(2n) .presentation17 .presentation_item-text{
+	color:#000;
+}
+
 
 
 
@@ -1860,7 +1877,7 @@
         flex-direction: column;
     }
     .presentation17 .presentation_item-text {
-        padding: 20px 20px 20px 0px;
+        padding: 20px 20px 20px 20px;
         margin-top: 0;
     }
     .presentation20 .presentation_items {
@@ -1947,6 +1964,9 @@
         padding: 30px;
     }
 
+    .presentation13 .presentation_title{
+    	width: 100%;
+    }
 
 
 
@@ -2046,22 +2066,22 @@
         padding: 30px;
     }  
     .presentation11 .circle1 span:nth-child(1) {
-        border: 85px solid color-mix(in oklab, var(--bg3), white 95%);
+        border: 85px solid color-mix(in oklab, var(--bg3), white 15%);
     }
     .presentation11 .circle1 span:nth-child(2) {
-        border: 85px solid color-mix(in oklab, var(--bg3), white 90%);
+        border: 85px solid color-mix(in oklab, var(--bg3), white 10%);
     }
     .presentation11 .circle1 span:nth-child(3) {
-        border: 85px solid color-mix(in oklab, var(--bg3), white 85%);
+        border: 85px solid color-mix(in oklab, var(--bg3), white 5%);
     }
     .presentation11 .circle2 span:nth-child(1) {
-        border: 85px solid color-mix(in oklab, var(--bg2), white 95%);
+        border: 85px solid color-mix(in oklab, var(--bg2), white 15%);
     }
     .presentation11 .circle2 span:nth-child(2) {
-        border: 85px solid color-mix(in oklab, var(--bg2), white 90%);
+        border: 85px solid color-mix(in oklab, var(--bg2), white 10%);
     }
     .presentation11 .circle2 span:nth-child(3) {
-        border: 85px solid color-mix(in oklab, var(--bg2), white 85%);
+        border: 85px solid color-mix(in oklab, var(--bg2), white 5%);
     }
     .presentation17 .presentation_wrap:before {
         display: none;
@@ -2070,22 +2090,28 @@
         display: none;
     }
     .presentation23 .circle1 span:nth-child(1) {
-        border: 85px solid color-mix(in oklab, var(--bg3), white 95%);
+        border: 85px solid color-mix(in oklab, var(--bg3), white 80%);
+        opacity: 0.3;
     }
     .presentation23 .circle1 span:nth-child(2) {
-        border: 85px solid color-mix(in oklab, var(--bg3), white 90%);
+        border: 85px solid color-mix(in oklab, var(--bg3), white 60%);
+        opacity: 0.3;
     }
     .presentation23 .circle1 span:nth-child(3) {
-        border: 85px solid color-mix(in oklab, var(--bg3), white 85%);
+        border: 85px solid color-mix(in oklab, var(--bg3), white 40%);
+        opacity: 0.3;
     }
     .presentation25 .circle3 span:nth-child(1) {
-        border: 85px solid color-mix(in oklab, var(--bg2), white 95%);
+        border: 85px solid color-mix(in oklab, var(--bg2), white 80%);
+        opacity: 0.3
     }
     .presentation25 .circle3 span:nth-child(2) {
-        border: 85px solid color-mix(in oklab, var(--bg2), white 90%);
+        border: 85px solid color-mix(in oklab, var(--bg2), white 60%);
+        opacity: 0.3
     }
     .presentation25 .circle3 span:nth-child(3) {
-        border: 85px solid color-mix(in oklab, var(--bg2), white 85%);
+        border: 85px solid color-mix(in oklab, var(--bg2), white 40%);
+        opacity: 0.3
     }
 
 
