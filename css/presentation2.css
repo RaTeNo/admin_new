@@ -1552,6 +1552,11 @@
     background: var(--bg3);
     z-index: 0;
 }
+
+.presentation26 .presentation_text{
+    z-index: 2;
+    position: relative;
+}
 .landing .presentation:nth-child(2n).presentation26 .presentation_right::after {
     background: #fff;
 }
@@ -1637,7 +1642,7 @@
         font-size: 30px;
     }
     .presentation1 .presentation_left .presentation_img:before {
-        width: calc(100% + 20px);
+       
         height: calc(100% + 40px);
         top: -20px;
         left: -20px;
