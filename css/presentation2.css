@@ -1096,8 +1096,12 @@
     z-index: -1;
 }
 
-.presentation18 .icon{    
-    filter: invert(75%);
+.presentation18 .icon{
+    color:var(--bg3);
+}
+
+.presentation:nth-child(2n).presentation18 .icon{    
+    color:var(--bg2);
 }
 
 .presentation_author span {
