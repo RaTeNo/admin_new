@@ -273,6 +273,7 @@
     top: -61%;
     right: -31%;
     z-index: 0;
+    opacity: 0.3 !important;
 }
 .presentation2 .presentation_wrap:after {
     position: absolute;
@@ -284,6 +285,7 @@
     bottom: -61%;
     left: -31%;
     z-index: 0;
+    opacity: 0.3 !important;
 }
 .landing .presentation2:nth-child(2n) .presentation_wrap:before {
     border: 167px solid color-mix(in oklab, var(--bg3), white 20%);
@@ -1093,6 +1095,11 @@
     right: -135px;
     z-index: -1;
 }
+
+.presentation18 .icon{    
+    filter: invert(75%);
+}
+
 .presentation_author span {
     color: var(--text);
     font-size: 22px;
