@@ -370,7 +370,7 @@ $(() => {
 	}*/
 
 	if ('function' === typeof MediaPlayer) {
-		[].forEach.call(document.querySelectorAll('audio[controls]'), function (media) {
+		[].forEach.call(document.querySelectorAll('audio[controls]:not(.not)'), function (media) {
 			player = media.player = new MediaPlayer(media, {
 				svgs: {
 					mute: 'images/sprite.svg#ic_mute',
