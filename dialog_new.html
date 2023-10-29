@@ -362,18 +362,28 @@
 														Прослушайте аудио-запись
 													</div>
 
-													<div class="trainer_step_audio audio_media">
+													<!-- <div class="trainer_step_audio audio_media">
 														<audio controls src="images/t-rex-roar.mp3">
 													            Your browser does not support the
 													            <code>audio</code> element.
 													    </audio>
-													</div>
+													</div> -->
 
-													<figure>													
-													    <audio controls class="not" src="images/t-rex-roar.mp3">
+													<div class="default_player">													
+													    <audio id="audio" controls class="not" src="images/t-rex-roar.mp3">
 													    	<a href="images/t-rex-roar.mp3"> Download audio </a>
 													    </audio>
-													</figure>
+
+													    <div class="speed_controller">
+													    	<span>Скорость:</span> 
+														    <button class="active" data-speed="1" type="button">100%</button>
+														    <button data-speed="1.25" type="button">125%</button>
+														    <button data-speed="1.5" type="button">150%</button>
+														    <button data-speed="2" type="button">200%</button>
+													    </div>													    
+													    
+													</div>
+
 
 													<button class="trainer_step_button">
 														Начать работу с тренажером
@@ -502,5 +512,16 @@
 		<script src="js/nice-select.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
+
+
+		<script>
+			let audio = document.getElementById("audio");
+
+			$(".speed_controller button").click(function (e) {
+				$(".speed_controller button").removeClass("active");
+				$(this).addClass("active");
+				audio.playbackRate = $(this).data("speed");
+			})
+		</script> 
 	</body>
 </html>
