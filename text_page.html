@@ -433,14 +433,20 @@
 										</section>
 
 
-										<section class="audio_player">
-											<audio
-										        controls
-										        src="images/t-rex-roar.mp3">
-										            Your browser does not support the
-										            <code>audio</code> element.
+										<div class="default_player">													
+										    <audio id="audio" controls class="not" src="images/t-rex-roar.mp3">
+										    	<a href="images/t-rex-roar.mp3"> Download audio </a>
 										    </audio>
-										</section>
+
+										    <div class="speed_controller">
+										    	<span>Скорость:</span> 
+											    <button class="active" data-speed="1" type="button">100%</button>
+											    <button data-speed="1.25" type="button">125%</button>
+											    <button data-speed="1.5" type="button">150%</button>
+											    <button data-speed="1.75" type="button">175%</button>
+										    </div>													    
+										    
+										</div>
 
 
 										<section class="video_player">
@@ -814,5 +820,15 @@
 		<script src="js/nice-select.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
+
+		<script>
+			let audio = document.getElementById("audio");
+
+			$(".speed_controller button").click(function (e) {
+				$(".speed_controller button").removeClass("active");
+				$(this).addClass("active");
+				audio.playbackRate = $(this).data("speed");
+			})
+		</script> 
 	</body>
 </html>
