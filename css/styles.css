@@ -29248,6 +29248,10 @@ bottom: 20px;
     justify-content: center;
 }
 
+.speed_controller.as{
+    justify-content: flex-start;
+}
+
 .speed_controller span{
     margin-right: 10px;
     color: #372F73;
