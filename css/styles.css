@@ -7886,7 +7886,7 @@ aside .menu .sub_menu a.active
 
 .dialog .message.answer .name
 {
-    color: rgba(255, 255, 255, .75);
+    color: rgba(255, 255, 255, 1);
 }
 
 .dialog .message.answer .text_message
