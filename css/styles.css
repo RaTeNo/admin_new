@@ -20066,7 +20066,7 @@ button.step-simulator_item span {
     flex-direction: column;
     height: 100%;
 }
-.step-simulator_bottom:before {
+.step-simulator_bottom .number_sim {
     position: absolute;
     font-family: "Inter";
     top: 0px;
