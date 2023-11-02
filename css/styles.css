@@ -27687,6 +27687,9 @@ form .form_btns input[type=file] + label,
 .myideas_item-label.green {
     background: #36BD43;
 }
+.myideas_item-label.blue {
+    background: #212aff;
+}
 .myideas_items.empt .myideas_item-icon {
     width: 65px;
     height: 65px;
@@ -27988,6 +27991,9 @@ form .form_btns input[type=file] + label,
 }
 .idea-block_item-label.green {
     background: #36BD43;
+}
+.idea-block_item-label.blue {
+    background: #212aff;
 }
 .idea-block_item-text {
     color: #7C81A1;
