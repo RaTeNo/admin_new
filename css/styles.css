@@ -24756,7 +24756,7 @@ form .form_btns input[type=file] + label,
 }
 .addition_left {
     display: flex;
-    margin-right: 10px;
+    margin-right: auto;
 }
 .addition_icon {
     margin-right: 14px;
@@ -28852,7 +28852,10 @@ bottom: 20px;
     color: #FFFFFF;
     border-radius: 55px;
     text-decoration: none;
+    margin-left: 10px;
 }
+
+
 
 .icon_has_img{
     position: relative;

@@ -1629,4 +1629,8 @@
         height: 50px;
     }
 
+    .print_btn + .print_btn{
+        margin-top: 10px;
+    }
+
 }
