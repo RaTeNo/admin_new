@@ -75,6 +75,11 @@ $(() => {
 	})
 
 
+	$(document).ready(function() {
+		$('.js-example-basic-single').select2();
+	});
+
+
 	// выбрать все checkbox`ы
 	$(".choose-link").click(function (e) {
 		e.preventDefault()

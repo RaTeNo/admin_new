@@ -1633,4 +1633,20 @@
         margin-top: 10px;
     }
 
+    .vacancy .page_title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .vacancy .page_title a {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    .application_top-whatsapp {
+        padding: 4px 23px;
+    }
+
+    .pagination {
+        gap: 4px;
+    }
+
 }

@@ -942,13 +942,31 @@
     .step-simulator_items > * {
         width: calc(100%/3 - 16px);
     }
-    .step-simulator_text {
-        
-    }
 
     .player_fixed{
         margin-left: -32px !important;
     }
 
+    .vacancy .table-wrap {
+        overflow-y: scroll;
+    }
+    .vacancy table {
+        width: 1200px;
+    }
+    .vacancy .table-wrap::-webkit-scrollbar {
+        height: 14px;        
+    }
+    .vacancy .table-wrap::-webkit-scrollbar-thumb { 
+        border-radius: 31px !important;
+    }
+    .vacancy_links-wrap {
+        overflow-y: scroll;
+    }
+    .vacancy_links {
+        width: 1200px;
+    }
+    .vacancy_links-wrap::-webkit-scrollbar {
+        display: none;
+    }
 
 }

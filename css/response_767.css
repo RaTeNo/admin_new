@@ -2711,6 +2711,40 @@
     }
 
 
+    .application .table-wrap {
+        overflow-y: scroll;
+    }
+    .application table {
+        width: 800px;
+    }
+    .application .table-wrap::-webkit-scrollbar {
+        height: 14px;   
+    }
+    .application .table-wrap::-webkit-scrollbar-thumb { 
+        border-radius: 31px !important;
+    }
+
+    .application_comment .line .field:first-child {
+        width: 100%;
+    }
+    .application_comment .line .field:nth-child(2) {
+        margin-top: 15px;
+        margin-left: 0;
+        width: calc(100% - 66px);
+    }
+    .application_comment form button .icon {
+        margin-top: 11px;
+    }
+    .application_bottom-text {
+        order: 1;
+        width: 100%;
+        margin-top: 15px;
+    }
+    .application_bottom-right {
+        flex-wrap: wrap;
+    }
+
+
 
 
 
