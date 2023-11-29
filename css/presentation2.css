@@ -1953,8 +1953,15 @@
 }
 
 
+.landing .presentation:nth-child(2n).presentation8 .presentation_text table td {
+    color: #ffffff;
 
+}
 
+.landing .presentation:nth-child(2n).presentation8 .presentation_text table tr:hover td {
+    background: #f6faff;
+    color: #505261;
+}
 
 
 
