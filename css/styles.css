@@ -30050,3 +30050,34 @@ bottom: 20px;
     background-color: #4E4B8E;
     color: white;
 }
+
+.load_anal{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+.load_anal svg{
+    width: 40px;
+    height: 40px;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.5, 0.33, 0.04, 1.02);
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: new_load;
+}
+.load_anal .text_load{
+    font-size: 14px;
+    letter-spacing: -0.3px;
+}
+
+.load_anal .text_load b{
+    font-size: 16px;    
+}
