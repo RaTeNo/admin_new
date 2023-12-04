@@ -23579,6 +23579,8 @@ form .form_btns input[type=file] + label,
     -webkit-box-orient: vertical;  
     overflow: hidden; */
     margin-bottom: 27px;
+    display: block;
+    text-decoration: none;
 }
 .task-block_comment-box {
     display: flex;
@@ -23805,7 +23807,7 @@ form .form_btns input[type=file] + label,
 .participants_item .icon {
     width: 25px;
     height: 25px;
-    margin-left: 7px;
+    margin-left: 0px;
 }
 .participants_items {
     margin-bottom: 16px;
@@ -29487,7 +29489,33 @@ bottom: 20px;
     font-weight: 500;
     margin-left: 20px;
 }
+.vacancy_information .status{
+	padding: 3px 10px;
+	align-items: flex-start;
+	border-radius: 29px;
+	background: #33BCDA;
+	color:#fff;
+	text-align: center;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	    min-width: 90px;
+}
 
+.vacancy_information .status.archive{
+	background: #E03A44;
+}
+.vacancy_information .status.work{
+	background: #67B934;
+}
+.vacancy_information .status.sobes{	
+	background: #FFA800;
+}
+
+.vacancy_information .status.archive span{
+	font-size: 10px;
+	font-weight: 400;
+}
 .pagination {
     display: flex;
     align-items: center;
