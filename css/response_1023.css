@@ -463,4 +463,13 @@
         margin-left: 40px;
     }
 
+    .projects-top_items {
+        margin-left: -20px;
+    }
+    .projects-top_items > * {
+        width: calc(100%/3 - 20px);
+        margin-left: 20px;
+    }
+
+
 }

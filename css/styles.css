@@ -27165,7 +27165,7 @@ form .form_btns input[type=file] + label,
 }
 
 .pie {
-    --p: 20;
+    --p: 30;
     --b: 5px;
     --c: var(--main_color);
     --w: 42px;
@@ -27218,6 +27218,21 @@ form .form_btns input[type=file] + label,
     }
 }
 
+
+.steps_stage .pie {
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+}
+.steps_stage .pie:after {
+    display: none;
+}
+.steps_stage .pie:before {
+    inset: 0;
+    background: radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat, conic-gradient(var(--c) calc(var(--p)*1%),#D0D0D0 0);
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+    mask: radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+}
 
 .course_info .progress{
     background: #FFFFFF;
@@ -30069,4 +30084,172 @@ bottom: 20px;
 
 .load_anal .text_load b{
     font-size: 16px;    
+}
+
+
+
+
+.tasks .step_stage {
+    border-radius: 0px;
+    background: none;
+    padding: 0px;
+    align-items: flex-start;
+}
+.tasks .steps_stage {
+    margin-top: 17px;
+    position: relative;
+    padding-bottom: 19px;    
+}
+.tasks .steps_stage:before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 40px);
+    height: 1px;
+    left: -20px;
+    bottom: 0;
+    background: #DFDFDF;
+}
+.tasks .step_stage .icon,
+.tasks .steps_stage_title .icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 9px;
+    flex-shrink: 0;
+}
+.tasks .steps_stage_title {
+    color: #637190;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px; 
+}
+.tasks .step_stage_body {
+    color: #2F3749;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; 
+    letter-spacing: -0.5px;
+}
+.tasks .step_stage_time {
+    color: #8683C0;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.22px;
+}
+.tasks .step_stage_time span {
+    color: var(--main_color);
+}
+
+
+.task-block_subtask {
+    display: flex;
+    align-items: center;
+    color: #7874A3;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.task-block_subtask .icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    margin-right: 3px;
+}
+.task-block .task-block_text {
+    margin-bottom: 12px;
+}
+.task-block_subtask.green {
+    color: #1CBD2C;
+}
+.task-block_items.classic .task-block_subtask {
+    margin-top: 13px;
+}
+
+.projects-top_items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -43px;
+    margin-top: 61px;
+    margin-bottom: 40px;
+}
+.projects-top_items > * {
+    width: calc(100%/3 - 43px);
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 43px;
+    padding: 20px 35px 17px 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+    background: #fff;
+}
+.projects-top_item::before {
+    position: absolute;
+    content: "";
+    background: url(../images/training-course_label.png);
+    top: -27px;
+    left: 0;
+    width: 326px;
+    height: 27px;
+    z-index: -1;
+}
+.projects-top_item-title {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px; 
+    letter-spacing: -0.3px;
+    padding-bottom: 20px;
+    margin-bottom: 14px;
+    position: relative;
+    text-decoration: none;
+    flex-grow: 1;
+}
+.projects-top_item-title::before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 55px);
+    height: 1px;
+    background: #DFDFDF;
+    bottom: 0;
+    left: -20px;
+}
+.projects-top_item-labels {
+    display: flex;
+    margin-top: auto;
+}
+.projects-top_item-label {
+    padding: 3px 10px;
+    border-radius: 29px;
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.projects-top_item-label.green {
+    background: #79C54B;
+}
+.projects-top_item-label.blau {
+    background: var(--main_color);
+}
+.projects-top_item-label + .projects-top_item-label {
+    margin-left: 10px;
+}
+.task-block_item .projects_item-author {
+    margin-top: 13px;
+}
+
+.project .task-block_items.classic {
+    margin-right: 0;
+    margin-left: 0;
 }

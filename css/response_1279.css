@@ -1990,7 +1990,13 @@
         margin-top: 16px;
     }
 
-
+    .projects-top_item-labels {
+        flex-direction: column;
+    }
+    .projects-top_item-label + .projects-top_item-label {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
 
 
 

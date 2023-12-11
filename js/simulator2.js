@@ -7,14 +7,13 @@ $(document).ready(function() {
             return;
         }
         var date = new Date();
-        // $(this).addClass("active").find(".icon_change use").attr("xlink:href","/images/sprite.svg#training_ok");
-        $(this).addClass("active").find(".icon_change use").attr("xlink:href","/images/sprite.svg#training_ok");
+        $(this).addClass("active").find(".icon_change use").attr("xlink:href","images/sprite.svg#training_ok2");
         let min = date.getMinutes();
         if(min<10)
         {
             min = "0"+min;
         }
-        $(this).find(".step_stage_time").text("Выполнено в mn,nn,mn," +  date.getHours() + ":"+  min);
+        $(this).find(".step_stage_time").html("Выполнил <span>Алексей Дмитриенко</span> 01.12.2023");
 
         if($(".steps_stage .step_stage:not(.active)").length==0)
         {
@@ -23,6 +22,8 @@ $(document).ready(function() {
 
         }
     });
+
+
 
 
 

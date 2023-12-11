@@ -2744,6 +2744,23 @@
         flex-wrap: wrap;
     }
 
+    .projects-top_items {
+        margin-left: 0px;
+    }
+    .projects-top_items > * {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .projects-top_item-labels {
+        flex-direction: row;
+    }
+    .projects-top_item-label + .projects-top_item-label {
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+    .projects-top_item + .projects-top_item {
+        margin-top: 50px;
+    }
 
 
 
