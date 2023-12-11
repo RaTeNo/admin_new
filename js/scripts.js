@@ -3,8 +3,24 @@ WW = window.innerWidth || document.clientWidth || document.getElementsByTagName(
 WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight
 $(() => {
 
+	$('body').on('click', '.tasks .steps_stage .step_stage:not(.active)', function (e) {        
+       
+        $(this).addClass("active").find(".icon_change use").attr("xlink:href","images/sprite.svg#training_ok2");    
 
+        var date = new Date();
+        let day = date.getDate();
+        let month = date.getMonth();
+        let year = date.getFullYear();      
+        $(this).find(".step_stage_time").html("Выполнил <span>Алексей Дмитриенко</span> "+day+"."+month+"."+year);
 
+        let count = $(".step_stage").length;
+        let count_active = $(".step_stage.active").length;
+        $(".js_complete").text(count_active).prev().removeClass("animate2");
+        setTimeout(() => {
+        	$(".pie").addClass("animate2").prop("style", "--start:"+Math.ceil(((count_active-1)/count)*100)+"; --p: "+Math.ceil((count_active/count)*100));			
+		}, 0);
+              
+    });
 
 	
 	$(".idea_check-bottom button").click(function (e) {
