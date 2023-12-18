@@ -105,6 +105,8 @@
 }
 .presentation_text {
     margin-bottom: 44px;
+    z-index: 1;
+    position: relative;
 }
 .presentation_text p {
     font-family: "SF Pro Display";
