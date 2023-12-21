@@ -30278,3 +30278,7 @@ bottom: 20px;
         --p
     }
 }
+
+.faq .total_file_desc .links > *{
+    width: auto;
+}
