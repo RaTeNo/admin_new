@@ -2762,7 +2762,16 @@
         margin-top: 50px;
     }
 
+    .feedback_ai{
+        font-size: 12px;
+        height: 25px;
+        bottom: -15px;
+    }
 
+    .feedback_ai svg{
+        height: 18px;
+        width: 18px;
+    }
 
 
 
