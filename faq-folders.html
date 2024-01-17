@@ -27,9 +27,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
 		<!-- Подключение файлов стилей -->
-		<link rel="stylesheet" href="css/nice-select.css">
 		<link rel="stylesheet" href="css/fancybox.css" async>
-		<link rel="stylesheet" href="css/select2.min.css">
 		<link rel="stylesheet" href="css/styles.css" async>
 
 		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
@@ -53,7 +51,9 @@
 							<span>1243</span>
 						</div>
 
-						<div class="sep"></div>
+						<div class="nitifications new">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_nitifications"></use></svg>
+						</div>
 
 						<div class="account">
 							<a href="/" class="settings_link">
@@ -83,7 +83,7 @@
 							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
 						</button>
 
-						<div class="page_title">Сводка</div>
+						<div class="page_title">Файлы</div>
 
 						<div class="wallet">
 							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
@@ -296,83 +296,63 @@
 						</aside>
 
 
-						<section class="content division-page intellect">
-							
-							<section class="page_title">
-								<a href="/">
-									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_left"></use></svg>
-								</a>
-								<span>Создание задачи</span>
+						<section class="content">
+							<div class="page_title">Ответы на часто задаваемые вопросы (FAQ)</div>
+
+							<section class="faq">
+								<form class="search_faq">
+									<input type="text" class="js-search input" placeholder="Поиск">
+									<button>Найти</button>
+								</form>
+
+								<div class="faq_fast_title">
+									Каталог базы знаний
+								</div>
+								<div class="projects-top_items">
+									<div class="projects-top_item">
+										<div class="projects-top_item-text">Обновлено: 25.01.2024</div>
+										<a href="#" class="projects-top_item-title">Информация о курсах</a>
+										<div class="projects-top_item-labels">
+											<div class="projects-top_item-label green">5 разделов</div>
+											<div class="projects-top_item-label blau">23 элемента знаний</div>
+										</div>
+									</div>
+									<div class="projects-top_item">
+										<div class="projects-top_item-text">Обновлено: 25.01.2024</div>
+										<a href="#" class="projects-top_item-title">Методика изготовления шин</a>
+										<div class="projects-top_item-labels">
+											<div class="projects-top_item-label green">5 разделов</div>
+											<div class="projects-top_item-label blau">23 элемента знаний</div>
+										</div>
+									</div>
+									<div class="projects-top_item">
+										<div class="projects-top_item-text">Обновлено: 25.01.2024</div>
+										<a href="#" class="projects-top_item-title">Методика изготовления шин</a>
+										<div class="projects-top_item-labels">
+											<div class="projects-top_item-label green">5 разделов</div>
+											<div class="projects-top_item-label blau">23 элемента знаний</div>
+										</div>
+									</div>
+									<div class="projects-top_item">
+										<div class="projects-top_item-text">Обновлено: 25.01.2024</div>
+										<a href="#" class="projects-top_item-title">Методика изготовления шин</a>
+										<div class="projects-top_item-labels">
+											<div class="projects-top_item-label green">5 разделов</div>
+											<div class="projects-top_item-label blau">23 элемента знаний</div>
+										</div>
+									</div>
+									<div class="projects-top_item">
+										<div class="projects-top_item-text">Обновлено: 25.01.2024</div>
+										<a href="#" class="projects-top_item-title">Методика изготовления шин</a>
+										<div class="projects-top_item-labels">
+											<div class="projects-top_item-label green">5 разделов</div>
+											<div class="projects-top_item-label blau">23 элемента знаний</div>
+										</div>
+									</div>
+								</div>
 							</section>
 
-							<form class="task-page_form">
-								<div class="line">
-									<div class="task-page_label">Название задачи</div>
-									<div class="field">
-										<input type="text" id="name" placeholder="Введите название">
-									</div>
-								</div>
-								<div class="line">
-									<div class="task-page_label">Описание</div>
-									<div class="field">
-										<textarea id="desc" class="task-page_textarea" placeholder="Введите название"></textarea>
-									</div>
-								</div>
-								<div class="line">
-									<div class="task-page_label">Ответственный <span>(Начните вводить имя)</span></div>
-									<div class="field">										
-										<select class="js-example-basic-multiple" multiple="multiple">
-											<option value="AL">Василий Иванов</option>
-											<option value="WY">Василий Иванов</option>
-										</select>										
-									</div>
-								</div>		
-								<div class="line">
-									<div class="task-page_subtitle">Подзадачи</div>
-									<div class="task-page_label">Список подзадач (каждая подзадача с новой строки)</div>
-									<div class="field">
-										<textarea id="desc" class="task-page_textarea h172" placeholder="Введите подзадачи"></textarea>
-									</div>
-								</div>
-								<div class="line">										
-									<div class="field">
-										<input type="checkbox" id="group1_check1">
-										<label for="group1_check1">Расширенные статусы у подзадач (с кнопками и комментариями)</label>
-									</div>	
-								</div>
-								<div class="line">
-									<div class="task-page_subtitle">Дополнительные настройки</div>														
-									<div class="field">
-										<input type="checkbox" id="group2_check1" checked>
-										<label for="group2_check1">Активировать комментарии</label>
-									</div>	
-									<div class="field">
-										<input type="checkbox" id="group2_check2" checked>
-										<label for="group2_check2">Принимать аудио сообщения</label>
-									</div>	
-									<div class="field">
-										<input type="checkbox" id="group2_check3" checked>
-										<label for="group2_check3">Разрешить загрузку файлов</label>
-									</div>	
-								</div>
-								<div class="line">
-									<div class="task-page_label">Дедлайн</div>
-									<div class="field">										
-										<div class="task-page_date">01.01.2024</div>										
-									</div>
-								</div>	
 
-								<div class="task-page_form-btns">
-									<button type="submit">
-										<span>Отмена</span>
-									</button>
-									<button type="submit">
-										<span>Создать задачу</span>
-									</button>	
-								</div>							
-							</form>
-
-													
 							<footer>
 								<div class="logo">
 									<img src="images/logo.svg" alt="">
@@ -409,135 +389,6 @@
 		</div>
 
 
-
-		<section class="modal modal-video" id="video_modal5" style="display: none;">
-			<video class="video-player video_new" controlslist="nodownload" controls="" crossorigin="anonymous">
-			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
-			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm" type="video/webm">
-			    <track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default="">
-			</video>
-		</section>
-
-
-		<section class="solutions-tasks_modal" id="callback_modal5">
-			<div class="solutions-tasks_modal-title">Запрос от 18 мая 2023</div>
-			<ul>
-				<li>
-					<span>Название вакансии</span>
-					Менеджер по продажам в айти компанию
-				</li>
-				<li>
-					<span>Описание</span>
-					Мы ищем энергичного и амбициозного Менеджера по продажам для нашей успешной айти компании. В эту должность требуется человек, который готов работать в команде, обладает опытом продаж в B2B, имеет опыт общения с клиентами и поставщиками, и готов стать частью нашей дружной команды.
-				</li>
-				<li>
-					<span>График</span>
-					Свободный
-				</li>
-				<li>
-					<span>Готовность к переезду</span>
-					Да
-				</li>
-			</ul>
-		</section>
-
-		<section class="solutions-tasks_modal" id="callback_modal6">
-			<div class="solutions-tasks_modal-title">Запрос от 18 мая 2023</div>
-			<ul>
-				<li>
-					<span>Название вакансии</span>
-					Менеджер по продажам в айти компанию
-				</li>
-				<li>
-					<span>Описание</span>
-					Мы ищем энергичного и амбициозного Менеджера по продажам для нашей успешной айти компании. В эту должность требуется человек, который готов работать в команде, обладает опытом продаж в B2B, имеет опыт общения с клиентами и поставщиками, и готов стать частью нашей дружной команды.
-				</li>
-				<li>
-					<span>График</span>
-					Свободный
-				</li>
-				<li>
-					<span>Готовность к переезду</span>
-					Да
-				</li>
-			</ul>
-		</section>
-
-		<section class="solutions-tasks_modal" id="callback_modal7">
-			<div class="solutions-tasks_modal-title">Запрос от 18 мая 2023</div>
-			<ul>
-				<li>
-					<span>Название вакансии</span>
-					Менеджер по продажам в айти компанию
-				</li>
-				<li>
-					<span>Описание</span>
-					Мы ищем энергичного и амбициозного Менеджера по продажам для нашей успешной айти компании. В эту должность требуется человек, который готов работать в команде, обладает опытом продаж в B2B, имеет опыт общения с клиентами и поставщиками, и готов стать частью нашей дружной команды.
-				</li>
-				<li>
-					<span>График</span>
-					Свободный
-				</li>
-				<li>
-					<span>Готовность к переезду</span>
-					Да
-				</li>
-			</ul>
-		</section>
-
-
-		<section class="solutions_modal" id="callback_modal8">
-			<div class="solutions_modal-icon">
-				<svg class="icon">
-					<use xlink:href="images/sprite.svg#ok2"></use>
-				</svg>
-			</div>	
-			<div class="solutions_modal-title">Задача выполнена</div>
-			<div class="solutions_modal-text">Ваша задача выполнена. Вы можете посмотреть результат</div>
-			<a href="#" class="solutions_modal-link">Смотреть решение</a>
-		</section>
-
-
-		<section class="solutions-tasks_modal" id="callback_modal9">
-			<div class="solutions-tasks_modal-title">Скорректировать запрос</div>
-			<form class="solutions-tasks_modal-form">
-				<div class="line">
-					<div class="field">
-						<label for="message1">Что вы хотите изменить?</label>
-						<textarea id="message1" placeholder="Например, сократи текст до 200 символов"></textarea>
-					</div>
-				</div>
-				<button>Генерировать</button>
-			</form>
-		</section>
-
-		<section class="solutions-tasks_modal" id="callback_modal10">
-			<div class="solutions-tasks_modal-title">Скорректировать запрос</div>
-			<form class="solutions-tasks_modal-form">
-				<div class="line">
-					<div class="field">
-						<label for="message1">Что вы хотите изменить?</label>
-						<textarea id="message1" placeholder="Например, сократи текст до 200 символов"></textarea>
-					</div>
-				</div>
-				<button>Генерировать</button>
-			</form>
-		</section>
-
-		<section class="solutions-tasks_modal" id="callback_modal11">
-			<div class="solutions-tasks_modal-title">Скорректировать запрос</div>
-			<form class="solutions-tasks_modal-form">
-				<div class="line">
-					<div class="field">
-						<label for="message1">Что вы хотите изменить?</label>
-						<textarea id="message1" placeholder="Например, сократи текст до 200 символов"></textarea>
-					</div>
-				</div>
-				<button>Генерировать</button>
-			</form>
-		</section>
-
-
 		<div class="supports_error">
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
 		</div>
@@ -548,12 +399,11 @@
 		<script src="js/lozad.min.js"></script>
 		<script src="js/media-player.js"></script>
 		<script src="js/html5sortable.min.js"></script>
-		<script src="js/select2.full.min.js"></script>
 		<script src="js/wavesurfer.js"></script>
 		<script src="js/fancybox.min.js"></script>
-		<script src="js/clipboard.min.js"></script>
+		<script src="js/nice-select.js"></script>
 		<script src="js/functions.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
 		<script src="js/scripts.js"></script>
-		<script src="js/search_courses.js"></script>
 	</body>
 </html>

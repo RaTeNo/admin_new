@@ -27,13 +27,12 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
-
 	<!-- Подключение файлов стилей -->
 	<link rel="stylesheet" href="css/nice-select.css">
 	<link rel="stylesheet" href="css/fancybox.css" async>
-	<link rel="stylesheet" href="css/select2.min.css">
 	<link rel="stylesheet" href="css/styles.css" async>
-	
+	<link rel="stylesheet" href="css/styles2.css" async>
+
 	<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
 	<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
 	<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
@@ -361,59 +360,108 @@
 
 
 					<section class="content">
-						<section class="project-creation">	
-							<section class="page_title">
-								<a href="/" class="big">
-									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_left"></use></svg>
-								</a>
-								<span>Создание проекта</span>
-							</section>	
-
-
-							<form class="form-project">
-								<div class="line">
-									<div class="field">
-										<label for="name">Название проекта</label>
-										<input id="name" type="text" placeholder="Введите название">
+						<div class="summary">
+							<div class="block_top-box">
+								<div class="block_top-info">
+									<div class="block_title">Сводка по проектам</div>
+									<div class="block_text">Краткая сводка по вашим текущим задачам</div>		
+								</div>		
+							</div>
+							<div class="summary_items">
+								<div class="summary_item">
+									<div class="summary_item_icon">
+										<svg class="icon">
+											<use xlink:href="images/sprite.svg#summary1"></use>
+										</svg>	
+									</div>	
+									<div class="summary_item-info">
+										<div class="summary_item-name">Всего проектов</div>
+										<div class="summary_item-col">15</div>
 									</div>
 								</div>
-								<div class="line">
-									<div class="field">
-										<label for="description">Описание</label>
-										<textarea class="project-textarea" id="description" placeholder="Введите описание"></textarea>
+								<div class="summary_item">
+									<div class="summary_item_icon">
+										<svg class="icon">
+											<use xlink:href="images/sprite.svg#summary2"></use>
+										</svg>	
+									</div>	
+									<div class="summary_item-info">
+										<div class="summary_item-name">Я ответственный</div>
+										<div class="summary_item-col">7</div>
 									</div>
 								</div>
-								<div class="line">
-									<div class="field">
-										<label for="description">Участники (несколько человек)*</label>
-										<select class="js-example-basic-multiple" multiple="multiple">
-											<option value="AL">Василий Иванов</option>
-											<option value="WY">Василий Иванов</option>
-										</select>										
+								<div class="summary_item">
+									<div class="summary_item_icon">
+										<svg class="icon">
+											<use xlink:href="images/sprite.svg#summary3"></use>
+										</svg>	
+									</div>									
+									<div class="summary_item-info">
+										<div class="summary_item-name">Задач в очереди</div>
+										<div class="summary_item-col">25</div>
 									</div>
-								</div>								
-								<div class="line">
-									<div class="field">
-										<label for="description">Ответственный (максимум 1)*</label>
-										<select class="js-example-basic-single">
-											<option value="AL1">Василий Иванов</option>
-											<option value="WY1">Петр Петров</option>
-										</select>
-										<div class="project-creation_error-text">Поле обязательно для заполнения</div>										
+								</div>
+							</div>							
+						</div>
+
+						<section class="projects">															
+							<div class="projects-block block2">
+								<div class="block_top-box">
+									<div class="block_top-info">
+										<div class="block_title">Каталог проектов</div>
+										<div class="block_text">Все проекты</div>		
+									</div>	
+									<div class="select-right">
+										<span>Сортировать:</span>
+										<select>
+											<option>По кол-ву проектов</option>
+											<option>По кол-ву проектов</option>
+											<option>По кол-ву проектов</option>
+											<option>По кол-ву проектов</option>
+										</select>	
+									</div>					
+								</div>
+
+								<div class="projects-top_items">
+									<div class="projects-top_item">
+										<a href="#" class="projects-top_item-title">Проекты по дизайну CRM системы закупок</a>
+										<div class="projects-top_item-labels">
+											<div class="projects-top_item-label green">7 активных</div>
+											<div class="projects-top_item-label blau">5 завершенных</div>
+										</div>
 									</div>
-									
-								</div>	
-								<div class="project-creation_description">Если вы хотите добавить нового пользователя, то сперва его нужно добавить участником в проект</div>
-								<div class="project-creation_btns">
-									<button type="submit">
-										<span>Отмена</span>
-									</button>
-									<button type="submit">
-										<span>Создать проект</span>
-									</button>	
-								</div>	
-								
-							</form>
+									<div class="projects-top_item">
+										<a href="#" class="projects-top_item-title">Проекты по верстке дизайна системы</a>
+										<div class="projects-top_item-labels">
+											<div class="projects-top_item-label green">7 активных</div>
+											<div class="projects-top_item-label blau">5 завершенных</div>
+										</div>
+									</div>
+									<div class="projects-top_item">
+										<a href="#" class="projects-top_item-title">Архив проектов</a>
+										<div class="projects-top_item-labels">
+											<div class="projects-top_item-label green">7 активных</div>
+											<div class="projects-top_item-label blau">5 завершенных</div>
+										</div>
+									</div>
+									<div class="projects-top_item">
+										<a href="#" class="projects-top_item-title">Проекты по дизайну CRM системы закупок</a>
+										<div class="projects-top_item-labels">
+											<div class="projects-top_item-label green">7 активных</div>
+											<div class="projects-top_item-label blau">5 завершенных</div>
+										</div>
+									</div>
+									<div class="projects-top_item">
+										<a href="#" class="projects-top_item-title">Проекты по верстке дизайна системы</a>
+										<div class="projects-top_item-labels">
+											<div class="projects-top_item-label green">7 активных</div>
+											<div class="projects-top_item-label blau">5 завершенных</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
 						</section>
 
 
@@ -838,29 +886,54 @@
 
 
 
-
-	<section class="projects-modal" id="tasks-modal">
+	<section class="projects-modal" id="projects-modal">
 		<div class="projects-modal_icon">
 			<svg class="icon">
-				<use xlink:href="images/sprite.svg#lock6"></use>
+				<use xlink:href="images/sprite.svg#lock3"></use>
 			</svg>
 		</div>	
-		<div class="projects-modal_title">Задача отправлена на проверку</div>
-		<div class="projects-modal_text">Задача отправлена на проверку. Пожалуйста, ожидайте проверки ответственным</div>
-		<button type="submit" class="projects-modal_btn">
-			<span>Понял</span>
+		<div class="projects-modal_title">У вас нет доступа к проекту</div>
+		<div class="projects-modal_text">Вы можете запросить доступ. Если ответственный за проект одобрит запрос, вы получите доступ к этому проекту</div>
+		<button type="submit" class="projects-modal_btn modal_content" data-content="#projects-modal2">
+			<span>Запросить доступ</span>
 		</button>			
+	</section>
+
+	<section class="projects-modal" id="projects-modal2">
+		<div class="projects-modal_icon">
+			<svg class="icon">
+				<use xlink:href="images/sprite.svg#lock4"></use>
+			</svg>
+		</div>	
+		<div class="projects-modal_title">Доступ запрошен</div>
+		<div class="projects-modal_text">Ваш запрос отправлен</div>
+		<button type="submit" class="projects-modal_btn">
+			<span>Закрыть это окно</span>
+		</button>			
+	</section>
+
+
+	<section class="modal modal-video" id="video_modal" style="display: none;">
+		<div class="modal-video_title">Как пользоваться модулем</div>
+		<video class="video-player video_new" controlslist="nodownload" controls="" crossorigin="anonymous">
+			<source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
+			<source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm" type="video/webm">
+			<track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default="">
+		</video>
+		<a href="#" class="modal-video_link">
+			<span>Далее</span>				
+		</a>
 	</section>
 
 
 	<!-- Подключение javascript файлов -->
 	<script src="js/jquery-3.5.0.min.js"></script>
 	<script src="js/lozad.min.js"></script>
-	<script src="js/select2.full.min.js"></script>
 	<script src="js/media-player.js"></script>
 	<script src="js/html5sortable.min.js"></script>
 	<script src="js/wavesurfer.js"></script>
 	<script src="js/fancybox.min.js"></script>
+	<script src="js/nice-select.js"></script>
 	<script src="js/functions.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/playlist.js"></script>

@@ -19,6 +19,7 @@ $(() => {
         setTimeout(() => {
         	$(".pie").addClass("animate2").prop("style", "--start:"+Math.ceil(((count_active-1)/count)*100)+"; --p: "+Math.ceil((count_active/count)*100));			
 		}, 0);
+
               
     });
 
@@ -860,6 +861,39 @@ $(() => {
 		$(".link-more").addClass("active");
 	});
 
+	// $(".audio-note .form-project").hide();
+	$(".audio-notes_description-redactor").click(function (e) {
+		e.preventDefault();
+		$(".audio-note .form-project").css("display", "block");
+		$(".audio-notes_description-redactor").addClass("active");
+	});
+
+
+	$('.audio-notes_description-decoding').click(function(){
+		$(this).parent().parent().next().slideToggle(300);
+	});  
+
+
+	$('.audio-notes_description-decoding').click(function() { 
+		if ($(this).text() == "Скрыть расшифровку") { 
+			$(this).text("Расшифровка"); 
+		} else { 
+			$(this).text("Скрыть расшифровку"); 
+		}; 
+	});
+
+
+	$('.audio-notes_btn').click(function(e) { 
+		e.preventDefault();
+		if ($(this).text() == "Отменить заметку") { 
+			$(this).text("Записать заметку"); 
+			$(".audio_wrapper").slideToggle(300);
+		} else { 
+			$(this).text("Отменить заметку"); 
+			$(".audio_wrapper").slideToggle(300);
+		}; 
+	});
+
 
 	$(".task-page_btn button").click(function (e) {
 		e.preventDefault();
@@ -890,6 +924,11 @@ $(() => {
 	$(".solutions-tasks_top-delete").click(function (e) {
 		e.preventDefault();
 		$(this).parent().parent().hide();
+	});
+
+	$(".solutions-tasks3 .solutions-tasks_top-delete").click(function (e) {
+		e.preventDefault();
+		$(this).parent().parent().parent().hide();
 	});
 
 
@@ -1014,6 +1053,8 @@ $(() => {
 	}
 
 
+	$('.js-example-basic-single').select2();
+
 
 	var locationHash = window.location.hash
 
@@ -1022,6 +1063,9 @@ $(() => {
 		$('html, body').stop().animate({ scrollTop: $(locationHash).offset().top }, 1000)
 	}
 
+	$('.calend_item').on('click', function(event){
+		$(this).toggleClass('active');
+	});
 
 	// Табы
 	var locationHash = window.location.hash

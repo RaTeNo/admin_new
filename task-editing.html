@@ -296,8 +296,7 @@
 						</aside>
 
 
-						<section class="content division-page intellect">
-							
+						<section class="content division-page intellect">							
 							<section class="page_title">
 								<a href="/">
 									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_left"></use></svg>
@@ -328,17 +327,53 @@
 									</div>
 								</div>		
 								<div class="line">
-									<div class="task-page_subtitle">Подзадачи</div>
-									<div class="task-page_label">Список подзадач (каждая подзадача с новой строки)</div>
-									<div class="field">
-										<textarea id="desc" class="task-page_textarea h172" placeholder="Введите подзадачи"></textarea>
+									<div class="task-page_subtitle">Подзадачи
+										<button>Добавить подзадачу</button>
 									</div>
-								</div>
-								<div class="line">										
 									<div class="field">
-										<input type="checkbox" id="group1_check1">
+										<input type="checkbox" id="group1_check1" checked>
 										<label for="group1_check1">Расширенные статусы у подзадач (с кнопками и комментариями)</label>
 									</div>	
+									<div class="task-page_wrap">
+										<div class="field">
+											<div class="task-editing_text">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#icon99"></use>
+												</svg>
+												<span>Проверить огнетушители в цеху №1</span>	
+											</div>
+											<div class="task-editing_btns">
+												<button>Переименовать</button>
+												<button>Архивировать</button>
+												<button>Удалить</button>
+											</div>
+										</div>
+										<div class="field">
+											<div class="task-editing_text">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#icon99"></use>
+												</svg>
+												<span>Проверить огнетушители в цеху №2. Выполнение происходит быстро по причине автоматизации накрутки. Если живые пользователи заходят на биржу, вручную подписываются, то у ботов все подписки выполняются машинально</span>	
+											</div>
+											<div class="task-editing_btns">
+												<button>Переименовать</button>
+												<button>Архивировать</button>
+												<button>Удалить</button>
+											</div>
+										</div>
+										<div class="field">
+											<div class="task-editing_text disabled">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#icon99"></use>
+												</svg>
+												<span>Проверить огнетушители в цеху №3</span>	
+											</div>
+											<div class="task-editing_btns">
+												<button class="disabled">Переименовать</button>
+												<button>Архивировать</button>
+											</div>
+										</div>	
+									</div>									
 								</div>
 								<div class="line">
 									<div class="task-page_subtitle">Дополнительные настройки</div>														
@@ -355,12 +390,79 @@
 										<label for="group2_check3">Разрешить загрузку файлов</label>
 									</div>	
 								</div>
+
 								<div class="line">
-									<div class="task-page_label">Дедлайн</div>
-									<div class="field">										
-										<div class="task-page_date">01.01.2024</div>										
+									<div class="task-page_subtitle">Повторение задачи</div>														
+									<div class="field">
+										<input type="checkbox" id="group3_check1" checked>
+										<label for="group3_check1">Включить</label>
+									</div>	
+									<div class="tabs_container">
+										<div class="tabs">
+											<button data-content="#tab1" data-level="level1" class="active"><span></span> В рамках недели</button>
+											<button data-content="#tab2" data-level="level1"><span></span> В рамках месяца</button>
+										</div>
+	
+										<div class="tab_content level1 active" id="tab1">
+											<div class="calend_text">Выберите дни для повторения. Учитываются только дни недели, без конкретного числа.</div>
+											<div class="calend_items">
+												<div class="calend_item">Пн</div>
+												<div class="calend_item">Вт</div>
+												<div class="calend_item">Ср</div>
+												<div class="calend_item">Чт</div>
+												<div class="calend_item">Пт</div>
+												<div class="calend_item">Сб</div>
+												<div class="calend_item">Вс</div>
+											</div>
+										</div>
+	
+	
+										<div class="tab_content level1" id="tab2">
+											<div class="calend_text">Выберите числа для повторения. Дни недели не учитываются.</div>
+											<div class="calend_items">
+												<div class="calend_item"></div>
+												<div class="calend_item"></div>
+												<div class="calend_item"></div>
+												<div class="calend_item"></div>
+												<div class="calend_item">1</div>
+												<div class="calend_item">2</div>
+												<div class="calend_item">3</div>
+												<div class="calend_item">4</div>
+												<div class="calend_item">5</div>
+												<div class="calend_item">6</div>
+												<div class="calend_item">7</div>
+												<div class="calend_item">8</div>
+												<div class="calend_item">9</div>
+												<div class="calend_item">10</div>
+												<div class="calend_item">11</div>
+												<div class="calend_item">12</div>
+												<div class="calend_item">13</div>
+												<div class="calend_item">14</div>
+												<div class="calend_item">15</div>
+												<div class="calend_item">16</div>
+												<div class="calend_item">17</div>
+												<div class="calend_item">18</div>
+												<div class="calend_item">19</div>
+												<div class="calend_item">20</div>
+												<div class="calend_item">21</div>
+												<div class="calend_item">22</div>
+												<div class="calend_item">23</div>
+												<div class="calend_item">24</div>
+												<div class="calend_item">25</div>
+												<div class="calend_item">26</div>
+												<div class="calend_item">27</div>
+												<div class="calend_item">28</div>
+												<div class="calend_item">29</div>
+												<div class="calend_item">30</div>
+												<div class="calend_item">31</div>
+											</div>
+										</div>
+
 									</div>
-								</div>	
+
+
+									
+								</div>
 
 								<div class="task-page_form-btns">
 									<button type="submit">
@@ -555,5 +657,16 @@
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
 		<script src="js/search_courses.js"></script>
+
+		<script src="https://unpkg.com/sortablejs-make/Sortable.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery-sortablejs@latest/jquery-sortable.js"></script>
+	
+		<script type="text/javascript">
+			$('.task-page_wrap').sortable({
+				animation: 150
+			});
+	
+		</script>
+
 	</body>
 </html>

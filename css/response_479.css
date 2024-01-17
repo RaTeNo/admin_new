@@ -1316,10 +1316,6 @@
     }
 
 
-    .uploaded-files_item-bottom {
-        justify-content: space-between;
-    }
-
     .form-project button {
         width: 100%;
         display: block;
@@ -1648,5 +1644,97 @@
     .pagination {
         gap: 4px;
     }
+
+    .solutions-tasks3 .solutions-tasks_top-title {
+        margin-bottom: 0px;
+    }
+    .solutions-tasks3 .solutions-tasks_top-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .solutions-tasks3 .solutions-tasks_btns {
+        margin-top: 10px;
+    }
+    .solutions-tasks_btns .modal_content, 
+    .solutions-tasks_top-copy {
+        margin-left: 0;
+    }
+    .project-creation_btns {
+        flex-direction: column;
+    }
+    .form-project button:nth-child(1) {
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+
+    .project .task-block .block_top-box {
+        flex-direction: column;
+    }
+    .task-block_item-btn {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .project .nice-select {
+        width: 100%;
+    }
+    .participants .block_top-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .task-editing_btns {
+        margin-left: 0;
+    }
+    .task-editing_btns button {
+        padding: 5px 8px;
+    }
+    .task-page_form-btns {
+        justify-content: flex-start;
+    }
+    .tasks-block_info-name {
+        width: 100%;
+    }
+    .tasks-block_info-name {
+        padding-left: 0;
+    }
+    .tasks .block_top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .audio-notes_btn {
+        margin-top: 15px;
+    }
+    .audio-notes_description {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .audio-notes_description-text {
+        margin-bottom: 12px;
+    }
+    .mt7 {
+        margin-top: 7px;
+    }
+
+    .audio-notes_description-btns-ok {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 7px;
+    }
+    .audio-notes_description-btns {
+        flex-wrap: wrap;        
+    }
+    .audio-notes_description-redactor {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+    .audio-note .form-project button:nth-child(1) {
+        margin-right: 7px;
+        margin-bottom: 0px;
+    }
+
+
 
 }

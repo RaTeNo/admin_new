@@ -1999,6 +1999,25 @@
     }
 
 
+    .audio-notes_description {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .audio-notes_description-btns {
+        margin-top: 7px;
+    }
+
+    .projects-top_items {
+        margin-left: -20px;
+        margin-bottom: 34px;
+    }
+    .projects-top_items > * {
+        margin-left: 20px;
+        margin-bottom: 34px;
+        width: calc(100%/3 - 20px);
+    }
+
+
 
 }
 

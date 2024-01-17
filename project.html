@@ -413,49 +413,43 @@
 									<div class="block_top-box">
 										<div class="block_top-info">
 											<div class="block_title">Задачи</div>
-											<div class="block_text">Текущие задачи проекта</div>		
+											<div class="block_text">Задачи проекта</div>		
 										</div>	
-										<div class="select-right">
-											<span>Вид:</span>
-											<select>
-												<option>Доска с задачами</option>
-												<option>Классический</option>
-       											</select>	
-										</div>					
-									</div>
-								</div>
-								<div class="task-block_items">
-									<div class="task-block_item">
-										<div class="task-block_item-title">Новые <span>2</span></div>
-										<button class="task-block_item-btn modal_content" data-content="#projects-modal3">
+										<button class="task-block_item-btn">
 											<svg class="icon">
 												<use xlink:href="images/sprite.svg#plus2"></use>
 											</svg>
 											<span>Добавить задачу</span>
 										</button>
+										<div class="select-right">
+											<span>Вид:</span>
+											<select>
+												<option>Доска с задачами</option>
+												<option>Классический</option>
+       										</select>	
+										</div>					
+									</div>
+								</div>
+								<div class="task-block_items block2">
+									<div class="task-block_item">
+										<div class="task-block_item-title">Новые <span>2</span></div>
 										<div class="task-block_item-box">
 											<div class="task-block_info">
 												<div class="task-block_top">
 													<div class="task-block_label red">Новый</div>
 													<button class="projects_item-btn">
 														<svg class="icon">
-															<use xlink:href="images/sprite.svg#more-btn"></use>
-														</svg>
+															<use xlink:href="images/sprite.svg#project_drag"></use>
+														</svg>	
 													</button>
 												</div>
 												<a href class="task-block_text">Конфиденциальность и коммерческая тайна - что является тайной, какой режим в компании</a>
-												<div class="task-block_subtask">
-													<svg class="icon">
-														<use xlink:href="images/sprite.svg#icon2001"></use>
-													</svg>
-													<span>1/5 подзадач</span>	
-												</div>
 												<div class="projects_item-author">
 													<div class="projects_item-avatar">
 														<img src="images/avatar1.png" alt="">
 													</div>
 													<div class="projects_item-desc">
-														<div class="projects_item-name" title="Иван Петрович Василипенчовичик">Иван Петрович Василипенчовичик</div>
+														<div class="projects_item-name">Иван Петрович</div>
 														<div class="projects_item-post">Ответственный</div>
 													</div>
 												</div>
@@ -466,13 +460,10 @@
 															<use xlink:href="images/sprite.svg#comment2"></use>
 														</svg>
 														<span>15</span>	
-													</div>
-													<svg class="icon_drag">
-														<use xlink:href="images/sprite.svg#project_drag"></use>
-													</svg>			
+													</div>															
 												</div>											
 											</div>
-											<div class="task-block_info">
+											<div class="task-block_info modal_content" data-content="#projects-modal3">
 												<div class="task-block_clossed-top">
 													<div class="task-block_clossed-label">Закрыта</div>
 													<svg class="icon">
@@ -503,19 +494,13 @@
 
 									<div class="task-block_item">
 										<div class="task-block_item-title">В работе <span>3</span></div>
-										<button class="task-block_item-btn">
-											<svg class="icon">
-												<use xlink:href="images/sprite.svg#plus2"></use>
-											</svg>
-											<span>Добавить задачу</span>
-										</button>
 										<div class="task-block_item-box">
 											<div class="task-block_info">
 												<div class="task-block_top">
 													<div class="task-block_label blau">В работе</div>
 													<button class="projects_item-btn">
 														<svg class="icon">
-															<use xlink:href="images/sprite.svg#more-btn"></use>
+															<use xlink:href="images/sprite.svg#project_drag"></use>
 														</svg>
 													</button>
 												</div>
@@ -538,10 +523,7 @@
 														</svg>
 														<span>15</span>	
 													</div>			
-													<div class="projects_item-massage">+3 новых</div>
-													<svg class="icon_drag">
-														<use xlink:href="images/sprite.svg#project_drag"></use>
-													</svg>
+													<div class="projects_item-massage">+3 новых</div>													
 												</div>										
 											</div>
 											<div class="task-block_info">
@@ -549,8 +531,8 @@
 													<div class="task-block_label blau">В работе</div>
 													<button class="projects_item-btn">
 														<svg class="icon">
-															<use xlink:href="images/sprite.svg#more-btn"></use>
-														</svg>
+															<use xlink:href="images/sprite.svg#project_drag"></use>
+														</svg>	
 													</button>
 												</div>
 												<div class="task-block_text">Оплата труда, принцип расчёта</div>
@@ -571,10 +553,7 @@
 															<use xlink:href="images/sprite.svg#comment2"></use>
 														</svg>
 														<span>15</span>	
-													</div>
-													<svg class="icon_drag">
-														<use xlink:href="images/sprite.svg#project_drag"></use>
-													</svg>			
+													</div>															
 												</div>										
 											</div>
 											<div class="task-block_info">
@@ -582,7 +561,7 @@
 													<div class="task-block_label blau">В работе</div>
 													<button class="projects_item-btn">
 														<svg class="icon">
-															<use xlink:href="images/sprite.svg#more-btn"></use>
+															<use xlink:href="images/sprite.svg#project_drag"></use>
 														</svg>
 													</button>
 												</div>
@@ -604,10 +583,7 @@
 															<use xlink:href="images/sprite.svg#comment2"></use>
 														</svg>
 														<span>15</span>	
-													</div>	
-													<svg class="icon_drag">
-														<use xlink:href="images/sprite.svg#project_drag"></use>
-													</svg>		
+													</div>																
 												</div>										
 											</div>	
 																		
@@ -619,7 +595,7 @@
 														<div class="task-block_label blau">В работе</div>
 														<button class="projects_item-btn">
 															<svg class="icon">
-																<use xlink:href="images/sprite.svg#more-btn"></use>
+																<use xlink:href="images/sprite.svg#project_drag"></use>
 															</svg>
 														</button>
 													</div>
@@ -642,10 +618,7 @@
 															</svg>
 															<span>15</span>	
 														</div>			
-														<div class="projects_item-massage">+3 новых</div>
-														<svg class="icon_drag">
-															<use xlink:href="images/sprite.svg#project_drag"></use>
-														</svg>
+														<div class="projects_item-massage">+3 новых</div>														
 													</div>	
 
 												</div>
@@ -654,7 +627,7 @@
 														<div class="task-block_label blau">В работе</div>
 														<button class="projects_item-btn">
 															<svg class="icon">
-																<use xlink:href="images/sprite.svg#more-btn"></use>
+																<use xlink:href="images/sprite.svg#project_drag"></use>
 															</svg>
 														</button>
 													</div>
@@ -677,10 +650,7 @@
 																<use xlink:href="images/sprite.svg#comment2"></use>
 															</svg>
 															<span>15</span>	
-														</div>	
-														<svg class="icon_drag">
-															<use xlink:href="images/sprite.svg#project_drag"></use>
-														</svg>		
+														</div>																	
 													</div>										
 												</div>
 												<div class="task-block_info">
@@ -688,8 +658,8 @@
 														<div class="task-block_label blau">В работе</div>
 														<button class="projects_item-btn">
 															<svg class="icon">
-																<use xlink:href="images/sprite.svg#more-btn"></use>
-															</svg>
+																<use xlink:href="images/sprite.svg#project_drag"></use>
+															</svg>	
 														</button>
 													</div>
 													<div class="task-block_text">Подготовка обращения</div>
@@ -710,10 +680,7 @@
 																<use xlink:href="images/sprite.svg#comment2"></use>
 															</svg>
 															<span>15</span>	
-														</div>
-														<svg class="icon_drag">
-															<use xlink:href="images/sprite.svg#project_drag"></use>
-														</svg>			
+														</div>																
 													</div>										
 												</div>
 											</div>	
@@ -722,19 +689,13 @@
 
 									<div class="task-block_item">
 										<div class="task-block_item-title">На проверке <span>1</span></div>
-										<button class="task-block_item-btn">
-											<svg class="icon">
-												<use xlink:href="images/sprite.svg#plus2"></use>
-											</svg>
-											<span>Добавить задачу</span>
-										</button>
 										<div class="task-block_item-box">
 											<div class="task-block_info">
 												<div class="task-block_top">
 													<div class="task-block_label yellow">На проверке</div>
 													<button class="projects_item-btn">
 														<svg class="icon">
-															<use xlink:href="images/sprite.svg#more-btn"></use>
+															<use xlink:href="images/sprite.svg#project_drag"></use>
 														</svg>
 													</button>
 												</div>
@@ -756,10 +717,7 @@
 															<use xlink:href="images/sprite.svg#comment2"></use>
 														</svg>
 														<span>15</span>	
-													</div>	
-													<svg class="icon_drag">
-														<use xlink:href="images/sprite.svg#project_drag"></use>
-													</svg>		
+													</div>																
 												</div>											
 											</div>											
 										</div>										
@@ -767,20 +725,14 @@
 
 									<div class="task-block_item">
 										<div class="task-block_item-title">Сделано <span>1</span></div>
-										<button class="task-block_item-btn">
-											<svg class="icon">
-												<use xlink:href="images/sprite.svg#plus2"></use>
-											</svg>
-											<span>Добавить задачу</span>
-										</button>
 										<div class="task-block_item-box">
 											<div class="task-block_info">
 												<div class="task-block_top">
 													<div class="task-block_label green">Сделано 01.12.2023</div>
 													<button class="projects_item-btn">
 														<svg class="icon">
-															<use xlink:href="images/sprite.svg#more-btn"></use>
-														</svg>
+															<use xlink:href="images/sprite.svg#project_drag"></use>
+														</svg>	
 													</button>
 												</div>
 												<div class="task-block_text">Организация видео и фотосъёмки рабочих опера...</div>
@@ -808,10 +760,7 @@
 															<use xlink:href="images/sprite.svg#comment2"></use>
 														</svg>
 														<span>15</span>	
-													</div>	
-													<svg class="icon_drag">
-														<use xlink:href="images/sprite.svg#project_drag"></use>
-													</svg>		
+													</div>														
 												</div>											
 											</div>											
 										</div>
@@ -819,46 +768,67 @@
 								</div>
 
 
+								<section class="changes block2">
+									<div class="block_top-box">
+										<div class="block_top-info">
+											<div class="block_title">Протокол изменений</div>
+										</div>
+									</div>
+									<div class="changes_wrap">
+										<div class="changes_items">
+											<div class="changes_item-box">
+												<div class="changes_item green">											
+													<div class="changes_item-text">Василий Петрович выполнил подзадачу “Проверить огнетушители в цеху №1 ”</div>
+													<div class="changes_item-date">01 мая 2023 в 23:46</div>	
+												</div>											
+											</div>
+											<div class="changes_item-box">
+												<div class="changes_item green">
+													<div class="changes_item-text">Василий Петрович выполнил подзадачу “Проверить огнетушители в цеху №2 ”</div>
+													<div class="changes_item-date">01 мая 2023 в 23:46</div>	
+												</div>	
+											</div>
+										</div>
+										<div class="changes_items">
+											<div class="changes_item-box">
+												<div class="changes_item green">											
+													<div class="changes_item-text">Василий Петрович выполнил подзадачу “Проверить огнетушители в цеху №3 ”</div>
+													<div class="changes_item-date">01 мая 2023 в 23:46</div>		
+												</div>											
+											</div>
+										</div>
+									</div>
+								</section>
+
+
 								<div class="task-block_items classic">
 									<div class="task-block_item">
 										<div class="task-block_item-top">
-											<div class="task-block_item-title">Новые <span>2</span></div>
-											<button class="task-block_item-btn">
-												<span>Сoздать задачу</span>
-											</button>	
+											<div class="task-block_item-title">В очереди <span>1</span></div>
 										</div>			
 										<div class="task-block_item-box">
 											<div class="task-block_info">												
-												<div class="task-block_label red">Новый</div>
-												<button class="projects_item-btn">
-													<svg class="icon">
-														<use xlink:href="images/sprite.svg#more-btn"></use>
-													</svg>
-												</button>
+												<div class="task-block_label yellow">В очереди</div>
 											</div>	
 											<div class="task-block_item-bottom">
 												<div class="task-block_text">Придумать три страницы для модуля проектов</div>												
+											</div>
+											<div class="projects_item-wrap">
+												<div class="projects_item-author">
+													<div class="projects_item-avatar">
+														<img src="images/avatar1.png" alt="">
+													</div>
+													<div class="projects_item-desc">
+														<div class="projects_item-name">Иван Петрович</div>
+														<div class="projects_item-post">Ответственный</div>
+													</div>
+												</div>	
 												<div class="projects_item-comment">
 													<div class="projects_item-massage">+3 новых</div>
 													<svg class="icon">
 														<use xlink:href="images/sprite.svg#comment2"></use>
 													</svg>
 													<span>15</span>
-												</div>
-											</div>
-											<div class="task-block_subtask">
-												<svg class="icon">
-													<use xlink:href="images/sprite.svg#icon2001"></use>
-												</svg>
-												<span>1/5 подзадач</span>	
-											</div>
-											<div class="projects_item-author">
-												<div class="projects_item-avatar">
-													<img src="images/avatar1.png" alt="">
-												</div>
-												<div class="projects_item-desc">
-													<div class="projects_item-name">Иван Петрович</div>
-													<div class="projects_item-post">Ответственный</div>
 												</div>
 											</div>
 										</div>												
@@ -866,22 +836,25 @@
 
 									<div class="task-block_item">
 										<div class="task-block_item-top">
-											<div class="task-block_item-title">В работе <span>3</span></div>
-											<button class="task-block_item-btn">
-												<span>Сoздать задачу</span>
-											</button>	
+											<div class="task-block_item-title">В работе <span>1</span></div>
 										</div>			
 										<div class="task-block_item-box">
 											<div class="task-block_info">												
 												<div class="task-block_label blau">В работе</div>
-												<button class="projects_item-btn">
-													<svg class="icon">
-														<use xlink:href="images/sprite.svg#more-btn"></use>
-													</svg>
-												</button>
 											</div>	
 											<div class="task-block_item-bottom">
-												<div class="task-block_text">Придумать три страницы для модуля проектов</div>
+												<div class="task-block_text">Придумать три страницы для модуля проектов</div>												
+											</div>
+											<div class="projects_item-wrap">
+												<div class="projects_item-author">
+													<div class="projects_item-avatar">
+														<img src="images/avatar1.png" alt="">
+													</div>
+													<div class="projects_item-desc">
+														<div class="projects_item-name">Иван Петрович</div>
+														<div class="projects_item-post">Ответственный</div>
+													</div>
+												</div>	
 												<div class="projects_item-comment">
 													<div class="projects_item-massage">+3 новых</div>
 													<svg class="icon">
@@ -890,30 +863,30 @@
 													<span>15</span>
 												</div>
 											</div>
-											<div class="projects_item-author">
-												<div class="projects_item-avatar">
-													<img src="images/avatar1.png" alt="">
-												</div>
-												<div class="projects_item-desc">
-													<div class="projects_item-name">Иван Петрович</div>
-													<div class="projects_item-post">Ответственный</div>
-												</div>
-											</div>
-										</div>													
+										</div>												
 									</div>
 
-									<div class="task-block_item">													
+									<div class="task-block_item">
+										<div class="task-block_item-top">
+											<div class="task-block_item-title">Сделано частично <span>1</span></div>
+										</div>			
 										<div class="task-block_item-box">
 											<div class="task-block_info">												
-												<div class="task-block_label blau">В работе</div>
-												<button class="projects_item-btn">
-													<svg class="icon">
-														<use xlink:href="images/sprite.svg#more-btn"></use>
-													</svg>
-												</button>
+												<div class="task-block_label azure">Сделано частично</div>
 											</div>	
 											<div class="task-block_item-bottom">
-												<div class="task-block_text">Придумать три страницы для модуля проектов</div>
+												<div class="task-block_text">Придумать три страницы для модуля проектов</div>												
+											</div>
+											<div class="projects_item-wrap">
+												<div class="projects_item-author">
+													<div class="projects_item-avatar">
+														<img src="images/avatar1.png" alt="">
+													</div>
+													<div class="projects_item-desc">
+														<div class="projects_item-name">Иван Петрович</div>
+														<div class="projects_item-post">Ответственный</div>
+													</div>
+												</div>	
 												<div class="projects_item-comment">
 													<div class="projects_item-massage">+3 новых</div>
 													<svg class="icon">
@@ -922,74 +895,121 @@
 													<span>15</span>
 												</div>
 											</div>
-											<div class="projects_item-author">
-												<div class="projects_item-avatar">
-													<img src="images/avatar1.png" alt="">
-												</div>
-												<div class="projects_item-desc">
-													<div class="projects_item-name">Иван Петрович</div>
-													<div class="projects_item-post">Ответственный</div>
-												</div>
-											</div>
-										</div>													
+										</div>												
 									</div>
 
 									<div class="task-block_item">
 										<div class="task-block_item-top">
 											<div class="task-block_item-title">Сделано <span>1</span></div>
-											<button class="task-block_item-btn">
-												<span>Сoздать задачу</span>
-											</button>	
 										</div>			
 										<div class="task-block_item-box">
 											<div class="task-block_info">												
-												<div class="task-block_label green">Сделано 01.12.2023</div>
-												<button class="projects_item-btn">
-													<svg class="icon">
-														<use xlink:href="images/sprite.svg#more-btn"></use>
-													</svg>
-												</button>
+												<div class="task-block_label green">Сделано 30.12.2023</div>
 											</div>	
 											<div class="task-block_item-bottom">
-												<div class="task-block_text">Придумать три страницы для модуля проектов</div>
+												<div class="task-block_text">Придумать три страницы для модуля проектов</div>												
+											</div>
+											<div class="projects_item-wrap">
+												<div class="projects_item-author">
+													<div class="projects_item-avatar">
+														<img src="images/avatar1.png" alt="">
+													</div>
+													<div class="projects_item-desc">
+														<div class="projects_item-name">Иван Петрович</div>
+														<div class="projects_item-post">Ответственный</div>
+													</div>
+												</div>	
 												<div class="projects_item-comment">
+													<div class="projects_item-massage">+3 новых</div>
 													<svg class="icon">
 														<use xlink:href="images/sprite.svg#comment2"></use>
 													</svg>
 													<span>15</span>
 												</div>
 											</div>
-											<div class="task-block_subtask green">
-												<svg class="icon">
-													<use xlink:href="images/sprite.svg#icon2002"></use>
-												</svg>
-												<span>1/5 подзадач</span>	
-											</div>
-											<div class="projects_item-author">
-												<div class="projects_item-avatar">
-													<img src="images/avatar1.png" alt="">
-												</div>
-												<div class="projects_item-desc">
-													<div class="projects_item-name">Иван Петрович</div>
-													<div class="projects_item-post">Ответственный</div>
-												</div>
-											</div>
-										</div>													
-									</div>
-
-
+										</div>												
+									</div>									
 								</div>
+							</section>
+
+
+							<section class="completed-tasks block2">
+								<div class="block_top">	
+									<div class="block_top-box">
+										<div class="block_top-info">
+											<div class="block_title">Выполненные задачи</div>
+											<div class="block_text">Лента выполненных задач</div>			
+										</div>				
+									</div>
+								</div>
+								<div class="completed-tasks_box">
+									<div class="completed-tasks_info">												
+										<div class="completed-tasks_label green">Сделано</div>
+										<button class="completed-tasks_btn">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#more-btn"></use>
+											</svg>
+										</button>
+									</div>	
+									<div class="completed-tasks_text">Организация видео и фотосъёмки рабочих операций</div>									
+									<div class="projects_item-comment">
+										<svg class="icon">
+											<use xlink:href="images/sprite.svg#comment2"></use>
+										</svg>
+										<span>15</span>
+									</div>																	
+								</div> 
+								<div class="completed-tasks_box">
+									<div class="completed-tasks_info">												
+										<div class="completed-tasks_label green">Сделано</div>
+										<button class="completed-tasks_btn">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#more-btn"></use>
+											</svg>
+										</button>
+									</div>	
+									<div class="completed-tasks_text">Организация видео и фотосъёмки рабочих операций</div>									
+									<div class="projects_item-comment">
+										<svg class="icon">
+											<use xlink:href="images/sprite.svg#comment2"></use>
+										</svg>
+										<span>15</span>
+									</div>																	
+								</div> 
+								<div class="completed-tasks_box">
+									<div class="completed-tasks_info">												
+										<div class="completed-tasks_label green">Сделано</div>
+										<button class="completed-tasks_btn">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#more-btn"></use>
+											</svg>
+										</button>
+									</div>	
+									<div class="completed-tasks_text">Организация видео и фотосъёмки рабочих операций</div>									
+									<div class="projects_item-comment">
+										<svg class="icon">
+											<use xlink:href="images/sprite.svg#comment2"></use>
+										</svg>
+										<span>15</span>
+									</div>																	
+								</div> 
 							</section>
 
 
 
 							<section class="participants block2" id="participants">
-								<div class="block_top">							
+								<div class="block_top">	
 									<div class="block_top-box">
 										<div class="block_top-info">
 											<div class="block_title">Участники</div>
-											<div class="block_text">Текущие и запросившие доступ участники</div>		
-										</div>														
+											<div class="block_text">Участники проекта</div>			
+										</div>	
+										<button class="task-block_item-btn">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#plus2"></use>
+											</svg>
+											<span>Добавить участника</span>
+										</button>				
 									</div>
 								</div>
 								<div class="participants_wrap">
@@ -1609,7 +1629,7 @@
 
 	<script type="text/javascript">
 		$('.task-block_item-box').sortable({
-			group: 'shared', // set both lists to same group
+			// group: 'shared',
 		    animation: 150
 		});
 

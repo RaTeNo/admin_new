@@ -969,4 +969,10 @@
         display: none;
     }
 
+    .tasks-block_info-left {
+        margin-bottom: 15px;
+    }
+
+
+
 }

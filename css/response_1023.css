@@ -472,4 +472,15 @@
     }
 
 
+    .summary_items > * {
+        width: 100%;
+    }
+    .summary_items {
+        gap: 15px;
+    }
+    .project-creation_description {
+        margin-bottom: 10px;
+    }
+
+
 }

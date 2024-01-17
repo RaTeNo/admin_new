@@ -2255,6 +2255,10 @@
         flex-direction: column;
         align-items: flex-start;
     }
+    .participants .block_top-box {
+        flex-direction: row;
+        align-items: flex-start;
+    }
     .projects .select-right {
         margin-left: 0;
         margin-top: 10px;
@@ -2295,11 +2299,6 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-    }
-    .task-block_items.classic .projects_item-comment {
-        padding-top: 12px;
-        position: relative;
-        width: 100%;
     }
     .task-block_items.classic .projects_item-comment:before {
         position: absolute;
@@ -2777,6 +2776,61 @@
         margin-top: 30px;
     }
 
+
+    .solutions-tasks3 .solutions-tasks_top-delete {
+        margin-top: 0;
+    }
+
+
+    .projects-top_items > * {
+        margin-bottom: 0;
+    }
+
+    .tasks-block_info-statut {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tasks-block_info-stat {
+        margin-top: 10px;
+    }
+    .tasks-block_info-left {
+        flex-wrap: wrap;
+    }
+    .tasks-block_info-name {
+        width: calc(100% - 90px);
+    }
+
+    .task2_item-top {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .task2_item-top-text {
+        margin-right: 0;
+        margin-top: 5px;
+    }
+
+    .tasks-block_info-label {
+        margin-top: 8px;
+    }
+    .tasks .block_top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tasks-block_btn {
+        margin-top: 10px;
+    }
+
+    .audio-notes_btn {
+        margin-top: 10px;
+    }
+    .replay {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .replay_items {
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
 
 
 

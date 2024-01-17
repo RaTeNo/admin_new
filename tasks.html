@@ -359,7 +359,7 @@
 
 
 					<section class="content">
-						<section class="tasks">	
+						<section class="tasks audio-note">	
 							<section class="page_title">
 								<a href="/" class="big">
 									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_left"></use></svg>
@@ -369,13 +369,24 @@
 
 
 							<section class="tasks-block block2">
-								<div class="tasks_status">
-									<span>В работе</span>
+								<div class="block_top">
+									<div class="block_top-info">
+										<div class="tasks-block_title">Нарисовать первую страницу</div>
+									</div>
+									<button class="tasks-block_btn">
+										Редактировать
+									</button>
 								</div>
-								<div class="tasks-block_title">Нарисовать первую страницу</div>
 								<div class="tasks-block_info">
 									<div class="tasks-block_info-project">Проект:</div>
 									<div class="tasks-block_info-name">Разработать модуль “Проекты”</div>
+									<div class="tasks-block_info-project">Статус:</div>
+									<select>
+										<option value="1">В работе</option>
+										<option value="2">В очереди</option>
+										<option value="3">Сделано частично</option>
+										<option value="4">Сделано</option>
+									</select>
 									<div class="tasks-block_info-label">Задача выполнена</div>
 									<div class="tasks-block_info-btn modal_content" data-content="#tasks-modal" style="display: none;">
 										<a href="#">
@@ -388,6 +399,17 @@
 									<div class="tasks-block_info-status" style="display: none;">На проверке</div>
 								</div>
 
+								<div class="tasks_item-box">
+									<div class="tasks_item-author">
+										<div class="tasks_item-avatar">
+											<img src="images/avatar1.png" alt="">
+										</div>
+										<div class="tasks_item-desc">
+											<div class="tasks_item-name">Иван Петрович</div>
+											<div class="tasks_item-post">Ответственный</div>
+										</div>
+									</div>
+								</div>
 
 								<div class="steps_stage">
 									<div class="steps_stage_title">										
@@ -430,6 +452,16 @@
 									<p>Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.</p>
 									<p>Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит, какой именно текст получится — таким образом, авторские права на реферат принадлежат только вам.</p>
 								</div>
+
+								<div class="replay">
+									<span>Задача повторяется каждое:</span>
+									<div class="replay_items">
+										<div class="replay_item">15</div>
+										<div class="replay_item">23</div>
+										<div class="replay_item">31</div>
+									</div>
+									<span>число месяца</span>
+								</div>
 							</section>
 							
 							
@@ -462,6 +494,119 @@
 								</div>
 							</section>
 
+
+
+							<div class="audio-notes block2">
+								<div class="block_top">
+									<div class="block_top-info">
+										<div class="block_title">Аудио-заметки</div>
+										<div class="block_text">Аудио заметки к задаче</div>
+									</div>
+									<a href="#" class="audio-notes_btn">
+										Записать заметку
+									</a>
+								</div>	
+								<div class="audio_wrapper" style="display: none;">
+									<div class="audio-note_list block2">
+										<div class="audio-note_list-title">Несколько советов</div>
+										<ol>
+											<li>Запишите на бумаге несколько заметок, о чем будете рассказывать, чтобы ничего не забыть</li>
+											<li>Говорите ближе к микрофону без посторонних шумов</li>
+											<li>В начале записи кратко скажите о чем будет ваше сообщение</li>
+											<li>А через пару минут посмотрите как система перевела речь в текст и отредактируйте текст, если нужно</li>
+											<li>Перед отправкой вы можете послушать результат и перезаписать его при необходимост</li>
+										</ol>
+									</div>
+									<div class="add_audio audio-record">
+										<input type="checkbox" id="audio_record-icon" name="">
+										<label for="audio_record-icon" class="start_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_mic"></use></svg>
+										</label>
+										<div class="exp">Нажмите и отпустите, чтобы начать запись</div>
+									</div>										
+								</div>
+															
+								
+								<div class="audio-notes_info">
+									<div class="audio_message">
+										<div class="audio_media">											
+ 											<audio
+												controls
+												src="images/t-rex-roar.mp3">
+													Your browser does not support the
+													<code>audio</code> element.
+											</audio>
+										</div>
+									</div>
+									<div class="audio-notes_description">
+										<div class="audio-notes_description-text">Иван Петрович 15.12.2023 в 13:45</div>
+										<div class="audio-notes_description-btns">
+											<button class="yellow audio-notes_description-decoding">
+												<span>Расшифровка</span>
+											</button>
+											<button class="red audio-notes_description-delete">
+												<span>Удалить</span>
+											</button>
+										</div>										
+									</div>
+									<div class="audio-notes_description-box" style="display: none;">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков</div>
+								</div>
+
+								<div class="audio-notes_info">
+									<div class="audio_message">
+										<div class="audio_media">											
+ 											<audio
+												controls
+												src="images/t-rex-roar.mp3">
+													Your browser does not support the
+													<code>audio</code> element.
+											</audio>
+										</div>
+									</div>
+									<div class="audio-notes_description">
+										<div class="audio-notes_description-text">Иван Петрович 15.12.2023 в 13:45</div>
+										<div class="audio-notes_description-btns">
+											<button class="yellow audio-notes_description-decoding">
+												<span>Расшифровка</span>
+											</button>
+											<button class="red audio-notes_description-delete">
+												<span>Удалить</span>
+											</button>	
+											<div class="audio-notes_description-btns-ok">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#ok999"></use>
+												</svg>
+												<span>Проверено 01 января 2024 в 18:03</span>
+											</div>											
+										</div>	
+										<button class="yellow audio-notes_description-redactor">
+											<span>Редактировать расшифровку</span>
+										</button>									
+									</div>
+									<div class="audio-notes_description-box" style="display: none;"> 
+										<span><p>Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для</p>  <a href="#" class="link-more">Показать все</a> <p class="hide-content">всех, кто относится к тексту, как к количеству знаков</p></span>
+										<button class="yellow audio-notes_description-redactor">
+											<span>Редактировать расшифровку</span>
+										</button>
+									</div>	
+									<form class="form-project" style="display: none;">
+										<div class="line">
+											<div class="field">
+												<textarea placeholder="Служба Яндекс.Рефераты предназначена для студентов и школьников,"></textarea>
+											</div>
+										</div>
+										<div class="task-page_form-btns">
+											<button type="submit">
+												<span>Отмена</span>
+											</button>
+											<button type="submit">
+												<span>Сохранить</span>
+											</button>	
+										</div>
+									</form>		
+								</div>
+
+							</div>
 
 
 							<section class="uploading-files block2">
@@ -512,27 +657,11 @@
 										</div>
 										<div class="uploaded-files_item-bottom">
 											<button class="blau">
-												<span>Скачать</span>
+												<span>Открыть</span>
 											</button>
-											<button class="yellow">
-												<span>Переименовать</span>
+											<button class="blau">
+												<span>Посмотреть</span>
 											</button>
-											<button class="red">
-												<span>Удалить</span>
-											</button>
-										</div>
-									</div>
-									<div class="uploaded-files_item">
-										<div class="uploaded-files_item-top">
-											<svg class="icon">
-												<use xlink:href="images/sprite.svg#files"></use>
-											</svg>
-											<div class="uploaded-files_item-info">
-												<div class="uploaded-files_item-name">filename12345.png</div>
-												<div class="uploaded-files_item-text">Васильев Иван 18.04.2023</div>
-											</div>
-										</div>
-										<div class="uploaded-files_item-bottom">
 											<button class="blau">
 												<span>Скачать</span>
 											</button>
@@ -556,27 +685,11 @@
 										</div>
 										<div class="uploaded-files_item-bottom">
 											<button class="blau">
-												<span>Скачать</span>
+												<span>Открыть</span>
 											</button>
-											<button class="yellow">
-												<span>Переименовать</span>
+											<button class="blau">
+												<span>Посмотреть</span>
 											</button>
-											<button class="red">
-												<span>Удалить</span>
-											</button>
-										</div>
-									</div>
-									<div class="uploaded-files_item">
-										<div class="uploaded-files_item-top">
-											<svg class="icon">
-												<use xlink:href="images/sprite.svg#files"></use>
-											</svg>
-											<div class="uploaded-files_item-info">
-												<div class="uploaded-files_item-name">filename12345.png</div>
-												<div class="uploaded-files_item-text">Васильев Иван 18.04.2023</div>
-											</div>
-										</div>
-										<div class="uploaded-files_item-bottom">
 											<button class="blau">
 												<span>Скачать</span>
 											</button>
@@ -600,6 +713,12 @@
 										</div>
 										<div class="uploaded-files_item-bottom">
 											<button class="blau">
+												<span>Открыть</span>
+											</button>
+											<button class="blau">
+												<span>Посмотреть</span>
+											</button>
+											<button class="blau">
 												<span>Скачать</span>
 											</button>
 											<button class="yellow">
@@ -607,6 +726,56 @@
 											</button>
 											<button class="red">
 												<span>Удалить</span>
+											</button>
+										</div>
+									</div>
+									<div class="uploaded-files_item">
+										<div class="uploaded-files_item-top">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#files"></use>
+											</svg>
+											<div class="uploaded-files_item-info">
+												<div class="uploaded-files_item-name">filename12345.png</div>
+												<div class="uploaded-files_item-text">Васильев Иван 18.04.2023</div>
+											</div>
+										</div>
+										<div class="uploaded-files_item-bottom">
+											<button class="blau">
+												<span>Открыть</span>
+											</button>
+											<button class="blau">
+												<span>Посмотреть</span>
+											</button>
+											<button class="blau">
+												<span>Скачать</span>
+											</button>
+											<button class="yellow">
+												<span>Переименовать</span>
+											</button>
+											<button class="red">
+												<span>Удалить</span>
+											</button>
+										</div>
+									</div>
+									<div class="uploaded-files_item">
+										<div class="uploaded-files_item-top">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#files"></use>
+											</svg>
+											<div class="uploaded-files_item-info">
+												<div class="uploaded-files_item-name">filename12345.png</div>
+												<div class="uploaded-files_item-text">Васильев Иван 18.04.2023</div>
+											</div>
+										</div>
+										<div class="uploaded-files_item-bottom">
+											<button class="blau">
+												<span>Открыть</span>
+											</button>
+											<button class="blau">
+												<span>Посмотреть</span>
+											</button>
+											<button class="blau">
+												<span>Скачать</span>
 											</button>
 										</div>
 									</div>
