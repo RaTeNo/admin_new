@@ -31569,13 +31569,12 @@ bottom: 20px;
 }
 
 .calend_items {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     padding: 9px;
     border-radius: 15px;
     border: 1px solid #7874A3;
     background: #FFF;
-    width: 340px;
 }
 .calend_items > * {
     border-radius: 87px;
@@ -31681,3 +31680,7 @@ bottom: 20px;
 }
 
 
+.task-page_form .tabs_container{
+    padding: 0;
+    width: 100%;
+}
