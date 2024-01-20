@@ -7565,7 +7565,8 @@ aside .menu .sub_menu a.active
 
 .dialog .message .info
 {
-    width: 368px;
+    /*width: 368px;*/
+    
     max-width: calc(100% - 65px);
     margin-right: 15px;
     padding: 14px;
@@ -7614,6 +7615,7 @@ aside .menu .sub_menu a.active
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+    min-width: 250px;
 }
 
 .dialog .message .audio_message .btn
@@ -23064,6 +23066,7 @@ form .form_btns input[type=file] + label,
     line-height: 19px;
     letter-spacing: -0.3px;
     color: #000;
+    white-space: nowrap;
 }
 .projects_item-post {
     font-weight: 400;
@@ -23482,6 +23485,10 @@ form .form_btns input[type=file] + label,
     border-radius: 15px;   
     padding: 13px 12px;
 }
+.task-block_items.col3 > *{
+    width: calc(100%/3 - 16px);
+}
+
 .task-block_item-title {
     font-weight: 700;
     font-size: 20px;
@@ -23611,7 +23618,7 @@ form .form_btns input[type=file] + label,
     display: flex;
     align-items: center;
     position: relative;
-    justify-content: space-between;
+    gap:20px;
 }
 .task-block_comment .icon {
     width: 18px;
@@ -30406,7 +30413,7 @@ bottom: 20px;
 .task-block_subtask {
     display: flex;
     align-items: center;
-    color: #7874A3;
+    color: #DF1B1B;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -30473,6 +30480,7 @@ bottom: 20px;
     position: relative;
     text-decoration: none;
     flex-grow: 1;
+    min-height: 40px;
 }
 .projects-top_item-title::before {
     position: absolute;
@@ -30565,9 +30573,16 @@ bottom: 20px;
     bottom: -20px;
 }
 
+.feedback_ai.new{
+    border: 1px solid #ABAAE2;
+    color: #68619E;
+    background: #F2F0FF;
+}
+
 .feedback_ai svg{
     width: 22px;
     height:22px;
+    margin-right: 5px;
 }
 
 .video_message .feedback_ai{
@@ -31159,10 +31174,19 @@ bottom: 20px;
     color: #DF2E2E;
 }
 .task2_item-top-label.purple {
-    background: #CECBF0;
-    color: #646093;
+    background: #F3F2FC;
+    color: #8683C0;
     padding: 3px 8px;
 }
+.task2_item-top-label.orange {
+    background: #FF9D2A;
+    color: #fff;
+    padding: 3px 8px;
+}
+.task2_labels.m2{
+    margin-top: 10px;
+}
+
 .task2_item-top-label:before {
     position: absolute;
     content: "";
@@ -31500,6 +31524,7 @@ bottom: 20px;
     display: none;
 }
 
+/*
 .select2-search--dropdown {
     position: absolute;
     bottom: -39px;
@@ -31517,7 +31542,7 @@ bottom: 20px;
 }
 .select2-container--default .select2-selection--single {
     background: none;
-}
+}*/
 
 #correction_modal55  {
     max-width: 510px;
@@ -31547,7 +31572,7 @@ bottom: 20px;
     border: 1px solid #ABAAE2;
     background: #F2F0FF;
     color: #68619E;
-    font-size: 12px;
+    font-size: 11px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -31683,4 +31708,62 @@ bottom: 20px;
 .task-page_form .tabs_container{
     padding: 0;
     width: 100%;
+}
+
+.message_load{
+    text-align: center;
+    border-radius: 72.908px;
+    background: #F2F0FF;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    padding-bottom: 4px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.message_continue{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.message_continue button{
+    border-radius: 55px;
+    border: 2px solid var(--main_color);
+    background: #FFF;
+    color: var(--main_color);
+    text-align: center;  
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding:10px 20px;
+    transition:0.3s;
+}
+
+
+.message_continue button:hover{
+    color:#fff;
+    background:var(--main_color);
+}
+
+.project_item_authors{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+
+.projects_item-author.more{
+    color: #8D91AC;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    border-bottom: 2px dashed #8D91AC;
+    display: inline-block;
+    cursor: pointer;
 }

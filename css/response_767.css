@@ -2832,6 +2832,9 @@
         margin-bottom: 7px;
     }
 
+    .dialog .message .audio_message{
+        min-width: 190px;
+    }
 
 
 }
