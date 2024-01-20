@@ -31767,3 +31767,126 @@ bottom: 20px;
     display: inline-block;
     cursor: pointer;
 }
+
+.task-block_item-box_empty{
+    height: 180px;
+    border: 2px dashed #ADAACD;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-block_item-box_empty_title{
+    color: #37327C;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.task-block_item-box_empty .task-block_item-btn{
+    margin: 20px 0 0 0 ;
+}
+
+
+.simulator_info{
+    display: flex;
+    gap:22px;
+    margin-bottom: 30px;
+}
+
+.simulator_info_item{
+    width: calc(100% / 3 - 14px);
+    border-radius: 15px;
+    background: #FFF;
+    padding: 14px 16px 14px 18px;
+}
+
+.simulator_info_item_title{
+    color: #7874A3;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px; /* 118.75% */
+    letter-spacing: -0.3px;
+}
+
+.simulator_info_item_number{
+    color: #292B4B;
+    font-size: 35px;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -1.3px;
+    margin-top: 8px;
+}
+
+.simulator_info_item_number span{
+    color: #7874A3;
+    font-size: 22px;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -1.3px;
+}
+
+.simulator_ratings_title{
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.simulator_ratings{
+    margin-bottom: 30px;
+}
+
+.simulator_ratings_list{    
+    gap:23px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.simulator_ratings_item{
+    border-radius: 15px;
+    background: #FFF;
+    display: flex;
+    width: calc(100% / 4 - 18px);
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.simulator_ratings_item_title{
+    color: #7874A3;
+
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px; /* 118.75% */
+    letter-spacing: -0.3px;
+}
+
+.simulator_ratings_item_rating{
+    margin-top: 3px;
+    color: #292B4B;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 0.7px;
+}
+
+.simulator_ratings_item_right .pie{
+    color: #0AB511;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 14.951px; /* 93.443% */
+    letter-spacing: -0.236px;
+}
+
+.simulator_ratings_item_right .pie.yellow{
+    color:#E7B025;
+}
+
+.simulator_ratings_item_right .pie.red{
+    color:#C31818;
+}

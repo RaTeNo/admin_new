@@ -2836,5 +2836,18 @@
         min-width: 190px;
     }
 
+    .simulator_info{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .simulator_info_item{
+        width: 100%;
+    }
+
+    .simulator_ratings_item{
+        width: 100%;
+    }
+
 
 }
