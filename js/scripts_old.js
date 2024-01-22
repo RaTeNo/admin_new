@@ -3,8 +3,7 @@ WW = window.innerWidth || document.clientWidth || document.getElementsByTagName(
 WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight
 $(() => {
 
-	$('body').on('click', '.tasks .steps_stage .step_stage', function (e) {        
-       	
+	$('body').on('click', '.tasks .steps_stage .step_stage', function (e) { 
        	if(!$(this).hasClass("active"))
        	{
        		$(this).addClass("active").find(".icon_change use").attr("xlink:href","images/sprite.svg#training_ok2");    

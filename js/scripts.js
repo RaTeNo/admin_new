@@ -562,6 +562,87 @@
 
 		$(this).toggleClass('active')
 	})
+
+
+	// $(".audio-note .form-project").hide();
+	$(".audio-notes_description-redactor").click(function (e) {
+		e.preventDefault();
+		$(".audio-note .form-project").css("display", "block");
+		$(".audio-notes_description-redactor").addClass("active");
+	});
+
+
+	$('.audio-notes_description-decoding').click(function(){
+		$(this).parent().parent().next().slideToggle(300);
+	});  
+
+
+	$('.audio-notes_description-decoding').click(function() { 
+		if ($(this).text() == "Скрыть расшифровку") { 
+			$(this).text("Расшифровка"); 
+		} else { 
+			$(this).text("Скрыть расшифровку"); 
+		}; 
+	});
+
+
+	$('.audio-notes_btn').click(function(e) { 
+		e.preventDefault();
+		if ($(this).text() == "Отменить заметку") { 
+			$(this).text("Записать заметку"); 
+			$(".audio_wrapper").slideToggle(300);
+		} else { 
+			$(this).text("Отменить заметку"); 
+			$(".audio_wrapper").slideToggle(300);
+		}; 
+	});
+
+	$(".solutions-tasks3 .solutions-tasks_top-delete").click(function (e) {
+		e.preventDefault();
+		$(this).parent().parent().parent().hide();
+	});
+
+	$('.js-example-basic-single').select2();
+
+	$('.calend_item').on('click', function(event){
+		$(this).toggleClass('active');
+	});
+
+	$('body').on('click', '.tasks .steps_stage .step_stage', function (e) { 
+       	if(!$(this).hasClass("active"))
+       	{
+       		$(this).addClass("active").find(".icon_change use").attr("xlink:href","images/sprite.svg#training_ok2");    
+
+	        var date = new Date();
+	        let day = date.getDate();
+	        let month = date.getMonth();
+	        let year = date.getFullYear();      
+	        $(this).find(".step_stage_time").html("Выполнил <span>Алексей Дмитриенко</span> "+day+"."+month+"."+year);
+
+	        let count = $(".step_stage").length;
+	        let count_active = $(".step_stage.active").length;
+	        $(".js_complete").text(count_active).prev().removeClass("animate2");
+	        setTimeout(() => {
+	        	$(".pie").addClass("animate2").prop("style", "--start:"+Math.ceil(((count_active-1)/count)*100)+"; --p: "+Math.ceil((count_active/count)*100));			
+			}, 0);
+       	}
+       	else
+       	{
+       		$(this).removeClass("active").find(".icon_change use").attr("xlink:href","images/sprite.svg#training_not2");    
+	      
+	        $(this).find(".step_stage_time").html("");
+
+	        let count = $(".step_stage").length;
+	        let count_active = $(".step_stage.active").length;
+	        $(".js_complete").text(count_active).prev().removeClass("animate2");
+	        setTimeout(() => {
+	        	$(".pie").addClass("animate2").prop("style", "--start:"+Math.ceil(((count_active-1)/count)*100)+"; --p: "+Math.ceil((count_active/count)*100));			
+			}, 0);
+       	}                 
+    });
+
+
+
 })
 
 
@@ -612,15 +693,28 @@ $(window).on('load', () => {
 
 
 $(window).on('resize', () => {
-	if (typeof WW !== 'undefined' && WW != $(window).width()) {
-		// Моб. версия
-		if (!fiestResize) {
-			$('meta[name=viewport]').attr('content', 'width=device-width, initial-scale=1, maximum-scale=1')
-			if ($(window).width() < 375) $('meta[name=viewport]').attr('content', 'width=375, user-scalable=no')
+	WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight
+	let windowW = window.outerWidth
 
-			fiestResize = true
+	if (typeof WW !== 'undefined' && WW != windowW) {
+		// Перезапись ширины окна
+		WW = window.innerWidth || document.clientWidth || document.getElementsByTagName('body')[0].clientWidth
+
+		// Моб. версия
+		if (!fakeResize) {
+			fakeResize = true
+			fakeResize2 = false
+
+			document.getElementsByTagName('meta')['viewport'].content = 'width=device-width, initial-scale=1, maximum-scale=1'
+		}
+
+		if (!fakeResize2) {
+			fakeResize2 = true
+
+			if (windowW < 375) document.getElementsByTagName('meta')['viewport'].content = 'width=375, user-scalable=no'
 		} else {
-			fiestResize = false
+			fakeResize = false
+			fakeResize2 = true
 		}
 
 
@@ -661,12 +755,9 @@ $(window).on('resize', () => {
 			namesHeight2($(this), 100)
 		})
 
-
-		// Перезапись ширины окна
-		WW = $(window).width()
 	}
-
 })
+
 
 // Кнопка 'Вверх'
 $('body').on('click', '.buttonUp button', function(e) {
