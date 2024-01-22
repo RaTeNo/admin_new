@@ -14,7 +14,7 @@ $(document).ready(function() {
         {
             min = "0"+min;
         }
-        $(this).find(".step_stage_time").text("Выполнено в mn,nn,mn," +  date.getHours() + ":"+  min);
+        $(this).find(".step_stage_time").text("Выполнено в " +  date.getHours() + ":"+  min);
 
         if($(".steps_stage .step_stage:not(.active)").length==0)
         {
@@ -23,6 +23,7 @@ $(document).ready(function() {
 
         }
     });
+
 
 
 

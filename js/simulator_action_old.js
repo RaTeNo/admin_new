@@ -1,10 +1,10 @@
 $(() => {
-
+   
 
     $(".image_info_sim .tooltype").on("click", function(){
 		let id = $(this).data("id");
 
-
+		
 		Fancybox.show([{
 			src: id,
 			type: 'inline'
@@ -17,7 +17,7 @@ $(() => {
 		let box = $(this);
 		let offset = box.offset();
 		let x = e.pageX - offset.left - 22.5
-		let y = e.pageY - offset.top - 22.5;
+		let y = e.pageY - offset.top - 22.5;	
 		// переаводим в проценты
 		let sizeBoxX = 	box.outerWidth();
 		let sizeBoxY = 	box.outerHeight();
