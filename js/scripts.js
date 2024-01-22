@@ -602,6 +602,10 @@
 		$(this).parent().parent().parent().hide();
 	});
 
+	if ($(".js-example-basic-multiple").length > 0) {
+		$('.js-example-basic-multiple').select2();
+	}
+
 	$('.js-example-basic-single').select2();
 
 	$('.calend_item').on('click', function(event){

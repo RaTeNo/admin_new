@@ -23067,6 +23067,8 @@ form .form_btns input[type=file] + label,
     letter-spacing: -0.3px;
     color: #000;
     white-space: nowrap;
+    overflow: hidden; /* Обрезаем всё за пределами блока */
+    text-overflow: ellipsis; /* Добавляем многоточие */
 }
 .projects_item-post {
     font-weight: 400;
@@ -31903,4 +31905,9 @@ bottom: 20px;
     color: #AEACC8;
     border-radius: 9px;
     height: 45px;
+}
+
+.task-page_form_not_padding{
+    padding: 0;
+    box-shadow: none;
 }
