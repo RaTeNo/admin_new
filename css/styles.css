@@ -24155,7 +24155,7 @@ form .form_btns input[type=file] + label,
 .form-project .line .field input {
     background: #FFFFFF;
     border: 1px solid #7874A3;
-    color: #AEACC8;
+    color: #000;
     border-radius: 9px;
     height: 45px;
     font-family: 'Ubuntu';
@@ -24168,7 +24168,7 @@ form .form_btns input[type=file] + label,
 .form-project .line .field textarea.project-textarea {
     background: #FFFFFF;
     border: 1px solid #7874A3;
-    color: #AEACC8;
+    color: #000;
     border-radius: 9px;
     height: 95px;
     font-family: 'Ubuntu';
@@ -24201,7 +24201,7 @@ form .form_btns input[type=file] + label,
     font-size: 12px;
     line-height: 33px;
     height: 33px;
-    color: #AEACC8;
+    color: #000;
 }
 .project-creation .select2-container .select2-search--inline .select2-search__field {
     margin-top: 0;
