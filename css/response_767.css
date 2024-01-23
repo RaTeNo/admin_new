@@ -2849,5 +2849,8 @@
         width: 100%;
     }
 
+    .dialog .message .info{
+        max-width: calc(100% - 130px);
+    }
 
 }

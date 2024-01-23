@@ -1735,6 +1735,12 @@
         margin-bottom: 0px;
     }
 
+    .title_faq{
+        flex-direction: column;
+    }
 
+    .accordion_item .head{
+        gap:5px;
+    }
 
 }

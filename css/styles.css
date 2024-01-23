@@ -7566,8 +7566,8 @@ aside .menu .sub_menu a.active
 .dialog .message .info
 {
     /*width: 368px;*/
-    
-    max-width: calc(100% - 65px);
+    /*width: calc(100% - 200px);*/
+    max-width: calc(100% - 200px);
     margin-right: 15px;
     padding: 14px;
 
@@ -12105,7 +12105,8 @@ section.total {
     margin-bottom: 20px;
     margin-top:30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap:20px;
 }
 .accordion_item{
     background: #FFFFFF;
@@ -12125,6 +12126,7 @@ section.total {
     letter-spacing: -0.375px;
     position: relative;
     cursor: pointer;
+    gap:20px;
 }
 
 .accordion_item .head:before{
@@ -12149,7 +12151,6 @@ section.total {
 
 .accordion_item .head .title{
     padding-left:30px;
-    padding-right: 80px;
 }
 .accordion_item .head .icon
 {
@@ -23066,9 +23067,6 @@ form .form_btns input[type=file] + label,
     line-height: 19px;
     letter-spacing: -0.3px;
     color: #000;
-    white-space: nowrap;
-    overflow: hidden; /* Обрезаем всё за пределами блока */
-    text-overflow: ellipsis; /* Добавляем многоточие */
 }
 .projects_item-post {
     font-weight: 400;
@@ -23862,6 +23860,7 @@ form .form_btns input[type=file] + label,
     font-size: 20px;
     line-height: 19px;
     letter-spacing: -0.375px;   
+    margin-bottom: 20px;
 }
 .tasks-block_info {
     display: flex;
@@ -24214,7 +24213,6 @@ form .form_btns input[type=file] + label,
     border: 1px solid #7874A3;
     border-radius: 9px;
     padding: 6px 9px;
-    height: 45px;
 }
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
     vertical-align: top;
@@ -31758,6 +31756,7 @@ bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     gap:10px;
+    align-items: center;
 }
 
 .projects_item-author.more{
@@ -31893,6 +31892,10 @@ bottom: 20px;
     color:#C31818;
 }
 
+.simulator_ratings_item_right .pie.gray{
+    color:#BCBCBC;
+}
+
 .projects_item-box_inner{
     display: flex;
     gap:10px;
@@ -31910,4 +31913,102 @@ bottom: 20px;
 .task-page_form_not_padding{
     padding: 0;
     box-shadow: none;
+}
+
+.simulator_info_title{
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+.dialog .message .info.red{
+    background: rgba(213, 33, 33, 0.27);
+    border:none;
+}
+
+.dialog .message .info.red .name, .dialog .message .info.red .text_message{
+    color: #D52121;
+}
+
+.dialog .message .info.green{
+    background: rgba(10, 181, 17, 0.27);
+    border:none;
+}
+
+.dialog .message .info.green .name, .dialog .message .info.green .text_message{
+    color: #0AB511;
+}
+
+
+.dialog .message .info.yellow{
+    background: rgba(231, 176, 37, 0.27);
+    border:none;
+}
+
+.dialog .message .info.yellow .name, .dialog .message .info.yellow .text_message{
+    color: #D87602;
+}
+
+.title_faq_update{
+    border-radius: 59px;
+    background: rgba(28, 189, 44, 0.20);
+    color: #1CBD2C;
+    font-family: Ubuntu;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0 10px;
+}
+
+.update_faq{
+    color: #1CBD2C;
+    font-family: Ubuntu;
+    font-size: 12px;
+    font-weight: 500;
+    padding-right: 80px;
+    margin-left: auto;
+}
+
+.images_faq{
+    display: flex;    
+    gap:20px;
+    flex-wrap: wrap;
+}
+
+.image_faq{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.image_faq img{
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.image_faq:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.70);
+    top: 0;
+    border-radius: 10px;
+}
+
+.image_faq:before{
+    display: block;
+    content: "";
+    background: url(../images/zoom_faq.svg);
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    z-index: 1;
 }
