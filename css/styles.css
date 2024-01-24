@@ -12460,6 +12460,7 @@ section.total {
 .message_img{
     margin-top:10px;
     position: relative;
+    max-width: 400px;
 }
 
 .message_img a:before{
@@ -12488,6 +12489,7 @@ section.total {
     max-width: 100%;
     border-radius: 10px;
     display: block;
+    
 }
 
 .buttons_video{
