@@ -606,8 +606,12 @@
 		$('.js-example-basic-multiple').select2();
 	}
 
-	$('.js-example-basic-single').select2();
-	$('.js-example-basic-single2').select2({minimumResultsForSearch: Infinity});
+	if ($(".js-example-basic-single").length > 0) {
+		$('.js-example-basic-single').select2();
+	}
+	if ($(".js-example-basic-single2").length > 0) {
+		$('.js-example-basic-single2').select2({minimumResultsForSearch: Infinity});
+	}
 	
 
 	$('.calend_item').on('click', function(event){

@@ -20,7 +20,12 @@ $(() => {
 
 
 	// Кастомный select
-	$('select').niceSelect()
+	if ($.fn.niceSelect)
+	{
+	   $('select').niceSelect()
+	}
+		
+	
 
 
 	// Fancybox
