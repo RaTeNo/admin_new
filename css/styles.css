@@ -23866,9 +23866,10 @@ form .form_btns input[type=file] + label,
 }
 .tasks-block_info {
     display: flex;
-    align-items: center;    
+    align-items: flex-start;    
     padding-bottom: 18px;
     position: relative;
+    flex-wrap: wrap;
 }
 .tasks-block_info:before {
     position: absolute;
@@ -31090,12 +31091,13 @@ bottom: 20px;
     display: block;
     margin-left: 10px;
     position: relative;    
-    padding: 9px 10px 9px 14px;
+    padding: 9px 10px 9px 18px;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     border-radius: 59px;    
+    text-wrap: nowrap;
 }
 .tasks-block_info-stat span.yellow {
     background: rgba(255, 157, 43, 0.20);
