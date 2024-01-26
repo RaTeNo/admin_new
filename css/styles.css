@@ -23857,6 +23857,7 @@ form .form_btns input[type=file] + label,
 .tasks input#file {
     display: none;
 }
+
 .tasks-block_title {
     font-weight: 700;
     font-size: 20px;
@@ -23866,7 +23867,7 @@ form .form_btns input[type=file] + label,
 }
 .tasks-block_info {
     display: flex;
-    align-items: flex-start;    
+    align-items: center; 
     padding-bottom: 18px;
     position: relative;
     flex-wrap: wrap;
@@ -23979,6 +23980,11 @@ form .form_btns input[type=file] + label,
     justify-content: space-between;
     margin-bottom: 30px;
 }
+
+.tasks .tasks-block .block_top{
+	margin-bottom: 0;
+}
+
 .tasks-block_info-status {
     font-weight: 500;
     font-size: 12px;
