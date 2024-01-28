@@ -597,6 +597,20 @@
 		};
 	});
 
+	$(".task-page_btn button").click(function (e) {
+		e.preventDefault();
+		$('.solutions-tasks').addClass('active');
+		$(".solutions-tasks .solutions-tasks_wrap").show();
+		$(".solutions-tasks2 .solutions-tasks_wrap").hide();
+		setTimeout(() => {
+			$('.solutions-tasks').removeClass('active');
+			$(".solutions-tasks .solutions-tasks_wrap").hide();
+			$(".solutions-tasks2 .solutions-tasks_wrap").show();
+			$('.solutions-tasks2').addClass('active');
+			$(".solutions-tasks .wrapper_head").hide();
+		}, 3000);
+	});
+
 	$(".solutions-tasks3 .solutions-tasks_top-delete").click(function (e) {
 		e.preventDefault();
 		$(this).parent().parent().parent().hide();

@@ -26355,7 +26355,7 @@ form .form_btns input[type=file] + label,
 }
 .solutions-tasks.active {
     display: block;
-    margin-top: 0;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 .solutions-tasks_wrap {
@@ -26381,7 +26381,7 @@ form .form_btns input[type=file] + label,
 }
 .solutions-tasks2.active {
     display: block;
-    margin-top: 0;
+    margin-top: 30px;
 }
 .solutions-tasks2 .solutions-tasks_wrap {
     padding: 20px 18px 22px;
