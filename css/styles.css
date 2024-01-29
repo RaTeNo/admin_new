@@ -24121,6 +24121,14 @@ form .form_btns input[type=file] + label,
     margin-right: 11px;
     margin-bottom: 8px;
 }
+.uploaded-files_item-bottom a{
+	font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    margin-right: 11px;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
 .uploaded-files_item-bottom button.blau {
     color: #0085FF; 
     border-bottom: 1px dashed #0085FF;
@@ -24133,6 +24141,20 @@ form .form_btns input[type=file] + label,
     color: #D93737; 
     border-bottom: 1px dashed #D93737;
 }
+
+.uploaded-files_item-bottom a.blau {
+    color: #0085FF; 
+    border-bottom: 1px dashed #0085FF;
+}
+.uploaded-files_item-bottom a.yellow {
+    color: #FFA800; 
+    border-bottom: 1px dashed #FFA800;
+}
+.uploaded-files_item-bottom a.red {
+    color: #D93737; 
+    border-bottom: 1px dashed #D93737;
+}
+
 .uploaded-files .block_title {
     margin-bottom: 0;
 }
