@@ -24027,11 +24027,11 @@ form .form_btns input[type=file] + label,
     border-radius: 9px; 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .uploaded-files_item-top {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 12px;
 }
 .uploaded-files_item-info {
@@ -24045,6 +24045,7 @@ form .form_btns input[type=file] + label,
     color: #1D1D1D;  
     margin-bottom: 2px;
     position: relative;
+    overflow-wrap: anywhere;
 }
 /* .uploaded-files_item-name[title]:hover::after {
     content: attr(title);
@@ -24104,6 +24105,7 @@ form .form_btns input[type=file] + label,
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-top: auto;
 }
 .uploaded-files_item-bottom::before {
     position: absolute;
@@ -24138,9 +24140,9 @@ form .form_btns input[type=file] + label,
     border-bottom: 1px dashed #FFA800;
 }
 .uploaded-files_item-bottom button.red {
-    color: #D93737; 
-    border-bottom: 1px dashed #D93737;
-}
+    color: #D93737; ;
+
+    border-bottom: 1px dashed #D93737}
 
 .uploaded-files_item-bottom a.blau {
     color: #0085FF; 
