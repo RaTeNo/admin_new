@@ -618,6 +618,15 @@
 		$('.js-example-basic-single2').select2({minimumResultsForSearch: Infinity});
 	}
 
+	$(".solutions-tasks_text_togger").click(function (e) {
+		$(this).hide().next().show();
+	});
+
+	$(".audio-notes_description-redactor").click(function (e) {
+		$(this).parent().next().show();
+	});
+	
+
 
 	$('.calend_item').on('click', function(event){
 		$(this).toggleClass('active');
