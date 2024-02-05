@@ -23677,6 +23677,7 @@ form .form_btns input[type=file] + label,
     color: #000;
     margin-bottom: 17px;
     opacity: 0.4;
+    text-decoration: none;
 }
 .task-block_clossed-comment {
     font-weight: 700;
@@ -23685,6 +23686,7 @@ form .form_btns input[type=file] + label,
     color: #000000;  
     opacity: 0.4;
     display: flex;
+    gap:0;
 }
 .task-block_clossed-comment .icon {
     width: 18px;

@@ -1748,4 +1748,17 @@
         padding-right: 0;
     }
 
+    .task-page_form-btns{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .audio-note .form-project button:nth-child(1){
+        justify-content: center;
+    }
+
+    .audio-note .form-project button{
+        margin-right: 0 !important;
+    }
+
 }
