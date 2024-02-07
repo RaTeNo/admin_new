@@ -8099,7 +8099,7 @@ aside .menu .sub_menu a.active
 {
     display: block;
 
-    width: 24px;
+    width: 20px;
     height: 36px;
 }
 
@@ -23140,7 +23140,9 @@ form .form_btns input[type=file] + label,
 .projects_item-bottom-box span.green {
     color: #1CBD2C;
 }
-
+.projects_item-bottom-box span.red {
+    color: #E01C1C;
+}
 
 
 .changes .block_title {
@@ -23593,6 +23595,15 @@ form .form_btns input[type=file] + label,
 }
 .task-block_label.azure:before {
     background: #13B8C2;
+}
+
+.task-block_label.deadline{
+	color: #fff;
+    background: #EF1A1A;
+}
+.task-block-top_wrap{
+	display: flex;
+	gap:10px;
 }
 .task-block_text {
     font-weight: 700;
@@ -24060,7 +24071,7 @@ form .form_btns input[type=file] + label,
     z-index: 99999;
     visibility: hidden;
 } */
-[data-title]:hover:after {
+/*[data-title]:hover:after {
     opacity: 1;
     transition: all 0.1s ease 0.5s;
     visibility: visible;
@@ -24083,7 +24094,7 @@ form .form_btns input[type=file] + label,
 }
 [data-title] {
     position: relative;
-}
+}*/
 .uploaded-files_item-text {
     font-weight: 400;
     font-size: 12px;
@@ -30522,8 +30533,11 @@ bottom: 20px;
     left: -20px;
 }
 .projects-top_item-labels {
-    display: flex;
+	display: flex;
     margin-top: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
 }
 .projects-top_item-label {
     padding: 3px 10px;
@@ -30538,11 +30552,13 @@ bottom: 20px;
     background: #79C54B;
 }
 .projects-top_item-label.blau {
-    background: var(--main_color);
+    background: #0F7DFF;
 }
-.projects-top_item-label + .projects-top_item-label {
-    margin-left: 10px;
+
+.projects-top_item-label.orange {
+    background: #FF9D2B;
 }
+
 .task-block_item .projects_item-author {
     margin-top: 13px;
 }
@@ -31323,7 +31339,7 @@ bottom: 20px;
 }
 
 .task-page_wrap {
-    margin-top: 25px;
+
 }
 
 .audio-note_list {
@@ -32047,7 +32063,7 @@ bottom: 20px;
     width: 100%;
     height: 100%;
     position: absolute;
-    background: rgba(0, 0, 0, 0.70);
+    background: rgba(0, 0, 0, 0.5);
     top: 0;
     border-radius: 10px;
 }
@@ -32072,4 +32088,44 @@ bottom: 20px;
     display: inline-block;
     margin-top: 10px;
     text-decoration: underline;
+}
+
+.projects-top_item-placeholder{
+    background: var(--main_color);
+    color: #fff;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 10px;
+    position: absolute;
+    top: -20px;
+    width: 100px;
+    text-align: center;
+    padding: 3px;
+    left: 16px;
+}
+
+.projects_item-last-active{
+	opacity: 0.5;
+	font-size: 14px;
+}
+
+.tasks_dedline{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px; 
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.tasks_dedline span{
+    background: #EF1A1A;
+    color: #fff;
+    font-size: 14px;
+    padding: 3px 10px;
+    border-radius: 14px;
+    margin-right: 10px;
 }

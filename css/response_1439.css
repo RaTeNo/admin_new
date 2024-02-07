@@ -972,7 +972,11 @@
     .tasks-block_info-left {
         margin-bottom: 15px;
     }
-
+    .task-block-top_wrap{
+        flex-direction: column;
+        align-items: flex-start;
+        gap:5px;
+    }
 
 
 }
