@@ -7215,7 +7215,7 @@ aside .menu .sub_menu a.active
 
 .simulator_item .dialog .message + .message
 {
-    margin-top: 15px;
+    margin-top: 30px;
 }
 
 .simulator_item .dialog .message .photo
@@ -7517,6 +7517,10 @@ aside .menu .sub_menu a.active
     margin-top: 30px;
 }
 
+.dialog .message:has(.feedback_ai.new) + .message{
+    margin-top: 50px;
+}
+
 
 .dialog .message.new
 {
@@ -7765,8 +7769,8 @@ aside .menu .sub_menu a.active
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 45px;
+    height: 45px;
     margin: auto;
 }
 
@@ -30615,13 +30619,17 @@ bottom: 20px;
     padding: 10px;
     position: absolute;
     right: 15px;
-    bottom: -20px;
+    top: -20px;
 }
 
 .feedback_ai.new{
     border: 1px solid #ABAAE2;
     color: #68619E;
     background: #F2F0FF;
+    left:15px;
+    bottom: -20px;
+    top: auto;
+    width: 180px;
 }
 
 .feedback_ai svg{

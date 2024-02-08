@@ -2775,8 +2775,8 @@
         width: 18px;
     }
 
-    .dialog .message:has(.feedback_ai) + .message{
-        margin-top: 30px;
+    .dialog .message:has(.feedback_ai.new) + .message{
+        margin-top: 50px;
     }
 
 
