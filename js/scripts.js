@@ -588,6 +588,35 @@
 		};
 	});
 
+	$('.js-open-record').click(function(e) {
+		e.preventDefault();
+		$(this).toggleClass("active");
+		if (!$(this).hasClass("active")) {
+			$(this).text("Записать аудио-подсказку");
+			$(".js-block_record").slideToggle(300);
+			$(".audio-notes_text").slideToggle(300);
+		} else {
+			$(this).text("Отменить запись");
+			$(".js-block_record").slideToggle(300);	
+			$(".audio-notes_text").slideToggle(300);					
+		};
+	});
+
+	$('.js-upload-record').click(function(e) {
+		e.preventDefault();
+		$(this).toggleClass("active");
+		if (!$(this).hasClass("active")) {
+			$(this).text("Загрузить с диска");
+			$(".js-block_upload").slideToggle(300);
+			$(".audio-notes_text").slideToggle(300);
+		} else {
+			$(this).text("Отменить загрузку");
+			$(".js-block_upload").slideToggle(300);	
+			$(".audio-notes_text").slideToggle(300);					
+		};
+	});
+
+	
 	$(".task-page_btn button").click(function (e) {
 		e.preventDefault();
 		$('.solutions-tasks').addClass('active');

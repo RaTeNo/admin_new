@@ -17290,7 +17290,6 @@ background: #64C841;
 .simulators-new .simulator_items {
     display: flex;
     margin-left: -33px;
-    margin-bottom: -30px;
     flex-wrap: wrap;
 }
 .simulators-new .simulator_items > * {
@@ -30696,6 +30695,27 @@ bottom: 20px;
     margin-bottom: 0;
     text-decoration: none;
 }
+.audio-notes_btn2 {
+    padding: 12px 20px;
+    border-radius: 40px;
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    margin-bottom: 0;
+    text-decoration: none;
+    background: #ECEBFF;
+    color: #64698F;
+    margin-left: 12px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #64698F;
+    padding: 12px;
+    background: #ECEBFF;
+    border-radius: 7px;
+}
 .audio-notes_description {
     display: flex;
     align-items: center;
@@ -32128,4 +32148,235 @@ bottom: 20px;
     padding: 3px 10px;
     border-radius: 14px;
     margin-right: 10px;
+}
+
+.setting-mode .audio-notes {
+    margin-top: 20px;
+    position: relative;
+}
+.setting-mode .audio-notes:after {
+    position: absolute;
+    content: "";
+    width: calc(100% + 36px);
+    height: 1px;
+    bottom: -20px;
+    left: -18px;
+    background: #DFDFDF;
+}
+.setting-mode .add_audio {
+    border: 1px solid #D7D7D7;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+.setting-mode .audio-note_list {
+    padding: 0;
+    margin-top: 18px;
+}
+.setting-mode .audio-notes_info {
+    border: 1px solid #D7D7D7;
+}
+.setting-mode .audio-notes_info:last-child {
+    margin-bottom: 40px;
+}
+.audio-notes_text {
+    margin-bottom: 20px;
+}
+
+.learning-paths .training-plan_items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -35px;
+    margin-top: 0px;
+    margin-bottom: 0;
+    padding: 28px;
+}
+.learning-paths .training-plan_item-title span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: var(--main_color);
+    font-size: 14px;
+    background: #fff;
+    margin-right: 6px;
+}
+.project_line .icon {
+    width: 27px;
+    height: 27px;
+    margin-right: 8px;
+}
+.project_line {
+    padding: 8px;
+    border-radius: 8px;
+    background: var(--main_color);
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.3;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.projects_item-descr {
+    font-size: 14px;
+    line-height: 16px;
+    color: #8d92b8;
+    margin-left: 15px;
+}
+.learning-paths_top {
+    display: flex;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+
+.learning-paths_top-icon {
+    width: 61px;
+    height: 61px;
+    margin-right: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: #cccef7;
+    flex-shrink: 0;
+}
+.learning-paths_top .icon {
+    width: 36px;
+    height: 36px;
+}
+.learning-paths_top-title {
+    font-size: 18px;
+    line-height: 1.05;
+    letter-spacing: -0.3px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #000;
+}
+.learning-paths_top-text {
+    color: #636363;
+    font-size: 14px;
+    line-height: 20px ;
+}
+
+.simulator_item-title {
+    position: relative;
+}
+.simulator_item-title .icon {
+    width: 21px;
+    height: 21px;
+    margin-left: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.simulator_item-title span {
+    width: calc(100% - 30px);
+    display: block;
+}
+
+.training-course2 .training-course_item-image img {
+    border: none;
+}
+.training-course2 .training-course_item-image {
+    width: 38px;
+    height: 38px;
+}
+.training-course2 .training-course_item-images {
+    margin-bottom: 12px;
+}
+.training-course2 .training-course_item-label {
+    width: 105px;
+    white-space: nowrap;
+    margin: -41px 20px 15px -7px;
+    background: var(--main_color);
+}
+.training-course2 .training-course_item-images::before {
+    display: none;
+}
+
+
+.training-course_item-lows {
+    border-top: 1px solid #DFDFDF;
+    padding-top: 15px;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    padding-right: 20px;
+    padding-left: 20px;  
+    display: flex; 
+    flex-wrap: wrap;
+    margin-bottom: -10px;
+}
+.training-course_item-lows > * {
+    margin-bottom: 10px;
+}
+.training-course_item-low:nth-child(1) .icon {
+    width: 10px;
+    height: 10px;
+    margin-right: 6px;
+}
+.training-course_item-low:nth-child(2) .icon {
+    width: 11px;
+    height: 6px;
+    margin-right: 6px;
+}
+.training-course_item-low:nth-child(3) .icon {
+    width: 9px;
+    height: 8px;
+    margin-right: 6px;
+}
+.training-course_item-low {
+    color: #fff;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 29px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.training-course_item-low:nth-child(1) {
+    background: #0774F4;
+    margin-right: 6px;
+}
+.training-course_item-low:nth-child(2) {
+    background: #D8005B;
+    margin-right: 6px;
+}
+.training-course_item-low:nth-child(3) {
+    background: #2BC19D;
+}
+
+.audio-notes .block_upload {
+    border-radius: 9px;
+    border: 2px dashed #BBB9D1;
+    background: #FFF;
+    text-align: center;
+    padding: 23px 38px 38px;
+    color: #7874A3;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px; 
+    letter-spacing: -0.3px;
+    margin-bottom: 20px;
+}
+.audio-notes .box__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.audio-notes .block_upload label {
+    display: flex;
+}
+
+.audio-notes .box__dragndrop, 
+.audio-notes .box__icon {
+    display: block;
+}
+.audio-notes .box__file {
+    display: none;
 }

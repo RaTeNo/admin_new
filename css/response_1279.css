@@ -1932,6 +1932,15 @@
         margin-left: 30px;
         margin-bottom: 20px;
     }
+    .learning-paths .training-plan_items {
+        margin-left: -30px;
+        margin-bottom: -20px;
+    }
+    .learning-paths .training-plan_items > * {
+        width: calc(100%/3 - 30px);
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
     .training-plan_item:nth-child(5):before {
         display: block;
     }

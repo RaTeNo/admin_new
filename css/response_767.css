@@ -2696,6 +2696,14 @@
         padding-left: 0;
         margin-top: 20px;
     }
+    .learning-paths .training-plan_items > * {
+        width: calc(100%/2 - 20px);
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .learning-paths .training-plan_items {
+        margin-left: -20px;
+    }
     .training-plan_top {
         align-items: center;
     }
@@ -2852,6 +2860,22 @@
         margin-top: 15px;
         display: flex;
         align-items: center;
+    }
+
+    .simulators-new .simulator_item-right {
+        width: 100%;
+    }
+
+
+    .setting-mode .add_audio{
+        padding-top: 25px;
+    }
+
+    .audio-notes_btn2{
+        margin-left: 0;
+        margin-top: 5px;
+        margin-right: 10px;
+        min-width: 46%;
     }
 
 }

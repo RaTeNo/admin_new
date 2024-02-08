@@ -1235,6 +1235,153 @@
 										При уходе с рабочего места закрыть емкость с нефрасом</p>
 								</div>
 
+
+
+								<div class="audio-notes">
+									<div class="warning_training_title">
+										<svg class="icon">
+											<use xlink:href="images/sprite.svg#audio"></use>
+										</svg>
+										Аудиоподсказка
+										<a href="#" class="audio-notes_btn2 js-open-record">
+											Записать аудио-подсказку
+										</a>
+										<a href="#" class="audio-notes_btn2 js-upload-record">
+											Загрузить с диска
+										</a>
+									</div>
+									<div class="audio-notes_text">Аудио-подсказки пока нет. Вы можете ее записать.</div>
+									<div class="audio_wrapper2 js-block_record" style="display: none;">
+										<div class="audio-note_list block2">
+											<div class="audio-note_list-title">Несколько советов</div>
+											<ol>
+												<li>Запишите на бумаге несколько заметок, о чем будете рассказывать, чтобы ничего не забыть</li>
+												<li>Говорите ближе к микрофону без посторонних шумов</li>
+											</ol>
+										</div>
+										<div class="add_audio audio-record">
+											<input type="checkbox" id="audio_record-icon" name="">
+											<label for="audio_record-icon" class="start_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_mic"></use></svg>
+											</label>
+											<div class="exp">Нажмите и отпустите, чтобы начать запись</div>
+										</div>										
+									</div>
+
+									<div class="audio_wrapper2 js-block_upload" style="display: none;">
+										<div class="audio-note_list block2">
+											<div class="audio-note_list-title">Несколько советов</div>
+											<ol>
+												<li>Запишите на бумаге несколько заметок, о чем будете рассказывать, чтобы ничего не забыть</li>
+												<li>Говорите ближе к микрофону без посторонних шумов</li>
+											</ol>
+										</div>
+
+										<div class="block_upload">										
+											<div class="box__input">
+												<svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
+													<path d="M44.6875 24.0626H44.0229C43.1635 15.7095 36.0823 9.16675 27.5 9.16675C18.9177 9.16675 11.8365 15.7095 10.9771 24.0626H10.3125C4.62917 24.0626 0 28.6917 0 34.3751C0 40.0584 4.62917 44.6876 10.3125 44.6876H44.6875C50.3708 44.6876 55 40.0584 55 34.3751C55 28.6917 50.3708 24.0626 44.6875 24.0626ZM37.3542 28.0959C37.0104 28.4626 36.5521 28.6459 36.0938 28.6459C35.6698 28.6459 35.2573 28.497 34.925 28.1876L29.2188 22.8595V37.2397C29.2188 38.1907 28.451 38.9584 27.5 38.9584C26.549 38.9584 25.7812 38.1907 25.7812 37.2397V22.8595L20.075 28.1876C19.3875 28.8292 18.299 28.7949 17.6458 28.0959C17.0042 27.4084 17.0385 26.3199 17.7375 25.6667L26.3313 17.6459C26.9844 17.0386 28.0156 17.0386 28.6688 17.6459L37.2625 25.6667C37.9615 26.3199 37.9958 27.4084 37.3542 28.0959Z" fill="#7874A3"></path>
+												</svg>
+												<input type="file" name="files[]" id="file" class="box__file" data-multiple-caption="{count} files selected" multiple="">
+												<label for="file">Нажмите или перетяните для загрузки</label>
+												<button type="submit" class="box__button">Загрузить</button>
+											</div>										
+											<div class="box__uploading">Загрузка…</div>
+											<div class="box__success">Готово! <a href="https://css-tricks.com/examples/DragAndDropFileUploading//?" class="box__restart" role="button">Загрузить еще?</a></div>
+											<div class="box__error">Ошибка! <span></span>. <a href="https://css-tricks.com/examples/DragAndDropFileUploading//?" class="box__restart" role="button">Попробуйте еще раз!</a></div>
+											<input type="hidden" name="ajax" value="1">										
+										</div>	
+
+									</div>
+																
+									
+									<div class="audio-notes_info">
+										<div class="audio_message">
+											<div class="audio_media">											
+												 <audio
+													controls
+													src="images/t-rex-roar.mp3">
+														Your browser does not support the
+														<code>audio</code> element.
+												</audio>
+											</div>
+										</div>
+										<div class="audio-notes_description">
+											<div class="audio-notes_description-text mb0_audio">Иван Петрович 15.12.2023 в 13:45</div>
+											<!-- <div class="audio-notes_description-btns">
+												<button class="yellow audio-notes_description-decoding">
+													<span>Расшифровка</span>
+												</button>
+												<button class="red audio-notes_description-delete">
+													<span>Удалить</span>
+												</button>
+											</div>										 -->
+										</div>
+										<div class="audio-notes_description-box" style="display: none;">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков</div>
+									</div>
+	
+									<div class="audio-notes_info">
+										<div class="audio_message">
+											<div class="audio_media">											
+												 <audio
+													controls
+													src="images/t-rex-roar.mp3">
+														Your browser does not support the
+														<code>audio</code> element.
+												</audio>
+											</div>
+										</div>
+										<div class="audio-notes_description">
+											<div class="audio-notes_description-text mb0_audio">Иван Петрович 15.12.2023 в 13:45</div>
+											<!-- <div class="audio-notes_description-btns">
+												<button class="yellow audio-notes_description-decoding">
+													<span>Расшифровка</span>
+												</button>
+												<button class="red audio-notes_description-delete">
+													<span>Удалить</span>
+												</button>	
+												<div class="audio-notes_description-btns-ok">
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#ok999"></use>
+													</svg>
+													<span>Проверено 01 января 2024 в 18:03</span>
+												</div>											
+											</div>	
+											<button class="yellow audio-notes_description-redactor">
+												<span>Редактировать расшифровку</span>
+											</button>									 -->
+										</div>
+										<div class="audio-notes_description-box" style="display: none;"> 
+											<span><p>Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для</p>  <a href="#" class="link-more">Показать все</a> <p class="hide-content">всех, кто относится к тексту, как к количеству знаков</p></span>
+											<button class="yellow audio-notes_description-redactor">
+												<span>Редактировать расшифровку</span>
+											</button>
+										</div>	
+										<form class="form-project" style="display: none;">
+											<div class="line">
+												<div class="field">
+													<textarea placeholder="Служба Яндекс.Рефераты предназначена для студентов и школьников,"></textarea>
+												</div>
+											</div>
+											<div class="task-page_form-btns">
+												<button>
+													<svg class="icon"><use xlink:href="images/sprite.svg#feedback_ai"></use></svg><span>Улучшить</span>
+												</button>
+												<button type="submit">
+													<span>Отмена</span>
+												</button>
+												<button type="submit">
+													<span>Сохранить</span>
+												</button>	
+											</div>
+										</form>		
+									</div>
+	
+								</div>
+	
+
+
+
 								<div class="additional-actions">
 									<div class="additional-actions_title">Дополнительные действия</div>
 									<div class="additional-actions_btns">
