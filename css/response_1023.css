@@ -482,5 +482,11 @@
         margin-bottom: 10px;
     }
 
+    .projects_item-edit{
+        display: block;
+        width: 200px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
 
 }

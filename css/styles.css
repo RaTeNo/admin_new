@@ -16688,7 +16688,7 @@ background: #64C841;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 7px;
+    border-radius: 50%;
     border: 4px solid #fff;
     transition: all .5s;
 }
@@ -16715,12 +16715,7 @@ background: #64C841;
     z-index: 4;
     transition: all .5s;
 }
-.training-course_item-image:hover img {
-    transform: scale(1.4);
-}
-.training-course_item-image:nth-child(4):hover {
-    transform: scale(1.4);
-}
+
 .training-course_item-info {
     position: absolute;
     display: none;
@@ -23061,6 +23056,7 @@ form .form_btns input[type=file] + label,
     width: 33px;
     height: 33px;
     border-radius: 50%;
+    object-fit: cover;
 }
 .projects_item-desc {
     margin-left: 14px;
@@ -26249,7 +26245,7 @@ form .form_btns input[type=file] + label,
     border-radius: 50%;
 }
 .task-page_form input[type=radio] + label:after {
-    top: 6px;
+    top: 0px;
     left: 4px;
     width: 19px;
     height: 19px;
@@ -26308,17 +26304,19 @@ form .form_btns input[type=file] + label,
     height: 27px;
 }
 .task-page_form label:after {
-    position: absolute;
-    z-index: 2;
-    top: 0px;
-    left: 3px;
-    display: block;
-    width: 20px;
-    height: 20px;
-    content: '';
-    transition: opacity .2s linear;
-    opacity: 0;
-    background: url(../images/ic_check_blue.svg) 50%/14px 16px no-repeat;
+    left: 7px;
+    top: 4px;
+    width: 13px;
+    height: 8px;
+    border-radius: 1px;
+    border-left: 4px solid var(--main_color);
+    border-bottom: 4px solid var(--main_color);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background: none;
 }
 .task-page_form input[type=checkbox]:checked + label:after {
     opacity: 1;
@@ -26557,6 +26555,8 @@ form .form_btns input[type=file] + label,
 .solutions-tasks3 .solutions-tasks_top-head-info .photo img {
     width: 100%;
     height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
 }
 .solutions-tasks3 .solutions-tasks_top-head {
     display: flex;
@@ -26595,6 +26595,19 @@ form .form_btns input[type=file] + label,
 }
 .solutions-tasks3 .solutions-tasks_top:last-child {
     padding-bottom: 0;
+}
+
+.correct_solution{
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    color: #64698F;
+    padding: 6px 8px;
+    background: #E5E3F8;
+    border-radius: 55px;
+    margin-left: 8px;
+    display: block;
+    text-decoration: none;
 }
 
 
@@ -32137,6 +32150,7 @@ bottom: 20px;
 .projects_item-last-active{
 	opacity: 0.5;
 	font-size: 14px;
+    margin-bottom: 10px;
 }
 
 .tasks_dedline{
@@ -32287,12 +32301,11 @@ bottom: 20px;
     display: block;
 }
 
-.training-course2 .training-course_item-image img {
-    border: none;
-}
 .training-course2 .training-course_item-image {
     width: 38px;
     height: 38px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 .training-course2 .training-course_item-images {
     margin-bottom: 12px;
