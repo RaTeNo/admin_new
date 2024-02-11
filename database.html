@@ -29,6 +29,7 @@
 		<!-- Подключение файлов стилей -->
 		<link rel="stylesheet" href="css/fancybox.css" async>
 		<link rel="stylesheet" href="css/styles.css" async>
+		<link rel="stylesheet" href="css/styles2.css" async>
 
 		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
 		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
@@ -296,7 +297,7 @@
 						</aside>
 
 
-						<section class="content">
+						<section class="content knowledgebase">
 							<div class="page_title">База знаний</div>
 
 							<section class="faq">
@@ -333,7 +334,12 @@
 												    <span class="tooltiptext">Ссылка скопирована в буфер обмена</span>
 												</button>
 											</div>
-											
+											<a href="#" class="knowledgebase_button modal_btn" data-content="#pass_add2">
+												<svg class="icon-redact">
+													<use xlink:href="images/sprite.svg#icon-redact"></use>
+												</svg>	
+												<span>Редактировать пункт</span>
+											</a>
 											<div class="icon"></div>
 										</div>
 
@@ -384,7 +390,12 @@
 									<div class="accordion_item" id="item2">
 										<div class="head">
 											<div class="title">Какой график обучения?</div>
-										
+											<a href="#" class="knowledgebase_button modal_btn" data-content="#pass_add2">
+												<svg class="icon-redact">
+													<use xlink:href="images/sprite.svg#icon-redact"></use>
+												</svg>	
+												<span>Редактировать пункт</span>
+											</a>
 											<div class="icon"></div>
 										</div>
 
@@ -406,7 +417,12 @@
 									<div class="accordion_item" id="item3">
 										<div class="head">
 											<div class="title">Обучение проходит в группе или индивидуально?</div>
-											
+											<a href="#" class="knowledgebase_button modal_btn" data-content="#pass_add2">
+												<svg class="icon-redact">
+													<use xlink:href="images/sprite.svg#icon-redact"></use>
+												</svg>	
+												<span>Редактировать пункт</span>
+											</a>
 											<div class="icon"></div>
 										</div>
 
@@ -424,7 +440,12 @@
 									<div class="accordion_item" id="item4">
 										<div class="head">
 											<div class="title">Какой график обучения?</div>
-
+											<a href="#" class="knowledgebase_button modal_btn" data-content="#pass_add2">
+												<svg class="icon-redact">
+													<use xlink:href="images/sprite.svg#icon-redact"></use>
+												</svg>	
+												<span>Редактировать пункт</span>
+											</a>
 											<div class="icon"></div>
 										</div>
 
@@ -499,7 +520,7 @@
 				<div class="line">
 					<div class="field">
 						<label for="password">Пароль</label>
-						<input type="password" id="password" placeholder="*********">
+						<input type="password" id="password" placeholder="*********">						
 					</div>
 					<button class="trainer_item-btn">
 						<span>Добавить</span>
@@ -508,6 +529,27 @@
 			</form>		
 		</section>
 
+		<section class="trainer_modal2" id="pass_add2">			
+			<div class="trainer_modal-title">Введите пароль</div>											
+			<form class="form">
+				<div class="line">
+					<div class="field">
+						<label for="password">Пароль</label>
+						<input type="password" id="password-input" placeholder="*********">
+						<a href="#" class="password-control">
+							<svg class="pass_add-icon">
+								<use xlink:href="images/sprite.svg#eye"></use>
+							</svg>	
+						</a>						
+					</div>
+					<button class="trainer_item-btn">
+						<span>Редактировать</span>
+					</button>
+				</div>
+			</form>		
+		</section>
+
+		
 
 		<div class="supports_error">
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.

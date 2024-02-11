@@ -16593,7 +16593,6 @@ background: #64C841;
 .training-course_items {
     display: flex;
     margin-left: -44px;
-    margin-bottom: -44px;
     flex-wrap: wrap;
     margin-top: 60px;
 }
@@ -26053,8 +26052,7 @@ form .form_btns input[type=file] + label,
     width: calc(100%/4 - 16px);
 }
 
-.task-page {
-}
+
 .task-page_head {
     padding-bottom: 20px;
     margin-bottom: 20px;
@@ -26072,7 +26070,6 @@ form .form_btns input[type=file] + label,
 .task-page_title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 19px;
     letter-spacing: -0.375px;
     margin-bottom: 5px;
 }
