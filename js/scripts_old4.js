@@ -588,34 +588,6 @@
 		};
 	});
 
-    $('.js-open-record').click(function(e) {
-        e.preventDefault();
-        $(this).toggleClass("active");
-        if (!$(this).hasClass("active")) {
-            $(this).text("Записать аудио-подсказку");
-            $(".js-block_record").slideToggle(300);
-            $(".audio-notes_text").slideToggle(300);
-        } else {
-            $(this).text("Отменить запись");
-            $(".js-block_record").slideToggle(300);
-            $(".audio-notes_text").slideToggle(300);
-        };
-    });
-
-    $('.js-upload-record').click(function(e) {
-        e.preventDefault();
-        $(this).toggleClass("active");
-        if (!$(this).hasClass("active")) {
-            $(this).text("Загрузить с диска");
-            $(".js-block_upload").slideToggle(300);
-            $(".audio-notes_text").slideToggle(300);
-        } else {
-            $(this).text("Отменить загрузку");
-            $(".js-block_upload").slideToggle(300);
-            $(".audio-notes_text").slideToggle(300);
-        };
-    });
-
 	$('.js-open-record').click(function(e) {
 		e.preventDefault();
 		$(this).toggleClass("active");
@@ -625,8 +597,8 @@
 			$(".audio-notes_text").slideToggle(300);
 		} else {
 			$(this).text("Отменить запись");
-			$(".js-block_record").slideToggle(300);
-			$(".audio-notes_text").slideToggle(300);
+			$(".js-block_record").slideToggle(300);	
+			$(".audio-notes_text").slideToggle(300);					
 		};
 	});
 
@@ -639,25 +611,25 @@
 			$(".audio-notes_text").slideToggle(300);
 		} else {
 			$(this).text("Отменить загрузку");
-			$(".js-block_upload").slideToggle(300);
-			$(".audio-notes_text").slideToggle(300);
+			$(".js-block_upload").slideToggle(300);	
+			$(".audio-notes_text").slideToggle(300);					
 		};
 	});
 
-
-	// $(".task-page_btn button").click(function (e) {
-	// 	e.preventDefault();
-	// 	$('.solutions-tasks').addClass('active');
-	// 	$(".solutions-tasks .solutions-tasks_wrap").show();
-	// 	$(".solutions-tasks2 .solutions-tasks_wrap").hide();
-	// 	setTimeout(() => {
-	// 		$('.solutions-tasks').removeClass('active');
-	// 		$(".solutions-tasks .solutions-tasks_wrap").hide();
-	// 		$(".solutions-tasks2 .solutions-tasks_wrap").show();
-	// 		$('.solutions-tasks2').addClass('active');
-	// 		$(".solutions-tasks .wrapper_head").hide();
-	// 	}, 3000);
-	// });
+	
+	$(".task-page_btn button").click(function (e) {
+		e.preventDefault();
+		$('.solutions-tasks').addClass('active');
+		$(".solutions-tasks .solutions-tasks_wrap").show();
+		$(".solutions-tasks2 .solutions-tasks_wrap").hide();
+		setTimeout(() => {
+			$('.solutions-tasks').removeClass('active');
+			$(".solutions-tasks .solutions-tasks_wrap").hide();
+			$(".solutions-tasks2 .solutions-tasks_wrap").show();
+			$('.solutions-tasks2').addClass('active');
+			$(".solutions-tasks .wrapper_head").hide();
+		}, 3000);
+	});
 
 	$(".solutions-tasks3 .solutions-tasks_top-delete").click(function (e) {
 		e.preventDefault();
@@ -682,26 +654,12 @@
 	$(".audio-notes_description-redactor").click(function (e) {
 		$(this).parent().next().show();
 	});
-
+	
 
 
 	$('.calend_item').on('click', function(event){
 		$(this).toggleClass('active');
 	});
-
-
-        $('.almanac_item').on('click', function(event){
-            $(this).toggleClass('active');
-        });
-
-        $('body').on('click', '.password-control', function(e){
-            e.preventDefault()
-            if ($('#password-input').attr('type') == 'password'){
-                $('#password-input').attr('type', 'text');
-            } else {
-                $('#password-input').attr('type', 'password');
-            }
-        });
 
 
 	$('.almanac_item').on('click', function(event){
