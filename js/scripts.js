@@ -141,6 +141,7 @@
 	});
 
 	$('body').on("keyup", '.js-search', function(event) {
+		$(".highlight").replaceWith(function() { return $(this).contents(); });
 		let value = $(this).val();
 		if(value=="")
 		{
@@ -155,11 +156,17 @@
 
 		let	list = $(".accordion_item");
 		list.each(function(index) {
+			let label_html = $(this).html();
 			let label = $(this).text();
 			if (label.toLowerCase().indexOf(value.toLowerCase()) == -1) {
 				$(this).hide();
 			} else {
 				$(this).show();
+				if(value.length>1)
+				{
+					var re = new RegExp(value, 'gi');	
+					$(this).html(label_html.replace(re, '<span class="highlight">'+value+'</span>'));
+				}
 			}
 		});
 	});
@@ -974,11 +981,12 @@ $(".resend_link a").click(function(e){
 });
 
 
-    function handle_audio() {
-        let audio = document.getElementById("audio");
-        $(".speed_controller button").click(function (e) {
-            $(".speed_controller button").removeClass("active");
-            $(this).addClass("active");
-            audio.playbackRate = $(this).data("speed");
-        });
-    }
+function handle_audio() {
+    let audio = document.getElementById("audio");
+    $(".speed_controller button").click(function (e) {
+        $(".speed_controller button").removeClass("active");
+        $(this).addClass("active");
+        audio.playbackRate = $(this).data("speed");
+    });
+}
+

@@ -9427,6 +9427,26 @@ aside .menu .sub_menu a.active
     margin-bottom: 15px;
 }
 
+.auth .form .field .error{
+    display: none;
+    order:3;    
+    gap:10px;
+    margin-top:10px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #E21B1B;
+}
+
+.auth .form .field .error svg{
+    flex-shrink: 0;
+}
+
+.auth .form .field:has(.parsley-error) .error{
+    display: flex;
+}
+
 
 .auth .form .label
 {
@@ -9463,6 +9483,15 @@ aside .menu .sub_menu a.active
     background: var(--form_bg_color);
 
     order: 2;
+}
+
+.auth .form .input.parsley-error, .auth .form .input.parsley-error:focus{
+    border-color:#E21B1B;
+    color:#E21B1B;
+}
+
+.auth .form .input.parsley-error::placeholder{
+    color:#E21B1B;
 }
 
 .auth .form .input[type='password']
@@ -31962,12 +31991,17 @@ bottom: 20px;
 
 .simulator_ratings_item_title{
     color: #7874A3;
-
     font-family: Ubuntu;
     font-size: 16px;
     font-weight: 700;
     line-height: 19px; /* 118.75% */
     letter-spacing: -0.3px;
+}
+
+.simulator_ratings_item_subtitle{
+    font-size: 14px;
+    line-height: 19px;
+    color: #A5A3BA;
 }
 
 .simulator_ratings_item_rating{
@@ -32396,5 +32430,13 @@ bottom: 20px;
     display: block;
 }
 .audio-notes .box__file {
+    display: none;
+}
+
+.highlight{
+    background:yellow;
+}
+
+.parsley-errors-list{
     display: none;
 }
