@@ -1779,4 +1779,24 @@
         text-align: right;
     }
 
+    .knowledgebase .accordion_item .head {
+        flex-wrap: nowrap;
+    }
+    .knowledgebase .accordion_item .head .title {
+        padding-right: 0;
+        width: calc(100% - 45px);       
+    }
+    .title_faq,
+    .faq_fast_title {
+        font-size: 20px;
+    }
+    .changes_item-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .changes_item-box button {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
 }

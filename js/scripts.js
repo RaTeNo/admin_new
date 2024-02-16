@@ -30,6 +30,13 @@
 		$(this).hide();
 	});
 
+
+	$('body').on('click', '.change-history_link', function (e) {
+		e.preventDefault()
+		$(".change-history_items.hide").addClass("active");
+		$(this).hide();
+	});
+
 	$('body').on('click', '.close_new_message', function (e) {
 		e.preventDefault()
 		$(this).parent().slideUp();
