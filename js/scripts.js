@@ -145,6 +145,7 @@
 		list.each(function(index) {
 			$(this).show();
 		});
+		$(".highlight").replaceWith(function() { return $(this).contents(); });
 	});
 
 	$('body').on("keyup", '.js-search', function(event) {

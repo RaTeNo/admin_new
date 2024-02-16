@@ -1965,7 +1965,9 @@
     color: #505261;
 }
 
-
+.landing .presentation:nth-child(2n) .slick_player .audio_media .media-text{
+    color:#fff;
+}
 
 
 @container presentations (max-width: 1100px) {
