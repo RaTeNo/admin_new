@@ -1954,6 +1954,23 @@
     opacity: 0.3;
 }
 
+.slick-slide:nth-child(2n) .table_wrap *{
+    color: #fff;
+}
+
+.slick-slide:nth-child(2n) .table_wrap:hover *{
+    color: #000;
+}
+
+.slick-slide:nth-child(2n) table tr:hover td {
+    background: #f9f9f9;
+    color: #000;
+}
+
+.slick_image.slick_video a{
+    position: relative;
+}
+
 
 .landing .presentation:nth-child(2n).presentation8 .presentation_box table td {
     color: #ffffff;

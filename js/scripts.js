@@ -631,7 +631,7 @@
         };
     });
 
-	$('.js-open-record').click(function(e) {
+	/*$('.js-open-record').click(function(e) {
 		e.preventDefault();
 		$(this).toggleClass("active");
 		if (!$(this).hasClass("active")) {
@@ -657,7 +657,7 @@
 			$(".js-block_upload").slideToggle(300);
 			$(".audio-notes_text").slideToggle(300);
 		};
-	});
+	});*/
 
 
 	// $(".task-page_btn button").click(function (e) {

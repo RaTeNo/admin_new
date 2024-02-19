@@ -30668,7 +30668,7 @@ bottom: 20px;
     left:15px;
     bottom: -20px;
     top: auto;
-    width: 180px;
+    width: max-content;
 }
 
 .feedback_ai svg{
@@ -32391,15 +32391,15 @@ bottom: 20px;
     font-weight: 500;
 }
 .training-course_item-low:nth-child(1) {
-    background: #0774F4;
+    background: var(--main_color);
     margin-right: 6px;
 }
 .training-course_item-low:nth-child(2) {
-    background: #D8005B;
+    background: var(--main_color);
     margin-right: 6px;
 }
 .training-course_item-low:nth-child(3) {
-    background: #2BC19D;
+    background: var(--main_color);
 }
 
 .audio-notes .block_upload {
@@ -32759,3 +32759,19 @@ bottom: 20px;
     margin-top: 15px;
 }
 
+.progress_new{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--main_color);
+    border-radius: 16px;
+    border:2px solid var(--main_color);
+    padding: 5px 10px;
+}
+
+.progress_new_wrap{
+    margin-top: 20px;
+    gap:20px;
+    display: flex;
+}
