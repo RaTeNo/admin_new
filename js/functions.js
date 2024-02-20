@@ -22,7 +22,7 @@ $(() => {
 	// Кастомный select
 	if ($.fn.niceSelect)
 	{
-	   $('select').niceSelect()
+	   $('select:not(#tag)').niceSelect()
 	}
 		
 	

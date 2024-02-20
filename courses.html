@@ -299,7 +299,16 @@
 							<div class="wrapper_head_courses">
 								<h1 class="page_title">Курсы</h1>
 								<div class="wrapper_head_courses_body">
-									<div class="select-right">
+									<div class="filter_courses">Фильтр по тегам</div>
+									<select name="tag[]" multiple data-mdb-select-all="false"  data-mdb-options-selected-label="вариантов выбрано" class="select" id="tag">
+										<option value="1">Тег</option>
+										<option value="2">Тег 2</option>
+									</select>
+		                           <!--  <div class="select-custom-content">
+		                                <button class="btn-save btn btn-primary btn-sm">Показать</button>
+		                            </div> -->
+
+									<!-- <div class="select-right">
 										<span>Сортировка:</span>
 										<select>
 											<option>Маленькая</option>
@@ -314,11 +323,293 @@
 											<option>Средняя</option>
 											<option>Большая</option>
 										</select>	
-									</div>
+									</div> -->
 								</div>								
 							</div>
 
 							<div class="message_new error"><div>Невозможно начать курс</div><button class="close_new_message">х</button></div>
+
+
+							
+
+
+							<form class="courses_faq">
+								<input type="text" class="js-search-courses input" placeholder="Поиск">
+							</form>
+
+							<div class="title_courses_result">Поиск: <span></span> <button><img src="images/reset.svg" alt=""></button></div>
+
+							<div class="title_courses_result_tag">Показаны курсы по тегам: <span></span> <button><img src="images/reset.svg" alt=""></button></div>
+
+
+							<section class="courses not_my"><div class="row not_slide found_course"></div></section>
+
+							<section class="courses">
+
+								<div class="wrapper_head_courses">
+									<div class="block_title">
+										Курсы вышивания	
+									</div>
+
+									<div class="select-right">
+										<span>Карточка урока:</span>
+										<select>
+											<option>Маленькая</option>
+											<option>Средняя</option>
+											<option>Большая</option>
+										</select>	
+									</div>
+								</div>
+
+								<div class="row not_slide">
+									<div class="course if_search" data-tags="1,2">
+										
+
+										<a href="/" class="thumb">
+											<img data-src="images/tmp/course_thumb1.jpg" alt="" class="lozad">
+										</a>
+
+										<div class="info">
+											<div class="stickers">
+												<div class="sticker blue">новый</div>
+												<div class="sticker red">обязательный</div>
+											</div>
+
+											<div class="name" data-search="Краткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строки">
+												<a href="/">Продажи сайтов</a>
+											</div>
+
+											<div class="desc" title="Краткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строки">Краткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строки</div>
+
+											<div class="progress">
+												<div class="line" style="width: 0%;"></div>
+												<div class="val">0%</div>
+											</div>
+
+											<div class="stats">Уроков: 2, тестов: 2, заданий: 3</div>
+										</div>
+									</div>
+
+									<div class="course complete" data-tags="1">
+										
+
+										<a href="/" class="thumb">
+											<img data-src="images/tmp/course_thumb2.jpg" alt="" class="lozad">
+										</a>
+
+										<div class="info">
+											<div class="stickers">
+												<div class="sticker green">пройден</div>
+											</div>
+
+											<div class="name" data-search="Краткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строки">
+												<a href="/">Узнай свой психотип</a>
+											</div>
+
+											<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
+
+											<div class="progress">
+												<div class="line" style="width: 10%;">
+													<div class="val">10%</div>
+												</div>
+											</div>
+
+											<div class="stats">Уроков: 2, тестов: 2, заданий: 3</div>
+										</div>
+									</div>
+
+									<div class="course if_search" data-tags="2">
+										
+
+										<a href="/" class="thumb">
+											<img data-src="images/tmp/course_thumb3.jpg" alt="" class="lozad">
+										</a>
+
+										<div class="info">
+											<div class="stickers">
+												<div class="sticker red">обязательный</div>
+											</div>
+
+											<div class="name" data-search="Краткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строки">
+												<a href="/">Передержка кошек, а также других питомцев на даче!</a>
+											</div>
+
+											<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
+
+											<div class="progress">
+												<div class="line" style="width: 70%;">
+													<div class="val">70%</div>
+												</div>
+											</div>
+
+											<div class="stats">Уроков: 2, тестов: 2, заданий: 3</div>
+										</div>
+									</div>
+								</div>
+							</section>
+
+
+							<section class="courses">
+								<div class="block_title">Курсы вязания крючком</div>
+
+								<div class="row not_slide">
+									<div class="course" data-tags="1">
+										<a href="/" class="thumb">
+											<img data-src="images/tmp/course_thumb1.jpg" alt="" class="lozad">
+										</a>
+
+										<div class="info">
+											<div class="name" data-search="Краткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строки">
+												<a href="/">Продажи сайтов</a>
+											</div>
+
+											<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
+
+											<div class="progress">
+												<div class="line" style="width: 0%;"></div>
+												<div class="val">0%</div>
+											</div>
+
+											<div class="stats">Уроков: 2, тестов: 2, заданий: 3</div>
+										</div>
+									</div>
+
+									<div class="course" data-tags="1">
+										
+
+										<a href="/" class="thumb">
+											<img data-src="images/tmp/course_thumb3.jpg" alt="" class="lozad">
+										</a>
+
+										<div class="info">
+											<div class="stickers">
+												<div class="sticker red">обязательный</div>
+											</div>
+
+											<div class="name" data-search="Нет нет">
+												<a href="/">Передержка кошек, а также других питомцев на даче!</a>
+											</div>
+
+											<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
+
+											<div class="progress">
+												<div class="line" style="width: 70%;">
+													<div class="val">70%</div>
+												</div>
+											</div>
+
+											<div class="stats">Уроков: 2, тестов: 2, заданий: 3</div>
+										</div>
+									</div>
+
+									<div class="course lock if_search" data-tags="1">
+										<div class="thumb">
+											<img data-src="images/tmp/course_thumb2.jpg" alt="" class="lozad">
+										</div>
+
+										<div class="info">
+											<div class="name" data-search="краткое описание">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_lock"></use></svg>
+												<span>Узнай свой психотип</span>
+											</div>
+
+											<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
+
+											<div class="progress">
+												<div class="line">
+													<div class="val">с 01.01.2022</div>
+												</div>
+											</div>
+
+											<div class="stats">Уроков: 2, тестов: 2, заданий: 3</div>
+										</div>
+									</div>
+								</div>
+							</section>
+
+
+							<section class="courses">
+								<div class="block_title">Остальные курсы</div>
+
+								<div class="row not_slide">
+									<div class="course" data-tags="1,2">								
+
+										<a href="/" class="thumb">
+											<img data-src="images/tmp/course_thumb3.jpg" alt="" class="lozad">
+										</a>
+
+										<div class="info">
+											<div class="stickers">
+												<div class="sticker red">обязательный</div>
+											</div>
+											<div class="name" data-search="нет">
+												<a href="/">Передержка кошек, а также других питомцев на даче!</a>
+											</div>
+
+											<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
+
+											<div class="progress">
+												<div class="line" style="width: 70%;">
+													<div class="val">70%</div>
+												</div>
+											</div>
+
+											<div class="stats">Уроков: 2, тестов: 2, заданий: 3</div>
+										</div>
+									</div>
+
+									<div class="course lock" data-tags="2">
+										<div class="thumb">
+											<img data-src="images/tmp/course_thumb2.jpg" alt="" class="lozad">
+										</div>
+
+										<div class="info">
+											<div class="name" data-search="Краткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строки">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_lock"></use></svg>
+												<span>Узнай свой психотип</span>
+											</div>
+
+											<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
+
+											<div class="progress">
+												<div class="line">
+													<div class="val">с 01.01.2022</div>
+												</div>
+											</div>
+
+											<div class="stats">Уроков: 2, тестов: 2, заданий: 3</div>
+										</div>
+									</div>
+
+									<div class="course" data-tags="2">										
+
+										<a href="/" class="thumb">
+											<img data-src="images/tmp/course_thumb1.jpg" alt="" class="lozad">
+										</a>
+
+										<div class="info">
+											<div class="stickers">
+												<div class="sticker green">завершенный</div>
+											</div>
+										
+											<div class="name" data-search="Краткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строки">
+												<a href="/">Про сайтов</a>
+											</div>
+
+											<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
+
+											<div class="progress">
+												<div class="line green" style="width: 100%;">
+													<div class="val">100%</div>
+												</div>
+											</div>
+
+											<div class="stats">Уроков: 2, тестов: 2, заданий: 3</div>
+										</div>
+									</div>
+								</div>
+							</section>
+
 
 							<div class="plan">
 								<div class="block_top">
@@ -373,20 +664,7 @@
 										<div class="plan_item-step">0/7</div>
 									</a>
 								</div>
-							</div>
-							
-
-
-							<form class="courses_faq">
-								<input type="text" class="js-search-courses input" placeholder="Поиск">
-							</form>
-
-							<div class="title_courses_result">Поиск: <span></span> <button><img src="images/reset.svg" alt=""></button></div>
-
-
-							<section class="courses not_my"><div class="row not_slide found_course"></div></section>
-
-
+							</div>	
 
 							<section class="education">
 								<h1 class="page_title">Обучение</h1>
@@ -487,8 +765,6 @@
 								</div>
 							</section>	
 
-
-
 							<section class="history-training">
 								<div class="history-training_head">
 									<div class="history-training_title">История обучения</div>
@@ -557,272 +833,6 @@
 								</div>	
 							</section>
 
-							<section class="courses">
-
-								<div class="wrapper_head_courses">
-									<div class="block_title">
-										Курсы вышивания	
-									</div>
-
-									<div class="select-right">
-										<span>Карточка урока:</span>
-										<select>
-											<option>Маленькая</option>
-											<option>Средняя</option>
-											<option>Большая</option>
-										</select>	
-									</div>
-								</div>
-
-								<div class="row not_slide">
-									<div class="course">
-										
-
-										<a href="/" class="thumb">
-											<img data-src="images/tmp/course_thumb1.jpg" alt="" class="lozad">
-										</a>
-
-										<div class="info">
-											<div class="stickers">
-												<div class="sticker blue">новый</div>
-												<div class="sticker red">обязательный</div>
-											</div>
-
-											<div class="name" data-search="Краткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строки">
-												<a href="/">Продажи сайтов</a>
-											</div>
-
-											<div class="desc" title="Краткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строки">Краткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строки</div>
-
-											<div class="progress">
-												<div class="line" style="width: 0%;"></div>
-												<div class="val">0%</div>
-											</div>
-
-											<div class="stats">Уроков: 2, тестов: 2, заданий: 3</div>
-										</div>
-									</div>
-
-									<div class="course complete">
-										
-
-										<a href="/" class="thumb">
-											<img data-src="images/tmp/course_thumb2.jpg" alt="" class="lozad">
-										</a>
-
-										<div class="info">
-											<div class="stickers">
-												<div class="sticker green">пройден</div>
-											</div>
-
-											<div class="name" data-search="Краткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строки">
-												<a href="/">Узнай свой психотип</a>
-											</div>
-
-											<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
-
-											<div class="progress">
-												<div class="line" style="width: 10%;">
-													<div class="val">10%</div>
-												</div>
-											</div>
-
-											<div class="stats">Уроков: 2, тестов: 2, заданий: 3</div>
-										</div>
-									</div>
-
-									<div class="course">
-										
-
-										<a href="/" class="thumb">
-											<img data-src="images/tmp/course_thumb3.jpg" alt="" class="lozad">
-										</a>
-
-										<div class="info">
-											<div class="stickers">
-												<div class="sticker red">обязательный</div>
-											</div>
-
-											<div class="name" data-search="Краткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строки">
-												<a href="/">Передержка кошек, а также других питомцев на даче!</a>
-											</div>
-
-											<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
-
-											<div class="progress">
-												<div class="line" style="width: 70%;">
-													<div class="val">70%</div>
-												</div>
-											</div>
-
-											<div class="stats">Уроков: 2, тестов: 2, заданий: 3</div>
-										</div>
-									</div>
-								</div>
-							</section>
-
-
-							<section class="courses">
-								<div class="block_title">Курсы вязания крючком</div>
-
-								<div class="row not_slide">
-									<div class="course">
-										<a href="/" class="thumb">
-											<img data-src="images/tmp/course_thumb1.jpg" alt="" class="lozad">
-										</a>
-
-										<div class="info">
-											<div class="name" data-search="Краткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строки">
-												<a href="/">Продажи сайтов</a>
-											</div>
-
-											<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
-
-											<div class="progress">
-												<div class="line" style="width: 0%;"></div>
-												<div class="val">0%</div>
-											</div>
-
-											<div class="stats">Уроков: 2, тестов: 2, заданий: 3</div>
-										</div>
-									</div>
-
-									<div class="course">
-										
-
-										<a href="/" class="thumb">
-											<img data-src="images/tmp/course_thumb3.jpg" alt="" class="lozad">
-										</a>
-
-										<div class="info">
-											<div class="stickers">
-												<div class="sticker red">обязательный</div>
-											</div>
-
-											<div class="name" data-search="Нет нет">
-												<a href="/">Передержка кошек, а также других питомцев на даче!</a>
-											</div>
-
-											<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
-
-											<div class="progress">
-												<div class="line" style="width: 70%;">
-													<div class="val">70%</div>
-												</div>
-											</div>
-
-											<div class="stats">Уроков: 2, тестов: 2, заданий: 3</div>
-										</div>
-									</div>
-
-									<div class="course lock if_search">
-										<div class="thumb">
-											<img data-src="images/tmp/course_thumb2.jpg" alt="" class="lozad">
-										</div>
-
-										<div class="info">
-											<div class="name" data-search="краткое описание">
-												<svg class="icon"><use xlink:href="images/sprite.svg#ic_lock"></use></svg>
-												<span>Узнай свой психотип</span>
-											</div>
-
-											<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
-
-											<div class="progress">
-												<div class="line">
-													<div class="val">с 01.01.2022</div>
-												</div>
-											</div>
-
-											<div class="stats">Уроков: 2, тестов: 2, заданий: 3</div>
-										</div>
-									</div>
-								</div>
-							</section>
-
-
-							<section class="courses">
-								<div class="block_title">Остальные курсы</div>
-
-								<div class="row not_slide">
-									<div class="course">								
-
-										<a href="/" class="thumb">
-											<img data-src="images/tmp/course_thumb3.jpg" alt="" class="lozad">
-										</a>
-
-										<div class="info">
-											<div class="stickers">
-												<div class="sticker red">обязательный</div>
-											</div>
-											<div class="name" data-search="нет">
-												<a href="/">Передержка кошек, а также других питомцев на даче!</a>
-											</div>
-
-											<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
-
-											<div class="progress">
-												<div class="line" style="width: 70%;">
-													<div class="val">70%</div>
-												</div>
-											</div>
-
-											<div class="stats">Уроков: 2, тестов: 2, заданий: 3</div>
-										</div>
-									</div>
-
-									<div class="course lock">
-										<div class="thumb">
-											<img data-src="images/tmp/course_thumb2.jpg" alt="" class="lozad">
-										</div>
-
-										<div class="info">
-											<div class="name" data-search="Краткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строки">
-												<svg class="icon"><use xlink:href="images/sprite.svg#ic_lock"></use></svg>
-												<span>Узнай свой психотип</span>
-											</div>
-
-											<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
-
-											<div class="progress">
-												<div class="line">
-													<div class="val">с 01.01.2022</div>
-												</div>
-											</div>
-
-											<div class="stats">Уроков: 2, тестов: 2, заданий: 3</div>
-										</div>
-									</div>
-
-									<div class="course">										
-
-										<a href="/" class="thumb">
-											<img data-src="images/tmp/course_thumb1.jpg" alt="" class="lozad">
-										</a>
-
-										<div class="info">
-											<div class="stickers">
-												<div class="sticker green">завершенный</div>
-											</div>
-										
-											<div class="name" data-search="Краткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строки">
-												<a href="/">Про сайтов</a>
-											</div>
-
-											<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
-
-											<div class="progress">
-												<div class="line green" style="width: 100%;">
-													<div class="val">100%</div>
-												</div>
-											</div>
-
-											<div class="stats">Уроков: 2, тестов: 2, заданий: 3</div>
-										</div>
-									</div>
-								</div>
-							</section>
-
 
 							<footer>
 								<div class="logo">
@@ -875,6 +885,7 @@
 		<script src="js/nice-select.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
+		<script src="js/select.min.js"></script>
 		<script src="js/search_courses.js"></script>
 	</body>
 </html>

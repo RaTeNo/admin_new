@@ -32775,3 +32775,106 @@ bottom: 20px;
     gap:20px;
     display: flex;
 }
+
+#tag{
+    display: none;
+}
+
+
+/*------------
+    Select
+------------*/
+.select-dropdown-container
+{
+    z-index: 1070;
+}
+
+
+.select-dropdown-container ::-webkit-scrollbar
+{
+    width: 5px !important;
+    height: 5px !important;
+}
+
+
+.select-dropdown
+{
+    margin-top: 1px;
+
+    border: 1px solid #e2e2e2;
+    border-radius: 3px;
+    background: #fff;
+}
+
+
+.select-options-wrapper
+{
+    overflow: auto;
+}
+
+
+.select-option
+{
+    font-size: 15px;
+    line-height: 25px;
+
+    position: relative;
+
+    display: flex;
+
+    height: auto !important;
+    min-height: 36px;
+    padding-left: 48px;
+
+    cursor: pointer;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.select-option input
+{
+    display: none;
+}
+
+
+.select-option:before
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 17px;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    margin: auto;
+
+    content: '';
+    transition: .2s linear;
+
+    border: 1px solid #e2e2e2;
+    border-radius: 3px;
+    background-position: 50%;
+}
+
+
+.select-option.selected:before
+{
+    border-color: #ae0b05;
+    background: url(../images/ic_check.svg) 50% no-repeat #ae0b05;
+}
+
+
+.select-dropdown-container
+{
+    width: 250px !important;
+}
+
+.title_courses_result_tag{
+    display: none;
+}
