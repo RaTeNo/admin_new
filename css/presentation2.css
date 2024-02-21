@@ -1969,6 +1969,7 @@
 
 .slick_image.slick_video a{
     position: relative;
+    display: block;
 }
 
 
