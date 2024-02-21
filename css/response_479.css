@@ -1799,4 +1799,9 @@
         margin-top: 15px;
     }
 
+    .title_courses_result_tag{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+
 }

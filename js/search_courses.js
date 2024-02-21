@@ -82,6 +82,7 @@ $(() => {
     {
         tag.addEventListener('valueChange.mdb.select', (e) => {        
             let tags = getSelectValues(tag);
+            let text_array = getSelectValues2(tag);
             $(".found_course").empty();
 
             if(!tags.length)
@@ -94,6 +95,12 @@ $(() => {
 	        {        	
 	        	$(".courses").show();
 		        $(".title_courses_result_tag").show();	
+
+		        /*Добавляем в заголовок*/
+		        $(".title_courses_result_tag span").html("");
+		        text_array.forEach(function(item, i, arr) {
+				   $(".title_courses_result_tag span").append("<b>"+item+"</b>");
+				});
 
 		        let	list2 = $(".courses:not(.not_my) .course.if_search");
 		        list2.each(function(index) {	
@@ -144,6 +151,17 @@ $(() => {
         $(".filter form").submit();
     })    */
 
+    $(".title_courses_result_tag button").on("click", function(){
+        $(".title_courses_result_tag").hide();
+        $(".course, .courses").show();
+        $(".found_course").empty();
+
+        /*$('#tag option').each(function(element) {
+		    $(this).removeAttr('selected').prop('selected', false);
+		});*/
+
+	});
+
 })
 
 
@@ -157,6 +175,21 @@ function getSelectValues(select) {
 
 	if (opt.selected) {
 	  	result.push(opt.value || opt.text);
+		}
+	}
+	return result;
+}
+
+function getSelectValues2(select) {
+	var result = [];
+	var options = select && select.options;
+	var opt;
+
+	for (var i=0, iLen=options.length; i<iLen; i++) {
+		opt = options[i];
+
+	if (opt.selected) {
+	  	result.push(opt.text);
 		}
 	}
 	return result;
