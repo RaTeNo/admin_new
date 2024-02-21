@@ -152,13 +152,14 @@ $(() => {
     })    */
 
     $(".title_courses_result_tag button").on("click", function(){
-        $(".title_courses_result_tag").hide();
+        /*$(".title_courses_result_tag").hide();
         $(".course, .courses").show();
-        $(".found_course").empty();
+        $(".found_course").empty();*/
 
         /*$('#tag option').each(function(element) {
 		    $(this).removeAttr('selected').prop('selected', false);
 		});*/
+		location.reload();
 
 	});
 
