@@ -7578,6 +7578,7 @@ aside .menu .sub_menu a.active
     border: 1px solid #abaae2;
     border-radius: 21px 21px 21px 0;
     background: #fff;
+    min-width: 220px;
 }
 
 .dialog .message .photo + .info
