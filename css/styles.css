@@ -1240,6 +1240,7 @@ aside
     padding: 50px 0;
 
     background: linear-gradient(0deg, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), var(--main_color);
+    scrollbar-width: thin;
 }
 
 
@@ -7548,6 +7549,7 @@ aside .menu .sub_menu a.active
 
     border-radius: 50%;
     background: #ddd;
+        align-self: self-end;
 }
 
 .dialog .message .photo img
@@ -7590,11 +7592,13 @@ aside .menu .sub_menu a.active
 
 .dialog .message .name
 {
-    color: #061058;
+    color: #353465;
     font-size: 18px;
     line-height: 21px;
-
-    opacity: .75;
+    display: flex;
+    gap:10px;
+    align-items: center;
+    font-weight: bold;
 }
 
 
@@ -7604,7 +7608,7 @@ aside .menu .sub_menu a.active
     font-size: 19px;
     line-height: 135%;
 
-    margin-top: 5px;
+    margin-top: 10px;
 
     letter-spacing: -.95px;
 }
@@ -7715,10 +7719,10 @@ aside .menu .sub_menu a.active
     overflow: hidden;
 
     width: 368px;
-    max-width: calc(100% - 65px);
-    margin-right: 15px;
+    max-width: calc(100%);
 
     border-radius: 10px 10px 0 10px;
+    margin-top: 15px;
 }
 
 .dialog .message .photo + .video_message
@@ -16782,25 +16786,29 @@ background: #64C841;
 }
 .dialog .message .prompt .text-information {
     width: 368px;
-    background: #ECEBF5;
-    border: 1px solid #9A97B8;
+    background: #F0F0FC;
+    border: 1px solid #E7E7F2;
     border-radius: 21px;
     padding: 15px;
     text-align: start;
 }
 .dialog .message .prompt .text .name {
-    color: #9396B2;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
     margin-bottom: 5px;
+    background-color: color-mix(in srgb, var(--main_color) 50%, #fff);
+    display: inline-flex;
+    padding: 0 10px;
+    border-radius: 16px;
 }
 .dialog .message .prompt .text .info-hint {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
     line-height: 135%;
     letter-spacing: -0.95px;
-    color: #75799C;
+    color: #34345D;
 }
 
 .dialog .message .prompt .likes {
@@ -16814,12 +16822,11 @@ background: #64C841;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 9px;
     padding: 6px;
 }
 .dialog .message .prompt .likes .icon {
-    width: 16px;
-    height: 16px;
+    width: 17px;
+    height: 19px;
     fill: #64698F;
 }
 .dialog .message .prompt .likes .like.active {
@@ -16830,9 +16837,11 @@ background: #64C841;
 }
 .dialog .message .prompt .likes .like.active .icon {
     fill: #fff;
+    color:#fff;
 }
 .dialog .message .prompt .likes .dislike.active .icon {
     fill: #fff;
+    color:#fff;
 }
 .correction_modal-form textarea::-webkit-input-placeholder {
     font-family: 'Ubuntu';
@@ -27763,7 +27772,6 @@ form .form_btns input[type=file] + label,
 .likes .like svg{
     width: 20px;
     height: 20px;
-    margin-right: 5px;
 }
 
 
@@ -27784,7 +27792,6 @@ form .form_btns input[type=file] + label,
 .likes .dislike svg{
     width: 20px;
     height: 20px;
-    margin-right: 5px;
 }
 
 .likes .dislike.active{
@@ -30652,19 +30659,21 @@ bottom: 20px;
 
 
 .feedback_ai{
-    color: #fff;
+    /*color: #fff;
     font-size: 15.243px;
     font-weight: 500;
     border-radius: 26px;
-    border-radius: 26px;
-    background: var(--main_color);
+    border-radius: 26px;*/
+    background: var(--main_color) !important;
     display: flex;
     align-items: center;
-    height: 33px;
+    /*height: 33px;
     padding: 10px;
     position: absolute;
     right: 15px;
-    top: -20px;
+    top: -20px;*/
+    position: relative;
+    overflow: hidden;
 }
 
 .feedback_ai.new{
@@ -32936,4 +32945,105 @@ bottom: 20px;
 
 .title_courses_result_tag img{
     display: block;
+}
+
+.dialog .list_label{
+    display: flex;
+    gap:10px;
+} 
+
+.dialog .list_label button{
+    padding: 7px 10px;
+    background: linear-gradient(67.84deg, #682D8C -1.82%, #EB1E79 106.59%);
+    border-radius: 73px;
+    color:#fff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;   
+}
+
+.dialog .list_label button.label_new{
+    background: #25AA2F;
+}
+
+
+.dialog .list_label button svg{
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+/* Стили для создания блика на кнопке */
+.feedback_ai:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%, /* Прозрачность начала блика */
+    rgba(255, 255, 255, 0.8), /* Цвет блика */
+    rgba(255, 255, 255, 0) 70% /* Прозрачность конца блика */
+    );
+    top: 0;
+    left: -100px;
+    animation: shine 2s infinite linear; /* Анимация блика */
+}
+
+/* Ключевые кадры для анимации блика */
+@keyframes shine {
+    0% {
+        left: -100px; /* Начальная позиция блика (левая сторона кнопки) */
+    }
+    20% {
+        left: 100%; /* Позиция блика в конце (правая сторона кнопки) */
+    }
+    100% {
+        left: 100%; /* Завершение анимации */
+    }
+}
+
+.interactive{
+    background: #FFFFFF;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    gap:15px;
+}
+
+.interactive svg{
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+}
+
+.interactive a{
+    margin-left:auto;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    display: block;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 55px;
+    background: var(--main_color);
+    text-align: center;
+}
+
+
+.interactive_title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+}
+
+.interactive_desc{
+    font-size: 14px;
+    line-height: 19px;
+    color: #505261;
+    opacity: 0.8;
+    margin-top: 5px;
 }
