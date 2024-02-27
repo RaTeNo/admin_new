@@ -110,10 +110,13 @@ $(() => {
 
 	// Закрываем всплывашку при клике за её пределами
 	$(document).click((e) => {
+		
 		if ($(e.target).closest('.modal_cont').length === 0) {
 			$('.mini_modal, .mini_modal_btn').removeClass('active')
+			console.log(123);
 
 			if (is_touch_device()) $('body').css('cursor', 'default')
+
 		}
 	})
 

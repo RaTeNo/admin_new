@@ -1813,5 +1813,26 @@
         width: calc(100% - 45px);
     }
 
+    .title_courses_result_tag span{
+        flex-wrap: wrap;
+    }
+
+    .title_courses_result_tag{
+        position: relative;
+    }
+
+    .title_courses_result_tag button{
+        position: absolute;
+        right: -5px;
+        top: 5px;
+    }
+
+    .wrapper_head_courses.filter_fix{
+        flex-direction: row;
+    }
+
+    .filter_fix .wrapper_head_courses_body{
+        margin-top: 0;
+    }
 
 }

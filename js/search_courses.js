@@ -77,7 +77,83 @@ $(() => {
         $(".found_course").empty();
 	});
 
-	const tag = document.getElementById('tag')
+
+	$(".filter_courses_wrap .filter_item").on("click", function(){
+		let tags = [];
+        let text_array = [];
+
+        $(this).toggleClass("active");
+
+        $(".filter_courses_wrap .filter_item.active").each(function(){
+        	tags.push($(this).data("value").toString());
+        	text_array.push($(this).text());
+        })
+
+        $(".found_course").empty();
+
+        if(!tags.length)
+        {
+        	$(".courses").show();
+        	$(".courses .course").show();
+        	$(".title_courses_result_tag").hide();
+        }
+	    else
+        {        	
+        	$(".courses").show();
+	        $(".title_courses_result_tag").show();	
+
+	        //Добавляем в заголовок
+	        $(".title_courses_result_tag span").html("");
+	        text_array.forEach(function(item, i, arr) {
+			   $(".title_courses_result_tag span").append("<b>"+item+"</b>");
+			});
+
+	        let	list2 = $(".courses:not(.not_my) .course.if_search");
+	        list2.each(function(index) {	
+			    let label = $(this).data("tags");
+			    label = label.toString().split(",");	
+
+			    console.log("В элементе "+label);	
+			    console.log("Выбрано в select: "+tags);	 
+
+			    console.log(find_all_elements(tags, label)); 
+
+			    if (!find_all_elements(tags, label)) {
+			        $(this).hide();
+			    } else {
+			        $(this).show().clone().appendTo(".found_course");			        
+			    }
+			});
+
+			$(".courses:not(.not_my)").each(function(index) {
+				let courses = $(this).find(".course");
+				let check = false;
+				courses.each(function(index) {
+					if ($(this).is(':visible')) {
+					    check = true;
+					}
+				});
+				if(!check)
+				{	
+					$(this).hide();
+				}
+			});			
+
+			$(".courses:not(.not_my)").hide();
+        }
+        setTimeout(() => {
+			observer = lozad('.lozad', {
+				rootMargin: '200px 0px',
+				threshold: 0,
+				loaded: el => el.classList.add('loaded')
+			})
+
+			observer.observe()
+		}, 200)
+
+	});
+
+	/*const tag = document.getElementById('tag')
     if(tag)
     {
         tag.addEventListener('valueChange.mdb.select', (e) => {        
@@ -96,7 +172,7 @@ $(() => {
 	        	$(".courses").show();
 		        $(".title_courses_result_tag").show();	
 
-		        /*Добавляем в заголовок*/
+		        //Добавляем в заголовок
 		        $(".title_courses_result_tag span").html("");
 		        text_array.forEach(function(item, i, arr) {
 				   $(".title_courses_result_tag span").append("<b>"+item+"</b>");
@@ -145,7 +221,7 @@ $(() => {
 				observer.observe()
 			}, 200)
         })   
-    }
+    }*/
 
     /*$(document).on('click', '.btn-save', function() {
         $(".filter form").submit();

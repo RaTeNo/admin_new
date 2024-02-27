@@ -296,13 +296,32 @@
 
 
 						<section class="content">
-							<div class="wrapper_head_courses">
+							<div class="wrapper_head_courses filter_fix">
 								<h1 class="page_title">Курсы</h1>
-								<div class="wrapper_head_courses_body">
-									<select name="tag[]" multiple data-mdb-select-all="false" data-mdb-placeholder="Фильтр по тегам"  data-mdb-options-selected-label="вариантов выбрано" class="select" id="tag">
+								<div class="wrapper_head_courses_body ">
+									<div class="select-right filter_align modal_cont filter_courses_wrap">
+										<button class="filter_courses btn mini_modal_btn" data-modal-id="#filter_modal">
+											Фильтр
+											<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>											                    
+										</button>	
+										
+										<div class="mini_modal" id="filter_modal">
+					                        <div class="filter_modal_title">Выберите теги</div>
+					                        <div class="list_filter">
+					                        	<div class="filter_item" data-value="1">#адаптация к изменениям</div>
+					                        	<div class="filter_item" data-value="2">#мотивация и самодисциплина</div>
+					                        	<div class="filter_item" data-value="3">#управление</div>
+					                        	<div class="filter_item" data-value="4">#холодные звонки</div>
+					                        	<div class="filter_item" data-value="5">#горячие звонки</div>
+					                        </div>
+					                    </div>		
+					                </div>									
+
+
+									<!-- <select name="tag[]" multiple data-mdb-select-all="false" data-mdb-placeholder="Фильтр по тегам"  data-mdb-options-selected-label="вариантов выбрано" class="select" id="tag">
 										<option value="1" >Фильтр по тегамФильтр по тегам</option>
 										<option value="2">Фильтр по тегамФильтр по тегамФильтр по тегамФильтр по тегам</option>
-									</select>
+									</select> -->
 		                           <!--  <div class="select-custom-content">
 		                                <button class="btn-save btn btn-primary btn-sm">Показать</button>
 		                            </div> -->
@@ -345,11 +364,11 @@
 
 							<section class="courses">
 
-								<div class="wrapper_head_courses">
+								<div class="wrapper_head_courses ">
 									<div class="block_title">
 										Курсы вышивания	
 									</div>
-
+									
 									<div class="select-right">
 										<span>Карточка урока:</span>
 										<select>
@@ -358,6 +377,15 @@
 											<option>Большая</option>
 										</select>	
 									</div>
+
+									<div class="select-right training">
+					                    <span>Размер:</span>
+					                    <select name="default_count_items_to_courses">
+					                        <option value="3" selected="">Большой</option>
+					                        <option value="4">Средний</option>
+					                        <option value="5">Маленький</option>
+					                    </select>
+					                </div>
 								</div>
 
 								<div class="row not_slide">
