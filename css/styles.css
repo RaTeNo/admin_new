@@ -23071,7 +23071,7 @@ form .form_btns input[type=file] + label,
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    color: #9398BC;
+    color: #000;
     margin-bottom: 24px;
 }
 .projects_item-box {
@@ -33068,7 +33068,7 @@ bottom: 20px;
 }
 
 .prompt_jt{
-    margin-top: 0 !important;
+    margin-top: 15px !important;
 }
 
 .prompt_jt .prompt-box{
