@@ -865,7 +865,7 @@
     }
     
     .dialog .message .prompt .text-information {
-        width: 200px;
+        /*width: 200px;*/
     }
 
 
@@ -1803,5 +1803,15 @@
         /* flex-direction: column; */
         flex-wrap: wrap;
     }
+
+    .dialog .message .info{
+        max-width: calc(100% - 100px);
+        width: 100%;
+    }
+
+    .dialog .message .prompt.prompt_jt .text-information{
+        width: calc(100% - 45px);
+    }
+
 
 }

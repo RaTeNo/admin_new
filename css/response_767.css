@@ -2764,16 +2764,7 @@
         margin-top: 50px;
     }
 
-    .feedback_ai{
-        font-size: 12px;
-        height: 25px;
-        bottom: -15px;
-    }
-
-    .feedback_ai svg{
-        height: 18px;
-        width: 18px;
-    }
+   
 
     .dialog .message:has(.feedback_ai.new) + .message{
         margin-top: 50px;
@@ -2836,7 +2827,7 @@
     }
 
     .dialog .message .audio_message{
-        min-width: 190px;
+        min-width: 167px;
     }
 
     .simulator_info{

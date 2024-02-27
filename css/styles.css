@@ -33047,3 +33047,15 @@ bottom: 20px;
     opacity: 0.8;
     margin-top: 5px;
 }
+
+.prompt_jt{
+    margin-top: 0 !important;
+}
+
+.prompt_jt .prompt-box{
+    display: block !important;
+}
+
+.dialog .message .prompt_jt .text{
+    margin-top: 0;
+}
