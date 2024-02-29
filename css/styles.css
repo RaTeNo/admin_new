@@ -5656,6 +5656,7 @@ aside .menu .sub_menu a.active
 
     border: 2px solid;
     border-radius: 20px;
+    text-wrap: nowrap;
 }
 
 .feedback .line .col_result span.green
@@ -33849,4 +33850,8 @@ bottom: 20px;
     padding: 12px;
     background: #ECEBFF;
     border-radius: 7px;
+}
+
+.changes_item-box.fix_line:before{
+    display: none;
 }
