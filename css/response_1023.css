@@ -491,7 +491,7 @@
 
 
     .simulator-questions_wrapper {
-        width: 90%;
+        width: calc(100% - 38px);
     }
     .simulator-questions .handle_box {
         width: 100%;

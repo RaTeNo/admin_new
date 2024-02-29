@@ -1853,11 +1853,8 @@
     .simulator-questions_list .video_message {
         max-width: 100%;
     }
-    .simulator-questions_bottom-btns {
-        flex-direction: column;
-    }
+
     .simulator-questions_bottom-btns button:nth-child(1) {
-        margin-bottom: 12px;
         margin-right: 0px;
     }
     .simulator-questions_title {
@@ -1874,10 +1871,6 @@
     .simulator-questions {
         margin-top: 10px;
     }
-
-
-
-
 
 
 }
