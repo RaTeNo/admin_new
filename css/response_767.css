@@ -2906,4 +2906,54 @@
         margin-left: initial;
     }
 
+
+    .simulator-questions_items {
+        margin-left: 0px;
+        margin-bottom: 0;
+    }
+    .simulator-questions_items > * {
+        margin-left: 0px;
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 0;
+        margin-top: 15px;
+    }
+    .simulator-questions_title {
+        font-size: 20px;
+    }
+    .tabs_container .tabs {
+        flex-direction: column;
+        display: flex;
+    }
+    .adding-question .tabs_container .tabs button {
+        text-align: start;
+    }
+    .adding-question .tabs_container .tabs button {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+    .adding-question_links {
+        flex-direction: column;
+        display: flex;
+    }
+    .adding-question .task-page_form .line.df {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .adding-question_top-text {
+        text-align: start;
+        white-space: wrap;
+        margin-bottom: 20px;
+    }
+    .adding-question_btn {
+        margin-left: 0;
+        margin-top: 13px;
+    }
+    .adding-question .simulator-questions_title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+
 }

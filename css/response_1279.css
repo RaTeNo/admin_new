@@ -2002,9 +2002,7 @@
     .projects-top_item-labels {
         flex-direction: column;
     }
-    .projects-top_item-label + .projects-top_item-label {
- 
-    }
+
 
 
     .audio-notes_description {
@@ -2027,6 +2025,26 @@
 
     .simulator_ratings_item{
         width: calc(100% / 2 - 12px);
+    }
+
+    .simulator-questions_list ul li {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .simulator-questions_list-btns {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .simulator-questions_items > * {
+        flex-direction: column;
+    }
+    .simulator-questions_item-info {
+        width: 100%;
+    }
+    .simulator-questions_item-link {
+        margin-top: 15px;
     }
 
 

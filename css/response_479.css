@@ -1835,4 +1835,49 @@
         margin-top: 0;
     }
 
+
+    .simulator-questions_list-btns {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+    }
+    .simulator-questions_list-btns button {
+        width: 100%;
+        margin-top: 12px;
+        margin-left: 0;
+    }
+    .simulator-questions_list-btns button:first-child {
+        margin-top: 0;
+    }
+    .simulator-questions_list .audio_message,
+    .simulator-questions_list .video_message {
+        max-width: 100%;
+    }
+    .simulator-questions_bottom-btns {
+        flex-direction: column;
+    }
+    .simulator-questions_bottom-btns button:nth-child(1) {
+        margin-bottom: 12px;
+        margin-right: 0px;
+    }
+    .simulator-questions_title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .simulator-questions_btns {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    .simulator-questions_btns a {
+        margin-left: 0;
+    }
+    .simulator-questions {
+        margin-top: 10px;
+    }
+
+
+
+
+
+
 }

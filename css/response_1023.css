@@ -489,4 +489,19 @@
         margin-top: 10px;
     }
 
+
+    .simulator-questions_wrapper {
+        width: 90%;
+    }
+    .simulator-questions .handle_box {
+        width: 100%;
+    }
+    .simulator-questions_label {
+        display: none;
+    }
+
+
+
+
+
 }
