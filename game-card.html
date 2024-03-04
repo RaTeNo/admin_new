@@ -380,7 +380,7 @@
 						<div class="card">
 							<div class="card_top">
 								<div class="card_title">Техника безопасности на заводе</div>
-								<a href="#" class="card_btn">Закончить игру</a>
+								<a href="game-over.html" class="card_btn">Закончить игру</a>
 							</div>
 
 							<div class="card_item">
@@ -392,95 +392,105 @@
 								</div>
 								<div class="card_item-text">Для чего нужно переодеваться в защитный костюм перед работой на станке “ТБМ-300” ?</div>
 								<div class="card_item-btns">
-									<a href="#" class="card_item-btn">Смотреть подсказку</a>
-									<a href="#" class="card_item-btn">Смотреть ответ</a>
+									<a href="" class="card_item-btn js-show-podskazka">Смотреть подсказку</a>
+									<a href="" class="card_item-btn js-show-answer">Смотреть ответ</a>
 								</div>
 							</div>
-						</div>
 
-
-						<div class="hint">								
-							<div class="hint_item">
-								<a href="#" class="btn-next">
-									<svg class="icon-next">
-										<use xlink:href="images/sprite.svg#icon-next"></use>
-									</svg>	
-								</a>																			
-								<div class="hint_item-count">
-									<svg class="icon">
-										<use xlink:href="images/sprite.svg#card_icon"></use>
-									</svg>
-									Карточка 5 из 35
-								</div>	
-								<div class="hint_item-text">........ ...................... ................. ............ ................. ...................... ........... ... .......... ............. .......... .............. ............. Вызвано это расслоением внутреннего слоя по причине либо ............. ............. ............ ............... ............. ............. ................ .................... ..................... ....................... .................., либо коррозии стальных компонентов.</div>
-								<div class="hint_item-btns">
-									<a href="#" class="hint_item-btn red">Пропустить</a>
-									<a href="#" class="hint_item-btn blau">Показать больше слов</a>
-									<a href="#" class="hint_item-btn green">Далее</a>
-								</div>
-							</div>
-						</div>
-
-
-
-						<div class="hint">								
-							<div class="hint_item">
-								<a href="#" class="btn-next">
-									<svg class="icon-next">
-										<use xlink:href="images/sprite.svg#icon-next"></use>
-									</svg>	
-								</a>																			
-								<div class="hint_item-count">
-									<svg class="icon">
-										<use xlink:href="images/sprite.svg#card_icon"></use>
-									</svg>
-									Карточка 5 из 35
-								</div>	
-								<div class="hint_item-text">Поверхность деформируется с разной степенью локальности. Иногда дефект эксплуатации шин выходит за рамки их металлических частей. Вызвано это расслоением внутреннего слоя по причине либо частых перегрузок и ударных нагрузок, либо коррозии стальных компонентов.</div>
-								<div class="hint_item-btns">
-									<a href="#" class="hint_item-btn red">Пропустить</a>
-									<a href="#" class="hint_item-btn green">Далее</a>
-								</div>
-							</div>
-						</div>
-
-
-
-						<div class="hint">								
-							<div class="hint_item">
-								<a href="#" class="btn-next">
-									<svg class="icon-next">
-										<use xlink:href="images/sprite.svg#icon-next"></use>
-									</svg>	
-								</a>																			
-								<div class="hint_item-count">
-									<svg class="icon">
-										<use xlink:href="images/sprite.svg#card_icon"></use>
-									</svg>
-									Карточка 5 из 35
-								</div>	
-								<div class="hint_item-images">
-									<a href="images/hint_img.jpg" data-fancybox class="hint_item-img">
-										<img src="images/hint_img.jpg" alt="">											
-									</a>
-									<span>
-										<svg class="loop">
-											<use xlink:href="images/sprite.svg#loop"></use>
+							<div class="hint" data-type="podskazka">								
+								<div class="hint_item">
+									<a href="" class="btn-next js-show-quest">
+										<svg class="icon-next">
+											<use xlink:href="images/sprite.svg#icon-next"></use>
+										</svg>	
+									</a>																			
+									<div class="hint_item-count">
+										<svg class="icon">
+											<use xlink:href="images/sprite.svg#card_icon"></use>
 										</svg>
-										нажмите, для увеличения
-									</span>	
-								</div>	
-								<div class="hint_item-text">Поверхность деформируется с разной степенью локальности. Иногда дефект эксплуатации шин выходит за рамки их металлических частей. Вызвано это расслоением внутреннего слоя по причине либо частых перегрузок и ударных нагрузок, либо коррозии стальных компонентов.</div>
-								<div class="hint_item-btns">
-									<a href="#" class="hint_item-btn red">Пропустить</a>
-									<a href="#" class="hint_item-btn green">Далее</a>
+										Карточка 5 из 35
+									</div>	
+									<div class="hint_item-text">........ ...................... ................. ............ ................. ...................... ........... ... .......... ............. .......... .............. ............. Вызвано это расслоением внутреннего слоя по причине либо ............. ............. ............ ............... ............. ............. ................ .................... ..................... ....................... .................., либо коррозии стальных компонентов.</div>
+
+									<div class="hint_item-text hint_item-text-more">Поверхность деформируется с разной степенью локальности. Иногда дефект эксплуатации шин выходит за рамки их металлических частей. Вызвано это расслоением внутреннего слоя по причине либо частых перегрузок и ударных нагрузок, либо коррозии стальных компонентов.</div>
+									<div class="hint_item-btns">
+										<a href="" class="hint_item-btn red js-show-answer">Пропустить</a>
+										<a href="" class="hint_item-btn blau js-show-more">Показать больше слов</a>
+										<a href="" class="hint_item-btn green js-show-answer">Далее</a>
+									</div>
 								</div>
 							</div>
-						</div>					
-					
 
 
-						
+
+							<div class="hint" data-type="answer">								
+								<div class="hint_item">
+									<a href="" class="btn-next js-show-quest">
+										<svg class="icon-next">
+											<use xlink:href="images/sprite.svg#icon-next"></use>
+										</svg>	
+									</a>																			
+									<div class="hint_item-count">
+										<svg class="icon">
+											<use xlink:href="images/sprite.svg#card_icon"></use>
+										</svg>
+										Карточка 5 из 35
+									</div>	
+									<div class="hint_item-images">
+										<a href="images/hint_img.jpg" data-fancybox class="hint_item-img">
+											<img src="images/hint_img.jpg" alt="">											
+										</a>
+										<span>
+											<svg class="loop">
+												<use xlink:href="images/sprite.svg#loop"></use>
+											</svg>
+											нажмите, для увеличения
+										</span>	
+									</div>	
+									
+									<div class="hint_item-text">Поверхность деформируется с разной степенью локальности. Иногда дефект эксплуатации шин выходит за рамки их металлических частей. Вызвано это расслоением внутреннего слоя по причине либо частых перегрузок и ударных нагрузок, либо коррозии стальных компонентов.</div>
+									<div class="hint_item-btns">
+										<a href="" class="hint_item-btn red">Пропустить</a>
+										<a href="" class="hint_item-btn green">Далее</a>
+									</div>
+								</div>
+							</div>
+
+
+
+							<!-- <div class="hint">								
+								<div class="hint_item">
+									<a href="" class="btn-next js-show-quest">
+										<svg class="icon-next">
+											<use xlink:href="images/sprite.svg#icon-next"></use>
+										</svg>	
+									</a>																			
+									<div class="hint_item-count">
+										<svg class="icon">
+											<use xlink:href="images/sprite.svg#card_icon"></use>
+										</svg>
+										Карточка 5 из 35
+									</div>	
+									<div class="hint_item-images">
+										<a href="images/hint_img.jpg" data-fancybox class="hint_item-img">
+											<img src="images/hint_img.jpg" alt="">											
+										</a>
+										<span>
+											<svg class="loop">
+												<use xlink:href="images/sprite.svg#loop"></use>
+											</svg>
+											нажмите, для увеличения
+										</span>	
+									</div>	
+									<div class="hint_item-text">Поверхность деформируется с разной степенью локальности. Иногда дефект эксплуатации шин выходит за рамки их металлических частей. Вызвано это расслоением внутреннего слоя по причине либо частых перегрузок и ударных нагрузок, либо коррозии стальных компонентов.</div>
+									<div class="hint_item-btns">
+										<a href="" class="hint_item-btn red">Пропустить</a>
+										<a href="" class="hint_item-btn green">Далее</a>
+									</div>
+								</div>
+							</div> -->
+
+						</div>							
 
 						<div class="player_fixed">
 							<div class="audio_media">
@@ -568,6 +578,7 @@
 	<script src="js/functions.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/playlist.js"></script>
+	<script src="js/cards.js"></script>
 	<script src="https://unpkg.com/sortablejs-make/Sortable.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-sortablejs@latest/jquery-sortable.js"></script>
 

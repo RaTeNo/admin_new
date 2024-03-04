@@ -2975,13 +2975,15 @@
     }
     .game_left {
         margin-right: 0;
-        margin-bottom: 15px;
+    }
+
+    .game_btn{
+        margin-top: 15px;
     }
     .game-over .page_title {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-bottom: 17px;
     }
     .game-over .page_title a {
         margin-left: 0;
