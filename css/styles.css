@@ -17850,7 +17850,7 @@ background: #64C841;
     border-radius: 55px;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    /*font-size: 12px;*/
     line-height: 14px;
     text-align: center;
     color: #8C93C0;
@@ -17858,6 +17858,7 @@ background: #64C841;
     padding: 10px 20px;
     margin: 0 auto;
     margin-top: 16px;
+    max-width: calc(100% - 20px);
 }
 
 .date_message{
@@ -22922,7 +22923,7 @@ form .form_btns input[type=file] + label,
     margin-bottom: 9px;
 }
 
-.details_gpt_title img{
+.details_gpt_title svg{
     margin-right: 10px;
 }
 
@@ -33405,6 +33406,7 @@ bottom: 20px;
     border-radius: 50px;
     font-weight: 500;
     font-size: 14px;
+    margin-left: initial;
 }
 .simulator-questions_bottom-btns button:nth-child(1) {
     color: #524F8E;
