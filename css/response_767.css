@@ -2962,4 +2962,67 @@
         margin-left: 0;
     }
 
+    .game_items > * {
+        width: 100%;
+    }
+    .game_title {
+        font-size: 18px;
+    }
+    .game_wrap {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .game_left {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .game-over .page_title {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 17px;
+    }
+    .game-over .page_title a {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .card_top {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start; 
+    }
+    .card_btn {
+        margin-top: 15px;
+    }
+    .hint_item-btns {
+        margin-top: 18px;
+        flex-direction: column;
+    }
+    .hint_item-btn {
+        min-width: 260px;
+    }
+    .hint_item-btn + .hint_item-btn {
+        margin-left: 0px;
+        margin-top: 13px;
+    }
+    .card_item-btns {
+        margin-top: 18px;
+        flex-direction: column;
+    }
+    .card_item-btn {
+        min-width: 260px;
+    }
+    .card_item-btn + .card_item-btn {
+        margin-left: 0px;
+        margin-top: 13px;
+    }
+    .card_item-text {
+        font-size: 18px;
+    }
+
+
+
+
+
 }

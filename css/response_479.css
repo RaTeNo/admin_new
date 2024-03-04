@@ -1872,5 +1872,15 @@
         margin-top: 10px;
     }
 
+    .card_item-btn,
+    .hint_item-btn {
+        max-width: 100%;
+        width: 100%;
+    }
+
+
+
+
+
 
 }

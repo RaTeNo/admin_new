@@ -501,6 +501,12 @@
     }
 
 
+    .game_items > * {
+        padding: 15px;
+        width: calc(100%/2 - 16px);
+    }
+
+
 
 
 
