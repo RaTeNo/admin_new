@@ -29,7 +29,6 @@
 
 	<!-- Подключение файлов стилей -->
 	<link rel="stylesheet" href="css/nice-select.css">	
-	<link rel="stylesheet" href="css/select2.min.css">
 	<link rel="stylesheet" href="css/fancybox.css" async>
 	<link rel="stylesheet" href="css/styles.css" async>
 
@@ -410,10 +409,11 @@
 											<div class="line">
 												<div class="task-page_label">Ответственный <span>(Начните вводить имя)</span></div>
 												<div class="field">										
-													<select class="js-example-basic-multiple" multiple="multiple">
-														<option value="AL">Василий Иванов</option>
-														<option value="WY">Василий Иванов</option>
-													</select>										
+													<select id="select">
+														<option value="punkt1">Категория №1</option>
+														<option value="punkt2">Категория №2</option>
+														<option value="punkt3">Категория №3</option>
+													</select>								
 												</div>
 											</div>		
 
@@ -763,8 +763,7 @@
 	<script src="js/html5sortable.min.js"></script>
 	<script src="js/wavesurfer.js"></script>
 	<script src="js/fancybox.min.js"></script>
-	<!-- <script src="js/nice-select.js"></script> -->
-	<script src="js/select2.full.min.js"></script>
+	<script src="js/nice-select.js"></script>
 	<script src="js/functions.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/playlist.js"></script>
