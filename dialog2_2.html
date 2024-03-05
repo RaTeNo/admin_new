@@ -391,7 +391,7 @@
 									<div class="add_audio">
 										<div class="audio_message">
 											<div class="audio_media light">											
-												<audio class="mediaplayer"
+												<audio class="mediaplayer" preload="metadata"
 											        controls
 											        src="images/t-rex-roar.mp3">
 											            Your browser does not support the
@@ -470,8 +470,9 @@
 		<script src="js/mediaelement-and-player.min.js"></script>
 		<script>
 			$('.mediaplayer').mediaelementplayer({
-			// When using jQuery's `mediaelementplayer`, an `instance` argument
-			// is available in the `success` callback
+				stretching: 'responsive',
+				preload: 'metadata',
+				features: ["playpause", "current", "progress", "duration", "tracks",  "fullscreen"],
 				success: function(mediaElement, originalNode, instance) {
 					// do things
 				}
