@@ -34220,3 +34220,13 @@ bottom: 20px;
     font-size: 16px;
     line-height: 23px;
 }
+
+
+.task-page_form .line .field.mb20{
+	margin-bottom: 20px;
+}
+
+.task-page_form .line .field.df{
+    display: flex;
+    gap:15px;
+}

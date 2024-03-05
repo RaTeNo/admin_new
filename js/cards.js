@@ -21,6 +21,7 @@ $(() => {
 
     $(".js-show-more").on("click", function(e){
     	e.preventDefault();
+        $(this).hide();
     	$(this).closest(".hint_item").find(".hint_item-text").hide();
     	$(this).closest(".hint_item").find(".hint_item-text-more").fadeIn();
     });	   
