@@ -34231,3 +34231,33 @@ bottom: 20px;
     gap:15px;
 }
 
+.mejs__container{
+    background: transparent;
+}
+
+.audio_media.light .mejs__container, 
+.audio_media.light .mejs__controls:not([style*='display: none']){
+    background: transparent;
+}
+
+.mejs__time-current, .mejs__time-handle-content {
+    border-radius: 10px;
+}
+
+.mejs__time-total, 
+.mejs__time-buffering, 
+.mejs__time-loaded, 
+.mejs__time-current, 
+.mejs__time-float, 
+.mejs__time-hovered, 
+.mejs__time-float-current, 
+.mejs__time-float-corner, 
+.mejs__time-marker{
+    border-radius: 10px;
+    height: 10px;
+}
+
+.audio_mediat .mejs__container, .audio_media .mejs__controls:not([style*='display: none']){
+    background: var(--main_color);
+    border-radius: 30px;
+}
