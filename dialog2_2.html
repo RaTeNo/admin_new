@@ -28,6 +28,7 @@
 
 		<!-- Подключение файлов стилей -->
 		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/mediaelementplayer.css" async>
 		<link rel="stylesheet" href="css/styles.css" async>
 
 		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
@@ -349,7 +350,7 @@
 
 												<div class="audio_message">
 													<div class="audio_media">											
-														<audio
+														<audio class="mediaplayer"
 													        controls
 													        src="images/t-rex-roar.mp3">
 													            Your browser does not support the
@@ -390,7 +391,7 @@
 									<div class="add_audio">
 										<div class="audio_message">
 											<div class="audio_media light">											
-												<audio
+												<audio class="mediaplayer"
 											        controls
 											        src="images/t-rex-roar.mp3">
 											            Your browser does not support the
@@ -459,12 +460,23 @@
 		<!-- Подключение javascript файлов -->
 		<script src="js/jquery-3.5.0.min.js"></script>
 		<script src="js/lozad.min.js"></script>
-		<script src="js/media-player.js"></script>
+		<!-- <script src="js/media-player.js"></script> -->
 		<script src="js/html5sortable.min.js"></script>
 		<script src="js/wavesurfer.js"></script>
 		<script src="js/fancybox.min.js"></script>
 		<script src="js/nice-select.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
+		<script src="js/mediaelement-and-player.min.js"></script>
+		<script>
+			$('.mediaplayer').mediaelementplayer({
+			// When using jQuery's `mediaelementplayer`, an `instance` argument
+			// is available in the `success` callback
+				success: function(mediaElement, originalNode, instance) {
+					// do things
+				}
+			});
+		</script>
+
 	</body>
 </html>
