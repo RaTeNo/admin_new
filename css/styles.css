@@ -17409,6 +17409,7 @@ background: #64C841;
 }
 .simulators-new .simulator_item-right {
     padding-left: 14px;
+    width: 100%;
 }
 .simulators-new .simulator_item-title {
     font-weight: 700;
