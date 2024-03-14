@@ -7553,6 +7553,8 @@ aside .menu .sub_menu a.active
         align-self: self-end;
 }
 
+
+
 .dialog .message .photo img
 {
     position: absolute;
@@ -18410,8 +18412,8 @@ button.copy span{
 .modal-page5 .modal-page_img button {
     position: absolute;
     content: "";
-    width: 56px;
-    height: 56px;
+    /*width: 56px;
+    height: 56px;*/
     top: 50%;
     right: 50%;
     transform: translate(50%, -50%);
@@ -19683,7 +19685,6 @@ button.copy span{
     width: 100%;
     height: 50px;
     padding: 0 20px 0 50px;
-    margin-bottom: 30px;
     font-family: 'Ubuntu';
 }
 
@@ -25534,9 +25535,10 @@ form .form_btns input[type=file] + label,
 }
 .education_description {
     margin-top: 10px;
-    display: none;
     position: relative;
     padding-top: 20px;
+        height: 120px;
+    overflow: hidden;
 }
 .education_description-title {
     font-weight: 700;
@@ -25549,6 +25551,15 @@ form .form_btns input[type=file] + label,
     font-size: 14px;
     line-height: 130%;
     color: #4B4978;
+}
+.education_more_link{
+    cursor: pointer;
+    position: absolute;
+    bottom: 0px;
+    padding: 31px 5px 4px 0px;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+    text-decoration: underline;
 }
 .analitics_box-title {
     font-weight: 700;
@@ -26153,34 +26164,7 @@ form .form_btns input[type=file] + label,
     line-height: 14px;
     padding: 14px;
 }
-.task-page_form .line .field input::-webkit-input-placeholder {
-    font-family: 'Ubuntu';
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: #7874A3;
-}
-.task-page_form .line .field input::-moz-placeholder {
-    font-family: 'Ubuntu';
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: #7874A3;
-}
-.task-page_form .line .field input:-moz-placeholder {
-    font-family: 'Ubuntu';
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: #7874A3;
-}
-.task-page_form .line .field input:-ms-input-placeholder {
-    font-family: 'Ubuntu';
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: #7874A3;
-}
+
 .task-page_form .line .field .task-page_textarea {
     width: 100%;
     background: #FFFFFF;
@@ -26190,45 +26174,16 @@ form .form_btns input[type=file] + label,
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
-    color: #7874A3;
     padding: 14px;
     height: 96px;
     resize: none;
 }
-.task-page_form .line .field .task-page_textarea::-webkit-input-placeholder {
-    font-family: 'Ubuntu';
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: #7874A3;
-}
-.task-page_form .line .field .task-page_textarea::-moz-placeholder {
-    font-family: 'Ubuntu';
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: #7874A3;
-}
-.task-page_form .line .field .task-page_textarea:-moz-placeholder {
-    font-family: 'Ubuntu';
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: #7874A3;
-}
-.task-page_form .line .field .task-page_textarea:-ms-input-placeholder {
-    font-family: 'Ubuntu';
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: #7874A3;
-}
+
 .task-page_form .nice-select {
     font-family: 'Ubuntu';
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;   
-    color: #7874A3;
 }
 .task-page_label {
     font-weight: 700;
@@ -26266,7 +26221,7 @@ form .form_btns input[type=file] + label,
     width: 14px;
     height: 14px;
     content: '';
-    border: .5px solid #4d4f60;
+    border: 1px solid #7874A3;
     border-radius: 4px;
     background: #fff;
 }
@@ -26326,7 +26281,7 @@ form .form_btns input[type=file] + label,
 .task-page_date {
     padding: 15px 42px 15px 15px;
     border-radius: 9px;
-    border: 1px solid #7874A3;
+        border: 1px solid #7874A3;
     opacity: 0.5;
     background: #FFF;
     color: #7874A3;
@@ -26341,7 +26296,7 @@ form .form_btns input[type=file] + label,
     top: -4px;
     left: 0;
     background: #FFFFFF;
-    border: 1px solid #C8C6DD;
+    border: 1px solid #7874A3;
     border-radius: 6px;
     content: '';
     width: 27px;
@@ -26371,8 +26326,8 @@ form .form_btns input[type=file] + label,
 }
 .task-page_form .nice-select {
     -webkit-tap-highlight-color: transparent;
-    background: #F9F8FD;
-    border: 1px solid #BBB9D1;
+    background: #fff;
+    border: 1px solid #7874A3;
     border-radius: 9px;
     box-sizing: border-box;
     clear: both;
@@ -26381,7 +26336,6 @@ form .form_btns input[type=file] + label,
     font-family: 'Ubuntu';
     font-weight: 500;
     font-size: 12px;
-    color: #BBB9D1;
     line-height: 45px;
     width: 254px;
     color: #000000;
@@ -32524,7 +32478,6 @@ bottom: 20px;
 }
 .task-page_form .nice-select {
     width: 100%;
-    color: #7874A3;
     font-weight: 500;
 }
 .faq_fast_title {
@@ -32584,14 +32537,14 @@ bottom: 20px;
 .almanac_items > * {
     border-radius: 87px;
     background: #fff;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #565289;
     text-align: center;
-    font-size: 13px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 30px; 
@@ -32610,10 +32563,10 @@ bottom: 20px;
 .almanac_item.active span {
     display: block;
     position: absolute;
-    width: 14px;
-    height: 14px;
-    font-size: 8px;
-    line-height: 14px;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 16px;
     letter-spacing: -1px;
     font-weight: 700;
     border-radius: 50%;
@@ -32627,8 +32580,8 @@ bottom: 20px;
 .almanac_item.active:after {
     position: absolute;
     content: "";
-    width: 13px;
-    height: 13px;
+    width: 18px;
+    height: 18px;
     top: -4px;
     right: 0px;
     background: #fff;
@@ -33650,7 +33603,7 @@ bottom: 20px;
     border: none;
 }
 .adding-question .add_audio {
-    border: 1px solid #D7D7D7;
+    border: 1px solid #7874A3;
     border-radius: 12px;
     padding: 25px;
 }
@@ -34261,4 +34214,24 @@ bottom: 20px;
 .audio_mediat .mejs__container, .audio_media .mejs__controls:not([style*='display: none']){
     background: var(--main_color);
     border-radius: 30px;
+}
+
+.task-page_form button.repeat_btn {
+    margin:0;
+}
+
+.message_new.error[style="display: none;"]{
+    margin-top: 0;
+}
+
+.filter_fix{
+    margin-bottom: 0;
+}
+
+.courses.not_my:has(.found_course:empty){
+    margin-top: 0;
+}
+
+.title_courses_result[style="display: block;"], .title_courses_result_tag[style="display: block;"]{
+    margin-top: 40px !important;
 }

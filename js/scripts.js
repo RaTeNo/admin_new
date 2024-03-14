@@ -3,7 +3,10 @@
     $(() => {
 	// tippy('[data-tippy-content]');
 
-
+	$(".education_more_link").click(function (e) {
+		$(".education_description").css("height", "auto");
+		$(this).hide();
+	});
 
         $(".idea_check-bottom button").click(function (e) {
             $(".commission-decision, .idea_form").hide();
