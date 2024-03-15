@@ -505,8 +505,6 @@
     .feedback .line .links
     {
         width: calc(100% + 15px);
-
-        justify-content: flex-end;
     }
 
     .feedback .line .links > *
