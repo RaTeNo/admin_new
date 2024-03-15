@@ -3033,5 +3033,34 @@
         height: 40px;
     }
 
+    .shop_items > * {
+        width: 100%;
+        gap: 10px;
+    }
+    .shop_item-bottom {
+        flex-direction: row;
+    }
+    .shop_item-link {
+        margin-left: auto;
+        margin-top: 0px;
+    }
+    .purchase_item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .purchase_item-right {
+        margin-top: 10px;
+    }
+    .shop_head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .shop_head .nice-select {
+        margin-top: 10px;
+    }
+    .shop_head .nice-select .list {
+        left: 0;
+    }
+
 
 }

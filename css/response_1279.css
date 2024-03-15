@@ -2048,6 +2048,16 @@
     }
 
 
+    .shop_items {
+        gap: 12px;
+    }
+    .shop_items > * {
+        width: calc(100% / 3 - 8px);
+        gap: 10px;
+    }
+
+
+
 
 }
 
