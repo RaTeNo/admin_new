@@ -264,12 +264,14 @@
     .error_info .code
     {
         width: 100%;
+        text-align: center;
     }
 
-    .error_info .code img
+    .error_info .code svg
     {
         width: 400px;
         margin: 0 auto;
+        max-width: 100%;
     }
 
 
