@@ -388,9 +388,9 @@
 									<svg class="icon">
 										<use xlink:href="images/sprite.svg#card_icon"></use>
 									</svg>
-									Карточка 5 из 35
+									Карточка <span class="js-current-quest">1</span> из <span class="js-total-quest">3</span>
 								</div>
-								<div class="card_item-text">Для чего нужно переодеваться в защитный костюм перед работой на станке “ТБМ-300” ?</div>
+								<div class="card_item-text js-quest">Для чего нужно переодеваться в защитный костюм перед работой на станке “ТБМ-300” ?</div>
 								<div class="card_item-btns">
 									<a href="" class="card_item-btn js-show-podskazka">Смотреть подсказку</a>
 									<a href="" class="card_item-btn js-show-answer">Смотреть ответ</a>
@@ -408,9 +408,22 @@
 										<svg class="icon">
 											<use xlink:href="images/sprite.svg#card_icon"></use>
 										</svg>
-										Карточка 5 из 35
+										Карточка <span class="js-current-quest">1</span> из <span class="js-total-quest">3</span>
 									</div>	
-									<div class="hint_item-text">........ ...................... ................. ............ ................. ...................... ........... ... .......... ............. .......... .............. ............. Вызвано это расслоением внутреннего слоя по причине либо ............. ............. ............ ............... ............. ............. ................ .................... ..................... ....................... .................., либо коррозии стальных компонентов.</div>
+
+									<div class="hint_item-images">
+										<a href="images/hint_img.jpg" data-fancybox class="hint_item-img">
+											<img src="images/hint_img.jpg" alt="">											
+										</a>
+										<span>
+											<svg class="loop">
+												<use xlink:href="images/sprite.svg#loop"></use>
+											</svg>
+											нажмите, для увеличения
+										</span>	
+									</div>	
+
+									<div class="hint_item-text js-answer"></div>
 
 									<div class="hint_item-text hint_item-text-more">Поверхность деформируется с разной степенью локальности. Иногда дефект эксплуатации шин выходит за рамки их металлических частей. Вызвано это расслоением внутреннего слоя по причине либо частых перегрузок и ударных нагрузок, либо коррозии стальных компонентов.</div>
 									<div class="hint_item-btns">
@@ -434,11 +447,11 @@
 										<svg class="icon">
 											<use xlink:href="images/sprite.svg#card_icon"></use>
 										</svg>
-										Карточка 5 из 35
+										Карточка <span class="js-current-quest">1</span> из <span class="js-total-quest">3</span>
 									</div>	
 									<div class="hint_item-images">
-										<a href="images/hint_img.jpg" data-fancybox class="hint_item-img">
-											<img src="images/hint_img.jpg" alt="">											
+										<a href="" data-fancybox class="hint_item-img">
+											<img src="" alt="">											
 										</a>
 										<span>
 											<svg class="loop">
@@ -448,47 +461,13 @@
 										</span>	
 									</div>	
 									
-									<div class="hint_item-text">Поверхность деформируется с разной степенью локальности. Иногда дефект эксплуатации шин выходит за рамки их металлических частей. Вызвано это расслоением внутреннего слоя по причине либо частых перегрузок и ударных нагрузок, либо коррозии стальных компонентов.</div>
+									<div class="hint_item-text js-answer">Поверхность деформируется с разной степенью локальности. Иногда дефект эксплуатации шин выходит за рамки их металлических частей. Вызвано это расслоением внутреннего слоя по причине либо частых перегрузок и ударных нагрузок, либо коррозии стальных компонентов.</div>
 									<div class="hint_item-btns">
 										<a href="" class="hint_item-btn red">Пропустить</a>
 										<a href="" class="hint_item-btn green">Далее</a>
 									</div>
 								</div>
 							</div>
-
-
-
-							<!-- <div class="hint">								
-								<div class="hint_item">
-									<a href="" class="btn-next js-show-quest">
-										<svg class="icon-next">
-											<use xlink:href="images/sprite.svg#icon-next"></use>
-										</svg>	
-									</a>																			
-									<div class="hint_item-count">
-										<svg class="icon">
-											<use xlink:href="images/sprite.svg#card_icon"></use>
-										</svg>
-										Карточка 5 из 35
-									</div>	
-									<div class="hint_item-images">
-										<a href="images/hint_img.jpg" data-fancybox class="hint_item-img">
-											<img src="images/hint_img.jpg" alt="">											
-										</a>
-										<span>
-											<svg class="loop">
-												<use xlink:href="images/sprite.svg#loop"></use>
-											</svg>
-											нажмите, для увеличения
-										</span>	
-									</div>	
-									<div class="hint_item-text">Поверхность деформируется с разной степенью локальности. Иногда дефект эксплуатации шин выходит за рамки их металлических частей. Вызвано это расслоением внутреннего слоя по причине либо частых перегрузок и ударных нагрузок, либо коррозии стальных компонентов.</div>
-									<div class="hint_item-btns">
-										<a href="" class="hint_item-btn red">Пропустить</a>
-										<a href="" class="hint_item-btn green">Далее</a>
-									</div>
-								</div>
-							</div> -->
 
 						</div>							
 
@@ -588,6 +567,28 @@
 			animation: 150
 		});
 	</script>
+
+
+	<script>
+		let quests = [
+		  {
+		    "quest": "Для чего нужно переодеваться в защитный костюм перед работой на станке “ТБМ-300” ?",
+		    "answer": "Поверхность <span class='hide1'>деформируется с разной степенью локальности.</span> Иногда дефект эксплуатации <span class='hide1'>шин выходит за рамки</span> их металлических частей. Вызвано <span class='hide2'>это расслоением внутреннего слоя по причине либо частых перегрузок</span> и ударных нагрузок, либо коррозии стальных компонентов.",
+		    "image": "images/hint_img.jpg"
+		  },
+		  {
+		    "quest": "Для чего нужно переодеваться в защитный костюм перед работой на станке “ТБМ-300”2 ?",
+		    "answer": "Поверхность <span class='hide1'>деформируется с разной степенью локальности.</span> Иногда дефект эксплуатации <span class='hide1'>шин выходит за рамки</span> их металлических частей. Вызвано <span class='hide2'>это расслоением внутреннего слоя по причине либо частых перегрузок</span> и ударных нагрузок, либо коррозии стальных компонентов.2",
+		    "image": ""
+		  },
+		  {
+		    "quest": "Для чего нужно переодеваться в защитный костюм перед работой на станке “ТБМ-300”3 ?",
+		    "answer": "Поверхность <span class='hide1'>деформируется с разной степенью локальности.</span> Иногда дефект эксплуатации <span class='hide1'>шин выходит за рамки</span> их металлических частей. Вызвано <span class='hide2'>это расслоением внутреннего слоя по причине либо частых перегрузок</span> и ударных нагрузок, либо коррозии стальных компонентов.3",
+		    "image": ""
+		  }
+		];
+
+	</script>		
 
 </body>
 

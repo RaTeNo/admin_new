@@ -34796,3 +34796,11 @@ bottom: 20px;
     width: 134px;    
     margin: 0 auto;
 }
+
+.card_item-count span, .hint_item-count span{
+    display: contents;
+}
+
+.hint_item-images{
+    display: none;
+}
