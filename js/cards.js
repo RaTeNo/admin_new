@@ -43,6 +43,7 @@ $(() => {
 
 		if(number_hide==3)
 		{
+            $(".js-show-answer").addClass("complete");
 			$(this).hide();
 		}
     });	
