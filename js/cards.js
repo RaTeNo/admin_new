@@ -13,6 +13,8 @@ $(() => {
 		$(".hint_item-images a").attr("href", quests[current_quest-1].image)
 		$(".hint_item-images img").attr("src", quests[current_quest-1].image)
 	}	
+  
+
 
 	$(".js-answer span").each(function() {
 	    $(this).data("quest", $(this).text()).text(".................................................");
@@ -23,12 +25,17 @@ $(() => {
     	e.preventDefault();
     	$(".hint[data-type='podskazka']").fadeIn();
     	$(".card_item").hide();
+        if($(".hint_item-images a").attr("href")!=""){
+            $(".hint_item-images").show();
+        }
+
     });	
 
 	let number_hide = 1;
 
     $(".js-show-more").on("click", function(e){
     	e.preventDefault();
+
     	$(".js-answer span.hide"+number_hide).each(function() {
 		    $(this).text($(this).data("quest"));	    
 		});
