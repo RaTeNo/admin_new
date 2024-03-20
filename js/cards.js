@@ -29,13 +29,15 @@ $(() => {
             $(".hint_item-images").show();
         }
 
+        quests[current_quest-1].error = 1;        
+
     });	
 
 	let number_hide = 1;
 
     $(".js-show-more").on("click", function(e){
     	e.preventDefault();
-
+       
     	$(".js-answer span.hide"+number_hide).each(function() {
 		    $(this).text($(this).data("quest"));	    
 		});
@@ -46,6 +48,8 @@ $(() => {
             $(".js-show-answer").addClass("complete");
 			$(this).hide();
 		}
+
+
     });	
 
     $(".js-show-quest").on("click", function(e){
@@ -110,10 +114,19 @@ $(() => {
     	else
     	{
     		// передаем какие-то данные
-    		alert("закончили рассчет")
+    		//alert("закончили рассчет")
+            localStorage.setItem('quests', JSON.stringify(quests)); 
+            document.location.href = 'game-card.html';
     	}
 
     });	
+
+    $(".js-end-game").on("click", function(e){ 
+        localStorage.setItem('quests', JSON.stringify(quests));
+        //редирект
+        document.location.href = 'game-card.html';
+    });
+    
 
     /*$(".js-show-podskazka").on("click", function(e){
     	e.preventDefault();

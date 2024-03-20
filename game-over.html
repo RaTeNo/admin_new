@@ -405,28 +405,14 @@
 											<div class="pie animate" style="--p:100;--w: 55px;--c:#0AB511;">100%</div>
 										</div>
 										<div class="game_info">
-											<div class="game_title">У вас возникли проблемы с 20 карточками</div>
+											<div class="game_title">У вас возникли проблемы с <span class="js-count-error">20</span> карточками</div>
 											<div class="game_text">Рекомендуем повторить их, для лушего усвоения материала</div>
 										</div>
 									</div>								
 								</div>
 							</section>
 							<div class="game_items">
-								<a href="#" class="game_item modal_btn" data-content="#game-over_modal1">
-									Для чего нужно переодеваться в защитный костюм перед работой на станке “ТБМ-300” ?
-								</a>
-								<a href="#" class="game_item modal_btn" data-content="#game-over_modal2">
-									За какое время сварочный станок “ТБМ-300”, ревизия 2.0 проходит свои испытания в сварочном цеху завода по изготовлению металлоконструкций?
-								</a>
-								<a href="#" class="game_item modal_btn" data-content="#game-over_modal3">
-									Для чего нужно переодеваться в защитный костюм перед работой на станке “ТБМ-300” ?
-								</a>
-								<a href="#" class="game_item modal_btn" data-content="#game-over_modal4">
-									Для чего нужно переодеваться в защитный костюм перед работой на станке “ТБМ-300” ?
-								</a>
-								<a href="#" class="game_item modal_btn" data-content="#game-over_modal5">
-									Поверхность деформируется с разной степенью локальности. Иногда дефект эксплуатации шин выходит за рамки их металлических частей
-								</a>
+
 							</div>	
 						</section>
 							
@@ -498,30 +484,10 @@
 	</div>
 
 
-	<div class="game_modal" id="game-over_modal1">
-		<div class="game_modal-title">Для чего нужно переодеваться в защитный костюм перед работой на станке “ТБМ-300” ?</div>
-		<div class="game_modal-text">Поверхность деформируется с разной степенью локальности. Иногда дефект эксплуатации шин выходит за рамки их металлических частей. Вызвано это расслоением внутреннего слоя по причине либо частых перегрузок и ударных нагрузок, либо коррозии стальных компонентов.</div>
+	<div class="modals_error">
+		
 	</div>
-
-	<div class="game_modal" id="game-over_modal2">
-		<div class="game_modal-title">За какое время сварочный станок “ТБМ-300”, ревизия 2.0 проходит свои испытания в сварочном цеху завода по изготовлению металлоконструкций?</div>
-		<div class="game_modal-text">Поверхность деформируется с разной степенью локальности. Иногда дефект эксплуатации шин выходит за рамки их металлических частей. Вызвано это расслоением внутреннего слоя по причине либо частых перегрузок и ударных нагрузок, либо коррозии стальных компонентов.</div>
-	</div>
-
-	<div class="game_modal" id="game-over_modal3">
-		<div class="game_modal-title">Для чего нужно переодеваться в защитный костюм перед работой на станке “ТБМ-300” ?</div>
-		<div class="game_modal-text">Поверхность деформируется с разной степенью локальности. Иногда дефект эксплуатации шин выходит за рамки их металлических частей. Вызвано это расслоением внутреннего слоя по причине либо частых перегрузок и ударных нагрузок, либо коррозии стальных компонентов.</div>
-	</div>
-
-	<div class="game_modal" id="game-over_modal4">
-		<div class="game_modal-title">Для чего нужно переодеваться в защитный костюм перед работой на станке “ТБМ-300” ?</div>
-		<div class="game_modal-text">Поверхность деформируется с разной степенью локальности. Иногда дефект эксплуатации шин выходит за рамки их металлических частей. Вызвано это расслоением внутреннего слоя по причине либо частых перегрузок и ударных нагрузок, либо коррозии стальных компонентов.</div>
-	</div>
-
-	<div class="game_modal" id="game-over_modal5">
-		<div class="game_modal-title">Поверхность деформируется с разной степенью локальности. Иногда дефект эксплуатации шин выходит за рамки их металлических частей</div>
-		<div class="game_modal-text">Поверхность деформируется с разной степенью локальности. Иногда дефект эксплуатации шин выходит за рамки их металлических частей. Вызвано это расслоением внутреннего слоя по причине либо частых перегрузок и ударных нагрузок, либо коррозии стальных компонентов.</div>
-	</div>
+	
 
 
 	<!-- Подключение javascript файлов -->
@@ -544,6 +510,37 @@
 			animation: 150
 		});
 	</script>
+
+	<script>
+		let quests = JSON.parse(localStorage.getItem('quests'));
+		let count_error = 0;
+		let counter = 0;
+		quests.forEach((element) => {
+			count_error+= Number(element.error);
+			counter++;
+			if(element.error)
+			{
+				$(".game_items").append('<a href="#" class="game_item modal_btn" data-content="#game-over_modal'+counter+'">'+element.quest+'</a>');
+
+				$(".modals_error").append('<div class="game_modal" id="game-over_modal'+counter+'"><div class="game_modal-title">'+element.quest+'</div><div class="game_modal-text">'+element.answer+'</div></div>')
+				
+
+			}
+			
+
+		});
+		
+		let l = (1-(count_error/quests.length))*100;
+
+		$(".game_icon .pie").attr("style", '--p:'+(l)+';--w: 55px;--c:#0AB511;');
+		
+		$(".game_icon .pie").text(Math.round(l)+'%')
+
+		$(".js-count-error").text(count_error);
+
+		
+	</script>
+	
 
 </body>
 
