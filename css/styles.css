@@ -9912,20 +9912,15 @@ aside .menu .sub_menu a.active
 
 .auth .form input[type=checkbox] + label:after
 {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    display: block;
-
-    width: 14px;
-    height: 14px;
-
     content: '';
-    transition: opacity .2s linear;
-
-    opacity: 0;
-    background: url(../images/ic_check_blue.svg) 50% no-repeat;
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 8px;
+    border: solid var(--main_color);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
 }
 
 .auth .form input[type=checkbox]:checked + label:after
@@ -34802,5 +34797,5 @@ bottom: 20px;
 }
 
 .hint_item-images{
-    display: none;
+    display: none;.auth .form input[type=checkbox] + label:after
 }
