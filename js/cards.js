@@ -118,7 +118,7 @@ $(() => {
     		// передаем какие-то данные
     		//alert("закончили рассчет")
             localStorage.setItem('quests', JSON.stringify(quests)); 
-            document.location.href = 'game-card.html';
+            document.location.href = 'game-over.html';
     	}
 
     });	
@@ -126,7 +126,7 @@ $(() => {
     $(".js-end-game").on("click", function(e){ 
         localStorage.setItem('quests', JSON.stringify(quests));
         //редирект
-        document.location.href = 'game-card.html';
+        document.location.href = 'game-over.html';
     });
     
 
