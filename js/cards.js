@@ -27,11 +27,13 @@ $(() => {
     	$(".card_item").hide();
         if($(".hint_item-images a").attr("href")!=""){
             $(".hint_item-images").show();
-        }
-
-        quests[current_quest-1].error = 1;        
-
+        } 
     });	
+
+
+    $(".js-error").on("click", function(e){
+        quests[current_quest-1].error = 1;    
+    });
 
 	let number_hide = 1;
 
