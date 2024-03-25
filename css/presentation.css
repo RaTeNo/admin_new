@@ -1570,7 +1570,7 @@
     color: #fff;
 }
 .presentation_list li .icon {
-    fill: var(--bg2);
+    color: var(--bg2);
 }
 
 

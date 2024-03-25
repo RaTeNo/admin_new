@@ -308,7 +308,7 @@
     line-height: normal;
 }
 .presentation_list li .icon {
-    fill: var(--bg2);
+    color: var(--bg2);
 }
 .text_block .presentation ul li:before {
     display: none;
