@@ -513,6 +513,7 @@
 
 	<script>
 		let quests = JSON.parse(localStorage.getItem('quests'));
+		let current_quest = localStorage.getItem('current_quest');
 		let count_error = 0;
 		let counter = 0;
 		quests.forEach((element) => {
@@ -530,7 +531,7 @@
 
 		});
 		
-		let l = (1-(count_error/quests.length))*100;
+		let l = (1-(count_error/current_quest))*100;
 
 		$(".game_icon .pie").attr("style", '--p:'+(l)+';--w: 55px;--c:#0AB511;');
 		
