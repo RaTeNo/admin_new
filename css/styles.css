@@ -34800,3 +34800,13 @@ bottom: 20px;
 .hint_item-images{
     display: none;.auth .form input[type=checkbox] + label:after
 }
+
+.create-report_wrap_hide{
+    /*height: 46px;*/
+    overflow: hidden;
+}
+
+.js-open-report{
+    margin-top: 10px;
+    display: inline-block;
+}

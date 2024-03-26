@@ -3,6 +3,46 @@
     $(() => {
 	// tippy('[data-tippy-content]');
 
+
+	if($(".create-report_wrap_hide").outerHeight()>46)
+	{
+		$(".create-report_wrap_hide").css("height", "46px");
+		$(".create-report_wrap_hide").after("<a href='' class='js-open-report'>Показать все</a>");
+	}
+
+	$('body').on('click', '.js-open-report', function (e) {
+		e.preventDefault();
+		$(this).hide().prev().css("height", "100%");
+	});
+
+
+	$('.addition_btn').click(function (e) {
+		e.preventDefault();
+		$('.addition form').addClass('active');
+		$('.addition_btn').remove();
+		$('.addition_arrow').show();
+	});
+
+	$('.addition form button').click(function (e) {
+		e.preventDefault();
+		$('.addition form .line').hide();
+		$('.addition form button.send').hide();
+		$(".js-more-addition").show();
+		$('.addition form .form-text').addClass('active');
+	});
+
+	
+	$('.js-more-addition').click(function (e) {
+		e.preventDefault();
+		$(this).hide();
+		$('.addition form button.send').show();
+		$('.addition form .form-text').removeClass('active');
+		$('.addition form .line').show();
+	});
+
+
+	
+
 	$(".education_more_link").click(function (e) {
 		$(".education_description").css("height", "auto");
 		$(this).hide();
