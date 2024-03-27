@@ -3,11 +3,12 @@
     $(() => {
 	// tippy('[data-tippy-content]');
 
-
-	if($(".create-report_wrap_hide").outerHeight()>46)
-	{
-		$(".create-report_wrap_hide").css("height", "46px");
-		$(".create-report_wrap_hide").after("<a href='' class='js-open-report'>Показать все</a>");
+	$(".create-report_wrap_hide").each(function( index ) {
+		if($(this).outerHeight()>46)
+		{
+			$(this).css("height", "46px");
+			$(this).after("<a href='' class='js-open-report'>Показать все</a>");
+		}
 	}
 
 	$('body').on('click', '.js-open-report', function (e) {

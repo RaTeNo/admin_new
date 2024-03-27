@@ -32761,6 +32761,13 @@ bottom: 20px;
     margin-left: 10px;
 }
 
+.almanac_status-item span.disabled {
+    background: #BDBBD8;
+}
+.almanac_status-item span.disabled2 {
+    background: #bdbbd899;
+}
+
 
 
 .change-history_wrap {
