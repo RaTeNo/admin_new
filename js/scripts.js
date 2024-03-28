@@ -9,7 +9,7 @@
 			$(this).css("height", "46px");
 			$(this).after("<a href='' class='js-open-report'>Показать все</a>");
 		}
-	}
+	})
 
 	$('body').on('click', '.js-open-report', function (e) {
 		e.preventDefault();

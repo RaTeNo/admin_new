@@ -1898,7 +1898,15 @@
     .modal_shop-img img {
         border-radius: 25px;
     }
-    
+        
+    .almanac_status{
+        flex-direction: column;
+        gap:10px;
+    }
+
+    .almanac_status-item + .almanac_status-item{
+        margin-left: 0;
+    }
 
 
 

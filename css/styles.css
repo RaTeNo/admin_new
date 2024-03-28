@@ -19276,7 +19276,7 @@ button.copy span{
     margin-bottom: 23px;
     text-align: start;
     margin-top: 0;
-    width: 90%;
+    width: 100%;
 }
 .modal-page6 .form {
     position: relative;
@@ -19303,6 +19303,7 @@ button.copy span{
     left: 50%;
     transform: translateX(-50%);
     top: 0;
+    display: none;
 }
 .modal-page6 .form .line {
     display: flex;
@@ -19346,6 +19347,15 @@ button.copy span{
     margin-top: 19px;
 }
 
+.modal-page6 .modal-page_title:before{
+left: -20px;
+    transform: none;
+    width: calc(100% + 40px);
+}
+
+.modal-page6 .modal-page_title{
+    margin-bottom: 0;
+}
 
 
 .form_title {
