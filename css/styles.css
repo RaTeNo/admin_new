@@ -32700,7 +32700,7 @@ bottom: 20px;
     color: #565289;
     border: 1px solid #fff;
 }
-.almanac_item:after {
+/*.almanac_item:after {
     position: absolute;
     content: "";
     width: 18px;
@@ -32710,7 +32710,7 @@ bottom: 20px;
     background: #fff;
     border-radius: 50%;
     z-index: 1;
-}
+}*/
 .almanac_item {
     margin-left: 4px;
     margin-right: 4px;
