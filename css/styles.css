@@ -32726,6 +32726,10 @@ bottom: 20px;
     background: #CC3636;
     color: #fff;
 }
+.almanac_item.empty_day {
+    background: transparent;
+    color: #fff;
+}
 .almanac_item.inactive.active {
     background: #0AB511;
     color: #fff;    
