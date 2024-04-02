@@ -1907,7 +1907,10 @@
     .almanac_status-item + .almanac_status-item{
         margin-left: 0;
     }
-
+    .button_repeat{
+        margin-top: 10px;
+        margin-left: 5px;
+    }
 
 
 
