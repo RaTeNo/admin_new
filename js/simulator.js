@@ -31,6 +31,7 @@ $(document).ready(function() {
         e.preventDefault();
         $(".inner_steps .step").removeClass("current");
         $(this).addClass("current");
+        //$(this).find(".icon").html('<use xlink:href="images/sprite.svg#step_complete2"></use>');
         let id = $(this).data("id");
         $(".steps_data_js").fadeOut(200).removeClass("active");
         setTimeout(() => {

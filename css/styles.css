@@ -22015,6 +22015,11 @@ form .form_btns input[type=file] + label,
     font-weight: bold;
 }
 
+.data_with_sidebar .step.current svg{
+    outline: 1px solid #fff;
+    border-radius: 50%;
+}
+
 
 
 .bank {
@@ -32325,9 +32330,9 @@ bottom: 20px;
 .setting-mode .audio-notes_info {
     border: 1px solid #D7D7D7;
 }
-.setting-mode .audio-notes_info:last-child {
+/*.setting-mode .audio-notes_info:last-child {
     margin-bottom: 40px;
-}
+}*/
 .audio-notes_text {
     margin-bottom: 20px;
 }
@@ -34831,6 +34836,6 @@ bottom: 20px;
 }
 
 .js-open-report{
-    margin-top: 10px;
+    margin-bottom: 10px;
     display: inline-block;
 }
