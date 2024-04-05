@@ -9786,7 +9786,7 @@ aside .menu .sub_menu a.active
 .auth .form .nice-select .list .list_item:hover,
 .auth .form .nice-select .list .list_item.selected
 {
-    background: #eeeffc;
+    background: #646464;
 }
 
 
@@ -34838,4 +34838,18 @@ bottom: 20px;
 .js-open-report{
     margin-bottom: 10px;
     display: inline-block;
+}
+
+.courses .course .thumb, .course_info .thumb{
+    background: #fff;
+}
+
+.course_info .thumb img.small, .courses .course .thumb img.small {
+    top: 50%;
+    left: 50%;
+    width: auto;
+    max-width: 70%;
+    height: auto;
+    max-height: 70%;
+    transform: translate(-50%, -50%);
 }
