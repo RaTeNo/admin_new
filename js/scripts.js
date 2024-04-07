@@ -207,7 +207,7 @@
 		$(".js-search").val("");
 		$(".title_faq").show();
 		$(".title_faq_result").hide();
-		let	list = $(".accordion_item");
+		let	list = $(".accordion_item .text_block_wrap");
 		list.each(function(index) {
 			$(this).show();
 		});
@@ -740,10 +740,10 @@
 	// 	}, 3000);
 	// });
 
-	$(".solutions-tasks3 .solutions-tasks_top-delete").click(function (e) {
+	/*$(".solutions-tasks3 .solutions-tasks_top-delete").click(function (e) {
 		e.preventDefault();
 		$(this).parent().parent().parent().hide();
-	});
+	});*/
 
 	if ($(".js-example-basic-multiple").length > 0) {
 		$('.js-example-basic-multiple').select2();

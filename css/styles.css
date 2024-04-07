@@ -34852,4 +34852,5 @@ bottom: 20px;
     height: auto;
     max-height: 70%;
     transform: translate(-50%, -50%);
+    border-radius: 0;
 }
