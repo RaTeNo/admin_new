@@ -207,7 +207,7 @@
 		$(".js-search").val("");
 		$(".title_faq").show();
 		$(".title_faq_result").hide();
-		let	list = $(".accordion_item");
+		let	list = $(".accordion_item .text_block_wrap");
 		list.each(function(index) {
 			$(this).show();
 		});
@@ -230,12 +230,12 @@
 
 		let	list = $(".accordion_item");
 		list.each(function(index) {
-			let label_html = $(this).find(".text_block_wrap").html();
-			let label = $(this).find(".text_block_wrap").text();
+			let label_html = $(this).html();
+			let label = $(this).text();
 			if (label.toLowerCase().indexOf(value.toLowerCase()) == -1) {
-				$(this).closest(".accordion_item").hide();
+				$(this).hide();
 			} else {
-				$(this).closest(".accordion_item").show();
+				$(this).show();
 				if(value.length>1)
 				{
 					var re = new RegExp(value, 'gi');	
