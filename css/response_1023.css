@@ -498,9 +498,6 @@
     .simulator-questions .handle_box {
         width: 100%;
     }
-    .simulator-questions_label {
-        display: none;
-    }
 
 
     .game_items > * {
