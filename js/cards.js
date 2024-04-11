@@ -60,6 +60,7 @@ $(() => {
     	$(".hint").hide();
     	$(".card_item").fadeIn();
     	$(".js-show-answer").removeClass("complete");
+        tippy('[data-tippy-content]');
     });	 
 
     $('body').on('click', '.js-show-answer:not(.complete)', function (e) {   
@@ -69,7 +70,7 @@ $(() => {
     	$(".hint[data-type='podskazka']").fadeIn();
 
     	$(".js-answer span").each(function() {
-		    $(this).text($(this).data("quest"));	    
+		    $(this).html($(this).data("quest"));	    
 		});
 
 		if($(".hint_item-images a").attr("href")!=""){
@@ -77,6 +78,7 @@ $(() => {
 		}
 
 		$(".js-show-answer").addClass("complete");
+        tippy('[data-tippy-content]');
     });	
 
     $('body').on('click', '.js-show-answer.complete', function (e) {   
@@ -111,7 +113,7 @@ $(() => {
 			}
 
 			$(".js-answer span").each(function() {
-			    $(this).data("quest", $(this).text()).text(".................................................");		    
+			    $(this).data("quest", $(this).html()).text(".................................................");		    
 			});
     	}
     	else
