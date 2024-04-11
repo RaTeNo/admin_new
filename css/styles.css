@@ -16732,6 +16732,10 @@ background: #64C841;
     top: -2px;
 }
 
+.fast_link{
+    top:0px;
+}
+
 .faq_search:hover{
     background: #0B00D8;
     color:#fff;
