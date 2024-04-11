@@ -13,13 +13,13 @@ $(() => {
 		$(".hint_item-images a").attr("href", quests[current_quest-1].image)
 		$(".hint_item-images img").attr("src", quests[current_quest-1].image)
 	}	
-  
-
 
 	$(".js-answer span").each(function() {
-	    $(this).data("quest", $(this).text()).text(".................................................");
+	    $(this).data("quest", $(this).html()).text(".................................................");
 	    //console.log($(this).data("quest"));
 	});
+
+    tippy('[data-tippy-content]');
 
 	$(".js-show-podskazka").on("click", function(e){
     	e.preventDefault();
@@ -41,7 +41,7 @@ $(() => {
     	e.preventDefault();
        
     	$(".js-answer span.hide"+number_hide).each(function() {
-		    $(this).text($(this).data("quest"));	    
+		    $(this).html($(this).data("quest"));	    
 		});
 		number_hide++;
 
@@ -51,6 +51,7 @@ $(() => {
 			$(this).hide();
 		}
 
+        tippy('[data-tippy-content]');
 
     });	
 
