@@ -26281,6 +26281,7 @@ form .form_btns input[type=file] + label,
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    gap:12px;
 }
 .task-page_form .line .field {
     width: 100%;
@@ -34930,4 +34931,8 @@ bottom: 20px;
 /* стили для чекбокса, находящегося в состоянии disabled */
 .custom-checkbox:disabled+label::before {
     background-color: #e9ecef;
+}
+
+.hint_item .fast_link{
+        font-size: 15px;
 }
