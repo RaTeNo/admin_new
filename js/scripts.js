@@ -1,11 +1,10 @@
-    WW = window.innerWidth || document.clientWidth || document.getElementsByTagName('body')[0].clientWidth
-    WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight
-    $(() => {
+WW = window.innerWidth || document.clientWidth || document.getElementsByTagName('body')[0].clientWidth
+WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight
+$(() => {
 	// tippy('[data-tippy-content]');
 
-	$(".create-report_wrap_hide").each(function( index ) {
-		if($(this).outerHeight()>46)
-		{
+	$(".create-report_wrap_hide").each(function (index) {
+		if ($(this).outerHeight() > 46) {
 			$(this).css("height", "46px");
 			$(this).after("<a href='' class='js-open-report'>Показать все</a>");
 		}
@@ -15,7 +14,6 @@
 		e.preventDefault();
 		$(this).hide().prev().css("height", "100%");
 	});
-
 
 	$('.addition_btn').click(function (e) {
 		e.preventDefault();
@@ -32,7 +30,7 @@
 		$('.addition form .form-text').addClass('active');
 	});
 
-	
+
 	$('.js-more-addition').click(function (e) {
 		e.preventDefault();
 		$(this).hide();
@@ -42,36 +40,38 @@
 	});
 
 
-	
-
 	$(".education_more_link").click(function (e) {
 		$(".education_description").css("height", "auto");
 		$(this).hide();
 	});
 
-        $(".idea_check-bottom button").click(function (e) {
-            $(".commission-decision, .idea_form").hide();
-            $(".new_load").show();
+	$(".idea_check-bottom button").click(function (e) {
+		$(".commission-decision, .idea_form").hide();
+		$(".new_load").show();
 
-            setTimeout(() => {
-                $(".new_load").hide();
-                $(".idea_form2").show();
-            }, 3000);
+		setTimeout(() => {
+			$(".new_load").hide();
+			$(".idea_form2").show();
+		}, 3000);
 
-        });
+	});
+
+	$('.intellect-top_btn').click(function () {
+		$('.intellect_form').slideToggle(300, function () {
+			if ($(this).is(':hidden')) {
+				$('.intellect-top_btn').html('Предложить');
+			} else {
+				$('.intellect-top_btn').html('Отменить');
+			}
+		});
+	});
 
 
-		
-
-
-	if($(".sortable").length)
-	{
-		sortable('.sortable')[0].addEventListener('sortupdate', function(e) {
+	if ($(".sortable").length) {
+		sortable('.sortable')[0].addEventListener('sortupdate', function (e) {
 			$(".answer_btn").show();
 		});
 	}
-
-
 
 
 	$('body').on('click', '.text_block_show_more', function (e) {
@@ -81,19 +81,18 @@
 	});
 
 
-
-	$('.adding-question_btn').click(function(e){
+	$('.adding-question_btn').click(function (e) {
 		e.preventDefault()
-		$('.adding-question_hide').slideToggle(300, function(){
+		$('.adding-question_hide').slideToggle(300, function () {
 			if ($(this).is(':hidden')) {
 				$('.adding-question_btn span').html('Показать');
 				$(".adding-question_btn").removeClass("active");
 			} else {
 				$('.adding-question_btn span').html('Свернуть');
 				$(".adding-question_btn").addClass("active");
-			}							
+			}
 		});
-	});	
+	});
 
 
 
@@ -118,11 +117,10 @@
 	// $(".register .submit_btn").prop("disabled", true);
 
 	$('body').on('change', '#remember_check', function (e) {
-		if($("#remember_check").prop("checked")){
+		if ($("#remember_check").prop("checked")) {
 			$(".register .submit_btn").prop("disabled", false);
 		}
-		else
-		{
+		else {
 			$(".register .submit_btn").prop("disabled", true);
 		}
 	});
@@ -131,11 +129,10 @@
 	$('body').on('click', '.details_item-head', function (e) {
 		e.preventDefault()
 		$(this).next('.details_item-body').slideToggle();
-		if($(this).find(".details_item-link-yellow").hasClass("active"))
-		{
+		if ($(this).find(".details_item-link-yellow").hasClass("active")) {
 			$(this).find(".details_item-link-yellow").html('<span>Свернуть</span><svg class="icon"><use xlink:href="/images/sprite.svg#turn"></use></svg>').removeClass("active");
 		}
-		else{
+		else {
 			$(this).find(".details_item-link-yellow").html('<span>Подробнее</span><svg class="icon"><use xlink:href="/images/sprite.svg#link-more"></use></svg>').addClass("active");
 		}
 	});
@@ -173,18 +170,18 @@
 			player.media.currentTime = player.media.currentTime + 30
 		})
 	}*/
-        if ('function' === typeof MediaPlayer) {
-            [].forEach.call(document.querySelectorAll('audio[controls]:not(.not)'), function (media) {
-                player = media.player = new MediaPlayer(media, {
-                    svgs: {
-                        mute: '/images/sprite.svg#ic_mute',
-                        unmute: '/images/sprite.svg#ic_mute',
-                        play: '/images/sprite.svg#ic_play',
-                        pause: '/images/sprite.svg#ic_pause',
-                    },
-                })
-            })
-        }
+	if ('function' === typeof MediaPlayer) {
+		[].forEach.call(document.querySelectorAll('audio[controls]:not(.not)'), function (media) {
+			player = media.player = new MediaPlayer(media, {
+				svgs: {
+					mute: '/images/sprite.svg#ic_mute',
+					unmute: '/images/sprite.svg#ic_mute',
+					play: '/images/sprite.svg#ic_play',
+					pause: '/images/sprite.svg#ic_pause',
+				},
+			})
+		})
+	}
 
 	// Аккордион
 	$('body').on('click', '.accordion .accordion_item .head', function (e) {
@@ -203,43 +200,40 @@
 		}
 	})
 
-	$(".title_faq_result button").on("click", function(){
+	$(".title_faq_result button").on("click", function () {
 		$(".js-search").val("");
 		$(".title_faq").show();
 		$(".title_faq_result").hide();
-		let	list = $(".accordion_item");
-		list.each(function(index) {
+		let list = $(".accordion_item");
+		list.each(function (index) {
 			$(this).show();
 		});
-		$(".highlight").replaceWith(function() { return $(this).contents(); });
+		$(".highlight").replaceWith(function () { return $(this).contents(); });
 	});
 
-	$('body').on("keyup", '.js-search', function(event) {
-		$(".highlight").replaceWith(function() { return $(this).contents(); });
+	$('body').on("keyup", '.js-search', function (event) {
+		$(".highlight").replaceWith(function () { return $(this).contents(); });
 		let value = $(this).val();
-		if(value=="")
-		{
+		if (value == "") {
 			$(".title_faq").show();
 			$(".title_faq_result").hide();
 		}
-		else
-		{
+		else {
 			$(".title_faq").hide();
 			$(".title_faq_result").show();
 		}
 
-		let	list = $(".accordion_item .text_block_wrap");
-		list.each(function(index) {
+		let list = $(".accordion_item .text_block_wrap");
+		list.each(function (index) {
 			let label_html = $(this).html();
 			let label = $(this).text();
 			if (label.toLowerCase().indexOf(value.toLowerCase()) == -1) {
 				$(this).closest(".accordion_item").hide();
 			} else {
 				$(this).closest(".accordion_item").show();
-				if(value.length>1)
-				{
-					var re = new RegExp(value, 'gi');	
-					$(this).html(label_html.replace(re, '<span class="highlight">'+value+'</span>'));
+				if (value.length > 1) {
+					var re = new RegExp(value, 'gi');
+					$(this).html(label_html.replace(re, '<span class="highlight">' + value + '</span>'));
 				}
 			}
 		});
@@ -383,10 +377,9 @@
 			}
 		}
 
-        if($(".stems li.matched").length==$(".stems li").length)
-        {
-            $(".answer_btn").show();
-        }
+		if ($(".stems li.matched").length == $(".stems li").length) {
+			$(".answer_btn").show();
+		}
 	})
 
 
@@ -515,7 +508,7 @@
 	// });
 
 
-	$(".test").on("click", function(e){
+	$(".test").on("click", function (e) {
 		e.preventDefault();
 		$(".messages").append('<div class="message"><div class="photo"><img src="images/tmp/person_photo.jpg"></div><div class="info"><div class="name">Василий Иванович</div><div class="audio_message"><button class="btn btn_new" data-index="1" data-action="play"><svg class="icon"><use xlink:href="images/sprite.svg#ic_play"></use></svg><svg class="icon"><use xlink:href="images/sprite.svg#ic_pause"></use></svg></button><div class="audio_wave audio_wave_new" data-file="https://wavesurfer-js.org/example/media/demo.wav"></div><div class="duration duration_new"></div></div></div>					</div>');
 		audio_wave_new = document.querySelector('.audio_wave_new');
@@ -559,12 +552,17 @@
 
 
 	// Клик по лайку
-	$(document).on('click', '.likes button', function(e) {
+	$(document).on('click', '.likes button', function (e) {
 		e.preventDefault();
 		$(".likes button").removeClass('active');
 		$(this).addClass('active');
 	})
 
+
+	$('body').on('click', '.modal-intellect_link', function (e) {
+		e.preventDefault()
+		Fancybox.close()
+	});
 
 	// Всплывающие окна
 	$('body').on('click', '.modal_content_eye', function (e) {
@@ -574,23 +572,23 @@
 			src: $(this).data('content'),
 			type: 'inline'
 		}],
-		{
-		on: {
-			closing: (fancybox, slide) => {
-				let videos = $('.modal video, .video_message video, audio');
-				$.each(videos, function(key, video) {
-					video.pause();
-					video.currentTime = 0;
-				});
-			},
-		},
-	})
+			{
+				on: {
+					closing: (fancybox, slide) => {
+						let videos = $('.modal video, .video_message video, audio');
+						$.each(videos, function (key, video) {
+							video.pause();
+							video.currentTime = 0;
+						});
+					},
+				},
+			})
 	})
 
 
 	// приостанавливает все аудио
 	function pause_audios() {
-		$('audio').each(function(){
+		$('audio').each(function () {
 			this.pause();
 			this.currentTime = 0;
 		});
@@ -609,16 +607,16 @@
 		}], {
 			on: {
 				closing: (fancybox, slide) => {
-						let videos = $('video');
-						$.each(videos, function(key, video) {
-							video.pause();
-							video.currentTime = 0;
-						});
-						let audios = $('audio');
-						$.each(audios, function(key, audio) {
-							audio.pause();
-							audio.currentTime = 0;
-						});
+					let videos = $('video');
+					$.each(videos, function (key, video) {
+						video.pause();
+						video.currentTime = 0;
+					});
+					let audios = $('audio');
+					$.each(audios, function (key, audio) {
+						audio.pause();
+						audio.currentTime = 0;
+					});
 				},
 			},
 		})
@@ -644,12 +642,12 @@
 		$(this).toggleClass('active')
 	})
 
-	$('.audio-notes_description-decoding').click(function(){
+	$('.audio-notes_description-decoding').click(function () {
 		$(this).parent().parent().next().slideToggle(300);
 	});
 
 
-	$('.audio-notes_description-decoding').click(function() {
+	$('.audio-notes_description-decoding').click(function () {
 		if ($(this).text() == "Скрыть расшифровку") {
 			$(this).text("Расшифровка");
 		} else {
@@ -658,7 +656,7 @@
 	});
 
 
-	$('.audio-notes_btn').click(function(e) {
+	$('.audio-notes_btn').click(function (e) {
 		e.preventDefault();
 		if ($(this).text() == "Отменить заметку") {
 			$(this).text("Записать заметку");
@@ -669,33 +667,33 @@
 		};
 	});
 
-    $('.js-open-record').click(function(e) {
-        e.preventDefault();
-        $(this).toggleClass("active");
-        if (!$(this).hasClass("active")) {
-            $(this).text("Записать аудио-подсказку");
-            $(".js-block_record").slideToggle(300);
-            $(".audio-notes_text").slideToggle(300);
-        } else {
-            $(this).text("Отменить запись");
-            $(".js-block_record").slideToggle(300);
-            $(".audio-notes_text").slideToggle(300);
-        };
-    });
+	$('.js-open-record').click(function (e) {
+		e.preventDefault();
+		$(this).toggleClass("active");
+		if (!$(this).hasClass("active")) {
+			$(this).text("Записать аудио-подсказку");
+			$(".js-block_record").slideToggle(300);
+			$(".audio-notes_text").slideToggle(300);
+		} else {
+			$(this).text("Отменить запись");
+			$(".js-block_record").slideToggle(300);
+			$(".audio-notes_text").slideToggle(300);
+		};
+	});
 
-    $('.js-upload-record').click(function(e) {
-        e.preventDefault();
-        $(this).toggleClass("active");
-        if (!$(this).hasClass("active")) {
-            $(this).text("Загрузить с диска");
-            $(".js-block_upload").slideToggle(300);
-            $(".audio-notes_text").slideToggle(300);
-        } else {
-            $(this).text("Отменить загрузку");
-            $(".js-block_upload").slideToggle(300);
-            $(".audio-notes_text").slideToggle(300);
-        };
-    });
+	$('.js-upload-record').click(function (e) {
+		e.preventDefault();
+		$(this).toggleClass("active");
+		if (!$(this).hasClass("active")) {
+			$(this).text("Загрузить с диска");
+			$(".js-block_upload").slideToggle(300);
+			$(".audio-notes_text").slideToggle(300);
+		} else {
+			$(this).text("Отменить загрузку");
+			$(".js-block_upload").slideToggle(300);
+			$(".audio-notes_text").slideToggle(300);
+		};
+	});
 
 	/*$('.js-open-record').click(function(e) {
 		e.preventDefault();
@@ -753,7 +751,7 @@
 		$('.js-example-basic-single').select2();
 	}
 	if ($(".js-example-basic-single2").length > 0) {
-		$('.js-example-basic-single2').select2({minimumResultsForSearch: Infinity});
+		$('.js-example-basic-single2').select2({ minimumResultsForSearch: Infinity });
 	}
 
 	$(".solutions-tasks_text_togger").click(function (e) {
@@ -766,32 +764,32 @@
 
 
 
-	$('.calend_item').on('click', function(event){
+	$('.calend_item').on('click', function (event) {
 		$(this).toggleClass('active');
 	});
 
 
-        $('.almanac_item').on('click', function(event){
-            $(this).toggleClass('active');
-        });
-
-        $('body').on('click', '.password-control', function(e){
-            e.preventDefault()
-            if ($('#password-input').attr('type') == 'password'){
-                $('#password-input').attr('type', 'text');
-            } else {
-                $('#password-input').attr('type', 'password');
-            }
-        });
-
-
-	$('.almanac_item').on('click', function(event){
+	$('.almanac_item').on('click', function (event) {
 		$(this).toggleClass('active');
 	});
 
-	$('body').on('click', '.password-control', function(e){
+	$('body').on('click', '.password-control', function (e) {
 		e.preventDefault()
-		if ($('#password-input').attr('type') == 'password'){
+		if ($('#password-input').attr('type') == 'password') {
+			$('#password-input').attr('type', 'text');
+		} else {
+			$('#password-input').attr('type', 'password');
+		}
+	});
+
+
+	$('.almanac_item').on('click', function (event) {
+		$(this).toggleClass('active');
+	});
+
+	$('body').on('click', '.password-control', function (e) {
+		e.preventDefault()
+		if ($('#password-input').attr('type') == 'password') {
 			$('#password-input').attr('type', 'text');
 		} else {
 			$('#password-input').attr('type', 'password');
@@ -801,7 +799,7 @@
 
 
 
-    // Табы
+	// Табы
 	var locationHash = window.location.hash
 
 	$('body').on('click', '.tabs button', function (e) {
@@ -955,7 +953,7 @@ $(window).on('resize', () => {
 
 
 // Кнопка 'Вверх'
-$('body').on('click', '.buttonUp button', function(e) {
+$('body').on('click', '.buttonUp button', function (e) {
 	e.preventDefault();
 	$('body, html').stop(false, false).animate({
 		scrollTop: 0
@@ -963,9 +961,9 @@ $('body').on('click', '.buttonUp button', function(e) {
 });
 
 
-$(window).scroll(function(){
+$(window).scroll(function () {
 	// Кнопка 'Вверх'
-	if( $(window).scrollTop() > $(window).innerHeight() ) {
+	if ($(window).scrollTop() > $(window).innerHeight()) {
 		$('.buttonUp').fadeIn(300)
 	} else {
 		$('.buttonUp').fadeOut(200)
@@ -1042,7 +1040,7 @@ function startTimer() {
 	setTimeout(() => { $(".resend").hide(); $(".resend_link").show(); clearInterval(timerInterval); }, 60000);
 }
 
-$(".resend_link a").click(function(e){
+$(".resend_link a").click(function (e) {
 	e.preventDefault();
 	TIME_LIMIT = 60;
 	timePassed = 0;
@@ -1056,11 +1054,11 @@ $(".resend_link a").click(function(e){
 
 
 function handle_audio() {
-    let audio = document.getElementById("audio");
-    $(".speed_controller button").click(function (e) {
-        $(".speed_controller button").removeClass("active");
-        $(this).addClass("active");
-        audio.playbackRate = $(this).data("speed");
-    });
+	let audio = document.getElementById("audio");
+	$(".speed_controller button").click(function (e) {
+		$(".speed_controller button").removeClass("active");
+		$(this).addClass("active");
+		audio.playbackRate = $(this).data("speed");
+	});
 }
 

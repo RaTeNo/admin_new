@@ -310,6 +310,39 @@
 										</div>
 									</div>
 								</h1>
+
+
+								<section class="intellect-top">
+									<div class="intellect-top_wrap">
+										<div class="intellect-top_left">
+											<div class="intellect-top_icon">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#intellect_icon"></use>
+												</svg>
+											</div>
+											<div class="intellect-top_info">
+												<div class="intellect-top_title">Предложить задачу для решения</div>
+												<div class="intellect-top_text">Вы можете предложить идею для создания нового асисстента</div>
+											</div>
+										</div>
+										<a href="#" class="intellect-top_btn">Предложить</a>									
+									</div>
+									<form class="intellect_form" style="display: none;">								
+										<div class="line">
+											<div class="intellect_form-label">Название</div>
+											<div class="field">
+												<input type="text" id="name" placeholder="Введите название">
+											</div>
+										</div>
+										<div class="line">
+											<div class="intellect_form-label">Описание</div>
+											<div class="field">
+												<textarea id="desc" class="intellect_form-textarea" placeholder="Введите название"></textarea>
+											</div>
+										</div>
+										<button type="submit" class="modal_btn" data-content="modal-intellect">Отправить</button>									
+									</form>
+								</section>
 								
 								<div class="education_box">
 									<div class="education_wrap">
@@ -427,7 +460,9 @@
 									<a href="division-page.html" class="division_item red">
 										<div class="division_item-label">15 задач</div>
 										<div class="division_item-icon">
-											<img src="images/Vector.png" alt="">										
+											<div class="icon">
+												<img src="images/Vector.png" alt="">
+											</div>																					
 										</div>
 										<div class="division_item-title">HR задачи</div>
 										<div class="division_item-text">Организации процессов найма, адаптации, развитию и управлению персоналом.</div>
@@ -539,6 +574,15 @@
 			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm" type="video/webm">
 			    <track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default="">
 			</video>
+		</section>
+
+		<section class="modal-intellect" id="modal-intellect">
+			<svg class="icon">
+				<use xlink:href="images/sprite.svg#ok888"></use>
+			</svg>
+			<div class="modal-intellect_title">Заявка принята</div>
+			<div class="modal-intellect_text">Ваша заявка принята и будет рассмотрена. Спасибо!</div>
+			<a href="#" class="modal-intellect_link">Вернуться к ассиистенту</a>
 		</section>
 
 		<div class="supports_error">

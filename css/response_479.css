@@ -1926,6 +1926,20 @@
         white-space:unset;
     }
 
+    .best-answer .video_link {
+        width: 100%;
+    }
+    .best-answer .comment .simulator-questions_link {
+        width: 100%;
+    }
+    .best-answer .comment {
+        padding: 12px;
+    }
+
+    .intellect-top_btn {
+        width: 100%;
+        text-align: center;
+    }
 
 
 
