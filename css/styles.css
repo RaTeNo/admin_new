@@ -20249,12 +20249,12 @@ button.step-simulator_item span {
     font-family: "Inter";
     top: 0px;
     right: 0px;
-    width: 24px;
+    min-width: 24px;
     height: 24px;
     content: counters(step, '') '';
     counter-increment: step;
     text-align: center;
-    border-radius: 50%;
+    border-radius: 12px;
     background: var(--main_color);
     font-weight: 900;
     font-size: 13px;
@@ -20262,6 +20262,7 @@ button.step-simulator_item span {
     text-align: center;
     letter-spacing: -0.3px;
     color: #FFFFFF;
+    padding: 0 7px;
 }
 .step-simulator_task {
     font-weight: 700;
@@ -21673,7 +21674,7 @@ form .form_btns input[type=file] + label,
     margin-right: 9px;
 }
 .photo-downloading_box .photo-downloading_head {
-    width: calc(100% - 550px);
+   /* width: calc(100% - 550px);*/
 }
 .photo-downloading_box .page_subtitle {
     margin-top: 0;
@@ -21999,17 +22000,18 @@ form .form_btns input[type=file] + label,
 }
 
 .data_with_sidebar .step_number{
-    width: 31px;
+    min-width: 31px;
     height: 31px;
     background: var(--main_color);
     margin-right: 10px;
-    border-radius: 50%;
+    border-radius: 15px;
     margin-right: 8px;
     text-align: center;
     line-height: 31px;
     color: #FFFFFF;
     font-weight: 900;
     font-size: 16px;
+    padding: 0 5px;
 }
 
 .data_with_sidebar .step_status svg{
@@ -34972,4 +34974,23 @@ bottom: 20px;
 
 .message_form .submit_btn{
     margin-left: 15px;
+}
+
+.step_stage_number{
+    min-width: 31px;
+    height: 31px;
+    background: var(--main_color);
+    margin-right: 10px;
+    border-radius: 15px;
+    margin-right: 8px;
+    text-align: center;
+    line-height: 31px;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 16px;
+    padding: 0 7px;
+}
+
+.faq_new .input{
+    margin-bottom: 0;
 }

@@ -530,14 +530,17 @@
 			
 
 		});
+
 		
-		let l = (1-(count_error/(current_quest-1)))*100;
+		
+		let l = (1-(count_error/Number(current_quest)))*100;
 
 		$(".game_icon .pie").attr("style", '--p:'+(l)+';--w: 55px;--c:#0AB511;');
 		
 		$(".game_icon .pie").text(Math.round(l)+'%')
 
 		$(".js-count-error").text(count_error);
+		debugger
 
 		
 	</script>
