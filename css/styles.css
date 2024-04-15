@@ -34936,3 +34936,40 @@ bottom: 20px;
 .hint_item .fast_link{
         font-size: 15px;
 }
+
+.message_order{   
+    background: #FFFFFF;
+    border: 1px solid #4D4A8D;
+    border-radius: 13px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #4D4A8D;
+    height: 110px;
+    width: 100%;
+    max-width: 560px;
+    flex-shrink: 0;
+    padding: 10px;
+}
+
+.message_order:active{    
+    border-radius: 13px;
+}
+
+.message_form{
+    margin-left: 65px;
+}
+
+.message_form form{
+    display: flex;
+    align-items: flex-end;
+    max-width: 560px;
+    width: 100%;
+}
+
+
+.message_form .submit_btn{
+    margin-left: 15px;
+}

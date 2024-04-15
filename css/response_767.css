@@ -3060,5 +3060,13 @@
         left: 0;
     }
 
+    .message_form{
+        margin-left: 55px;
+    }
+
+    .message_form form{
+        width: calc(100% - 45px);
+    }
+
 
 }
