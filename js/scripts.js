@@ -208,11 +208,11 @@ $(() => {
 		list.each(function (index) {
 			$(this).show();
 		});
-		$(".highlight").replaceWith(function () { return $(this).contents(); });
+		//$(".highlight").replaceWith(function () { return $(this).contents(); });
 	});
 
 	$('body').on("keyup", '.js-search', function (event) {
-		$(".highlight").replaceWith(function () { return $(this).contents(); });
+		//$(".highlight").replaceWith(function () { return $(this).contents(); });
 		let value = $(this).val();
 		if (value == "") {
 			$(".title_faq").show();
@@ -233,7 +233,7 @@ $(() => {
 				$(this).closest(".accordion_item").show();
 				if (value.length > 1) {
 					var re = new RegExp(value, 'gi');
-					$(this).html(label_html.replace(re, '<span class="highlight">' + value + '</span>'));
+					//$(this).html(label_html.replace(re, '<span class="highlight">' + value + '</span>'));
 				}
 			}
 		});
