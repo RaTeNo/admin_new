@@ -336,20 +336,20 @@
 										</div>
 										<div class="step-simulator_head_right">
 											<a href="#" class="step-simulator_head_link">Добавить этап</a>
-											<a href="#" class="step-simulator_head_link">Поменять порядок</a>
+											<a href="#" class="step-simulator_head_link js-sort">Включить сортировку</a>
 										</div>										
 									</div>
-									<div class="steps-instructions">
+									<div class="steps-instructions -zone" id="sortlist2">
 										<div class="steps-instruction_item">
 											<div class="steps-instructions_head">
 												<div class="steps-instructions_head-left">
 													<div class="steps-instructions_head-number">1</div>
 													<div class="steps-instructions_head-title">Подготовка шлифовальной суспензии</div>
-													<div class="steps-instructions_head-settings">
+													<a href="" class="steps-instructions_head-settings">
 														<svg class="icon">
 															<use xlink:href="images/sprite.svg#setting"></use>
 														</svg>
-													</div>
+													</a>
 												</div>
 												<div class="steps-instructions_head-right">
 													<a href="#" class="steps-instructions_head-message"  data-tippy-content="Есть аудио примечание">
@@ -377,26 +377,32 @@
 															</svg>
 															<span>45</span>
 														</div>
+														<div class="sort_step_new steps-instructions_head-item">
+															<svg class="icon">
+																<use xlink:href="images/sprite.svg#sort_interactive"></use>
+															</svg>
+														</div>
 													</div>
+
 												</div>
 											</div>
 											<div class="steps-instructions_items">
-												<div class="steps-instructions_item">
+												<a href="" class="steps-instructions_item">
 													<div class="steps-instructions_item-number">1</div>
 													<div class="steps-instructions_item-info">
 														<div class="steps-instructions_item-title">
 															<span>Действие №1</span>
 															<div class="steps-instructions_item-links">
-																<a href="#">
+																<div>
 																	<svg class="icon">
 																		<use xlink:href="images/sprite.svg#photo2"></use>
 																	</svg>
-																</a>
+																</div>
 															</div>	
 														</div>
-														<a href="#" class="steps-instructions_item-text" data-tippy-content="Для получения равномерной по всей окружности фаски во время шлифования поворачивать пластину вокруг своей оси. Кликните, что бы открыть действие">Включить станок</a>
+														<div class="steps-instructions_item-text" data-tippy-content="Для получения равномерной по всей окружности фаски во время шлифования поворачивать пластину вокруг своей оси. Кликните, что бы открыть действие">Включить станок</div>
 													</div>
-												</div>
+												</a>
 												<div class="steps-instructions_item">
 													<div class="steps-instructions_item-number">2</div>
 													<div class="steps-instructions_item-info">
@@ -474,11 +480,11 @@
 												<div class="steps-instructions_head-left">
 													<div class="steps-instructions_head-number">1.1</div>
 													<div class="steps-instructions_head-title">Технологический процесс</div>
-													<div class="steps-instructions_head-settings">
+													<a href="" class="steps-instructions_head-settings">
 														<svg class="icon">
 															<use xlink:href="images/sprite.svg#setting"></use>
 														</svg>
-													</div>
+													</a>
 												</div>
 												<div class="steps-instructions_head-right">
 													<a href="#" class="steps-instructions_head-message"  data-tippy-content="Есть аудио примечание">
@@ -505,6 +511,11 @@
 																<use xlink:href="images/sprite.svg#message2"></use>
 															</svg>
 															<span>45</span>
+														</div>
+														<div class="sort_step_new steps-instructions_head-item">
+															<svg class="icon">
+																<use xlink:href="images/sprite.svg#sort_interactive"></use>
+															</svg>
 														</div>
 													</div>
 												</div>
@@ -566,11 +577,11 @@
 												<div class="steps-instructions_head-left">
 													<div class="steps-instructions_head-number">1.1</div>
 													<div class="steps-instructions_head-title">Технологический процесс</div>
-													<div class="steps-instructions_head-settings">
+													<a href="" class="steps-instructions_head-settings">
 														<svg class="icon">
 															<use xlink:href="images/sprite.svg#setting"></use>
 														</svg>
-													</div>
+													</a>
 												</div>
 												<div class="steps-instructions_head-right">
 													<a href="#" class="steps-instructions_head-message"  data-tippy-content="Есть аудио примечание">
@@ -597,6 +608,11 @@
 																<use xlink:href="images/sprite.svg#message2"></use>
 															</svg>
 															<span>45</span>
+														</div>
+														<div class="sort_step_new steps-instructions_head-item">
+															<svg class="icon">
+																<use xlink:href="images/sprite.svg#sort_interactive"></use>
+															</svg>
 														</div>
 													</div>
 												</div>
@@ -1094,6 +1110,33 @@
 				      placeholder: "ui-state-highlight"
 				    });
 					$( "#sortlist" ).disableSelection();
+				}
+			});
+
+			
+		</script>
+
+		<script>
+			$(".js-sort").on("click", function (event) {
+				event.preventDefault(); 
+				if($(this).hasClass("active"))
+				{
+					$(".sort_step_new").removeClass("active");
+
+					$(this).text("Включить сортировку");
+					$(this).removeClass("active");
+					$( "#sortlist2" ).sortable( "destroy" );
+				}
+				else
+				{	
+					$(".sort_step_new").addClass("active");
+
+					$(this).text("Отключить сортировку");
+					$(this).addClass("active");
+					$( "#sortlist2" ).sortable({
+				      placeholder: "ui-state-highlight"
+				    });
+					$( "#sortlist2" ).disableSelection();
 				}
 			});
 			
