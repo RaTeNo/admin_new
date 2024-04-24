@@ -3079,5 +3079,16 @@
         font-size: 18px;
     }
 
+    .steps-instructions_head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .steps-instructions_items > * {
+        width: 100%;
+    }
+    .steps-instructions_head-left {
+        margin-bottom: 12px;
+    }
+
 
 }

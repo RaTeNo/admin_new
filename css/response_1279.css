@@ -2057,6 +2057,23 @@
     }
 
 
+    .steps-instructions_items > * {
+        width: calc(100%/3 - 6px);
+        padding: 8px;
+        background: #F3F3FF;
+    }
+    .step-simulator_head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .step-simulator_head_link:first-child {
+        margin-left: 0;
+    }
+    .step-simulator_head_right {
+        margin-top: 12px;
+    }
+
+
 
 
 }
