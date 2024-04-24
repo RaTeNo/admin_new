@@ -1941,6 +1941,8 @@
         text-align: center;
     }
 
-
+    .sort_step_new{
+        display: none !important;
+    }
 
 }
