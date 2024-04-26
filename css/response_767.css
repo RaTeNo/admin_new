@@ -3091,4 +3091,38 @@
     }
 
 
+    .simulator-quiz_info-text {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .simulator-quiz_wrap-text {
+        font-size: 19px;
+        line-height: 25px;
+    }
+    .simulator-quiz_description-item-title {
+        font-size: 18px;
+        line-height: 23px;
+        margin-bottom: 10px;
+    }
+    .simulator-quiz_description-item-text {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 0px;
+    }
+    .simulator-quiz_item-title {
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 }

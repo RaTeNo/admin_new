@@ -95,6 +95,65 @@ $(() => {
 	});
 
 
+		var currentStep = 1,
+			totalSteps = 3
+
+		$('.simulator-quiz .head .count .total').text(totalSteps)
+
+
+
+
+	$('.simulator-quiz .next_btn').click(function (e) {
+		e.preventDefault()
+
+		currentStep++
+
+		$('.simulator-quiz .step').hide()
+		$('.simulator-quiz .step' + currentStep).fadeIn(500)
+
+		$('.simulator-quiz .progress .count .current').text(Math.round(currentStep / totalSteps * 100) + '%')
+		$('.simulator-quiz .progress .progress_bar div').width(currentStep / totalSteps * 100 + '%')
+
+		currentStep > 1
+			? $('.simulator-quiz .prev_btn').removeClass('disabled')
+			: $('.simulator-quiz .prev_btn').addClass('disabled')
+
+		if (currentStep == totalSteps) {
+			$('.simulator-quiz .head').hide()
+			$('.simulator-quiz .next_btn').addClass('disabled')
+		} else {
+			$('.simulator-quiz .head').show()
+			$('.simulator-quiz .next_btn').removeClass('disabled')
+		}
+
+	})
+
+
+	$('.simulator-quiz .prev_btn').click(function (e) {
+		e.preventDefault()
+
+		currentStep = currentStep - 1
+
+		$('.simulator-quiz .step').hide()
+		$('.simulator-quiz .step' + currentStep).fadeIn(500)
+
+		$('.simulator-quiz .progress .count .current').text(Math.round(currentStep / totalSteps * 100) + '%')
+		$('.simulator-quiz .progress .progress_bar div').width(currentStep / totalSteps * 100 + '%')
+
+		currentStep > 1
+			? $('.simulator-quiz .prev_btn').removeClass('disabled')
+			: $('.simulator-quiz .prev_btn').addClass('disabled')
+
+		if (currentStep == totalSteps) {
+			$('.simulator-quiz .head').hide()
+			$('.simulator-quiz .next_btn').addClass('disabled')
+		} else {
+			$('.simulator-quiz .head').show()
+			$('.simulator-quiz .next_btn').removeClass('disabled')
+		}
+	})
+
+
 
 	$('body').on('click', '.change-history_link', function (e) {
 		e.preventDefault()
