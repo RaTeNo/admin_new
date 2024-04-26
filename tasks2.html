@@ -456,9 +456,9 @@
 								</div>
 								<div class="task2_item-top-text">Проверить огнетушители в четвертом цеху</div>
 								<div class="task2_labels m2">
-									<button class="task2_item-top-label purple mt7">Выполнил</button>
-									<button class="task2_item-top-label purple mt7 modal_content" data-content="#callback_modal111">Выполнил, но с проблемой</button>
-									<button class="task2_item-top-label purple mt7 modal_content" data-content="#callback_modal111">Не выполнил</button>
+									<button class="task2_item-top-label purple mt7 modal_btn" data-content="#correction_modal">Выполнил</button>
+									<button class="task2_item-top-label purple mt7 modal_btn" data-content="#correction_modal">Выполнил, но с проблемой</button>
+									<button class="task2_item-top-label purple mt7 modal_btn" data-content="#correction_modal">Не выполнил</button>
 								</div>
 
 							</section>
@@ -1282,6 +1282,26 @@
 			</div>
 			<button>Отправить</button>
 		</form>
+	</section>
+
+	<section class="correction_modal" id="correction_modal">
+	    <div class="correction_modal-title">Предложить исправление</div>
+	    <div class="correction_modal-text">Ваше исправление</div>
+	    <form class="correction_modal-form">
+	        <div class="line">
+	            <div class="field">
+	                <textarea></textarea>
+	            </div>
+	        </div>
+	        <div class="correction_modal-btns">
+	            <a href="#" class="correction_modal-form-btn gray">
+	                <span>Назад</span>
+	            </a>
+	            <a href="#" class="correction_modal-form-btn">
+	                <span>Предложить</span>
+	            </a>
+	        </div>
+	    </form>
 	</section>
 
 
