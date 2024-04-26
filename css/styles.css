@@ -35763,9 +35763,13 @@ bottom: 20px;
     margin: 30px 23px 35px 0px; 
     position: relative;
     display: block;
+    width: 100%;
 }
 .simulator-quiz_img img {
     border-radius: 16px;
+    height: 75vh;
+    width: 100%;
+    object-fit: cover;
 }
 .simulator-quiz_img .full_screen {
     padding-right: 8px;
@@ -35857,6 +35861,8 @@ bottom: 20px;
     justify-content: center;  
     position: relative;
     width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .simulator-quiz_video .simulator-quiz_video-wrap .icon {
     position: absolute;
@@ -35882,12 +35888,11 @@ bottom: 20px;
     border-radius: 8px;
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 75vh;
 }
 .simulator-quiz_video-wrap {
 	position: relative;
-	width: 230px;
-	height: 230px;
+	width: 100%;
     display: block;
 }
 
