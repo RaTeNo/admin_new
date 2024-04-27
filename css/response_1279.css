@@ -2073,7 +2073,7 @@
         margin-top: 12px;
     }
 
-
+    /*
     .simulator-quiz_box {
         flex-direction: column-reverse;
         gap: 5px;
@@ -2082,6 +2082,7 @@
         margin: 20px 18px 10px;
         position: relative;
         display: block;
+        max-width: calc(100% - 36px);
     }
     .simulator-quiz_img img {
         width: 100%;
@@ -2093,6 +2094,10 @@
     .simulator-quiz_head {
         padding: 22px 18px 19px;
         gap: 10px;
+    }*/
+
+    .simulator-quiz_wrap{
+    	width: 50%;
     }
     
 
