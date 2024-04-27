@@ -35969,3 +35969,17 @@ bottom: 20px;
     margin-right: 10px;
     flex-shrink: 0;
 }
+
+.content_flex_full_action .row{
+    display: block;
+}
+
+.content_flex.content_flex_full_action .content{
+    width: 100%;
+    padding-bottom: 52px;
+}
+
+.content_flex.content_flex_full_action .simulator-quiz_img img,
+.content_flex.content_flex_full_action  .simulator-quiz_video img{
+    height: 60vh;
+}
