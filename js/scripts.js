@@ -95,6 +95,11 @@ $(() => {
 	});
 
 
+
+
+	var currentStep = 1,
+		totalSteps = $(".simulator-quiz_block .step").length-1;
+
 	$(".js-select_step").click(function (e) {
 		$('.simulator-quiz .step').hide()
 		$('.simulator-quiz .step' + 0).fadeIn(500)
@@ -104,17 +109,20 @@ $(() => {
 		e.preventDefault()
 		$('.simulator-quiz .step').hide()
 		$('.simulator-quiz .step' + $(this).data("number")).fadeIn(500)
+		currentStep = $(this).data("number");
+		$('.simulator-quiz .progress .count .current').text(Math.round(currentStep / totalSteps * 100) + '%')
+		$('.simulator-quiz .progress .progress_bar div').width(currentStep / totalSteps * 100 + '%')
 	});
 
 
-	var currentStep = 1,
-		totalSteps = $(".simulator-quiz_block .step").length-1;
-
 	$('.simulator-quiz .head .count .total').text(totalSteps)
+
+	$('.simulator-quiz .progress .count .current').text(Math.round(currentStep / totalSteps * 100) + '%')
+	$('.simulator-quiz .progress .progress_bar div').width(currentStep / totalSteps * 100 + '%')
 
 
 	document.addEventListener('keydown', function(event) {
-		if(event.code === 'ArrowRight') {
+		if(event.code === 'ArrowRight' && currentStep<totalSteps) {
 			currentStep++
 
 			$('.simulator-quiz .step').hide()
@@ -135,7 +143,7 @@ $(() => {
 				$('.simulator-quiz .next_btn').removeClass('disabled')
 			}
 		}
-		if(event.code === 'ArrowLeft') {
+		if(event.code === 'ArrowLeft' && currentStep>1) {
 			if(currentStep>1)
 			{
 				currentStep = currentStep - 1
