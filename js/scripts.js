@@ -95,8 +95,20 @@ $(() => {
 	});
 
 
+	$(".js-select_step").click(function (e) {
+		$('.simulator-quiz .step').hide()
+		$('.simulator-quiz .step' + 0).fadeIn(500)
+	});
+
+	$(".simulator-quiz_item_step").click(function (e) {
+		e.preventDefault()
+		$('.simulator-quiz .step').hide()
+		$('.simulator-quiz .step' + $(this).data("number")).fadeIn(500)
+	});
+
+
 	var currentStep = 1,
-		totalSteps = $(".simulator-quiz_block .step").length;
+		totalSteps = $(".simulator-quiz_block .step").length-1;
 
 	$('.simulator-quiz .head .count .total').text(totalSteps)
 

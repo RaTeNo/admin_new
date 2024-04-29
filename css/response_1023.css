@@ -515,6 +515,8 @@
     }
 
 
-
+    .simulator-quiz_item_step{
+        width: 100%;
+    }
 
 }
