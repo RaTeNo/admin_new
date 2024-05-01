@@ -26,9 +26,10 @@ $(() => {
     $(".search_ai").on("click", function(){
     	$(".checkbox_ai").prop("checked", true);
     	$(".select_cats").addClass("active");
-    	$(".js-search").addClass("ai");
+        $(".js-search").addClass("ai").prop("placeholder", "Введите ваш вопрос");
+        $(".search_faq").addClass("ai");
         $(".wrap_search_default").hide();
-        $(this).removeClass("active");
+        $(".search_ai").removeClass("active");
     });
 
     $(".select_search input").on("change", function(){
@@ -84,13 +85,16 @@ $(() => {
 })
 
 function addAI(){
-	if(!$(".accordion_item").is(':visible')){
-		$(".title_faq_result span").text("По Вашему запросу ничего не найдено. Попробуйте поискать с нейросетью")
-		$(".search_ai").addClass("active");
-	}
-	else
-	{
-		$(".title_faq_result span").text("Результаты поиска");
-		$(".search_ai").removeClass("active");
-	}
+    if($(".wrap_search_default").is(':visible'))
+    {
+    	if(!$(".accordion_item").is(':visible')){
+    		$(".title_faq_result span").text("По Вашему запросу ничего не найдено. Попробуйте поискать с нейросетью")
+    		$(".search_ai").addClass("active");
+    	}
+    	else
+    	{
+    		$(".title_faq_result span").text("Результаты поиска");
+    		$(".search_ai").removeClass("active");
+    	}
+    }
 }
