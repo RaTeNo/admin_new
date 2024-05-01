@@ -33,13 +33,13 @@ $(() => {
     	if($(".select_search input:checked").val()==2)
     	{    		
     		$(".select_cats").addClass("active");
-    		$(".js-search").addClass("ai");
+    		$(".js-search").addClass("ai").prop("placeholder", "Введите ваш вопрос");
     		$(".search_faq").addClass("ai");
     	}
     	else
     	{
     		$(".select_cats").removeClass("active");
-    		$(".js-search").removeClass("ai");
+    		$(".js-search").removeClass("ai").prop("placeholder", "Напишите термин");
     		$(".search_faq").removeClass("ai");
     		$(".wrap_search_ai").hide();
     		$(".wrap_search_default").show();
@@ -48,6 +48,7 @@ $(() => {
 
     $('body').on("click", '.search_faq.ai button', function(event) {
     	event.preventDefault()
+        $(".search_ai").removeClass("active");
     	//Запрос к AI 
     	if($(".filter_cats_item.active").length!=0){
     		$(".wrap_search_default").hide();
