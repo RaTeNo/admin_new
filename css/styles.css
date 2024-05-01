@@ -36051,6 +36051,10 @@ bottom: 20px;
     margin-left: 15px;
 }
 
+.select_search input{
+    display: none;
+}
+
 .select_search label{
     height: 34px;
     line-height: 34px;
