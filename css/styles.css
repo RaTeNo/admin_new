@@ -36056,8 +36056,11 @@ bottom: 20px;
     line-height: 34px;
     padding: 0 15px;
     cursor: pointer;
-    transition: 0.3s;    
+    transition: 0.3s;
     border-radius: 54px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .select_search label:has(input:checked){
@@ -36404,4 +36407,10 @@ bottom: 20px;
     gap:15px;
     align-items: center;
     margin-top: 10px;
+}
+
+.select_search label .ai{
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
 }
