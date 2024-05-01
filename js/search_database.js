@@ -1,0 +1,90 @@
+$(() => {
+
+    /*$('body').on("keyup", '.js-search-courses', function(event) {
+        let value = $(this).val();*/
+
+
+	/*$(".filter_courses_wrap .filter_item").on("click", function(){
+        $(this).toggleClass("active");*/
+
+
+    $(".select_cats_all").on("click", function(){
+    	$(".filter_cats_item").addClass("active");    	
+    	$(".select_cats_filter").removeClass("error");
+    });
+
+    $(".deselect_cats_all").on("click", function(){
+    	$(".filter_cats_item").removeClass("active")
+    });
+
+
+    $(".filter_cats_item").on("click", function(){
+    	$(this).toggleClass("active");    	
+    	$(".select_cats_filter").removeClass("error");
+    });
+
+    $(".search_ai").on("click", function(){
+    	$(".checkbox_ai").prop("checked", true);
+    	$(".select_cats").addClass("active");
+    	$(".js-search").addClass("ai");
+    });
+
+    $(".select_search input").on("change", function(){
+    	if($(".select_search input:checked").val()==2)
+    	{    		
+    		$(".select_cats").addClass("active");
+    		$(".js-search").addClass("ai");
+    		$(".search_faq").addClass("ai");
+    	}
+    	else
+    	{
+    		$(".select_cats").removeClass("active");
+    		$(".js-search").removeClass("ai");
+    		$(".search_faq").removeClass("ai");
+    		$(".wrap_search_ai").hide();
+    		$(".wrap_search_default").show();
+    	}
+    });
+
+    $('body').on("click", '.search_faq.ai button', function(event) {
+    	event.preventDefault()
+    	//Запрос к AI 
+    	if($(".filter_cats_item.active").length!=0){
+    		$(".wrap_search_default").hide();
+    		$(".wrap_search_ai").show();
+    		setTimeout(() => {
+				$(".search_ai_loading").hide();	
+				$(".search_ai_content").show();
+			}, 3000);
+    	}
+    	else
+    	{
+    		$(".select_cats_filter").addClass("error");
+    	}
+    });
+
+    $(".search_ai_history_show").on("click", function(){
+    	console.log($(this).text())
+    	if($(this).text()=="Посмотреть ответ"){
+    		$(this).text("Скрыть ответ").parent().parent().find(".search_ai_history_desc").show();
+    	}
+    	else{
+			$(this).text("Посмотреть ответ").parent().parent().find(".search_ai_history_desc").hide();
+    	}
+    });
+
+
+
+})
+
+function addAI(){
+	if(!$(".accordion_item").is(':visible')){
+		$(".title_faq_result span").text("По Вашему запросу ничего не найдено. Попробуйте поискать с нейросетью")
+		$(".search_ai").addClass("active");
+	}
+	else
+	{
+		$(".title_faq_result span").text("Результаты поиска");
+		$(".search_ai").removeClass("active");
+	}
+}

@@ -1945,4 +1945,8 @@
         display: none !important;
     }
 
+    .wrap_search_ai{
+        margin-top: 0px !important;
+    }
+
 }

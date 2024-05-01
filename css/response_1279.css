@@ -2099,6 +2099,24 @@
     .simulator-quiz_wrap{
     	width: 50%;
     }
+
+    .page_title_bd{
+        flex-direction: column;
+        gap:15px;
+        align-items: baseline;
+    }
+
+    .select_search, .select_cats{
+        margin-left: 0;
+    }
+
+    .select_cats_wrap .mini_modal{
+        width: 250px;
+    }
+
+    .filter_cats_buttons{
+        margin-bottom: 15px;
+    }
     
 
 
