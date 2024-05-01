@@ -27,6 +27,8 @@ $(() => {
     	$(".checkbox_ai").prop("checked", true);
     	$(".select_cats").addClass("active");
     	$(".js-search").addClass("ai");
+        $(".wrap_search_default").hide();
+        $(this).removeClass("active");
     });
 
     $(".select_search input").on("change", function(){
@@ -35,6 +37,8 @@ $(() => {
     		$(".select_cats").addClass("active");
     		$(".js-search").addClass("ai").prop("placeholder", "Введите ваш вопрос");
     		$(".search_faq").addClass("ai");
+            $(".wrap_search_default").hide();
+            $(".search_ai").removeClass("active");
     	}
     	else
     	{
@@ -43,6 +47,7 @@ $(() => {
     		$(".search_faq").removeClass("ai");
     		$(".wrap_search_ai").hide();
     		$(".wrap_search_default").show();
+
     	}
     });
 
