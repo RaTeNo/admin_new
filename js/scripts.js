@@ -103,6 +103,7 @@ $(() => {
 	$(".js-select_step").click(function (e) {
 		$('.simulator-quiz .step').hide()
 		$('.simulator-quiz .step' + 0).fadeIn(500)
+		$(".simulator-quiz .btns").hide();
 	});
 
 	$(".simulator-quiz_item_step").click(function (e) {
@@ -112,6 +113,7 @@ $(() => {
 		currentStep = $(this).data("number");
 		$('.simulator-quiz .progress .count .current').text(Math.round(currentStep / totalSteps * 100) + '%')
 		$('.simulator-quiz .progress .progress_bar div').width(currentStep / totalSteps * 100 + '%')
+		$(".simulator-quiz .btns").show();
 	});
 
 

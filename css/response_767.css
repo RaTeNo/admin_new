@@ -2793,12 +2793,14 @@
     }
 
     .task2_item-top {
-        flex-direction: column-reverse;
+        flex-wrap:wrap;
         align-items: flex-start;
     }
     .task2_item-top-text {
         margin-right: 0;
         margin-top: 5px;
+        width: 100%;
+        order:2;
     }
 
     .tasks-block_info-label {
@@ -3138,9 +3140,26 @@
     }
 
 
+    .almanac_items div > *{
+        width: 35px;
+        height: 35px;
+    }
 
+    .almanac_item span{
+        font-size: 11px;
+        width: 17px;
+        height: 17px;
+        line-height: 13px;
+    }
 
+    .simulator-quiz_video .simulator-quiz_video-wrap{
+        width: calc(100% - 40px);
+        margin-left: 20px;
+    }
 
+    .task2_item-top-label{
+        margin-top: 7px;
+    }
 
 
 

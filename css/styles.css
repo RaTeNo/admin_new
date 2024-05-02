@@ -24126,7 +24126,7 @@ form .form_btns input[type=file] + label,
 }
 .tasks-block_info-text {
     margin-top: 18px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 .tasks-block_info-text p {
     font-weight: 400;
@@ -31435,6 +31435,7 @@ bottom: 20px;
     border-radius: 50%;
     left: 7px;
     top: calc(50% - 3px);
+    background: #fff;
 }
 .task2_item-top-label.green:before {
     background: #1CBD2C;
@@ -31444,6 +31445,9 @@ bottom: 20px;
 }
 .task2_item-top-label.red:before {
     background: #DF2E2E;
+}
+.task2_item-top-label.purple:before{
+    display: none;
 }
 .task2_item-bottom {
     display: flex;
@@ -32259,6 +32263,10 @@ bottom: 20px;
     z-index: 1;
 }
 
+.solutions-tasks_text{
+    width: 100%;
+}
+
 
 .solutions-tasks_text .hide{
 	display: none;
@@ -32672,10 +32680,10 @@ bottom: 20px;
     display: flex;
 }
 .almanac_items div > * {
-    border-radius: 87px;
+    border-radius: 9px;
     background: #fff;
-    width: 35px;
-    height: 35px;
+    width: 70px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32690,6 +32698,10 @@ bottom: 20px;
     background: #BDBBD8;
     position: relative;
 }
+.almanac_items div > *:nth-child(6), .almanac_items div > *:nth-child(7){
+    background: #4F8FEF;
+    color:#fff;
+}
 .almanac_item.active {
     background: #0AB511;
     color: #fff; 
@@ -32701,19 +32713,19 @@ bottom: 20px;
 .almanac_item span {
     display: block;
     position: absolute;
-    width: 18px;
-    height: 18px;
-    font-size: 12px;
-    line-height: 16px;
+    width: 27px;
+    height: 27px;
+    font-size: 16px;
+    line-height: 23px;
     letter-spacing: -1px;
     font-weight: 700;
     border-radius: 50%;
-    top: -4px;
-    right: 0px;
+    top: -11px;
+    right: -8px;
     z-index: 2;
     background: #BDBBD8;
     color: #565289;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
 }
 /*.almanac_item:after {
     position: absolute;
@@ -32798,7 +32810,9 @@ bottom: 20px;
     background: #bdbbd899;
 }
 
-
+.almanac_status-item span.wensday {
+    background: #537BE2;
+}
 
 .change-history_wrap {
     padding: 16px;
@@ -35860,9 +35874,10 @@ bottom: 20px;
     align-items: center;
     justify-content: center;  
     position: relative;
-    width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-right: 20px;
+    width: calc(100% - 20px);
 }
 .simulator-quiz_video .simulator-quiz_video-wrap .icon {
     position: absolute;
@@ -36428,4 +36443,38 @@ bottom: 20px;
     width: 15px;
     height: 15px;
     flex-shrink: 0;
+}
+
+.filter_cats_modal_close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    opacity: 0.2;
+    cursor: pointer;
+    transition: opacity ease 0.5s;
+    z-index: 100;
+}
+.filter_cats_modal_close:hover {
+    opacity: 1;
+}
+
+.filter_cats_modal_close::before,
+.filter_cats_modal_close::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: #000;
+}
+
+.filter_cats_modal_close::before {
+    transform: rotate(45deg);
+}
+
+.filter_cats_modal_close::after {
+    transform: rotate(-45deg);
 }

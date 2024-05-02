@@ -81,6 +81,12 @@ $(() => {
     });
 
 
+    $(".filter_cats_modal_close").on("click", function(){
+        $('.mini_modal, .mini_modal_btn').removeClass('active')
+        if (is_touch_device()) $('body').css('cursor', 'default')
+    });
+
+
 
 })
 
