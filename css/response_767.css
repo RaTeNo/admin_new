@@ -3098,7 +3098,7 @@
         line-height: 25px;
     }
     .simulator-quiz_wrap-text {
-        font-size: 19px;
+        font-size: 20px;
         line-height: 25px;
     }
     .simulator-quiz_description-item-title {
@@ -3159,6 +3159,63 @@
 
     .task2_item-top-label{
         margin-top: 7px;
+    }
+
+    .shop_head-links {
+        margin-top: 12px;
+        flex-direction: column;
+    }
+    .shop_head-links a {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .shop_head-links a + a {
+        margin-top: 10px;
+    }
+    .shop-new_zakaz {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .shop-new_zakaz button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .shop-new_zakaz-left {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .shop-new_zakaz-product {
+        margin-top: 10px;
+    }
+
+    .shop_accrual-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .shop_purchase-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .shop_award-head {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .shop_top-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .shop_top-box {
+        align-items: flex-start;
+    }
+
+    .knowledge-base_items > * {
+        width: 100%;
+    }
+    .knowledge-base_items {
+        gap: 10px;
     }
 
 

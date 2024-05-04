@@ -1949,4 +1949,61 @@
         margin-top: 0px !important;
     }
 
+    .simulator-answer_item .audio_message {
+        width: 100%;
+    }
+
+    /* .simulator-quiz_wrap-text {
+        order: 1;
+        margin-top: 15px;
+        margin-left: -55px;
+    } */
+    .simulator-quiz_wrap-labels {
+        margin-top: 7px;
+    }
+    .simulator-quiz_wrap-labels span {
+        display: none;
+    }
+    .shop-new_history-item-title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .shop-new_history-item-price {
+        margin-left: 0;
+        margin-bottom: 6px;
+        margin-top: 5px;
+    }
+    .shop_head-links {
+        width: 100%;
+    }
+    .shop_card-title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .shop_card-title .nice-select .list {
+        left: 0;
+    }
+    .shop_card-title {
+        margin-bottom: 15px;
+    }
+    .shop_card-title .nice-select {
+        margin-top: 15px;
+    }
+    .comment_bottom:before {
+        width: calc(100% + 24px);
+    }
+
+    .simulator-quiz_step_select_head .simulator-quiz_wrap-labels span {
+        display: block;
+    }
+
+
+
+
+
+
+
+
+
+
 }

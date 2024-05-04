@@ -2117,7 +2117,10 @@
     .filter_cats_buttons{
         margin-bottom: 15px;
     }
-    
+
+    .knowledge-base_items > * {
+        width: calc(100% / 2 - 11px);
+    }
 
 
 }

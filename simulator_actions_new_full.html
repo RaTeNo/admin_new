@@ -56,7 +56,7 @@
 
 							<div class="simulator-quiz">
 								<div class="simulator-quiz_head">
-									<a href="/">
+									<a href="/" class="modal_btn" data-content="#modal_next">
 										<svg class="icon">
 											<use xlink:href="images/sprite.svg#ic_arrow_left2"></use>
 										</svg>
@@ -80,6 +80,12 @@
 													<div class="simulator-quiz_wrap-number">1.1</div>
 													<div class="simulator-quiz_wrap-info">
 														<div class="simulator-quiz_wrap-text">Зачистка заусенцев на основаниях ШЖ0 805.206 ТК</div>
+														<div class="simulator-quiz_wrap-labels">
+															<svg class="icon">
+																<use xlink:href="images/sprite.svg#completed"></use>
+															</svg>
+															<span>Рабочих действий: </span> 26
+														</div>
 													</div>
 												</div>
 												<div class="simulator-quiz_items">
@@ -199,15 +205,39 @@
 												<div class="simulator-quiz_description">
 													<div class="simulator-quiz_step_select">
 														<a href="" class="simulator-quiz_item_step" data-number="1">
-															<div class="simulator-quiz_item_step_number">1.1</div>
+															<div class="simulator-quiz_step_select_head">
+																<div class="simulator-quiz_item_step_number">1.1</div>
+																<div class="simulator-quiz_wrap-labels">
+																	<svg class="icon">
+																		<use xlink:href="images/sprite.svg#completed"></use>
+																	</svg>
+																	<span>26</span>
+																</div>
+															</div>															
 															<div class="simulator-quiz_item_step_title">Проверка рабочего места и оборудования</div>
 														</a>
 														<a href="" class="simulator-quiz_item_step" data-number="2">
-															<div class="simulator-quiz_item_step_number">1.2</div>
+															<div class="simulator-quiz_step_select_head">
+																<div class="simulator-quiz_item_step_number">1.2</div>
+																<div class="simulator-quiz_wrap-labels">
+																	<svg class="icon">
+																		<use xlink:href="images/sprite.svg#completed"></use>
+																	</svg>
+																	<span>26</span>
+																</div>
+															</div>	
 															<div class="simulator-quiz_item_step_title">Подготовка к изготовлению покрышек и осмотр сборочного барабана</div>
 														</a>
 														<a href="" class="simulator-quiz_item_step" data-number="3">
-															<div class="simulator-quiz_item_step_number">1.3</div>
+															<div class="simulator-quiz_step_select_head">
+																<div class="simulator-quiz_item_step_number">1.3</div>
+																<div class="simulator-quiz_wrap-labels">
+																	<svg class="icon">
+																		<use xlink:href="images/sprite.svg#completed"></use>
+																	</svg>
+																	<span>26</span>
+																</div>
+															</div>	
 															<div class="simulator-quiz_item_step_title">Порядок действий сборщика при работе с системой штрихкодировани</div>
 														</a>
 													</div>
@@ -346,6 +376,16 @@
 				</a>			
 			</div>							
 		</form>
+	</section>
+
+
+	<section class="modal_next" id="modal_next">
+		<svg class="icon">
+			<use xlink:href="images/sprite.svg#question"></use>
+		</svg>			
+		<div class="modal_next-title">Выйти из полноэкранного режима</div>
+		<div class="modal_next-text">Вы уверены, что хотите выйти из полноэкранного режима?</div>
+		<a href="#" class="modal_next-btn">Выйти</a>		
 	</section>
 
 	<!-- Подключение javascript файлов -->
