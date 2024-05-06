@@ -131,7 +131,8 @@ $(() => {
 
 
 	document.addEventListener('keydown', function (event) {
-		if (event.code === 'ArrowRight' && currentStep < totalSteps) {
+	
+		if ((event.code === 'ArrowRight' || event.code === 'PageDown') && currentStep < totalSteps) {
 			currentStep++
 
 			$('.simulator-quiz .step').hide()
@@ -152,7 +153,7 @@ $(() => {
 				$('.simulator-quiz .next_btn').removeClass('disabled')
 			}
 		}
-		if (event.code === 'ArrowLeft' && currentStep > 1) {
+		if ((event.code === 'ArrowLeft' || event.code === 'PageUp') && currentStep > 1) {
 			if (currentStep > 1) {
 				currentStep = currentStep - 1
 

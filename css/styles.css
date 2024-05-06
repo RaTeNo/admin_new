@@ -32198,7 +32198,7 @@ bottom: 20px;
 }
 
 .title_faq_update{
-    border-radius: 59px;
+    border-radius: 15px;
     background: rgba(28, 189, 44, 0.20);
     color: #1CBD2C;
     font-family: Ubuntu;
@@ -37441,6 +37441,17 @@ bottom: 20px;
     margin-top: 0;
 }
 
-
+.draft_db{
+	background: #D9D6F0;
+    border-radius: 15px;
+    padding: 6px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #515781;
+    display: inline-block;
+    margin-left: 10px;
+}
 
 
