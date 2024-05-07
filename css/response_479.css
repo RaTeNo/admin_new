@@ -1999,6 +1999,8 @@
 
     .select_cats{
         margin-left: auto;
+        width: 100%;
+        justify-content: flex-end;
     }
 
 
