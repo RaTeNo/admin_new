@@ -299,7 +299,11 @@
 
 						<section class="content knowledgebase">
 							<div class="page_title page_title_bd">
-								База знаний
+								<a href="https://test5.xskill.com/cabinet/user/faq" class="page_title_bd_link">
+						            <svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_left"></use></svg>
+						             Назад
+						        </a>
+						       
 
 								<div class="select_search">
 									<label><input type="radio" name="select_search" value="1" checked>Обычный поиск</label>
@@ -337,7 +341,8 @@
 
 							<section class="faq">
 								<form class="search_faq">
-									<input type="text" class="js-search input" placeholder="Напишите термин">
+									<!-- <input type="text" class="js-search input" placeholder="Напишите термин"> -->
+									<textarea rows="1" class="js-search input" id="autoresize" placeholder="Напишите термин"></textarea>
 									<button>Найти</button>
 								</form>
 

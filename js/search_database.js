@@ -8,6 +8,17 @@ $(() => {
         $(this).toggleClass("active");*/
 
 
+    const textarea = document.querySelector('#autoresize');
+
+    textarea.addEventListener( 'input', autosize );
+                 
+    function autosize(){
+        this.style.height = 'auto';
+        let applyNow = this.style.offsetHeight;
+        this.style.height = this.scrollHeight + 0 + 'px';
+    }
+
+
     $(".select_cats_all").on("click", function(){
     	$(".filter_cats_item").addClass("active");    	
     	$(".select_cats_filter").removeClass("error");

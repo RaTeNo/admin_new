@@ -12250,10 +12250,11 @@ section.total {
     border-radius: 54px;
     display: block;
     width: 100%;
-    height: 50px;
-    padding: 0 20px 0 50px;
+    min-height: 50px;
+    padding: 17px 120px 17px 50px;
     margin-bottom: 30px;
     font-family: 'Ubuntu';
+    overflow: hidden;
 }
 
 .title_faq{
@@ -15436,6 +15437,7 @@ background: #64C841;
     border-radius: 55px;
     background: var(--main_color);
     top: 4px;
+    top: calc(50% - 36px);
 }
 
 
@@ -37455,3 +37457,8 @@ bottom: 20px;
 }
 
 
+.page_title_bd_link{
+    display: flex;
+    align-items: center;
+    color:#353352 !important;
+}
