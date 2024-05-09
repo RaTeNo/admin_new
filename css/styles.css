@@ -30700,7 +30700,7 @@ bottom: 20px;
     background: #79C54B;
 }
 .projects-top_item-label.blau {
-    background: #0F7DFF;
+    background: var(--main_color);
 }
 
 .projects-top_item-label.orange {
@@ -36074,7 +36074,6 @@ bottom: 20px;
     align-items: center;
     padding: 0 6px;
     gap:6px;
-    margin-left: 15px;
 }
 
 .select_search input{

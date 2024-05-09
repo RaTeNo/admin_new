@@ -2633,6 +2633,7 @@
     }
     .idea-head_left {
         margin-bottom: 15px !important;
+        width: 100% !important;
     }
     .idea-head .select-right {
         margin-left: 0;
