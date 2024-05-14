@@ -2032,7 +2032,9 @@
 
     .dialog .message.answer{
         align-items: end;
+        flex-direction: column-reverse;
     }
+
 
     .dialog .message.answer .photo{
         margin-right: 12px;
