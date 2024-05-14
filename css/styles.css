@@ -35605,7 +35605,7 @@ bottom: 20px;
 .simulator-quiz_wrap {
     padding: 26px 18px 19px;
     border-right: 1px solid #C1C1C1;
-    width: calc(100%);
+    width: calc(50%);
     flex-shrink: 0;
     padding-bottom: 126px;
 }

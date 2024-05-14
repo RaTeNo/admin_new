@@ -2030,7 +2030,13 @@
     }
 
 
+    .dialog .message.answer{
+        align-items: end;
+    }
 
+    .dialog .message.answer .photo{
+        margin-right: 12px;
+    }
 
 
 
