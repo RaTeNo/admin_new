@@ -2003,8 +2003,31 @@
     }
 
 
+    .dialog .message{
+        flex-direction: column;
+        gap: 10px;
+        align-content: flex-start;
+    }
 
+    .dialog .message .photo + .info{
+        margin-left: 0;
+    }
 
+    .dialog .message .info{
+        max-width: 100%;
+    }
+
+    .correction-btn{
+        margin-left: 0;
+    }
+
+    .dialog .message .photo{
+        align-self: auto;
+    }
+
+    .dialog .message .prompt, .gtp_message{
+        margin-left: 0;
+    }
 
 
 
