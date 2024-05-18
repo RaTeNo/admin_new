@@ -36343,6 +36343,7 @@ bottom: 20px;
 
     box-shadow: 2px 4px 60px 0px rgba(41, 44, 124, 0.10);
     padding: 15px;
+    margin-bottom: 20px;
 }
 
 .search_ai_head{
@@ -36398,6 +36399,7 @@ bottom: 20px;
     display: flex;
     gap:15px;
     align-items: center;
+    justify-content: space-between;
 }
 
 .search_ai_history_head_title{
@@ -36412,6 +36414,11 @@ bottom: 20px;
     margin-top: 5px;
 }
 
+.search_ai_history_btn{
+    display: flex;
+    gap: 10px;
+}
+
 .search_ai_history_show{
     color: #0085FF;
     font-size: 12px;
@@ -36420,6 +36427,10 @@ bottom: 20px;
     cursor: pointer;
     margin-left: auto;
     text-wrap: nowrap;
+}
+
+.search_ai_history_show.red{
+    color:red;
 }
 
 .search_ai_history_desc{
