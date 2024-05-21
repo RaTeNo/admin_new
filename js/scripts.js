@@ -394,29 +394,30 @@ $(() => {
 		}
 	}
 
-
-	var swiper = new Swiper('.shop-new_leader .swiper', {
-		slidesPerView: 3,
-		spaceBetween: 13,
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-		breakpoints: {
-			320: {
-				slidesPerView: 1,
-				spaceBetween: 0
+	if($(".shop-new_leader .swiper").length>0){
+		var swiper = new Swiper('.shop-new_leader .swiper', {
+			slidesPerView: 3,
+			spaceBetween: 13,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
 			},
-			480: {
-				slidesPerView: 2,
-				spaceBetween: 13
-			},
-			767: {
-				slidesPerView: 3,
-				spaceBetween: 13
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+					spaceBetween: 0
+				},
+				480: {
+					slidesPerView: 2,
+					spaceBetween: 13
+				},
+				767: {
+					slidesPerView: 3,
+					spaceBetween: 13
+				}
 			}
-		}
-	})
+		})
+	}
 
 
 	// Тест - Пары

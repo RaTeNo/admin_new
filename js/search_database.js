@@ -81,13 +81,13 @@ $(() => {
     	}
     });
 
-    $(".search_ai_history_show").on("click", function(){
+    $(".search_ai_history_show:not(.red)").on("click", function(){
     	console.log($(this).text())
     	if($(this).text()=="Посмотреть ответ"){
-    		$(this).text("Скрыть ответ").parent().parent().find(".search_ai_history_desc").show();
+    		$(this).text("Скрыть ответ").parent().parent().parent().find(".search_ai_history_desc").show();
     	}
     	else{
-			$(this).text("Посмотреть ответ").parent().parent().find(".search_ai_history_desc").hide();
+			$(this).text("Посмотреть ответ").parent().parent().parent().find(".search_ai_history_desc").hide();
     	}
     });
 
