@@ -347,7 +347,7 @@ $(() => {
 		//$(".highlight").replaceWith(function () { return $(this).contents(); });
 	});
 
-	$('body').on("keyup", '.js-search', function (event) {
+	/*$('body').on("keyup", '.js-search', function (event) {
 		//$(".highlight").replaceWith(function () { return $(this).contents(); });
 		let value = $(this).val();
 		if (value == "") {
@@ -375,7 +375,7 @@ $(() => {
 		});
 
 		addAI();
-	});
+	});*/
 
 
 	// Тест - Поля ввода в тексте
