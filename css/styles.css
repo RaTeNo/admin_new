@@ -28429,7 +28429,7 @@ form .form_btns input[type=file] + label,
     background: #212aff;
 }
 .idea-block_item-text {
-    color: #7C81A1;
+    color: #000;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -30745,7 +30745,7 @@ bottom: 20px;
     }
 }
 
-.faq .total_file_desc .links > *{
+.faq .total_file_desc .links > *, .idea-block_item .total_file_desc .links > *{
     width: auto;
 }
 
