@@ -2023,6 +2023,7 @@
 
     .dialog .message .photo{
         align-self: auto;
+        display: none;
     }
 
     .dialog .message .prompt, .gtp_message{
@@ -2038,6 +2039,10 @@
 
     .dialog .message.answer .photo{
         margin-right: 12px;
+    }
+
+    .message_form{
+        margin-left: 0;
     }
 
 
