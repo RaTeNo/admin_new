@@ -7898,12 +7898,12 @@ aside .menu .sub_menu a.active
     height: 45px;
     margin: auto;
 }
-
+/*
 .dialog .message:has(.feedback_ai) .prompt
 {
      margin-top: 30px;
 }
-
+*/
 
 .dialog .message .prompt
 {
