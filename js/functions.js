@@ -56,6 +56,13 @@ $(() => {
 		}],
 		{
 	    on: {
+	    	/*done: (fancybox, slide) => {
+	    		var dropdownParent = $(document.body);
+	    		if ($(".js-example-basic-single222").length > 0) {
+					$('.js-example-basic-single222').select2({dropdownParent: dropdownParent});
+				}
+	    	},*/
+
 		    closing: (fancybox, slide) => {
                 let videos = $('video');
                 $.each(videos, function(key, video) {

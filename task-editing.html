@@ -320,7 +320,7 @@
 								<div class="line">
 									<div class="task-page_label">Ответственный <span>(Начните вводить имя)</span></div>
 									<div class="field">										
-										<select class="js-example-basic-multiple" multiple="multiple">
+										<select class="js-example-basic-multiple" multiple="multiple" id="tag">
 											<option value="AL">Василий Иванов</option>
 											<option value="WY">Василий Иванов</option>
 										</select>										
@@ -347,7 +347,7 @@
                                                 </div>
 											</div>
 											<div class="task-editing_btns">
-												<button>Переименовать</button>
+												<button type="button" class="modal_btn rename-subtask-modal-btn" data-content="#rename_subtask">Редактировать</button>
 												<button>Архивировать</button>
 												<button>Удалить</button>
 											</div>
@@ -644,6 +644,41 @@
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
 		</div>
 
+		<section class="correction_modal" id="rename_subtask" >
+	        <div class="correction_modal-title">Редактирование подзадачи</div>
+	        <form method="POST" action="#" class="correction_modal-form">
+	            <input type="hidden" name="_token" value="3FWSaoPEp88CpmvqxrRXEapmT2A8isXYjCGAiMw1" autocomplete="off">            <input type="hidden" name="_method" value="patch">
+	            <div class="line">
+	                <div class="field">
+	                    <input type="datetime-local" name="deadline_at" value="">
+	                </div>
+	            </div>
+
+	            <div class="line">
+	                <div class="field">
+	                    <select name="user_id">
+	                                                    <option value="">Выберите пользователя</option>
+	                            <option value="1">Иван Иванов</option>
+	                             <option value="1">Иван Иванов</option>
+	                              <option value="1">Иван Иванов</option>
+	                               <option value="1">Иван Иванов</option>
+	                                            </select>
+	                </div>
+	            </div>
+
+	            <div class="line">
+	                <div class="field">
+	                    <textarea name="title"></textarea>
+	                </div>
+	            </div>
+	            <div class="correction_modal-btns">
+	                <input type="hidden" name="subtask_id" value="">
+	                <button type="button" href="#" class="correction_modal-form-btn" id="save_subtask_title">
+	                    <span>Сохранить</span>
+	                </button>
+	            </div>
+	        </form>
+	    </section>
 
 		<!-- Подключение javascript файлов -->
 		<script src="js/jquery-3.5.0.min.js"></script>
@@ -651,7 +686,7 @@
 		<script src="js/media-player.js"></script>
 		<script src="js/html5sortable.min.js"></script>
 		<script src="js/select2.full.min.js"></script>
-		<!-- <script src="js/nice-select.js"></script> -->
+		<script src="js/nice-select.js"></script>
 		<script src="js/wavesurfer.js"></script>
 		<script src="js/fancybox.min.js"></script>
 		<script src="js/clipboard.min.js"></script>

@@ -37496,3 +37496,60 @@ bottom: 20px;
     line-height: 14px;
     padding: 14px;
 }
+
+.correction_modal .nice-select{
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #7874A3;
+    border-radius: 9px;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 14px;
+    height: 46px;
+}
+
+.correction_modal .nice-select .current {
+    line-height: 18px;
+}
+
+.correction_modal .nice-select.open .list {
+    top: calc(100% + 10px);
+    visibility: visible;
+    opacity: 1;
+    padding: 10px 0;
+}
+.correction_modal .nice-select .list {
+    position: absolute;
+    z-index: 9;
+    top: calc(100% + 30px);
+    left: 0;
+    visibility: hidden;
+    overflow: hidden;
+    min-width: 100%;
+    transition: .2s linear;
+    opacity: 0;
+    border: 1px solid #7874A3;
+    border-radius: 11px;
+    background: #fff;
+}
+
+.correction_modal. nice-select .list .scrollbar {
+    overflow: auto;
+    max-height: 240px;
+    padding: 10px 0;
+}
+
+.correction_modal .nice-select .list .list_item:hover, .correction_modal .nice-select .list .list_item.selected {
+    background: #eeeffc;
+    color:#000;
+}
+.correction_modal .nice-select .list .list_item {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 10px 14px;
+    cursor: pointer;
+    transition: background .2s linear;
+}
