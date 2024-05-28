@@ -31161,6 +31161,7 @@ bottom: 20px;
 .task-editing_text {
     display: flex;
     align-items: flex-start;
+    gap:10px;
 }
 .task-editing_text .icon {
     width: 10px;
@@ -37482,4 +37483,16 @@ bottom: 20px;
     display: flex;
     align-items: center;
     color:#353352 !important;
+}
+
+.correction_modal-form input[name="deadline_at"]{
+	width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #7874A3;
+    border-radius: 9px;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 14px;
 }
