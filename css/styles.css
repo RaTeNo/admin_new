@@ -30593,7 +30593,7 @@ bottom: 20px;
 }
 .tasks .step_stage_time {
     color: #8683C0;
-    font-size: 11px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -31478,7 +31478,7 @@ bottom: 20px;
 }
 .task2_item-comment {
     color: #605D97;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 158.333%;
@@ -31486,7 +31486,7 @@ bottom: 20px;
 }
 .task2_item-comment span {
     color: #505050;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 19px;
