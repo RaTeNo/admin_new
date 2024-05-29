@@ -31427,7 +31427,6 @@ bottom: 20px;
 .task2_item-top-label.orange {
     background: #FF9D2A;
     color: #fff;
-    padding: 3px 8px;
 }
 .task2_labels.m2{
     margin-top: 10px;
@@ -31461,7 +31460,7 @@ bottom: 20px;
 }
 .task2_item-bottom-name {
     color: var(--main_color);
-    font-size: 11px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -31470,7 +31469,7 @@ bottom: 20px;
 }
 .task2_item-bottom-date {
     color: #8683C0;
-    font-size: 11px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -37552,4 +37551,8 @@ bottom: 20px;
     padding: 10px 14px;
     cursor: pointer;
     transition: background .2s linear;
+}
+
+.correction_modal .label{
+    margin-bottom: 5px;
 }
