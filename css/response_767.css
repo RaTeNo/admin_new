@@ -2852,6 +2852,9 @@
         margin-top: 15px;
         display: flex;
         align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
+        gap:10px;
     }
 
     .simulators-new .simulator_item-right {
@@ -3219,7 +3222,18 @@
         gap: 10px;
     }
 
+    .search_ai_history_head{
+        align-items: flex-start;
+        flex-direction: column;
+    }
 
+    .search_ai_cats{
+        flex-direction: column;
+    }
+
+    .search_ai_cat{
+        padding: 5px 10px;
+    }
 
 
 
