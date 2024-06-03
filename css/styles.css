@@ -32247,6 +32247,7 @@ bottom: 20px;
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
+    cursor: pointer;
 }
 .image_faq .images_faq_wrap{
     width: 120px;
@@ -32267,6 +32268,7 @@ bottom: 20px;
     background: rgba(0, 0, 0, 0.5);
     top: 0;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .image_faq .images_faq_wrap:before{
@@ -32277,6 +32279,7 @@ bottom: 20px;
     height: 42px;
     position: absolute;
     z-index: 1;
+    cursor: pointer;
 }
 
 .image_faq.video:before{
