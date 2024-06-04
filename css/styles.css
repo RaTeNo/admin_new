@@ -31978,6 +31978,7 @@ bottom: 20px;
     align-items: center;
     margin-top: 40px;
     justify-content: center;
+    gap:10px;
 }
 
 .message_continue button{
