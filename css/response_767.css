@@ -3235,6 +3235,9 @@
         padding: 5px 10px;
     }
 
+    .message_continue{
+    	flex-direction: column;
+    }
 
 
 }
