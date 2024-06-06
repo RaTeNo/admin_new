@@ -27,7 +27,11 @@ $(() => {
 	        reader.readAsDataURL(f);
 	    }
 	}
-	document.getElementById('imgInp').addEventListener('change', handleFileSelect, false);
+	if(document.getElementById('imgInp'))
+	{
+		document.getElementById('imgInp').addEventListener('change', handleFileSelect, false);
+	}
+	
 		
 
 

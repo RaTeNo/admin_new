@@ -37654,3 +37654,18 @@ bottom: 20px;
     margin-top: 10px;
     cursor: pointer;
 }
+
+.correction_modal-form .line input[type='number']{
+    padding: 0 14px;
+    background: #FFFFFF;
+    border-radius: 9px;
+    border: 1px solid #808093;
+    resize: none;
+    height: 41px;
+    width: 100%;
+    font-family: var(--font_family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #808093;
+}
