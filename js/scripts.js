@@ -3,25 +3,39 @@ WH = window.innerHeight || document.clientHeight || document.getElementsByTagNam
 $(() => {
 	// tippy('[data-tippy-content]');
 
-	function readURL(input) {
-		if (input.files && input.files[0]) {
-			var reader = new FileReader();
-
-			reader.onload = function(e) {
-			    $('#steam').attr('src', e.target.result).show();
-			    $(".img_file").show();
-			}
-
-			reader.readAsDataURL(input.files[0]);
-		}
+	function handleFileSelect(evt) {
+	    var files = evt.target.files; // FileList object
+	    // Loop through the FileList and render image files as thumbnails.
+	    for (var i = 0, f; f = files[i]; i++) {
+	        // Only process image files.
+	        if (!f.type.match('image.*')) {
+	            alert("Image only please....");
+	        }
+	        var reader = new FileReader();
+	        // Closure to capture the file information.
+	        reader.onload = (function (theFile) {
+	            return function (e) {
+	                // Render thumbnail.
+	                var span = document.createElement('span');
+	                span.innerHTML = ['<img class="thumb" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
+	                $("#outputMulti").append(span);
+	                $(".img_file").show();
+	                $(".clear_input").show();
+	            };
+	        })(f);
+	        // Read in the image file as a data URL.
+	        reader.readAsDataURL(f);
+	    }
 	}
+	document.getElementById('imgInp').addEventListener('change', handleFileSelect, false);
+		
 
-	$("#imgInp").change(function() {
-	    readURL(this);
-	});
-	
-	$('.img_file_close').click(function (e) {
+
+	$('.clear_input').click(function (e) {
+		$(".clear_input").hide();
 		$(".img_file").hide();
+		$("#outputMulti").html("");
+		document.getElementById("imgInp").value = "";
 	});
 	
 

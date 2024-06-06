@@ -3239,5 +3239,9 @@
     	flex-direction: column;
     }
 
+    #outputMulti, .comments .comment .images{
+        flex-direction: column;
+    }
+
 
 }
