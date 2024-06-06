@@ -3,6 +3,28 @@ WH = window.innerHeight || document.clientHeight || document.getElementsByTagNam
 $(() => {
 	// tippy('[data-tippy-content]');
 
+	function readURL(input) {
+		if (input.files && input.files[0]) {
+			var reader = new FileReader();
+
+			reader.onload = function(e) {
+			    $('#steam').attr('src', e.target.result).show();
+			    $(".img_file").show();
+			}
+
+			reader.readAsDataURL(input.files[0]);
+		}
+	}
+
+	$("#imgInp").change(function() {
+	    readURL(this);
+	});
+	
+	$('.img_file_close').click(function (e) {
+		$(".img_file").hide();
+	});
+	
+
 	$(".create-report_wrap_hide").each(function (index) {
 		if ($(this).outerHeight() > 46) {
 			$(this).css("height", "46px");
