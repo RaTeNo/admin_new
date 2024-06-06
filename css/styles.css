@@ -37669,3 +37669,16 @@ bottom: 20px;
     line-height: 14px;
     color: #808093;
 }
+
+.step_stage_time_new .icon{
+    width: 27px;
+    height: 27px;
+}
+
+.step_stage_time_new{
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}

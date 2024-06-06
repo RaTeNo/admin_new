@@ -41,6 +41,25 @@
 	<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
 
 	<style>
+		.content_flex_full_action .simulator-quiz_wrap-time{
+			display: flex;
+	        gap: 10px;
+	        align-items: center;
+	        margin-left: auto;
+	        font-size: 20px;
+	        font-weight: bold;
+	        color: #000;
+		}
+
+		.content_flex_full_action .simulator-quiz_wrap-time .icon{
+			width: 30px;
+			height: 30px;
+		}
+
+		.content_flex_full_action .simulator-quiz_wrap-text{			
+			display: flex;
+			gap:15px;
+		}
 		@media print, (min-width: 1024px)
 		{
 			.content_flex_full_action .simulator-quiz_info-title{
@@ -53,6 +72,19 @@
 
 			.content_flex_full_action .simulator-quiz_wrap-text{
 				font-size: 30px;
+				display: flex;
+				gap:15px;
+			}
+
+
+			.content_flex_full_action .simulator-quiz_wrap-time{
+				display: flex;
+		        gap: 10px;
+		        align-items: center;
+		        margin-left: auto;
+		        font-size: 20px;
+		        font-weight: bold;
+		        color: #000;
 			}
 
 			.content_flex_full_action .simulator-quiz_wrap-labels{
@@ -136,7 +168,15 @@
 												<div class="simulator-quiz_wrap-head">
 													<div class="simulator-quiz_wrap-number">1.1</div>
 													<div class="simulator-quiz_wrap-info">
-														<div class="simulator-quiz_wrap-text">Зачистка заусенцев на основаниях ШЖ0 805.206 ТК</div>
+														<div class="simulator-quiz_wrap-text">
+															<span>Зачистка заусенцев на основаниях ШЖ0 805.206 ТК</span>
+															<div class="simulator-quiz_wrap-time">
+																<svg class="icon">
+																	<use xlink:href="images/sprite.svg#full_time"></use>
+																</svg>
+																05:43
+															</div>
+														</div>
 														<div class="simulator-quiz_wrap-labels">
 															<svg class="icon">
 																<use xlink:href="images/sprite.svg#completed"></use>
@@ -270,6 +310,13 @@
 																	</svg>
 																	<span>26</span>
 																</div>
+																<div class="simulator-quiz_wrap-time">
+																	<svg class="icon">
+																		<use xlink:href="images/sprite.svg#full_time"></use>
+																	</svg>
+																	05:43
+																</div>
+
 															</div>															
 															<div class="simulator-quiz_item_step_title">Проверка рабочего места и оборудования</div>
 														</a>
