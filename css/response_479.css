@@ -467,12 +467,13 @@
         height: 44px;
 
         border-radius: 8px;
+        display: none;
     }
 
 
     .comments .comment .data
     {
-        width: calc(100% - 60px);
+        width: calc(100% - 0px);
     }
 
 
@@ -2045,6 +2046,9 @@
         margin-left: 0;
     }
 
-
+    .step_stage_time_new{
+        margin-left: 38px;
+        margin-top: 10px;
+    }
 
 }
