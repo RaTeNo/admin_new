@@ -10500,6 +10500,11 @@ aside .menu .sub_menu a.active
     width: calc(100% - 65px);
 }
 
+.comments .add_comment .block_upload{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
 
 .comments .add_comment textarea
 {
