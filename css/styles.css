@@ -10706,6 +10706,18 @@ aside .menu .sub_menu a.active
     border-bottom: 1px dashed;
 }
 
+.comments .comment .edit_btn
+{
+    color: #d11a1a;
+    font-size: 12px;
+    line-height: 14px;
+
+    margin-top: 10px;
+    margin-left: 10px;
+
+    border-bottom: 1px dashed;
+}
+
 
 .comments .comment .reply_btn
 {

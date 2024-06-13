@@ -640,6 +640,8 @@
 														<div class="date">5 минут назад</div>
 														
 														<button class="del_btn">Удалить</button>
+
+														<button class="edit_btn modal_btn" data-content="#edit">Редактировать</button>
 													</div>
 												</div>
 											</div>
@@ -866,6 +868,20 @@
 				</section>
 			</div>
 		</div>
+
+
+		<section class="solutions-tasks_modal" id="edit">
+			<div class="solutions-tasks_modal-title">Редактировать</div>
+			<form class="solutions-tasks_modal-form">
+				<div class="line">
+					<div class="field">
+						<label for="message1">Что вы хотите изменить?</label>
+						<textarea id="message1" placeholder="Например, сократи текст до 200 символов" value="text"></textarea>
+					</div>
+				</div>
+				<button>Редактировать</button>
+			</form>
+		</section>
 
 
 		<div class="supports_error">
