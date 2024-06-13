@@ -12074,7 +12074,7 @@ section.total {
 .total_file_desc .links > * {
     margin-bottom: 10px;
     margin-left: 10px;
-    width: 130px;
+    /*width: 130px;*/
 }
 
 .total_file_desc .links a {
@@ -12272,6 +12272,7 @@ section.total {
     display: flex;
     justify-content: flex-start;
     gap:20px;
+    align-items: flex-start;
 }
 .accordion_item{
     background: #FFFFFF;
@@ -32220,6 +32221,7 @@ bottom: 20px;
     font-weight: 500;
     line-height: 33px;
     padding: 0 10px;
+    white-space: nowrap;
 }
 
 .update_faq{
