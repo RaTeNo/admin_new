@@ -27103,7 +27103,7 @@ form .form_btns input[type=file] + label,
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
-    height: 96px;
+    height: 300px;
 }
 .solutions-tasks_modal-form button {
     background: var(--main_color);
