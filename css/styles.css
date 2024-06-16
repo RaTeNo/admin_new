@@ -37725,3 +37725,12 @@ bottom: 20px;
     display: flex;
     margin-bottom: 16px;
 }
+
+.comments_wrap_new{
+    display: flex;
+    gap: 20px;
+}
+
+.comments_wrap_new .comments{
+    width: calc(50% - 10px);
+}

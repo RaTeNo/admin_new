@@ -3244,4 +3244,12 @@
     }
 
 
+    .comments_wrap_new{
+        flex-direction: column;
+    }
+
+    .comments_wrap_new .comments{
+        width: 100%;
+    }
+
 }
