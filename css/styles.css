@@ -37734,3 +37734,24 @@ bottom: 20px;
 .comments_wrap_new .comments{
     width: calc(50% - 10px);
 }
+
+.accordion_dialog{
+	margin-top:30px;
+}
+
+.accordion_dialog .accordion_item .head{
+	padding-bottom: 0 !important;
+	padding-top: 0 !important;
+	border:none;
+	align-items: center;
+}
+
+.accordion_dialog .accordion_item .head .title{
+	padding: 0;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.accordion_dialog .accordion_item .data{
+	padding: 20px;
+}

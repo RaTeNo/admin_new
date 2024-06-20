@@ -2051,4 +2051,17 @@
         margin-top: 10px;
     }
 
+    .accordion_dialog .accordion_item{
+        width: calc(100% + 44px);
+        margin-right: -22px;
+        margin-left: -22px;
+    }
+
+    .accordion_dialog .accordion_item .data {
+        padding: 20px;
+        width: 100%;
+        margin: 0;
+    }
+
+
 }
