@@ -374,6 +374,8 @@ $(() => {
 
 			$item.addClass('active').find('.data').slideDown(300)
 		}
+		
+   
 	})
 
 	$(".title_faq_result button").on("click", function () {

@@ -3252,4 +3252,35 @@
         width: 100%;
     }
 
+
+    .dialog .head .person {
+        margin-top: 35px;
+    }
+    .trainer_new_desc {
+        padding: 15px;
+    }
+    .accordion_item .faq_btn span {
+        display: none;
+    }
+    .trainer_step:after {
+        width: calc(100% + 30px);
+    }
+    .trainer_step .accordion_dialog .accordion_item .head .title {
+        width: calc(100% - 30px);
+    }
+    .trainer_step .accordion_dialog .accordion_item .head {
+        flex-wrap: nowrap;
+        padding: 0 15px;
+    }
+    .trainer_step .accordion_dialog .accordion_item {
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+
+
+
+
+
 }

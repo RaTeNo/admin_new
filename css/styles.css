@@ -7530,7 +7530,7 @@ aside .menu .sub_menu a.active
 
 .dialog .head .person
 {
-    color: #7f85ad;
+    color: #8381A9;
     font-size: 18px;
     font-weight: 500;
     line-height: 21px;
@@ -29575,12 +29575,61 @@ bottom: 20px;
 }
 
 .trainer_new{
-    max-width: 720px;
     margin: 20px auto;
     text-align: center;
     padding: 24px;
 }
-
+.trainer_new .accordion_dialog .accordion_item .head {
+    justify-content: space-between;
+}
+.accordion_item .faq_btn:last-child .faq_btn-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; 
+    background: #F93E3E;
+}
+.accordion_item .faq_btn:first-child .faq_btn-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; 
+    background: var(--main_color);
+}
+.faq_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; 
+    gap: 7px; 
+}
+.accordion_item .faq_btn:last-child span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.09px;
+    color: #F93E3E;
+}
+.accordion_item .faq_btn:first-child span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.09px;
+    color: var(--main_color);
+}
+.accordion_item .faq_btn:last-child {
+    display: none;
+}
+.accordion_item.active .faq_btn:last-child {
+    display: flex;
+}
+.accordion_item.active .faq_btn:first-child {
+    display: none;
+}
 .trainer_new_subtitle{
     border-radius: 69.865px;
     background: #F2F0FF;
@@ -29595,7 +29644,6 @@ bottom: 20px;
 
 .trainer_new_desc{
     border-radius: 20px;
-    border: 1px solid #C4BFE5;
     background: #F2F0FF;
     padding: 32px;
 }
@@ -29606,6 +29654,7 @@ bottom: 20px;
     font-weight: 700;
     letter-spacing: -1px;
     margin-bottom: 24px;
+    text-align: start;
 }
 
 .trainer_new_text{
@@ -29620,7 +29669,8 @@ bottom: 20px;
 .trainer_step_title{
     font-size: 18px;
     font-weight: 700;
-    margin-bottom: 24px;
+    margin-bottom: 15px;
+    text-align: start;
 }
 
 .trainer_step_button{
@@ -29631,6 +29681,8 @@ bottom: 20px;
     margin-top: 32px;
     padding: 15px 20px;
     border-radius: 40px;
+    margin-right: auto;
+    display: block;
 }
 
 .trainer_step_video{
@@ -29646,6 +29698,7 @@ bottom: 20px;
 
 .trainer_step_video a img{
 	display: block;
+    height: 137px;
 }
 
 .trainer_step_video a:after{
@@ -29661,24 +29714,98 @@ bottom: 20px;
 
 .trainer_step_video svg{
     position: absolute;
-    top:calc(50% - 25px);
-    left:calc(50%  - 25px);
-    width: 50px;
-    height: 50px;
+    top:calc(50% - 21px);
+    left:calc(50%  - 21px);
+    width: 42px;
+    height: 42px;
     z-index: 100;
 }
+.trainer_steps {
+    position: relative;
+}
+.trainer_step {
+    position: relative;
+    padding-bottom: 24px;
+}
+.trainer_step:last-child {
+    padding-bottom: 0;
+}
+.trainer_step:after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #B6B6B6;
+    width: calc(100% + 64px);
+    height: 1px;
+}
+.trainer_step:last-child::after {
+    display: none;
+}
+.trainer_step .trainer_step_audio {
+    padding: 3px 10px;
+    margin-bottom: 18px;
+}
+.trainer_new .accordion_item .head:before {
+    display: none;
+}
+.trainer_new .accordion_item {
+    background: #DFDCF6;
+}
+.dialog .trainer_new .data {
+    border-radius: 15px;
+    background: none;
+}
+.trainer_new .accordion_item .title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20.68px;
+    letter-spacing: -1px;
+    color: #000;
+}
+.trainer_new .accordion_item .title span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background: var(--main_color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20.68px;
+    letter-spacing: -1px;
+    color: #fff;
+    flex-shrink: 0;
+}
+.trainer_new .accordion_dialog .accordion_item.active .head {
+    min-height: 55px;
+    border-bottom: 1px solid #A5A0CC;
+}
+.trainer_step-text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+    color: #433C7B; 
+    margin-bottom: 15px;
+}
+
 
 .trainer_step_audio {
-    max-width: 350px;
+    max-width: 368px;
     background: #fff;
     padding: 10px;
     border-radius: 50px;
-    margin: 0 auto;
 }
 
 .trainer_step_video{
-    max-width: 300px;
-    margin: auto;
+    max-width: 207px;
+    margin-bottom: 23px;
 }
 
 .trainer_step_video img{
@@ -37750,6 +37877,7 @@ bottom: 20px;
 	padding: 0;
     font-size: 16px;
     line-height: 1;
+    text-align: left;
 }
 
 .accordion_dialog .accordion_item .data{
