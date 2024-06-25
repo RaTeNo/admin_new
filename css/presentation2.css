@@ -3325,6 +3325,10 @@
         padding: 30px;
     }
 
+    .presentation48 .presentation_img{
+        margin-top: 20px;
+    }
+
 
 }
 @container presentations (max-width: 600px) {
@@ -3508,6 +3512,22 @@
         padding-left: 50px;
     }
 
+    .presentation38 .presentation_img{
+        max-width: 100%;
+    }
+
+    .presentation38 .presentation_img:before{
+        max-width: 100%;
+        max-height: 100%;
+        left: -25px;
+    }
+
+    .presentation42 .presentation_img {
+        margin-top: 0;
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+    }
 
 }
 
