@@ -580,6 +580,10 @@
     gap: 25px;
     padding: 0;
 }
+
+.landing .presentation:nth-child(2n).presentation8 .slick_text{
+    color:#fff;
+}
 .presentation9 .presentation_wrap {
     flex-direction: column;
     align-items: flex-start;
@@ -2015,7 +2019,7 @@
     aspect-ratio: 668 / 600;
     object-fit: cover;
     height: 100%;   
-    clip-path: polygon(34% 100%, 13% 71%, 8% 63%, 3% 53%, 1% 48%, 2% 42%, 8% 32%, 22% 13%, 35% 0, 45% 0, 60% 0, 76% 0, 92% 0%, 100% 0%, 100% 99%); 
+    clip-path: polygon(34% 100%, 13% 71%, 7% 62%, 1% 52%, 0% 50%, 3% 44%, 10% 32%, 24% 13%, 35% 0, 45% 0, 60% 0, 76% 0, 92% 0%, 100% 0%, 100% 100%);
 }
 .presentation_logo img {
     width: auto;
@@ -2206,9 +2210,13 @@
 .presentation:nth-child(2n).presentation40 .presentation_icon2 .icon {
     color: var(--bg3);
 }
-.presentation:nth-child(2n).presentation40 .presentation_wrap {
+/*.presentation:nth-child(2n).presentation40 .presentation_wrap {
     background: #fff;
 }
+.presentation:nth-child(2n).presentation40 .presentation_wrap {
+    background: #fff;
+}*/
+
 .presentation40 .presentation_text {
     max-width: 425px;
 }
@@ -2221,10 +2229,10 @@
     left: -64px;
 }
 .presentation40.presentation:nth-child(2n) .presentation_text p {
-    color: var(--text);
+    color: #fff;
 }
 .presentation40.presentation:nth-child(2n) .presentation_title {
-    color: #292929;
+    color: #fff;
 }
 .presentation40 {
     background: #fff;
@@ -2334,19 +2342,28 @@
 }
 .presentation42 .presentation_img {
     width: 721px;
-    height: 721px;    
+    height: 721px;
     margin-top: -462px;
     margin-right: -224px;
+    border: 54px solid #fff;
+    border-radius: 100%;
+    outline: 94px solid color-mix(in oklab, var(--bg3), white 85%);
 }
 .presentation42 .presentation_img img {
     border-radius: 50%;
     object-fit: cover;
-    aspect-ratio: 722/722;
+    aspect-ratio: 722 / 722;
+    object-position: bottom left;
 }
 .presentation42 .presentation_left {
     max-width: 560px;
 }
-.presentation42 .presentation_wrap:before {
+.presentation42:nth-child(2n) .presentation_img{
+    outline: 94px solid color-mix(in oklab, var(--bg3), white 15%);
+    border: 54px solid var(--bg3);
+}
+
+/*.presentation42 .presentation_wrap:before {
     position: absolute;
     content: "";
     width: 950px;
@@ -2356,7 +2373,7 @@
     left: 45%;
     top: -398px;
     z-index: 0;
-}
+}*/
 .presentation42 .presentation_left {
     margin-top: 100px;
 }
@@ -3527,6 +3544,8 @@
         max-width: 100%;
         max-height: 100%;
         height: auto;
+        outline-width: 30px;
+        border-width: 30px;
     }
 
 }
