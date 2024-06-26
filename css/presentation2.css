@@ -2079,6 +2079,8 @@
 }
 .presentation38.presentation-two .presentation_right {
     padding-right: 69px;
+        display: flex;
+    align-items: center;
 }
 .presentation38 .presentation_img:before {
     position: absolute;
@@ -2146,8 +2148,11 @@
     padding: 66px 54px 66px 47px;
     background: var(--bg3);
 }
+.presentation39 .presentation_img{
+    height:100%;
+}
 .presentation39 .presentation_img img {
-    aspect-ratio: 520 / 468;
+    height: 100%;
     object-fit: cover;
 }
 .presentation39 {
@@ -2194,8 +2199,11 @@
     position: relative;
     background: var(--bg3);
 }
+.presentation40 .presentation_img{
+    height: 100%;
+}
 .presentation40 .presentation_img img {
-    aspect-ratio: 513 / 454;
+    height: 100%;
     object-fit: cover;
 }
 .presentation40.presentation-two .presentation_left {
@@ -2302,6 +2310,14 @@
 .presentation41.presentation-two .presentation_right {
     padding: 82px 71px 82px 0px;
 }
+
+.presentation41.presentation-two .presentation_right .presentation_img{
+    height: 100%;
+}
+
+.presentation41.presentation-two .presentation_right .presentation_img img{
+    height: 100%;
+}
 .presentation:nth-child(2n + 1).presentation41 .presentation_left {
     z-index: 3;
     position: relative;
@@ -2341,16 +2357,16 @@
     justify-content: space-between;
 }
 .presentation42 .presentation_img {
-    width: 721px;
-    height: 721px;
-    margin-top: -462px;
-    margin-right: -224px;
+    width: 500px;
+    height: 500px;
+    margin-top: -149px;
+    margin-right: -54px;
     border: 54px solid #fff;
-    border-radius: 100%;
     outline: 94px solid color-mix(in oklab, var(--bg3), white 85%);
+    border-bottom-left-radius: 100%;
+    overflow: hidden;
 }
 .presentation42 .presentation_img img {
-    border-radius: 50%;
     object-fit: cover;
     aspect-ratio: 722 / 722;
     object-position: bottom left;
@@ -2540,21 +2556,30 @@
     color: #fff;
 }
 .presentation45 .presentation_img img {
-    aspect-ratio: 442/600;
+    height: 100%;
     object-fit: cover;
 }
 .presentation45.presentation-two .presentation_right {
     padding: 0 0 0 30px;
 }
 
+.presentation45.presentation-two .presentation_right .presentation_img{
+    height: 100%;
+}
+
+.presentation45.presentation-two .presentation_right .presentation_img{
+    height: 100%;
+}
+
 
 .presentation46 .presentation_img img {
-    aspect-ratio: 351 / 436;
+    height: 100%;
     border-radius: 39px;
     object-fit: cover;
 }
 .presentation46 .presentation_img {
     position: relative;
+    height: 100%;
 }
 .presentation46 .presentation_left {
     padding: 69px 69px 69px 69px;
@@ -2615,7 +2640,10 @@
     outline: 60px solid #fff;
 }
 
-
+.presentation48 .presentation_right{
+        display: flex;
+    align-items: center;
+}
 
 .presentation48 .presentation_img img {
     aspect-ratio: 544 / 544;
@@ -2776,6 +2804,9 @@
     z-index: 5;
 }
 
+.presentation37 .presentation_img{
+    height: 100%;
+}
 
 
 
