@@ -85,7 +85,7 @@
     padding: 70px;
     gap: 65px;
     background: #fff;
-    align-items: center;
+    align-items: stretch;
     overflow: hidden;
 }
 .presentation .presentation_right {
@@ -2634,8 +2634,8 @@
 .presentation48 .presentation_left::after {
     position: absolute;
     content: "";
-    width: 1066px;
-    height: 1066px;
+    width: 150%;
+    height: 150%;
     border-radius: 50%;
     background: #fff;
     top: 50%;
@@ -2654,6 +2654,9 @@
 }
 .presentation48.presentation-two:nth-child(2n) .presentation_right {
     background: #fff;
+    height: auto;
+    display: flex;
+    align-items: center;
 }
 
 .presentation-two:nth-child(2n + 1).presentation ol li:before {
