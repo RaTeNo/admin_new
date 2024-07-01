@@ -3,6 +3,16 @@ WH = window.innerHeight || document.clientHeight || document.getElementsByTagNam
 $(() => {
 	// tippy('[data-tippy-content]');
 
+	$('.play_text .inner').click(function (e) {
+		e.preventDefault();
+		$(this).hide();
+		$(this).next().addClass("active");
+		setTimeout(() => {
+			$(this).next().removeClass("active");
+			$(this).next().next().show();
+		}, 3000);
+	});
+
 	function handleFileSelect(evt) {
 	    var files = evt.target.files; // FileList object
 	    // Loop through the FileList and render image files as thumbnails.
