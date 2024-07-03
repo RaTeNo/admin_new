@@ -28272,13 +28272,14 @@ form .form_btns input[type=file] + label,
     /*padding-bottom: 20px;*/
     position: relative;
 }
-.current-issues_top:before {
+.current-issues_items:before {
+
     position: absolute;
     content: "";
     width: calc(100% + 36px);
     height: 1px;
     left: -18px;
-    bottom: 0;
+    top: 0;
     background: #DFDFDF;
 }
 .current-issues_title {
@@ -28295,6 +28296,7 @@ form .form_btns input[type=file] + label,
 }
 .current-issues_items {
     margin-top: 8px;
+    position: relative;
 }
 .current-issues_item {
     padding: 7px 9px;
