@@ -28269,7 +28269,7 @@ form .form_btns input[type=file] + label,
     margin-top: 30px;
 }
 .current-issues_top {
-    padding-bottom: 20px;
+    /*padding-bottom: 20px;*/
     position: relative;
 }
 .current-issues_top:before {
@@ -37887,6 +37887,7 @@ bottom: 20px;
 .comments_wrap_new .block_title{
     display: flex;
     align-items: center;
+    gap:15px;
 }
 
 .comments_wrap_new .block_title .tabs{
@@ -37895,6 +37896,7 @@ bottom: 20px;
     background: #E8E6F4;
     margin: 0 !important;
     margin-left: 20px !important;
+    text-wrap:nowrap;
 }
 
 .comments_wrap_new .block_title .tabs .icon{
