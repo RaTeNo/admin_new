@@ -28297,6 +28297,7 @@ form .form_btns input[type=file] + label,
 .current-issues_items {
     margin-top: 8px;
     position: relative;
+    padding-top: 15px;
 }
 .current-issues_item {
     padding: 7px 9px;
