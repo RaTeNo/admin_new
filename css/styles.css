@@ -37859,6 +37859,9 @@ bottom: 20px;
 .comments_wrap_new{
     display: flex;
     gap: 20px;
+    padding: 0;
+    background: none;
+    margin-top: 0 !important;
 }
 
 .comments_wrap_new .comments{
