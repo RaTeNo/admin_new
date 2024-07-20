@@ -32,6 +32,10 @@ $(() => {
 	}
 
 
+	$(".training-plan_item-link").click(function (e) {
+		e.preventDefault();
+		$(this).parent().parent().toggleClass("active");
+	});
 
 
 	$('.clear_input').click(function (e) {
