@@ -38353,14 +38353,10 @@ bottom: 20px;
     display: inline-block;
 }
 
-.comments .add_comment .submit_btn svg{
-    display: none;
+.comment_button svg{
+   height: 30px;
 }
 
-.comments .add_comment .submit_btn.active svg{
-    display: block;
-}
-
-.comments .add_comment .submit_btn.active img{
-    display: none;
+.comment_button.active{
+    padding: 0 10px;
 }
