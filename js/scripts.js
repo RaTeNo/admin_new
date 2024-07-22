@@ -1,6 +1,16 @@
 WW = window.innerWidth || document.clientWidth || document.getElementsByTagName('body')[0].clientWidth
 WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight
 $(() => {
+
+	
+	document.querySelectorAll('.comments .add_comment .submit_btn').forEach(button => 
+	    button.addEventListener('click', (e) => {
+	    	e.preventDefault(); 
+	    	button.classList.add("active");
+	    })
+	);
+
+
 	// tippy('[data-tippy-content]');
 	function handleFileSelect(evt) {
 	    var files = evt.target.files; // FileList object
