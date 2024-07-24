@@ -32,9 +32,9 @@ $(() => {
 	}
 
 
-	$(".training-plan_item-link").click(function (e) {
+	$(".learning-paths .training-plan_item ul li span").click(function (e) {
 		e.preventDefault();
-		$(this).parent().parent().toggleClass("active");
+		$(this).parent().toggleClass("active");
 	});
 
 
