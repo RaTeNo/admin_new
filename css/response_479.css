@@ -2068,4 +2068,8 @@
         flex-direction: row;
     }
 
+    .training-plan_item-btns{
+        flex-direction: column;
+    }
+
 }
