@@ -38190,7 +38190,7 @@ bottom: 20px;
 .learning-paths .training-plan_item ul li {
     display: flex;
     gap: 15px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     position: relative;
     padding-left: 26px;
