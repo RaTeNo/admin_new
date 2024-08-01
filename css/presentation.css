@@ -3244,7 +3244,98 @@
 }
 
 
+/**/
+.slick-slide:nth-child(2n) .presentation-two .presentation_wrap:before,
+.slick-slide:nth-child(2n) .presentation-two .presentation_wrap:after  {
+    opacity: 0.1;
+}
 
+.slick-slide:nth-child(2n) .presentation-two .presentation_left::before {
+    background: #fff;
+}
+.slick-slide:nth-child(2n) .presentation-two .presentation_left::after {
+    background: #fff;
+}
+.slick-slide:nth-child(2n) .presentation-two .presentation_img:after {
+    background: #fff;
+}
+.slick-slide:nth-child(2n) .presentation_img:before {
+    background: #fff;
+}
+.slick-slide:nth-child(2n) .presentation-two .button-arrow {
+    background: #fff;
+}
+.slick-slide:nth-child(2n) .presentation38.presentation-two .button-arrow .icon {
+    color: var(--bg3);
+    width: 22px;
+    height: 23px;
+}
+
+.slick-slide:nth-child(2n) .presentation44.presentation-two .presentation_right-item:nth-child(1) {
+    background: #fff;
+}
+.slick-slide:nth-child(2n) .presentation44.presentation-two .presentation_right-item:nth-child(1):after {
+    background: #fff;
+    opacity: 0.6;
+} 
+.slick-slide:nth-child(2n) .presentation44.presentation-two .presentation_right-item:nth-child(2) {
+    background: #fff;
+    opacity: 0.8;    
+}
+.slick-slide:nth-child(2n) .presentation44.presentation-two .presentation_right-item:nth-child(2)::before {
+    background: #fff;
+    opacity: 0.7;
+}
+.slick-slide:nth-child(2n) .presentation44.presentation-two .presentation_right-item:nth-child(2)::after {
+    background: #fff;
+    opacity: 0.5;
+}
+
+.slick-slide:nth-child(2n) .presentation-two .presentation_list .icon {
+    color: #fff;
+}
+
+.slick-slide:nth-child(2n) .text_block .presentation-two ul li p {
+    color: #fff;
+}
+.slick-slide:nth-child(2n) .presentation47.presentation-two .presentation_img img {
+    border: 52px solid rgb(255, 255, 255, 0.29);
+    outline: 60px solid #fff;
+}
+
+.slick-slide:nth-child(2n+1) .presentation48.presentation-two .presentation_left::after {
+    background: #fff;
+}
+.slick-slide:nth-child(2n) .presentation48.presentation-two .presentation_left::after {
+    background: var(--bg3);
+}
+.slick-slide:nth-child(2n+1) .presentation48.presentation-two .presentation_right {
+    background: var(--bg3);
+}
+.slick-slide:nth-child(2n) .presentation48.presentation-two .presentation_right {
+    background: #fff;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.slick-slide:nth-child(2n+1) .presentation-two.presentation ol li:before {
+    background: var(--bg3);
+}
+.slick-slide:nth-child(2n) .presentation-two.presentation ol li:before {
+    background: #fff;
+    color: var(--bg3);
+}
+
+.slick-slide:nth-child(2n+1) .presentation-two.presentation ol li:before {
+    background: var(--bg3);
+}
+.slick-slide:nth-child(2n) .presentation-two.presentation ol li:before {
+    background: #fff;
+    color: var(--bg3);
+}
+
+/**/    
 
 
 
