@@ -1933,10 +1933,13 @@
         margin-bottom: 20px;
     }
     .learning-paths .training-plan_items {
-        gap: 15px;
+        margin-left: -30px;
+        margin-bottom: -20px;
     }
     .learning-paths .training-plan_items > * {
-        width: calc(100%/2 - 8px);
+        width: calc(100%/3 - 30px);
+        margin-left: 30px;
+        margin-bottom: 20px;
     }
     .training-plan_item:nth-child(5):before {
         display: block;
@@ -2118,6 +2121,20 @@
     .knowledge-base_items > * {
         width: calc(100% / 2 - 11px);
     }
+
+
+
+    .evaluation-calls .mistake_items {
+        margin-bottom: 0;
+    }
+    .evaluation-calls .mistake_items > * {
+        width: calc(100% / 2 - 15px);
+        margin-bottom: 0;
+    }
+    .name-assessment_items > * {
+        width: calc(100% / 3 - 12px);
+    }
+
 
 
 }

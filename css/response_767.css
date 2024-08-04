@@ -2695,6 +2695,14 @@
         padding-left: 0;
         margin-top: 20px;
     }
+    .learning-paths .training-plan_items > * {
+        width: calc(100%/2 - 20px);
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .learning-paths .training-plan_items {
+        margin-left: -20px;
+    }
     .training-plan_top {
         align-items: center;
     }
@@ -3277,19 +3285,62 @@
 
 
 
-    .learning-paths_items > * {
+
+
+    .evaluation-calls .mistake_items > * {
         width: 100%;
     }
-    .learning-paths_items {
-        gap: 15px;
+    .evaluation-calls .table-wrap {
+        overflow-y: scroll;
+        overflow: -moz-scrollbars-none; 
+        -ms-overflow-style: none;
+    }
+    .evaluation-calls table {
+        width: 760px;
+    }
+    .evaluation-calls .table-wrap::-webkit-scrollbar { 
+        width: 0; 
+    }
+    .evaluation-calls_head {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .evaluation-calls_head .page_title {
+        width: 100%;
+    }
+    .name-assessment_items {
+        gap: 10px;
+    }
+    .name-assessment_items > * {
+        width: calc(100% / 2 - 12px);
     }
 
-    .learning-paths .training-plan_items > * {
+    .evaluation-calls .mistake_items > * {
         width: 100%;
     }
-    .learning-paths .training-plan_items {
-        padding: 20px;
+    .examples-calls .table-wrap {
+        overflow-y: scroll;
+        overflow: -moz-scrollbars-none; 
+        -ms-overflow-style: none;
     }
+    .examples-calls table {
+        width: 760px;
+    }
+    .examples-calls .table-wrap::-webkit-scrollbar { 
+        width: 0; 
+    }
+
+    .communication-assessment_items > * {
+        width: 100%;
+    }
+    .call-dialog_top {
+        flex-direction: column;
+    }
+    .call-dialog_audio {
+        width: 100%;
+    }
+
 
 
 }

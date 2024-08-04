@@ -1603,6 +1603,14 @@
     .training-plan_items {
         margin-left: 0;
     }
+    .learning-paths .training-plan_items > * {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .learning-paths .training-plan_items {
+        margin-left: 0;
+    }
     .training-plan_item:before,
     .training-plan_item:nth-child(4):before {
         display: none;
@@ -2068,8 +2076,9 @@
         flex-direction: row;
     }
 
-    .training-plan_item-btns{
-        flex-direction: column;
+    .name-assessment_items > * {
+        width: 100%;
     }
+    
 
 }

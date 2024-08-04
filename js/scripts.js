@@ -32,10 +32,6 @@ $(() => {
 	}
 
 
-	// $(".learning-paths .training-plan_item ul li span").click(function (e) {
-	// 	e.preventDefault();
-	// 	$(this).parent().toggleClass("active");
-	// });
 
 
 	$('.clear_input').click(function (e) {
