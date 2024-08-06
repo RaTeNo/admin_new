@@ -38270,7 +38270,6 @@ bottom: 20px;
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
-    margin-top: 39px;
 }
 .name-assessment_items > * {
     padding: 19px 15px;
@@ -38823,6 +38822,10 @@ bottom: 20px;
     line-height: 20px;
     color: #393939;
 }
+
+.mistake + .mistake{
+    margin-top: 40px;
+} 
 
 .mistake .pie {
     width: 55px;
