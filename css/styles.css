@@ -10632,16 +10632,14 @@ aside .menu .sub_menu a.active
 .comments .comment .data
 {
     display: flex;
-
     width: calc(100% - 65px);
-    padding-bottom: 20px;
-
-    border-bottom: 1px solid rgba(53,53,82,.1);
-
+    padding: 20px;
+    border: 1px solid #ABAAE2;
     justify-content: flex-start;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+    border-radius: 20px;
 }
 
 
