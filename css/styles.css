@@ -38101,7 +38101,6 @@ bottom: 20px;
 .inforamation-calls tbody tr td:nth-child(4) {
     text-align: center;
     padding: 9px 17px;
-    display: flex;
     justify-content: center;
 }
 .inforamation-calls tbody tr td:nth-child(5) {
