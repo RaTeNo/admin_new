@@ -38512,6 +38512,9 @@ bottom: 20px;
     text-align: center;
     border-radius: 50%;
 }
+.inforamation-call_item-text.yellow{
+	color: yellow;
+}
 .communication-assessment_items {
     display: flex;
     gap: 22px;
