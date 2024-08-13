@@ -38513,7 +38513,8 @@ bottom: 20px;
     border-radius: 50%;
 }
 .inforamation-call_item-text.yellow{
-	color: yellow;
+	color: #EF9B1C;
+    background: #fdf0dd;
 }
 .communication-assessment_items {
     display: flex;
