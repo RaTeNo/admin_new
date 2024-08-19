@@ -2695,14 +2695,6 @@
         padding-left: 0;
         margin-top: 20px;
     }
-    .learning-paths .training-plan_items > * {
-        width: calc(100%/2 - 20px);
-        margin-left: 20px;
-        margin-bottom: 20px;
-    }
-    .learning-paths .training-plan_items {
-        margin-left: -20px;
-    }
     .training-plan_top {
         align-items: center;
     }
@@ -3285,45 +3277,20 @@
 
 
 
-
-
-    .evaluation-calls .mistake_items > * {
+    .learning-paths_items > * {
         width: 100%;
     }
-    .evaluation-calls .table-wrap {
-        overflow-y: scroll;
-        overflow: -moz-scrollbars-none; 
-        -ms-overflow-style: none;
-    }
-    .evaluation-calls table {
-        width: 760px;
-    }
-    .evaluation-calls .table-wrap::-webkit-scrollbar { 
-        width: 0; 
-    }
-    .evaluation-calls_head {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    .evaluation-calls_head .page_title {
-        width: 100%;
-    }
-    .name-assessment_items {
-        gap: 10px;
-    }
-    .name-assessment_items > * {
-        width: calc(100% / 2 - 12px);
+    .learning-paths_items {
+        gap: 15px;
     }
 
-    .evaluation-calls .mistake_items > * {
+    .learning-paths .training-plan_items > * {
         width: 100%;
     }
-    .examples-calls .table-wrap {
-        overflow-y: scroll;
-        overflow: -moz-scrollbars-none; 
-        -ms-overflow-style: none;
+    .learning-paths .training-plan_items {
+        padding: 20px;
     }
+<<<<<<< HEAD
     .examples-calls table {
         width: 760px;
     }
@@ -3353,6 +3320,8 @@
         width: 0; 
     }
     
+=======
+>>>>>>> parent of 732ebe3 (ffff)
 
 
 }
